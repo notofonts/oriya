@@ -591,7 +591,7 @@ disablesAutomaticAlignment = 1;
 familyName = "Noto Sans Oriya";
 featurePrefixes = (
 {
-code = "languagesystem DFLT dflt;\012\012languagesystem ory2 dflt;\012";
+code = "languagesystem DFLT dflt;\012\012languagesystem ory2 dflt;\012languagesystem latn dflt; # This is needed in our full builds because we use feature variations\012";
 name = Languagesystems;
 }
 );
