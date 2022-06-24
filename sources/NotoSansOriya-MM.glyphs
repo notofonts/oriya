@@ -544,6 +544,10 @@ value = (
 );
 },
 {
+name = "Disable Last Change";
+value = 1;
+},
+{
 name = description;
 value = "Designed by Amélie Bonet and Sol Matas";
 },
@@ -1439,7 +1443,6 @@ xHeight = 658;
 glyphs = (
 {
 glyphname = .notdef;
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -1566,7 +1569,6 @@ note = .notdef;
 },
 {
 glyphname = NULL;
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -1595,7 +1597,6 @@ subCategory = Other;
 },
 {
 glyphname = CR;
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -1623,7 +1624,6 @@ unicode = 000D;
 },
 {
 glyphname = space;
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -1651,7 +1651,6 @@ unicode = 0020;
 },
 {
 glyphname = nbspace;
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -1678,7 +1677,6 @@ unicode = 00A0;
 },
 {
 glyphname = "candraBindu-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -2125,7 +2123,6 @@ unicode = 0B01;
 },
 {
 glyphname = "anusvara-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -2343,7 +2340,6 @@ unicode = 0B02;
 },
 {
 glyphname = "visarga-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -2621,7 +2617,6 @@ unicode = 0B03;
 },
 {
 glyphname = "a-oriya";
-lastChange = "2022-06-24 11:11:41 +0000";
 layers = (
 {
 anchors = (
@@ -3449,7 +3444,6 @@ unicode = 0B05;
 },
 {
 glyphname = "aa-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -3563,7 +3557,6 @@ unicode = 0B06;
 },
 {
 glyphname = "i-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -4592,7 +4585,6 @@ unicode = 0B07;
 },
 {
 glyphname = "ii-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -5846,7 +5838,6 @@ unicode = 0B08;
 },
 {
 glyphname = "u-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -6695,7 +6686,6 @@ unicode = 0B09;
 },
 {
 glyphname = "uu-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -7704,7 +7694,6 @@ unicode = 0B0A;
 },
 {
 glyphname = "rVocalic-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -8243,7 +8232,6 @@ unicode = 0B0B;
 },
 {
 glyphname = "lVocalic-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -8667,7 +8655,6 @@ unicode = 0B0C;
 },
 {
 glyphname = "e-oriya";
-lastChange = "2022-06-24 11:11:41 +0000";
 layers = (
 {
 anchors = (
@@ -9116,7 +9103,6 @@ unicode = 0B0F;
 },
 {
 glyphname = "ai-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 guideLines = (
@@ -9645,7 +9631,6 @@ unicode = 0B10;
 },
 {
 glyphname = "o-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -10028,7 +10013,6 @@ unicode = 0B13;
 },
 {
 glyphname = "au-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -10658,7 +10642,6 @@ unicode = 0B14;
 },
 {
 glyphname = "ka-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -11707,7 +11690,6 @@ unicode = 0B15;
 },
 {
 glyphname = "kha-oriya";
-lastChange = "2022-06-24 11:11:41 +0000";
 layers = (
 {
 anchors = (
@@ -12321,7 +12303,6 @@ unicode = 0B16;
 },
 {
 glyphname = "ga-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -12820,7 +12801,6 @@ unicode = 0B17;
 },
 {
 glyphname = "gha-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -13354,7 +13334,6 @@ unicode = 0B18;
 },
 {
 glyphname = "nga-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -14462,7 +14441,6 @@ unicode = 0B19;
 },
 {
 glyphname = "ca-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -14940,7 +14918,6 @@ unicode = 0B1A;
 },
 {
 glyphname = "cha-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -16393,7 +16370,6 @@ unicode = 0B1B;
 },
 {
 glyphname = "ja-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -17324,7 +17300,6 @@ unicode = 0B1C;
 },
 {
 glyphname = "jha-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -17995,7 +17970,6 @@ unicode = 0B1D;
 },
 {
 glyphname = "nya-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -18735,7 +18709,6 @@ unicode = 0B1E;
 },
 {
 glyphname = "tta-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -19229,7 +19202,6 @@ unicode = 0B1F;
 },
 {
 glyphname = "ttha-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -19549,7 +19521,6 @@ unicode = 0B20;
 },
 {
 glyphname = "dda-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -20542,7 +20513,6 @@ unicode = 0B21;
 },
 {
 glyphname = "ddha-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -21487,7 +21457,6 @@ unicode = 0B22;
 },
 {
 glyphname = "nna-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -22021,7 +21990,6 @@ unicode = 0B23;
 },
 {
 glyphname = "ta-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -22912,7 +22880,6 @@ unicode = 0B24;
 },
 {
 glyphname = "tha-oriya";
-lastChange = "2022-06-24 11:11:41 +0000";
 layers = (
 {
 anchors = (
@@ -23361,7 +23328,6 @@ unicode = 0B25;
 },
 {
 glyphname = "da-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -23856,7 +23822,6 @@ unicode = 0B26;
 },
 {
 glyphname = "dha-oriya";
-lastChange = "2022-06-24 11:11:41 +0000";
 layers = (
 {
 anchors = (
@@ -24226,7 +24191,6 @@ unicode = 0B27;
 },
 {
 glyphname = "na-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -24734,7 +24698,6 @@ unicode = 0B28;
 },
 {
 glyphname = "pa-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -25208,7 +25171,6 @@ unicode = 0B2A;
 },
 {
 glyphname = "pha-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -25865,7 +25827,6 @@ unicode = 0B2B;
 },
 {
 glyphname = "ba-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -26384,7 +26345,6 @@ unicode = 0B2C;
 },
 {
 glyphname = "bha-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -27451,7 +27411,6 @@ unicode = 0B2D;
 },
 {
 glyphname = "ma-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -27931,7 +27890,6 @@ unicode = 0B2E;
 },
 {
 glyphname = "ya-oriya";
-lastChange = "2022-06-24 11:11:41 +0000";
 layers = (
 {
 anchors = (
@@ -28470,7 +28428,6 @@ unicode = 0B2F;
 },
 {
 glyphname = "ra-oriya";
-lastChange = "2022-06-24 11:11:41 +0000";
 layers = (
 {
 anchors = (
@@ -28955,7 +28912,6 @@ unicode = 0B30;
 },
 {
 glyphname = "la-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -29485,7 +29441,6 @@ unicode = 0B32;
 },
 {
 glyphname = "lla-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -30004,7 +29959,6 @@ unicode = 0B33;
 },
 {
 glyphname = "va-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -31008,7 +30962,6 @@ unicode = 0B35;
 },
 {
 glyphname = "sha-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -31633,7 +31586,6 @@ unicode = 0B36;
 },
 {
 glyphname = "ssa-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -32487,7 +32439,6 @@ unicode = 0B37;
 },
 {
 glyphname = "sa-oriya";
-lastChange = "2022-06-24 11:11:41 +0000";
 layers = (
 {
 anchors = (
@@ -32842,7 +32793,6 @@ unicode = 0B38;
 },
 {
 glyphname = "ha-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -33799,7 +33749,6 @@ unicode = 0B39;
 },
 {
 glyphname = "wa-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -34429,7 +34378,6 @@ category = Letter;
 },
 {
 glyphname = "rrVocalic-oriya";
-lastChange = "2022-06-24 11:11:41 +0000";
 layers = (
 {
 guideLines = (
@@ -35039,7 +34987,6 @@ unicode = 0B60;
 },
 {
 glyphname = "llVocalic-oriya";
-lastChange = "2022-06-24 11:11:41 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -35429,7 +35376,6 @@ unicode = 0B61;
 },
 {
 glyphname = "nukta-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -35587,7 +35533,6 @@ unicode = 0B3C;
 },
 {
 glyphname = "avagraha-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -35730,7 +35675,6 @@ unicode = 0B3D;
 },
 {
 glyphname = "aaMatra-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -35843,7 +35787,6 @@ unicode = 0B3E;
 },
 {
 glyphname = "iMatra-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -36006,7 +35949,6 @@ unicode = 0B3F;
 },
 {
 glyphname = "iMatra-oriya.wide";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -36168,7 +36110,6 @@ note = ivowelsignorya;
 },
 {
 glyphname = "iiMatra-oriya";
-lastChange = "2022-06-24 11:11:41 +0000";
 layers = (
 {
 anchors = (
@@ -36302,7 +36243,6 @@ unicode = 0B40;
 },
 {
 glyphname = "uMatra-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -36607,7 +36547,6 @@ unicode = 0B41;
 },
 {
 glyphname = "uuMatra-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -37082,7 +37021,6 @@ unicode = 0B42;
 },
 {
 glyphname = "rVocalicMatra-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -37310,7 +37248,6 @@ unicode = 0B43;
 },
 {
 glyphname = "rrVocalicMatra-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -37838,7 +37775,6 @@ unicode = 0B44;
 },
 {
 glyphname = "lVocalicMatra-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -38546,7 +38482,6 @@ unicode = 0B62;
 },
 {
 glyphname = "llVocalicMatra-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -39224,7 +39159,6 @@ unicode = 0B63;
 },
 {
 glyphname = "eMatra-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -39482,7 +39416,6 @@ unicode = 0B47;
 },
 {
 glyphname = "aiMatra-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 components = (
@@ -39580,7 +39513,6 @@ unicode = 0B48;
 },
 {
 glyphname = "oMatra-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 components = (
@@ -39678,7 +39610,6 @@ unicode = 0B4B;
 },
 {
 glyphname = "auMatra-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 components = (
@@ -39783,7 +39714,6 @@ unicode = 0B4C;
 },
 {
 glyphname = "aiLength-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -40044,7 +39974,6 @@ unicode = 0B56;
 },
 {
 glyphname = "aiLength-oriya.stem";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -40281,7 +40210,6 @@ note = ailengthmarkorya;
 },
 {
 glyphname = "aiLength-oriya.umbrella";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -40538,7 +40466,6 @@ note = ailengthmarkorya;
 },
 {
 glyphname = "auLength-oriya";
-lastChange = "2022-06-24 11:54:10 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -40783,7 +40710,6 @@ subCategory = Spacing;
 },
 {
 glyphname = "halant-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -40896,7 +40822,6 @@ unicode = 0B4D;
 },
 {
 glyphname = "yya-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -41535,7 +41460,6 @@ unicode = 0B5F;
 },
 {
 glyphname = "om-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -42037,7 +41961,6 @@ note = omorya;
 },
 {
 glyphname = "rra-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -42142,7 +42065,6 @@ unicode = 0B5C;
 },
 {
 glyphname = "rha-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -42247,7 +42169,6 @@ unicode = 0B5D;
 },
 {
 glyphname = "reph-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -42391,7 +42312,6 @@ width = 800;
 },
 {
 glyphname = "isshar-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -42614,7 +42534,6 @@ unicode = 0B70;
 },
 {
 glyphname = danda;
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -42697,7 +42616,6 @@ unicode = 0964;
 },
 {
 glyphname = dbldanda;
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 background = {
@@ -42871,7 +42789,6 @@ unicode = 0965;
 },
 {
 glyphname = "zero-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -43089,7 +43006,6 @@ unicode = 0B66;
 },
 {
 glyphname = "one-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -43491,7 +43407,6 @@ unicode = 0B67;
 },
 {
 glyphname = "two-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 components = (
@@ -43656,7 +43571,6 @@ unicode = 0B68;
 },
 {
 glyphname = "three-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -44346,7 +44260,6 @@ unicode = 0B69;
 },
 {
 glyphname = "four-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -44569,7 +44482,6 @@ unicode = 0B6A;
 },
 {
 glyphname = "five-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -45413,7 +45325,6 @@ unicode = 0B6B;
 },
 {
 glyphname = "six-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -45916,7 +45827,6 @@ unicode = 0B6C;
 },
 {
 glyphname = "seven-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -46426,7 +46336,6 @@ unicode = 0B6D;
 },
 {
 glyphname = "eight-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -46524,7 +46433,6 @@ unicode = 0B6E;
 },
 {
 glyphname = "nine-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -46845,7 +46753,6 @@ unicode = 0B6F;
 },
 {
 glyphname = "onequarter-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -46931,7 +46838,6 @@ subCategory = Fraction;
 },
 {
 glyphname = "onehalf-oriya";
-lastChange = "2022-06-24 11:11:41 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -47148,7 +47054,6 @@ subCategory = Fraction;
 },
 {
 glyphname = "threequarters-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -47446,7 +47351,6 @@ subCategory = Fraction;
 },
 {
 glyphname = "onesixteenth-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -47552,7 +47456,6 @@ subCategory = Fraction;
 },
 {
 glyphname = "oneeighth-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 guideLines = (
@@ -47878,7 +47781,6 @@ subCategory = Fraction;
 },
 {
 glyphname = "threesixteenths-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -48181,7 +48083,6 @@ subCategory = Fraction;
 },
 {
 glyphname = zerowidthspace;
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -48209,7 +48110,6 @@ unicode = 200B;
 },
 {
 glyphname = zerowidthnonjoiner;
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -48297,7 +48197,6 @@ unicode = 200C;
 },
 {
 glyphname = zerowidthjoiner;
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -48440,7 +48339,6 @@ unicode = 200D;
 },
 {
 glyphname = dottedCircle;
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -49198,7 +49096,6 @@ unicode = 25CC;
 },
 {
 glyphname = "kara-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -50278,7 +50175,6 @@ rightMetricsKey = "ka-oriya";
 },
 {
 glyphname = "khara-oriya";
-lastChange = "2022-06-24 11:11:52 +0000";
 layers = (
 {
 anchors = (
@@ -50953,7 +50849,6 @@ rightMetricsKey = "kha-oriya";
 },
 {
 glyphname = "gara-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -51508,7 +51403,6 @@ rightMetricsKey = "ga-oriya";
 },
 {
 glyphname = "ghara-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -52101,7 +51995,6 @@ rightMetricsKey = "gha-oriya";
 },
 {
 glyphname = "ngara-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -53125,7 +53018,6 @@ rightMetricsKey = "nga-oriya";
 },
 {
 glyphname = "cara-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -53708,7 +53600,6 @@ rightMetricsKey = "ca-oriya";
 },
 {
 glyphname = "chara-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -55024,7 +54915,6 @@ rightMetricsKey = "cha-oriya";
 },
 {
 glyphname = "jara-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -55939,7 +55829,6 @@ rightMetricsKey = "ja-oriya";
 },
 {
 glyphname = "jhara-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -56687,7 +56576,6 @@ rightMetricsKey = "jha-oriya";
 },
 {
 glyphname = "nyara-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -57536,7 +57424,6 @@ rightMetricsKey = "nya-oriya";
 },
 {
 glyphname = "ttara-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -58136,7 +58023,6 @@ rightMetricsKey = "tta-oriya";
 },
 {
 glyphname = "tthara-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -58561,7 +58447,6 @@ rightMetricsKey = "ttha-oriya";
 },
 {
 glyphname = "ddara-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -59375,7 +59260,6 @@ rightMetricsKey = "dda-oriya";
 },
 {
 glyphname = "ddhara-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -59927,7 +59811,6 @@ rightMetricsKey = "ddha-oriya";
 },
 {
 glyphname = "nnara-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -60498,7 +60381,6 @@ rightMetricsKey = "nna-oriya";
 },
 {
 glyphname = "tara-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -61089,7 +60971,6 @@ rightMetricsKey = "ta-oriya";
 },
 {
 glyphname = "thara-oriya";
-lastChange = "2022-06-24 11:11:52 +0000";
 layers = (
 {
 anchors = (
@@ -61593,7 +61474,6 @@ rightMetricsKey = "tha-oriya";
 },
 {
 glyphname = "dara-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -62149,7 +62029,6 @@ rightMetricsKey = "da-oriya";
 },
 {
 glyphname = "dhara-oriya";
-lastChange = "2022-06-24 11:11:52 +0000";
 layers = (
 {
 anchors = (
@@ -62547,7 +62426,6 @@ rightMetricsKey = "dha-oriya";
 },
 {
 glyphname = "nara-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -63072,7 +62950,6 @@ rightMetricsKey = "na-oriya";
 },
 {
 glyphname = "para-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -63562,7 +63439,6 @@ rightMetricsKey = "pa-oriya";
 },
 {
 glyphname = "phara-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -64232,7 +64108,6 @@ rightMetricsKey = "pha-oriya";
 },
 {
 glyphname = "bara-oriya";
-lastChange = "2022-06-24 11:11:41 +0000";
 layers = (
 {
 anchors = (
@@ -64828,7 +64703,6 @@ rightMetricsKey = "ba-oriya";
 },
 {
 glyphname = "bhara-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -65747,7 +65621,6 @@ rightMetricsKey = "bha-oriya";
 },
 {
 glyphname = "mara-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -66243,7 +66116,6 @@ rightMetricsKey = "ma-oriya";
 },
 {
 glyphname = "yara-oriya";
-lastChange = "2022-06-24 11:11:52 +0000";
 layers = (
 {
 anchors = (
@@ -66818,7 +66690,6 @@ rightMetricsKey = "ya-oriya";
 },
 {
 glyphname = "lara-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -67398,7 +67269,6 @@ rightMetricsKey = "la-oriya";
 },
 {
 glyphname = "llara-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -67968,7 +67838,6 @@ rightMetricsKey = "lla-oriya";
 },
 {
 glyphname = "vara-oriya";
-lastChange = "2022-06-24 11:11:41 +0000";
 layers = (
 {
 anchors = (
@@ -68972,7 +68841,6 @@ rightMetricsKey = "va-oriya";
 },
 {
 glyphname = "shara-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -69633,7 +69501,6 @@ rightMetricsKey = "sha-oriya";
 },
 {
 glyphname = "ssara-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -70192,7 +70059,6 @@ rightMetricsKey = "ssa-oriya";
 },
 {
 glyphname = "sara-oriya";
-lastChange = "2022-06-24 11:11:52 +0000";
 layers = (
 {
 anchors = (
@@ -70593,7 +70459,6 @@ rightMetricsKey = "sa-oriya";
 },
 {
 glyphname = "hara-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -71205,7 +71070,6 @@ rightMetricsKey = "ha-oriya";
 },
 {
 glyphname = "wara-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -71867,7 +71731,6 @@ rightMetricsKey = "wa-oriya";
 },
 {
 glyphname = "rrara-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -72587,7 +72450,6 @@ rightMetricsKey = "rra-oriya";
 },
 {
 glyphname = "rhara-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -73290,7 +73152,6 @@ rightMetricsKey = "rha-oriya";
 },
 {
 glyphname = "yyara-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -74038,7 +73899,6 @@ rightMetricsKey = "yya-oriya";
 },
 {
 glyphname = "ka-oriya.base";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -74626,7 +74486,6 @@ rightMetricsKey = "ka-oriya";
 },
 {
 glyphname = "kha-oriya.base";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -75219,7 +75078,6 @@ rightMetricsKey = "kha-oriya";
 },
 {
 glyphname = "ga-oriya.base";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -75692,7 +75550,6 @@ rightMetricsKey = "ga-oriya";
 },
 {
 glyphname = "gha-oriya.base";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -76205,7 +76062,6 @@ rightMetricsKey = "gha-oriya";
 },
 {
 glyphname = "nga-oriya.base";
-lastChange = "2022-06-24 11:11:41 +0000";
 layers = (
 {
 anchors = (
@@ -76828,7 +76684,6 @@ rightMetricsKey = "nga-oriya";
 },
 {
 glyphname = "ca-oriya.base";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -77276,7 +77131,6 @@ rightMetricsKey = "ca-oriya";
 },
 {
 glyphname = "cha-oriya.base";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -78079,7 +77933,6 @@ rightMetricsKey = "cha-oriya";
 },
 {
 glyphname = "ja-oriya.base";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -78890,7 +78743,6 @@ rightMetricsKey = "ja-oriya";
 },
 {
 glyphname = "jha-oriya.base";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -79537,7 +79389,6 @@ rightMetricsKey = "jha-oriya";
 },
 {
 glyphname = "nya-oriya.base";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -80269,7 +80120,6 @@ rightMetricsKey = "nya-oriya";
 },
 {
 glyphname = "tta-oriya.base";
-lastChange = "2022-06-24 11:11:41 +0000";
 layers = (
 {
 anchors = (
@@ -80742,7 +80592,6 @@ rightMetricsKey = "tta-oriya";
 },
 {
 glyphname = "ttha-oriya.base";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -81054,7 +80903,6 @@ rightMetricsKey = "ttha-oriya";
 },
 {
 glyphname = "dda-oriya.base";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -81547,7 +81395,6 @@ rightMetricsKey = "dda-oriya";
 },
 {
 glyphname = "ddha-oriya.base";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -82061,7 +81908,6 @@ rightMetricsKey = "ddha-oriya";
 },
 {
 glyphname = "nna-oriya.base";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -82574,7 +82420,6 @@ rightMetricsKey = "nna-oriya";
 },
 {
 glyphname = "ta-oriya.base";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -83062,7 +82907,6 @@ rightMetricsKey = "ta-oriya";
 },
 {
 glyphname = "tha-oriya.base";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -83495,7 +83339,6 @@ rightMetricsKey = "tha-oriya";
 },
 {
 glyphname = "da-oriya.base";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -83948,7 +83791,6 @@ rightMetricsKey = "da-oriya";
 },
 {
 glyphname = "dha-oriya.base";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -84291,7 +84133,6 @@ rightMetricsKey = "dha-oriya";
 },
 {
 glyphname = "na-oriya.base";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -84769,7 +84610,6 @@ rightMetricsKey = "na-oriya";
 },
 {
 glyphname = "pa-oriya.base";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -85222,7 +85062,6 @@ rightMetricsKey = "pa-oriya";
 },
 {
 glyphname = "pha-oriya.base";
-lastChange = "2022-06-24 11:11:41 +0000";
 layers = (
 {
 anchors = (
@@ -85847,7 +85686,6 @@ rightMetricsKey = "pha-oriya";
 },
 {
 glyphname = "ba-oriya.base";
-lastChange = "2022-06-24 11:11:41 +0000";
 layers = (
 {
 anchors = (
@@ -86346,7 +86184,6 @@ rightMetricsKey = "ba-oriya";
 },
 {
 glyphname = "bha-oriya.base";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -86899,7 +86736,6 @@ rightMetricsKey = "bha-oriya";
 },
 {
 glyphname = "ma-oriya.base";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -87357,7 +87193,6 @@ rightMetricsKey = "ma-oriya";
 },
 {
 glyphname = "ya-oriya.base";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -87875,7 +87710,6 @@ rightMetricsKey = "ya-oriya";
 },
 {
 glyphname = "ra-oriya.base";
-lastChange = "2022-06-24 11:11:52 +0000";
 layers = (
 {
 anchors = (
@@ -88338,7 +88172,6 @@ rightMetricsKey = "ra-oriya";
 },
 {
 glyphname = "la-oriya.base";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -88841,7 +88674,6 @@ rightMetricsKey = "la-oriya";
 },
 {
 glyphname = "lla-oriya.base";
-lastChange = "2022-06-24 11:11:41 +0000";
 layers = (
 {
 anchors = (
@@ -89339,7 +89171,6 @@ rightMetricsKey = "lla-oriya";
 },
 {
 glyphname = "va-oriya.base";
-lastChange = "2022-06-24 11:11:41 +0000";
 layers = (
 {
 anchors = (
@@ -90364,7 +90195,6 @@ rightMetricsKey = "va-oriya";
 },
 {
 glyphname = "sha-oriya.base";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -90967,7 +90797,6 @@ rightMetricsKey = "sha-oriya";
 },
 {
 glyphname = "ssa-oriya.base";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -91445,7 +91274,6 @@ rightMetricsKey = "ssa-oriya";
 },
 {
 glyphname = "sa-oriya.base";
-lastChange = "2022-06-24 11:11:52 +0000";
 layers = (
 {
 anchors = (
@@ -91813,7 +91641,6 @@ rightMetricsKey = "sa-oriya";
 },
 {
 glyphname = "ha-oriya.base";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -92354,7 +92181,6 @@ rightMetricsKey = "ha-oriya";
 },
 {
 glyphname = "rra-oriya.base";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 components = (
@@ -92429,7 +92255,6 @@ rightMetricsKey = "dda-oriya.base";
 },
 {
 glyphname = "rha-oriya.base";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 components = (
@@ -92504,7 +92329,6 @@ rightMetricsKey = "ddha-oriya.base";
 },
 {
 glyphname = "wa-oriya.base";
-lastChange = "2022-06-24 11:11:41 +0000";
 layers = (
 {
 anchors = (
@@ -93111,7 +92935,6 @@ rightMetricsKey = "o-oriya";
 },
 {
 glyphname = "kassa-oriya.base";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -93674,7 +93497,6 @@ rightMetricsKey = "ya-oriya.base";
 },
 {
 glyphname = "ka-oriya.below";
-lastChange = "2022-06-24 11:11:52 +0000";
 layers = (
 {
 anchors = (
@@ -94109,7 +93931,6 @@ source = "ka-oriya";
 },
 {
 glyphname = "kha-oriya.below";
-lastChange = "2022-06-24 11:11:52 +0000";
 layers = (
 {
 anchors = (
@@ -94669,7 +94490,6 @@ subCategory = Nonspacing;
 },
 {
 glyphname = "ga-oriya.below";
-lastChange = "2022-06-24 11:11:52 +0000";
 layers = (
 {
 anchors = (
@@ -95129,7 +94949,6 @@ subCategory = Nonspacing;
 },
 {
 glyphname = "gha-oriya.below";
-lastChange = "2022-06-24 11:11:52 +0000";
 layers = (
 {
 anchors = (
@@ -95629,7 +95448,6 @@ subCategory = Nonspacing;
 },
 {
 glyphname = "nga-oriya.below";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -96239,7 +96057,6 @@ subCategory = Nonspacing;
 },
 {
 glyphname = "ca-oriya.below";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -96674,7 +96491,6 @@ subCategory = Nonspacing;
 },
 {
 glyphname = "cha-oriya.below";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -97439,7 +97255,6 @@ subCategory = Nonspacing;
 },
 {
 glyphname = "ja-oriya.below";
-lastChange = "2022-06-24 11:11:52 +0000";
 layers = (
 {
 anchors = (
@@ -97821,7 +97636,6 @@ source = "ja-oriya";
 },
 {
 glyphname = "jha-oriya.below";
-lastChange = "2022-06-24 11:11:41 +0000";
 layers = (
 {
 anchors = (
@@ -98431,7 +98245,6 @@ subCategory = Nonspacing;
 },
 {
 glyphname = "tta-oriya.below";
-lastChange = "2022-06-24 11:11:52 +0000";
 layers = (
 {
 anchors = (
@@ -98891,7 +98704,6 @@ subCategory = Nonspacing;
 },
 {
 glyphname = "ttha-oriya.below";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -99166,7 +98978,6 @@ subCategory = Nonspacing;
 },
 {
 glyphname = "dda-oriya.below";
-lastChange = "2022-06-24 11:11:41 +0000";
 layers = (
 {
 anchors = (
@@ -99630,7 +99441,6 @@ subCategory = Nonspacing;
 },
 {
 glyphname = "ddha-oriya.below";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -99915,7 +99725,6 @@ subCategory = Nonspacing;
 },
 {
 glyphname = "nna-oriya.below";
-lastChange = "2022-06-24 11:11:52 +0000";
 layers = (
 {
 anchors = (
@@ -100415,7 +100224,6 @@ subCategory = Nonspacing;
 },
 {
 glyphname = "ta-oriya.below";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -100745,7 +100553,6 @@ subCategory = Nonspacing;
 },
 {
 glyphname = "tha-oriya.below";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -101080,7 +100887,6 @@ subCategory = Nonspacing;
 },
 {
 glyphname = "da-oriya.below";
-lastChange = "2022-06-24 11:11:41 +0000";
 layers = (
 {
 anchors = (
@@ -101520,7 +101326,6 @@ subCategory = Nonspacing;
 },
 {
 glyphname = "dha-oriya.below";
-lastChange = "2022-06-24 11:11:52 +0000";
 layers = (
 {
 anchors = (
@@ -101845,7 +101650,6 @@ subCategory = Nonspacing;
 },
 {
 glyphname = "na-oriya.below";
-lastChange = "2022-06-24 11:11:41 +0000";
 layers = (
 {
 anchors = (
@@ -102130,7 +101934,6 @@ subCategory = Nonspacing;
 },
 {
 glyphname = "pa-oriya.below";
-lastChange = "2022-06-24 11:11:52 +0000";
 layers = (
 {
 anchors = (
@@ -102550,7 +102353,6 @@ subCategory = Nonspacing;
 },
 {
 glyphname = "pha-oriya.below";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -103150,7 +102952,6 @@ subCategory = Nonspacing;
 },
 {
 glyphname = "ba-oriya.below";
-lastChange = "2022-06-24 11:11:41 +0000";
 layers = (
 {
 anchors = (
@@ -103670,7 +103471,6 @@ source = "ha-oriya";
 },
 {
 glyphname = "bha-oriya.below";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -104110,7 +103910,6 @@ subCategory = Nonspacing;
 },
 {
 glyphname = "ma-oriya.below";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -104454,7 +104253,6 @@ subCategory = Nonspacing;
 },
 {
 glyphname = "ya-oriya.below";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -104958,7 +104756,6 @@ subCategory = Nonspacing;
 },
 {
 glyphname = "ra-oriya.below";
-lastChange = "2022-06-24 11:11:30 +0000";
 layers = (
 {
 anchors = (
@@ -105060,7 +104857,6 @@ subCategory = Nonspacing;
 },
 {
 glyphname = "la-oriya.below";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -105428,7 +105224,6 @@ source = "la-oriya";
 },
 {
 glyphname = "lla-oriya.below";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -105738,7 +105533,6 @@ subCategory = Nonspacing;
 },
 {
 glyphname = "va-oriya.below";
-lastChange = "2022-06-24 11:11:52 +0000";
 layers = (
 {
 anchors = (
@@ -106035,7 +105829,6 @@ subCategory = Nonspacing;
 },
 {
 glyphname = "sha-oriya.below";
-lastChange = "2022-06-24 11:11:52 +0000";
 layers = (
 {
 anchors = (
@@ -106625,7 +106418,6 @@ subCategory = Nonspacing;
 },
 {
 glyphname = "ssa-oriya.below";
-lastChange = "2022-06-24 11:11:52 +0000";
 layers = (
 {
 anchors = (
@@ -107066,7 +106858,6 @@ subCategory = Nonspacing;
 },
 {
 glyphname = "sa-oriya.below";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -107416,7 +107207,6 @@ subCategory = Nonspacing;
 },
 {
 glyphname = "ha-oriya.below";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -107921,7 +107711,6 @@ subCategory = Nonspacing;
 },
 {
 glyphname = "yya-oriya.post";
-lastChange = "2022-06-24 11:11:41 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -108117,7 +107906,6 @@ subCategory = Spacing;
 },
 {
 glyphname = "kassa-oriya.below";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -108667,7 +108455,6 @@ subCategory = Nonspacing;
 },
 {
 glyphname = "taalt-oriya.below";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -108833,7 +108620,6 @@ width = 267.88889;
 },
 {
 glyphname = "iMatra-oriya.below";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -108965,7 +108751,6 @@ note = ivowelsignloworya;
 },
 {
 glyphname = "ka-oriya.single";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 components = (
@@ -109026,7 +108811,6 @@ subCategory = Spacing;
 },
 {
 glyphname = "kha-oriya.single";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 components = (
@@ -109087,7 +108871,6 @@ subCategory = Spacing;
 },
 {
 glyphname = "ga-oriya.single";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 components = (
@@ -109148,7 +108931,6 @@ subCategory = Spacing;
 },
 {
 glyphname = "gha-oriya.single";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 components = (
@@ -109209,7 +108991,6 @@ subCategory = Spacing;
 },
 {
 glyphname = "nga-oriya.single";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 components = (
@@ -109270,7 +109051,6 @@ subCategory = Spacing;
 },
 {
 glyphname = "ca-oriya.single";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 components = (
@@ -109331,7 +109111,6 @@ subCategory = Spacing;
 },
 {
 glyphname = "cha-oriya.single";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 components = (
@@ -109392,7 +109171,6 @@ subCategory = Spacing;
 },
 {
 glyphname = "ja-oriya.single";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 components = (
@@ -109453,7 +109231,6 @@ subCategory = Spacing;
 },
 {
 glyphname = "jha-oriya.single";
-lastChange = "2022-06-24 11:11:52 +0000";
 layers = (
 {
 components = (
@@ -109514,7 +109291,6 @@ subCategory = Spacing;
 },
 {
 glyphname = "tta-oriya.single";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 components = (
@@ -109575,7 +109351,6 @@ subCategory = Spacing;
 },
 {
 glyphname = "ttha-oriya.single";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 components = (
@@ -109636,7 +109411,6 @@ subCategory = Spacing;
 },
 {
 glyphname = "dda-oriya.single";
-lastChange = "2022-06-24 11:11:52 +0000";
 layers = (
 {
 components = (
@@ -109697,7 +109471,6 @@ subCategory = Spacing;
 },
 {
 glyphname = "ddha-oriya.single";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 components = (
@@ -109758,7 +109531,6 @@ subCategory = Spacing;
 },
 {
 glyphname = "nna-oriya.single";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 components = (
@@ -109819,7 +109591,6 @@ subCategory = Spacing;
 },
 {
 glyphname = "ta-oriya.single";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 components = (
@@ -109880,7 +109651,6 @@ subCategory = Spacing;
 },
 {
 glyphname = "tha-oriya.single";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 components = (
@@ -109941,7 +109711,6 @@ subCategory = Spacing;
 },
 {
 glyphname = "da-oriya.single";
-lastChange = "2022-06-24 11:11:52 +0000";
 layers = (
 {
 components = (
@@ -110002,7 +109771,6 @@ subCategory = Spacing;
 },
 {
 glyphname = "dha-oriya.single";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 components = (
@@ -110063,7 +109831,6 @@ subCategory = Spacing;
 },
 {
 glyphname = "na-oriya.single";
-lastChange = "2022-06-24 11:11:52 +0000";
 layers = (
 {
 components = (
@@ -110124,7 +109891,6 @@ subCategory = Spacing;
 },
 {
 glyphname = "pa-oriya.single";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 components = (
@@ -110185,7 +109951,6 @@ subCategory = Spacing;
 },
 {
 glyphname = "pha-oriya.single";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 components = (
@@ -110246,7 +110011,6 @@ subCategory = Spacing;
 },
 {
 glyphname = "ba-oriya.single";
-lastChange = "2022-06-24 11:11:52 +0000";
 layers = (
 {
 components = (
@@ -110307,7 +110071,6 @@ subCategory = Spacing;
 },
 {
 glyphname = "bha-oriya.single";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 components = (
@@ -110368,7 +110131,6 @@ subCategory = Spacing;
 },
 {
 glyphname = "ma-oriya.single";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 components = (
@@ -110429,7 +110191,6 @@ subCategory = Spacing;
 },
 {
 glyphname = "ya-oriya.single";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 components = (
@@ -110490,7 +110251,6 @@ subCategory = Spacing;
 },
 {
 glyphname = "ra-oriya.single";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 components = (
@@ -110551,7 +110311,6 @@ subCategory = Spacing;
 },
 {
 glyphname = "la-oriya.single";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 components = (
@@ -110612,7 +110371,6 @@ subCategory = Spacing;
 },
 {
 glyphname = "lla-oriya.single";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 components = (
@@ -110673,7 +110431,6 @@ subCategory = Spacing;
 },
 {
 glyphname = "va-oriya.single";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 components = (
@@ -110734,7 +110491,6 @@ subCategory = Spacing;
 },
 {
 glyphname = "sha-oriya.single";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 components = (
@@ -110795,7 +110551,6 @@ subCategory = Spacing;
 },
 {
 glyphname = "ssa-oriya.single";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 components = (
@@ -110856,7 +110611,6 @@ subCategory = Spacing;
 },
 {
 glyphname = "sa-oriya.single";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 components = (
@@ -110917,7 +110671,6 @@ subCategory = Spacing;
 },
 {
 glyphname = "ha-oriya.single";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 components = (
@@ -110978,7 +110731,6 @@ subCategory = Spacing;
 },
 {
 glyphname = "kaka-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 components = (
@@ -111106,7 +110858,6 @@ rightMetricsKey = "ka-oriya";
 },
 {
 glyphname = "kaca-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 components = (
@@ -111233,7 +110984,6 @@ rightMetricsKey = "ka-oriya";
 },
 {
 glyphname = "kata-oriya";
-lastChange = "2022-06-24 11:11:41 +0000";
 layers = (
 {
 anchors = (
@@ -112058,7 +111808,6 @@ rightMetricsKey = "ka-oriya";
 },
 {
 glyphname = "katara-oriya";
-lastChange = "2022-06-24 11:11:41 +0000";
 layers = (
 {
 anchors = (
@@ -112931,7 +112680,6 @@ rightMetricsKey = "ka-oriya";
 },
 {
 glyphname = "kataraalt-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -113749,7 +113497,6 @@ rightMetricsKey = "ka-oriya";
 },
 {
 glyphname = "katta-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 components = (
@@ -113875,7 +113622,6 @@ rightMetricsKey = "ka-oriya";
 },
 {
 glyphname = "kava-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -114685,7 +114431,6 @@ rightMetricsKey = "va-oriya.below";
 },
 {
 glyphname = "kalla-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 components = (
@@ -114812,7 +114557,6 @@ rightMetricsKey = "ka-oriya";
 },
 {
 glyphname = "kassa-oriya";
-lastChange = "2022-06-24 11:11:41 +0000";
 layers = (
 {
 anchors = (
@@ -115396,7 +115140,6 @@ rightMetricsKey = "aaMatra-oriya";
 },
 {
 glyphname = "kassanna-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 components = (
@@ -115516,7 +115259,6 @@ rightMetricsKey = "nna-oriya.below";
 },
 {
 glyphname = "kassama-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -116260,7 +116002,6 @@ rightMetricsKey = "aaMatra-oriya";
 },
 {
 glyphname = "kassara-oriya";
-lastChange = "2022-06-24 11:11:41 +0000";
 layers = (
 {
 anchors = (
@@ -116889,7 +116630,6 @@ rightMetricsKey = "aaMatra-oriya";
 },
 {
 glyphname = "kasa-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -117618,7 +117358,6 @@ rightMetricsKey = "ca-oriya";
 },
 {
 glyphname = "gada-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 components = (
@@ -117734,7 +117473,6 @@ rightMetricsKey = "da-oriya.below";
 },
 {
 glyphname = "gadha-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -118373,7 +118111,6 @@ rightMetricsKey = "aaMatra-oriya";
 },
 {
 glyphname = "gana-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -119013,7 +118750,6 @@ rightMetricsKey = "aaMatra-oriya";
 },
 {
 glyphname = "galla-oriya";
-lastChange = "2022-06-24 11:11:41 +0000";
 layers = (
 {
 anchors = (
@@ -119751,7 +119487,6 @@ rightMetricsKey = "lla-oriya.below";
 },
 {
 glyphname = "ghana-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -120572,7 +120307,6 @@ rightMetricsKey = "aaMatra-oriya";
 },
 {
 glyphname = "ngaka-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -121518,7 +121252,6 @@ rightMetricsKey = "nga-oriya";
 },
 {
 glyphname = "ngakata-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -122686,7 +122419,6 @@ rightMetricsKey = "nga-oriya";
 },
 {
 glyphname = "ngakassa-oriya";
-lastChange = "2022-06-24 11:11:41 +0000";
 layers = (
 {
 components = (
@@ -122782,7 +122514,6 @@ rightMetricsKey = "nga-oriya";
 },
 {
 glyphname = "ngakha-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -123756,7 +123487,6 @@ rightMetricsKey = "pha-oriya";
 },
 {
 glyphname = "ngaga-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -124610,7 +124340,6 @@ rightMetricsKey = "pha-oriya";
 },
 {
 glyphname = "ngagha-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -125324,7 +125053,6 @@ rightMetricsKey = "pha-oriya";
 },
 {
 glyphname = "caca-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -125995,7 +125723,6 @@ rightMetricsKey = "ca-oriya";
 },
 {
 glyphname = "cacha-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -126921,7 +126648,6 @@ rightMetricsKey = "ca-oriya";
 },
 {
 glyphname = "jaja-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -127680,7 +127406,6 @@ rightMetricsKey = "ja-oriya";
 },
 {
 glyphname = "jajava-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -128554,7 +128279,6 @@ rightMetricsKey = "va-oriya.below";
 },
 {
 glyphname = "jajha-oriya";
-lastChange = "2022-06-24 11:11:41 +0000";
 layers = (
 {
 components = (
@@ -128675,7 +128399,6 @@ rightMetricsKey = "jha-oriya.below";
 },
 {
 glyphname = "janya-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -129429,7 +129152,6 @@ rightMetricsKey = "nya-oriya";
 },
 {
 glyphname = "java-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -130113,7 +129835,6 @@ rightMetricsKey = "ja-oriya";
 },
 {
 glyphname = "nyaca-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -130857,7 +130578,6 @@ rightMetricsKey = "nya-oriya";
 },
 {
 glyphname = "nyacha-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -131871,7 +131591,6 @@ rightMetricsKey = "nya-oriya";
 },
 {
 glyphname = "nyaja-oriya";
-lastChange = "2022-06-24 11:11:52 +0000";
 layers = (
 {
 anchors = (
@@ -132703,7 +132422,6 @@ rightMetricsKey = "iiMatra-oriya";
 },
 {
 glyphname = "nyajha-oriya";
-lastChange = "2022-06-24 11:11:41 +0000";
 layers = (
 {
 anchors = (
@@ -133510,7 +133228,6 @@ rightMetricsKey = "=avagraha-oriya-20";
 },
 {
 glyphname = "ttatta-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -134184,7 +133901,6 @@ rightMetricsKey = "tta-oriya";
 },
 {
 glyphname = "ddaga-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 components = (
@@ -134304,7 +134020,6 @@ rightMetricsKey = "dda-oriya";
 },
 {
 glyphname = "ddadda-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 components = (
@@ -134422,7 +134137,6 @@ rightMetricsKey = "dda-oriya";
 },
 {
 glyphname = "nnatta-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 components = (
@@ -134538,7 +134252,6 @@ rightMetricsKey = "tta-oriya.below";
 },
 {
 glyphname = "nnattha-oriya";
-lastChange = "2022-06-24 11:11:41 +0000";
 layers = (
 {
 anchors = (
@@ -135252,7 +134965,6 @@ rightMetricsKey = "ttha-oriya.below";
 },
 {
 glyphname = "nnadda-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -136036,7 +135748,6 @@ rightMetricsKey = "ta-oriya.below";
 },
 {
 glyphname = "nnaddara-oriya";
-lastChange = "2022-06-24 11:11:41 +0000";
 layers = (
 {
 anchors = (
@@ -136878,7 +136589,6 @@ rightMetricsKey = "ta-oriya.below";
 },
 {
 glyphname = "nnaddha-oriya";
-lastChange = "2022-06-24 11:11:41 +0000";
 layers = (
 {
 anchors = (
@@ -137608,7 +137318,6 @@ rightMetricsKey = "ddha-oriya.below";
 },
 {
 glyphname = "nnanna-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -138457,7 +138166,6 @@ rightMetricsKey = "wa-oriya";
 },
 {
 glyphname = "taka-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 components = (
@@ -138559,7 +138267,6 @@ rightMetricsKey = "ca-oriya";
 },
 {
 glyphname = "takara-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -139339,7 +139046,6 @@ rightMetricsKey = "ca-oriya";
 },
 {
 glyphname = "tata-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -139952,7 +139658,6 @@ rightMetricsKey = "la-oriya";
 },
 {
 glyphname = "tatava-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -140774,7 +140479,6 @@ rightMetricsKey = "la-oriya";
 },
 {
 glyphname = "tatara-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -141466,7 +141170,6 @@ rightMetricsKey = "la-oriya";
 },
 {
 glyphname = "tatha-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -142274,7 +141977,6 @@ rightMetricsKey = "ta-oriya";
 },
 {
 glyphname = "tana-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 components = (
@@ -142376,7 +142078,6 @@ rightMetricsKey = "na-oriya";
 },
 {
 glyphname = "tapa-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 components = (
@@ -142490,7 +142191,6 @@ rightMetricsKey = "taalt-oriya.below";
 },
 {
 glyphname = "tapara-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -143139,7 +142839,6 @@ rightMetricsKey = "taalt-oriya.below";
 },
 {
 glyphname = "tava-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -143864,7 +143563,6 @@ rightMetricsKey = "ta-oriya";
 },
 {
 glyphname = "tama-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 components = (
@@ -143966,7 +143664,6 @@ rightMetricsKey = "taalt-oriya.below";
 },
 {
 glyphname = "tasa-oriya";
-lastChange = "2022-06-24 11:11:52 +0000";
 layers = (
 {
 anchors = (
@@ -144385,7 +144082,6 @@ rightMetricsKey = "sa-oriya";
 },
 {
 glyphname = "tasana-oriya";
-lastChange = "2022-06-24 11:11:52 +0000";
 layers = (
 {
 anchors = (
@@ -144993,7 +144689,6 @@ rightMetricsKey = "sa-oriya";
 },
 {
 glyphname = "daga-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 components = (
@@ -145113,7 +144808,6 @@ rightMetricsKey = "da-oriya";
 },
 {
 glyphname = "dagha-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 components = (
@@ -145232,7 +144926,6 @@ rightMetricsKey = "da-oriya";
 },
 {
 glyphname = "dada-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -145800,7 +145493,6 @@ rightMetricsKey = "da-oriya";
 },
 {
 glyphname = "dadha-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -146369,7 +146061,6 @@ rightMetricsKey = "da-oriya";
 },
 {
 glyphname = "dadhava-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -147222,7 +146913,6 @@ rightMetricsKey = "da-oriya";
 },
 {
 glyphname = "dava-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -147986,7 +147676,6 @@ rightMetricsKey = "da-oriya";
 },
 {
 glyphname = "dabha-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -148670,7 +148359,6 @@ rightMetricsKey = "la-oriya";
 },
 {
 glyphname = "dhava-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -149195,7 +148883,6 @@ rightMetricsKey = "dha-oriya";
 },
 {
 glyphname = "dhaya-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -149850,7 +149537,6 @@ rightMetricsKey = "ya-oriya";
 },
 {
 glyphname = "dhayya-oriya";
-lastChange = "2022-06-24 11:11:41 +0000";
 layers = (
 {
 anchors = (
@@ -150339,7 +150025,6 @@ rightMetricsKey = "aaMatra-oriya";
 },
 {
 glyphname = "nata-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -151046,7 +150731,6 @@ rightMetricsKey = "na-oriya";
 },
 {
 glyphname = "natara-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -151761,7 +151445,6 @@ rightMetricsKey = "na-oriya";
 },
 {
 glyphname = "natava-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -152634,7 +152317,6 @@ rightMetricsKey = "na-oriya";
 },
 {
 glyphname = "natha-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -153361,7 +153043,6 @@ rightMetricsKey = "na-oriya";
 },
 {
 glyphname = "nada-oriya";
-lastChange = "2022-06-24 11:11:41 +0000";
 layers = (
 {
 anchors = (
@@ -153959,7 +153640,6 @@ rightMetricsKey = "da-oriya";
 },
 {
 glyphname = "nadara-oriya";
-lastChange = "2022-06-24 11:11:41 +0000";
 layers = (
 {
 anchors = (
@@ -154630,7 +154310,6 @@ rightMetricsKey = "da-oriya";
 },
 {
 glyphname = "nadava-oriya";
-lastChange = "2022-06-24 11:11:41 +0000";
 layers = (
 {
 anchors = (
@@ -155387,7 +155066,6 @@ rightMetricsKey = "da-oriya";
 },
 {
 glyphname = "nadha-oriya";
-lastChange = "2022-06-24 11:11:41 +0000";
 layers = (
 {
 anchors = (
@@ -155991,7 +155669,6 @@ rightMetricsKey = "da-oriya";
 },
 {
 glyphname = "nadhava-oriya";
-lastChange = "2022-06-24 11:11:41 +0000";
 layers = (
 {
 anchors = (
@@ -156761,7 +156438,6 @@ rightMetricsKey = "da-oriya";
 },
 {
 glyphname = "nadhara-oriya";
-lastChange = "2022-06-24 11:11:41 +0000";
 layers = (
 {
 anchors = (
@@ -157456,7 +157132,6 @@ rightMetricsKey = "da-oriya";
 },
 {
 glyphname = "nana-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -158136,7 +157811,6 @@ rightMetricsKey = "na-oriya";
 },
 {
 glyphname = "paka-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 components = (
@@ -158251,7 +157925,6 @@ rightMetricsKey = "ka-oriya.below";
 },
 {
 glyphname = "pata-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -158945,7 +158618,6 @@ rightMetricsKey = "ta-oriya.below";
 },
 {
 glyphname = "patta-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 components = (
@@ -159068,7 +158740,6 @@ rightMetricsKey = "tta-oriya.below";
 },
 {
 glyphname = "papa-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -159722,7 +159393,6 @@ rightMetricsKey = "aaMatra-oriya";
 },
 {
 glyphname = "palla-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -160399,7 +160069,6 @@ rightMetricsKey = "lla-oriya.below";
 },
 {
 glyphname = "pasa-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -160953,7 +160622,6 @@ rightMetricsKey = "sa-oriya";
 },
 {
 glyphname = "baja-oriya";
-lastChange = "2022-06-24 11:11:41 +0000";
 layers = (
 {
 anchors = (
@@ -161717,7 +161385,6 @@ rightMetricsKey = "ba-oriya";
 },
 {
 glyphname = "bada-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -162356,7 +162023,6 @@ rightMetricsKey = "ca-oriya";
 },
 {
 glyphname = "badha-oriya";
-lastChange = "2022-06-24 11:11:41 +0000";
 layers = (
 {
 components = (
@@ -162491,7 +162157,6 @@ rightMetricsKey = "ba-oriya";
 },
 {
 glyphname = "baba-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -163185,7 +162850,6 @@ rightMetricsKey = "ca-oriya";
 },
 {
 glyphname = "mapa-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -163874,7 +163538,6 @@ rightMetricsKey = "pha-oriya";
 },
 {
 glyphname = "mapara-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -164594,7 +164257,6 @@ rightMetricsKey = "pha-oriya";
 },
 {
 glyphname = "mapha-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -165442,7 +165104,6 @@ rightMetricsKey = "pha-oriya";
 },
 {
 glyphname = "maba-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -166084,7 +165745,6 @@ rightMetricsKey = "aaMatra-oriya";
 },
 {
 glyphname = "mabha-oriya";
-lastChange = "2022-06-24 11:11:41 +0000";
 layers = (
 {
 anchors = (
@@ -166743,7 +166403,6 @@ rightMetricsKey = "yya-oriya";
 },
 {
 glyphname = "mabhara-oriya";
-lastChange = "2022-06-24 11:11:41 +0000";
 layers = (
 {
 anchors = (
@@ -167440,7 +167099,6 @@ rightMetricsKey = "yya-oriya";
 },
 {
 glyphname = "mama-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -168186,7 +167844,6 @@ rightMetricsKey = "ma-oriya";
 },
 {
 glyphname = "llaka-oriya";
-lastChange = "2022-06-24 11:11:41 +0000";
 layers = (
 {
 components = (
@@ -168320,7 +167977,6 @@ rightMetricsKey = "lla-oriya";
 },
 {
 glyphname = "llalla-oriya";
-lastChange = "2022-06-24 11:11:41 +0000";
 layers = (
 {
 components = (
@@ -168447,7 +168103,6 @@ rightMetricsKey = "lla-oriya";
 },
 {
 glyphname = "llapa-oriya";
-lastChange = "2022-06-24 11:11:41 +0000";
 layers = (
 {
 anchors = (
@@ -169219,7 +168874,6 @@ rightMetricsKey = "lla-oriya";
 },
 {
 glyphname = "llapha-oriya";
-lastChange = "2022-06-24 11:11:41 +0000";
 layers = (
 {
 anchors = (
@@ -170143,7 +169797,6 @@ rightMetricsKey = "lla-oriya";
 },
 {
 glyphname = "laka-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 components = (
@@ -170271,7 +169924,6 @@ rightMetricsKey = "la-oriya";
 },
 {
 glyphname = "laga-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -171080,7 +170732,6 @@ rightMetricsKey = "la-oriya";
 },
 {
 glyphname = "lapa-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -171828,7 +171479,6 @@ rightMetricsKey = "la-oriya";
 },
 {
 glyphname = "lapha-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -172751,7 +172401,6 @@ rightMetricsKey = "la-oriya";
 },
 {
 glyphname = "lama-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -173438,7 +173087,6 @@ rightMetricsKey = "la-oriya";
 },
 {
 glyphname = "lala-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 components = (
@@ -173566,7 +173214,6 @@ rightMetricsKey = "la-oriya";
 },
 {
 glyphname = "lalla-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 components = (
@@ -173692,7 +173339,6 @@ rightMetricsKey = "la-oriya";
 },
 {
 glyphname = "shaca-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 components = (
@@ -173816,7 +173462,6 @@ rightMetricsKey = "ca-oriya.below";
 },
 {
 glyphname = "shacha-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -174680,7 +174325,6 @@ rightMetricsKey = "tha-oriya.below";
 },
 {
 glyphname = "shava-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -175463,7 +175107,6 @@ rightMetricsKey = "sha-oriya";
 },
 {
 glyphname = "shalla-oriya";
-lastChange = "2022-06-24 11:11:41 +0000";
 layers = (
 {
 anchors = (
@@ -176302,7 +175945,6 @@ rightMetricsKey = "lla-oriya.below";
 },
 {
 glyphname = "ssaka-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -177091,7 +176733,6 @@ rightMetricsKey = "ka-oriya.below";
 },
 {
 glyphname = "ssakara-oriya";
-lastChange = "2022-06-24 11:11:41 +0000";
 layers = (
 {
 anchors = (
@@ -177893,7 +177534,6 @@ rightMetricsKey = "ka-oriya.below";
 },
 {
 glyphname = "ssatta-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -178755,7 +178395,6 @@ rightMetricsKey = "tta-oriya.below";
 },
 {
 glyphname = "ssattara-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -179623,7 +179262,6 @@ rightMetricsKey = "tta-oriya.below";
 },
 {
 glyphname = "ssattha-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -180252,7 +179890,6 @@ rightMetricsKey = "ttha-oriya.below";
 },
 {
 glyphname = "ssanna-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -181056,7 +180693,6 @@ rightMetricsKey = "wa-oriya";
 },
 {
 glyphname = "ssapa-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -181775,7 +181411,6 @@ rightMetricsKey = "aaMatra-oriya";
 },
 {
 glyphname = "ssapha-oriya";
-lastChange = "2022-06-24 11:11:41 +0000";
 layers = (
 {
 anchors = (
@@ -182689,7 +182324,6 @@ rightMetricsKey = "pha-oriya.below";
 },
 {
 glyphname = "saka-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -183368,7 +183002,6 @@ rightMetricsKey = "ka-oriya.below";
 },
 {
 glyphname = "sakha-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -184202,7 +183835,6 @@ rightMetricsKey = "kha-oriya.below";
 },
 {
 glyphname = "sata-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -184831,7 +184463,6 @@ rightMetricsKey = "ta-oriya.below";
 },
 {
 glyphname = "satara-oriya";
-lastChange = "2022-06-24 11:11:52 +0000";
 layers = (
 {
 anchors = (
@@ -185371,7 +185002,6 @@ rightMetricsKey = "sa-oriya";
 },
 {
 glyphname = "satha-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -186002,7 +185632,6 @@ rightMetricsKey = "tha-oriya.below";
 },
 {
 glyphname = "sana-oriya";
-lastChange = "2022-06-24 11:11:52 +0000";
 layers = (
 {
 anchors = (
@@ -186515,7 +186144,6 @@ rightMetricsKey = "sa-oriya";
 },
 {
 glyphname = "sapa-oriya";
-lastChange = "2022-06-24 11:11:52 +0000";
 layers = (
 {
 anchors = (
@@ -187134,7 +186762,6 @@ rightMetricsKey = "sa-oriya";
 },
 {
 glyphname = "sapha-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -187933,7 +187560,6 @@ rightMetricsKey = "pha-oriya.below";
 },
 {
 glyphname = "sava-oriya";
-lastChange = "2022-06-24 11:11:41 +0000";
 layers = (
 {
 anchors = (
@@ -188456,7 +188082,6 @@ rightMetricsKey = "pa-oriya";
 },
 {
 glyphname = "sama-oriya";
-lastChange = "2022-06-24 11:11:41 +0000";
 layers = (
 {
 anchors = (
@@ -188996,7 +188621,6 @@ rightMetricsKey = "pa-oriya";
 },
 {
 glyphname = "haka-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -189805,7 +189429,6 @@ rightMetricsKey = "ha-oriya";
 },
 {
 glyphname = "haja-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -190574,7 +190197,6 @@ rightMetricsKey = "ha-oriya";
 },
 {
 glyphname = "hana-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -191298,7 +190920,6 @@ rightMetricsKey = "ha-oriya";
 },
 {
 glyphname = "hama-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -192037,7 +191658,6 @@ rightMetricsKey = "ha-oriya";
 },
 {
 glyphname = "hala-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -192781,7 +192401,6 @@ rightMetricsKey = "ha-oriya";
 },
 {
 glyphname = "halla-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -193510,7 +193129,6 @@ rightMetricsKey = "ha-oriya";
 },
 {
 glyphname = "hava-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -194233,7 +193851,6 @@ rightMetricsKey = "ha-oriya";
 },
 {
 glyphname = "hau-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -194962,7 +194579,6 @@ rightMetricsKey = "ha-oriya";
 },
 {
 glyphname = "hauu-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -195705,7 +195321,6 @@ note = huuorya;
 },
 {
 glyphname = "harVocalic-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 components = (
@@ -195792,7 +195407,6 @@ rightMetricsKey = "ha-oriya";
 },
 {
 glyphname = "rephcandraBindu-oriya";
-lastChange = "2022-06-24 11:49:28 +0000";
 layers = (
 {
 anchors = (
@@ -195919,7 +195533,6 @@ subCategory = Nonspacing;
 },
 {
 glyphname = "iMatracandraBindu-oriya";
-lastChange = "2022-06-24 11:49:59 +0000";
 layers = (
 {
 anchors = (
@@ -196030,7 +195643,6 @@ subCategory = Nonspacing;
 },
 {
 glyphname = "iMatracandraBindu-oriya.wide";
-lastChange = "2022-06-24 12:02:54 +0000";
 layers = (
 {
 anchors = (
@@ -196140,7 +195752,6 @@ subCategory = Nonspacing;
 },
 {
 glyphname = "iMatrareph-oriya";
-lastChange = "2022-06-24 11:50:35 +0000";
 layers = (
 {
 anchors = (
@@ -196348,7 +195959,6 @@ subCategory = Nonspacing;
 },
 {
 glyphname = "iMatrareph-oriya.wide";
-lastChange = "2022-06-24 11:50:35 +0000";
 layers = (
 {
 anchors = (
@@ -196556,7 +196166,6 @@ subCategory = Nonspacing;
 },
 {
 glyphname = "iMatrarephcandraBindu-oriya";
-lastChange = "2022-06-24 11:50:35 +0000";
 layers = (
 {
 anchors = (
@@ -196666,7 +196275,6 @@ subCategory = Nonspacing;
 },
 {
 glyphname = "iMatrarephcandraBindu-oriya.wide";
-lastChange = "2022-06-24 11:50:35 +0000";
 layers = (
 {
 anchors = (
@@ -196776,7 +196384,6 @@ subCategory = Nonspacing;
 },
 {
 glyphname = "aiLengthcandraBindu-oriya";
-lastChange = "2022-06-24 11:51:11 +0000";
 layers = (
 {
 anchors = (
@@ -196897,7 +196504,6 @@ subCategory = Nonspacing;
 },
 {
 glyphname = "aiLengthcandraBindu-oriya.stem";
-lastChange = "2022-06-24 11:51:11 +0000";
 layers = (
 {
 anchors = (
@@ -197017,7 +196623,6 @@ subCategory = Nonspacing;
 },
 {
 glyphname = "aiLengthcandraBindu-oriya.umbrella";
-lastChange = "2022-06-24 11:51:43 +0000";
 layers = (
 {
 anchors = (
@@ -197138,7 +196743,6 @@ subCategory = Nonspacing;
 },
 {
 glyphname = "rephaiLength-oriya";
-lastChange = "2022-06-24 11:52:31 +0000";
 layers = (
 {
 anchors = (
@@ -197412,7 +197016,6 @@ subCategory = Nonspacing;
 },
 {
 glyphname = "rephaiLength-oriya.stem";
-lastChange = "2022-06-24 11:52:31 +0000";
 layers = (
 {
 anchors = (
@@ -197686,7 +197289,6 @@ subCategory = Nonspacing;
 },
 {
 glyphname = "rephaiLength-oriya.umbrella";
-lastChange = "2022-06-24 11:52:31 +0000";
 layers = (
 {
 anchors = (
@@ -197960,7 +197562,6 @@ subCategory = Nonspacing;
 },
 {
 glyphname = "rephaiLengthcandraBindu-oriya";
-lastChange = "2022-06-24 11:53:03 +0000";
 layers = (
 {
 anchors = (
@@ -198076,7 +197677,6 @@ subCategory = Nonspacing;
 },
 {
 glyphname = "rephaiLengthcandraBindu-oriya.stem";
-lastChange = "2022-06-24 11:53:03 +0000";
 layers = (
 {
 anchors = (
@@ -198193,7 +197793,6 @@ subCategory = Nonspacing;
 },
 {
 glyphname = "rephaiLengthcandraBindu-oriya.umbrella";
-lastChange = "2022-06-24 11:53:03 +0000";
 layers = (
 {
 anchors = (
@@ -198309,7 +197908,6 @@ subCategory = Nonspacing;
 },
 {
 glyphname = "auLengthcandraBindu-oriya";
-lastChange = "2022-06-24 11:54:10 +0000";
 layers = (
 {
 components = (
@@ -198386,7 +197984,6 @@ subCategory = Spacing;
 },
 {
 glyphname = "rephauLength-oriya";
-lastChange = "2022-06-24 11:54:10 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -198675,7 +198272,6 @@ subCategory = Spacing;
 },
 {
 glyphname = "rephauLengthcandraBindu-oriya";
-lastChange = "2022-06-24 11:54:10 +0000";
 layers = (
 {
 components = (
@@ -198752,7 +198348,6 @@ subCategory = Spacing;
 },
 {
 glyphname = "rauMatra-oriya.below";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -199071,7 +198666,6 @@ subCategory = Nonspacing;
 },
 {
 glyphname = "rauuMatra-oriya.below";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -199425,7 +199019,6 @@ subCategory = Nonspacing;
 },
 {
 glyphname = "rarVocalicMatra-oriya.below";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -199729,7 +199322,6 @@ subCategory = Nonspacing;
 },
 {
 glyphname = "rarrVocalicMatra-oriya.below";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -200083,7 +199675,6 @@ subCategory = Nonspacing;
 },
 {
 glyphname = "aicandraBindu-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 components = (
@@ -200157,7 +199748,6 @@ note = aicandrabinduorya;
 },
 {
 glyphname = "aireph-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -200733,7 +200323,6 @@ width = 888.61111;
 },
 {
 glyphname = "airephcandraBindu-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 components = (
@@ -200808,7 +200397,6 @@ width = 882.91667;
 },
 {
 glyphname = "aucandraBindu-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 components = (
@@ -200882,7 +200470,6 @@ note = aucandrabinduorya;
 },
 {
 glyphname = "aureph-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -201588,7 +201175,6 @@ width = 907.91667;
 },
 {
 glyphname = "aurephcandraBindu-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 components = (
@@ -201663,7 +201249,6 @@ width = 907.91667;
 },
 {
 glyphname = rupeeIndian;
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -201916,7 +201501,6 @@ unicode = 20B9;
 },
 {
 glyphname = exclam;
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -202088,7 +201672,6 @@ unicode = 0021;
 },
 {
 glyphname = quotedbl;
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -202215,7 +201798,6 @@ unicode = 0022;
 },
 {
 glyphname = numbersign;
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -202462,7 +202044,6 @@ unicode = 0023;
 },
 {
 glyphname = percent;
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -202904,7 +202485,6 @@ unicode = 0025;
 },
 {
 glyphname = quotesingle;
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -202986,7 +202566,6 @@ unicode = 0027;
 },
 {
 glyphname = parenleft;
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -203123,7 +202702,6 @@ unicode = 0028;
 },
 {
 glyphname = parenright;
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -203260,7 +202838,6 @@ unicode = 0029;
 },
 {
 glyphname = asterisk;
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -203397,7 +202974,6 @@ unicode = 002A;
 },
 {
 glyphname = plus;
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -203519,7 +203095,6 @@ unicode = 002B;
 },
 {
 glyphname = comma;
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -203631,7 +203206,6 @@ unicode = 002C;
 },
 {
 glyphname = hyphen;
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -203713,7 +203287,6 @@ unicode = 2010;
 },
 {
 glyphname = period;
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -203840,7 +203413,6 @@ unicode = 002E;
 },
 {
 glyphname = slash;
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -203922,7 +203494,6 @@ unicode = 002F;
 },
 {
 glyphname = zero;
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -204139,7 +203710,6 @@ unicode = 0030;
 },
 {
 glyphname = one;
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -204266,7 +203836,6 @@ unicode = 0031;
 },
 {
 glyphname = two;
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -204458,7 +204027,6 @@ unicode = 0032;
 },
 {
 glyphname = three;
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -204735,7 +204303,6 @@ unicode = 0033;
 },
 {
 glyphname = four;
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -204927,7 +204494,6 @@ unicode = 0034;
 },
 {
 glyphname = five;
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -205149,7 +204715,6 @@ unicode = 0035;
 },
 {
 glyphname = six;
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -205436,7 +205001,6 @@ unicode = 0036;
 },
 {
 glyphname = seven;
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -205533,7 +205097,6 @@ unicode = 0037;
 },
 {
 glyphname = eight;
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -205900,7 +205463,6 @@ unicode = 0038;
 },
 {
 glyphname = nine;
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -206187,7 +205749,6 @@ unicode = 0039;
 },
 {
 glyphname = colon;
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -206404,7 +205965,6 @@ unicode = 003A;
 },
 {
 glyphname = semicolon;
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -206601,7 +206161,6 @@ unicode = 003B;
 },
 {
 glyphname = less;
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -206698,7 +206257,6 @@ unicode = 003C;
 },
 {
 glyphname = equal;
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -206825,7 +206383,6 @@ unicode = 003D;
 },
 {
 glyphname = greater;
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -206922,7 +206479,6 @@ unicode = 003E;
 },
 {
 glyphname = question;
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -207214,7 +206770,6 @@ unicode = 003F;
 },
 {
 glyphname = bracketleft;
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -207316,7 +206871,6 @@ unicode = 005B;
 },
 {
 glyphname = backslash;
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -207398,7 +206952,6 @@ unicode = 005C;
 },
 {
 glyphname = bracketright;
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -207500,7 +207053,6 @@ unicode = 005D;
 },
 {
 glyphname = asciicircum;
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -207597,7 +207149,6 @@ unicode = 005E;
 },
 {
 glyphname = underscore;
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -207679,7 +207230,6 @@ unicode = 005F;
 },
 {
 glyphname = braceleft;
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -207906,7 +207456,6 @@ unicode = 007B;
 },
 {
 glyphname = bar;
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -207988,7 +207537,6 @@ unicode = 007C;
 },
 {
 glyphname = braceright;
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -208215,7 +207763,6 @@ unicode = 007D;
 },
 {
 glyphname = asciitilde;
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -208412,7 +207959,6 @@ unicode = 007E;
 },
 {
 glyphname = softhyphen;
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 components = (
@@ -208465,7 +208011,6 @@ unicode = 00AD;
 },
 {
 glyphname = endash;
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -208547,7 +208092,6 @@ unicode = 2013;
 },
 {
 glyphname = emdash;
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -208629,7 +208173,6 @@ unicode = 2014;
 },
 {
 glyphname = quoteleft;
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -208736,7 +208279,6 @@ unicode = 2018;
 },
 {
 glyphname = quoteright;
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -208843,7 +208385,6 @@ unicode = 2019;
 },
 {
 glyphname = quotedblleft;
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -209020,7 +208561,6 @@ unicode = 201C;
 },
 {
 glyphname = quotedblright;
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -209197,7 +208737,6 @@ unicode = 201D;
 },
 {
 glyphname = ellipsis;
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -209504,7 +209043,6 @@ unicode = 2026;
 },
 {
 glyphname = multiply;
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -209626,7 +209164,6 @@ unicode = 00D7;
 },
 {
 glyphname = divide;
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -209888,7 +209425,6 @@ unicode = 00F7;
 },
 {
 glyphname = minus;
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -209970,7 +209506,6 @@ unicode = 2212;
 },
 {
 glyphname = "nnattahalant-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -210913,7 +210448,6 @@ rightMetricsKey = "tta-oriya.below";
 },
 {
 glyphname = "nnaddahalant-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -211757,7 +211291,6 @@ rightMetricsKey = "ta-oriya.below";
 },
 {
 glyphname = "tarauMatra-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 components = (
@@ -211836,7 +211369,6 @@ rightMetricsKey = "ta-oriya";
 },
 {
 glyphname = "darauMatra-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -212481,7 +212013,6 @@ rightMetricsKey = "da-oriya";
 },
 {
 glyphname = "natauMatra-oriya";
-lastChange = "2022-06-24 11:11:41 +0000";
 layers = (
 {
 anchors = (
@@ -213369,7 +212900,6 @@ rightMetricsKey = "ta-oriya";
 },
 {
 glyphname = "ssattahalant-oriya";
-lastChange = "2022-06-24 11:11:41 +0000";
 layers = (
 {
 anchors = (
@@ -214267,7 +213797,6 @@ rightMetricsKey = "tta-oriya.below";
 },
 {
 glyphname = "saparVocalicMatra-oriya";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -215045,7 +214574,6 @@ leftMetricsKey = "sa-oriya";
 {
 export = 0;
 glyphname = "tara-oriya.below";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -215343,7 +214871,6 @@ note = tarasubscriptorya;
 {
 export = 0;
 glyphname = "bhaalt-oriya.below";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -215620,7 +215147,6 @@ width = 374.27778;
 {
 export = 0;
 glyphname = _part.da.below;
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -217696,7 +217222,6 @@ topValue = 100;
 {
 export = 0;
 glyphname = "partta-oriya.below";
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -217981,7 +217506,6 @@ subCategory = Spacing;
 {
 export = 0;
 glyphname = _part.pha;
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -218198,7 +217722,6 @@ width = 888.66667;
 {
 export = 0;
 glyphname = _part.ra.below;
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 anchors = (
@@ -219290,7 +218813,6 @@ topValue = 100;
 {
 export = 0;
 glyphname = _cap.overlap;
-lastChange = "2022-06-24 11:10:09 +0000";
 layers = (
 {
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
