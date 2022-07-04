@@ -14,7 +14,7 @@ Fontbakery version: 0.8.9
 
 
 * 🔥 **FAIL** PANOSE family type is not the same across this family. In order to fix this, please make sure that the panose.bFamilyType value is the same in the OS/2 table of all of this family font files. [code: inconsistency]
-</div></details><br></div></details><details><summary><b>[10] NotoSerifOriya-Bold.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[9] NotoSerifOriya-Bold.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
 
 
 * 💔 **ERROR** Failed with IndexError: list index out of range
@@ -22,10 +22,6 @@ Fontbakery version: 0.8.9
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 979, but got 917 instead [code: ascent]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking font version fields (head and name table). (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/head.html#com.google.fonts/check/font_version">com.google.fonts/check/font_version</a>)</summary><div>
-
-
-* 🔥 **FAIL** head version is "1.05099" while name version string (for platform 3, encoding 1) is "Version 1.51; ttfautohint (v1.8.4.7-5d5b)". [code: mismatch]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
 
 
@@ -35,25 +31,25 @@ Fontbakery version: 0.8.9
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- colon
-
-	- bracketleft
-
-	- uni00A0
-
 	- parenleft
 
-	- equal
+	- asciitilde
 
-	- four
+	- ellipsis
+
+	- six
+
+	- endash
+
+	- divide
+
+	- underscore
+
+	- exclam
 
 	- five
 
-	- braceright
-
-	- one
-
-	- bracketright 
+	- quotedbl 
 
 	- And 35 more.
 
@@ -128,7 +124,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 	* h (U+0068): L<<252.0,309.0>--<253.0,118.0>> 
 
 	* And sterling (U+00A3): L<<428.0,346.0>--<270.0,347.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[12] NotoSerifOriya-Medium.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[11] NotoSerifOriya-Medium.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
 
 
 * 💔 **ERROR** Failed with IndexError: list index out of range
@@ -136,10 +132,6 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 979, but got 917 instead [code: ascent]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking font version fields (head and name table). (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/head.html#com.google.fonts/check/font_version">com.google.fonts/check/font_version</a>)</summary><div>
-
-
-* 🔥 **FAIL** head version is "1.05099" while name version string (for platform 3, encoding 1) is "Version 1.51; ttfautohint (v1.8.4.7-5d5b)". [code: mismatch]
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
 
 
@@ -156,25 +148,25 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- colon
-
-	- bracketleft
-
-	- uni00A0
-
 	- parenleft
 
-	- equal
+	- asciitilde
 
-	- four
+	- ellipsis
+
+	- six
+
+	- endash
+
+	- divide
+
+	- underscore
+
+	- exclam
 
 	- five
 
-	- braceright
-
-	- one
-
-	- bracketright 
+	- quotedbl 
 
 	- And 35 more.
 
@@ -244,7 +236,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 * ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
 
 	* h (U+0068): L<<106.0,117.0>--<105.0,649.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[8] NotoSerifOriya-Regular.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[7] NotoSerifOriya-Regular.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
 
 
 * 💔 **ERROR** Failed with IndexError: list index out of range
@@ -252,10 +244,6 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 979, but got 917 instead [code: ascent]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking font version fields (head and name table). (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/head.html#com.google.fonts/check/font_version">com.google.fonts/check/font_version</a>)</summary><div>
-
-
-* 🔥 **FAIL** head version is "1.05099" while name version string (for platform 3, encoding 1) is "Version 1.51; ttfautohint (v1.8.4.7-5d5b)". [code: mismatch]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
 
 
@@ -265,25 +253,25 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- colon
-
-	- bracketleft
-
-	- uni00A0
-
 	- parenleft
 
-	- equal
+	- asciitilde
 
-	- four
+	- ellipsis
+
+	- six
+
+	- endash
+
+	- divide
+
+	- underscore
+
+	- exclam
 
 	- five
 
-	- braceright
-
-	- one
-
-	- bracketright 
+	- quotedbl 
 
 	- And 35 more.
 
@@ -327,7 +315,7 @@ The following glyphs do not have the recommended number of contours:
 	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
-</div></details><br></div></details><details><summary><b>[11] NotoSerifOriya-SemiBold.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[10] NotoSerifOriya-SemiBold.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
 
 
 * 💔 **ERROR** Failed with IndexError: list index out of range
@@ -335,10 +323,6 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 979, but got 917 instead [code: ascent]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking font version fields (head and name table). (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/head.html#com.google.fonts/check/font_version">com.google.fonts/check/font_version</a>)</summary><div>
-
-
-* 🔥 **FAIL** head version is "1.05099" while name version string (for platform 3, encoding 1) is "Version 1.51; ttfautohint (v1.8.4.7-5d5b)". [code: mismatch]
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
 
 
@@ -355,25 +339,25 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- colon
-
-	- bracketleft
-
-	- uni00A0
-
 	- parenleft
 
-	- equal
+	- asciitilde
 
-	- four
+	- ellipsis
+
+	- six
+
+	- endash
+
+	- divide
+
+	- underscore
+
+	- exclam
 
 	- five
 
-	- braceright
-
-	- one
-
-	- bracketright 
+	- quotedbl 
 
 	- And 35 more.
 
@@ -435,7 +419,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 	* h (U+0068): L<<235.0,313.0>--<236.0,115.0>> 
 
 	* And sterling (U+00A3): L<<419.0,343.0>--<261.0,344.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[9] NotoSerifOriya[wght].ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[8] NotoSerifOriya[wght].ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
 
 
 * 💔 **ERROR** Failed with IndexError: list index out of range
@@ -447,10 +431,6 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 979, but got 917 instead [code: ascent]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking font version fields (head and name table). (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/head.html#com.google.fonts/check/font_version">com.google.fonts/check/font_version</a>)</summary><div>
-
-
-* 🔥 **FAIL** head version is "1.05099" while name version string (for platform 3, encoding 1) is "Version 1.51". [code: mismatch]
 </div></details><details><summary>🔥 <b>FAIL:</b> Validates that when an instance record is included for the default instance, its subfamilyNameID value is set to either 2 or 17, and its postScriptNameID value is set to 6. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/fvar.html#com.adobe.fonts/check/varfont/valid_default_instance_nameids">com.adobe.fonts/check/varfont/valid_default_instance_nameids</a>)</summary><div>
 
 
@@ -464,25 +444,25 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- colon
-
-	- bracketleft
-
-	- uni00A0
-
 	- parenleft
 
-	- equal
+	- asciitilde
 
-	- four
+	- ellipsis
+
+	- six
+
+	- endash
+
+	- divide
+
+	- underscore
+
+	- exclam
 
 	- five
 
-	- braceright
-
-	- one
-
-	- bracketright 
+	- quotedbl 
 
 	- And 35 more.
 
@@ -505,7 +485,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 5 | 15 | 33 | 555 | 32 | 475 | 0 |
+| 5 | 10 | 33 | 555 | 32 | 480 | 0 |
 | 0% | 1% | 3% | 50% | 3% | 43% | 0% |
 
 **Note:** The following loglevels were omitted in this report:
