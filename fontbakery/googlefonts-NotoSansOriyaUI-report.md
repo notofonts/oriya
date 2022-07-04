@@ -2,13 +2,10 @@
 
 Fontbakery version: 0.8.9
 
-<details><summary><b>[14] NotoSansOriyaUI-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
+<details><summary><b>[14] NotoSansOriyaUI-Regular.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
 
 
-* 🔥 **FAIL** Missing required codepoints:
-
-	- 0x00AF (MACRON)
- [code: missing-codepoints]
+* 💔 **ERROR** Failed with IndexError: list index out of range
 </div></details><details><summary>🔥 <b>FAIL:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
 
 
@@ -36,23 +33,23 @@ GFTools is available at https://pypi.org/project/gftools/ [code: lacks-gasp]
 
 	- uni0B4D
 
-	- uni0B56
-
-	- uni0B62
-
-	- uni0B01
-
 	- uni0B3F
-
-	- uni0B3C
-
-	- uni0B43
 
 	- uni0B63
 
-	- uni0B41 
+	- uni0B01
 
-	- And uni0B42 [code: unattached-dotted-circle-marks]
+	- uni0B41
+
+	- uni0B42
+
+	- uni0B62
+
+	- uni0B3C
+
+	- uni0B43 
+
+	- And uni0B56 [code: unattached-dotted-circle-marks]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
 
 
@@ -67,25 +64,25 @@ aiLengthcandraBinduoriya.umbrella, rephaiLengthcandraBinduoriya.stem and rephaiL
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- uni0B35.REV_BRACKET.141
+	- uni0B39.REV_BRACKET.141
 
-	- uni0B62.REV_BRACKET.141
+	- uni0B08.REV_BRACKET.141
 
-	- uni0B19.REV_BRACKET.141
+	- charaoriya.REV_BRACKET.141
 
-	- uni0B6B.REV_BRACKET.141
+	- aicandraBinduoriya
 
-	- uni0B37.REV_BRACKET.141
+	- uni0B35.base.REV_BRACKET.141
 
-	- uni0B0A.REV_BRACKET.141
+	- uni0B42.REV_BRACKET.141
 
-	- ngaraoriya.REV_BRACKET.141
+	- uni0B24.REV_BRACKET.141
 
-	- airephcandraBinduoriya
+	- uni0B68.REV_BRACKET.141
 
-	- uni0B07.REV_BRACKET.141
+	- karaoriya.REV_BRACKET.141
 
-	- uni0B1B.REV_BRACKET.141 
+	- uni0B09.REV_BRACKET.141 
 
 	- And 27 more.
 
@@ -162,13 +159,10 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-short-s
 * ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
 
 	* uni0B27 (U+0B27): L<<550.0,289.0>--<551.0,751.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[13] NotoSansOriyaUI-Thin.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[13] NotoSansOriyaUI-Thin.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
 
 
-* 🔥 **FAIL** Missing required codepoints:
-
-	- 0x00AF (MACRON)
- [code: missing-codepoints]
+* 💔 **ERROR** Failed with IndexError: list index out of range
 </div></details><details><summary>🔥 <b>FAIL:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
 
 
@@ -196,23 +190,23 @@ GFTools is available at https://pypi.org/project/gftools/ [code: lacks-gasp]
 
 	- uni0B4D
 
-	- uni0B56
-
-	- uni0B62
-
-	- uni0B01
-
 	- uni0B3F
-
-	- uni0B3C
-
-	- uni0B43
 
 	- uni0B63
 
-	- uni0B41 
+	- uni0B01
 
-	- And uni0B42 [code: unattached-dotted-circle-marks]
+	- uni0B41
+
+	- uni0B42
+
+	- uni0B62
+
+	- uni0B3C
+
+	- uni0B43 
+
+	- And uni0B56 [code: unattached-dotted-circle-marks]
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
 
 
@@ -234,25 +228,25 @@ aiLengthcandraBinduoriya.umbrella, rephaiLengthcandraBinduoriya.stem and rephaiL
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- uni0B35.REV_BRACKET.141
+	- uni0B39.REV_BRACKET.141
 
-	- uni0B62.REV_BRACKET.141
+	- uni0B08.REV_BRACKET.141
 
-	- uni0B19.REV_BRACKET.141
+	- charaoriya.REV_BRACKET.141
 
-	- uni0B6B.REV_BRACKET.141
+	- aicandraBinduoriya
 
-	- uni0B37.REV_BRACKET.141
+	- uni0B35.base.REV_BRACKET.141
 
-	- uni0B0A.REV_BRACKET.141
+	- uni0B42.REV_BRACKET.141
 
-	- ngaraoriya.REV_BRACKET.141
+	- uni0B24.REV_BRACKET.141
 
-	- airephcandraBinduoriya
+	- uni0B68.REV_BRACKET.141
 
-	- uni0B07.REV_BRACKET.141
+	- karaoriya.REV_BRACKET.141
 
-	- uni0B1B.REV_BRACKET.141 
+	- uni0B09.REV_BRACKET.141 
 
 	- And 27 more.
 
@@ -306,8 +300,8 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 12 | 15 | 232 | 13 | 183 | 0 |
-| 0% | 3% | 3% | 51% | 3% | 40% | 0% |
+| 2 | 10 | 15 | 232 | 13 | 183 | 0 |
+| 0% | 2% | 3% | 51% | 3% | 40% | 0% |
 
 **Note:** The following loglevels were omitted in this report:
 * **SKIP**
