@@ -8,5 +8,9 @@ includeSubsets:
   ranges:
     - start: 0x02BC
       end: 0x02BC
+- from: Noto Sans
+  ranges:
+    - start: 0x035A
+      end: 0x035A
 sources:
 - NotoSansOriya.glyphs
