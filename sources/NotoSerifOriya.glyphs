@@ -1,5 +1,8 @@
 {
-.appVersion = "1346";
+.appVersion = "3109";
+DisplayStrings = (
+"/uni25CC"
+);
 classes = (
 {
 code = "phaorya bhaorya laorya phanuktaorya lanuktaorya ngakaorya ngakhaorya ngagaorya ngaghaorya nyajaorya dabhaorya maphaorya lakaorya lagaorya lalaorya lakaUIorya lalaUIorya kassannaorya lapaorya laphaorya lasaorya ngakhaorya phattaUIorya phattaorya sakaorya sakhaUIorya sakhaorya ssakaorya ssattaUIorya ssattaorya yyabaorya yyajaorya yyakaorya yyalaorya yyallaorya yyamaorya yyanaorya yyaraorya yyrvocalicorya yyuorya yyuuorya phalaorya ";
@@ -166,12 +169,8 @@ code = "ivowelsignorya aivowelsignorya ivowelsigncandrabinduorya ivowelsignrepho
 name = vowabove;
 }
 );
-copyright = "Copyright 2021 Google LLC. All Rights Reserved.";
+copyright = "Copyright 2022 The Noto Project Authors (https://github.com/notofonts/oriya)";
 customParameters = (
-{
-name = vendorID;
-value = GOOG;
-},
 {
 name = unicodeRanges;
 value = (
@@ -188,8 +187,16 @@ name = "Enforce Compatibility Check";
 value = 1;
 },
 {
+name = "Use Typo Metrics";
+value = 1;
+},
+{
+name = vendorID;
+value = GOOG;
+},
+{
 name = license;
-value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This Font Software is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the SIL Open Font License for the specific language, permissions and limitations governing your use of this Font Software.";
+value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL";
 },
 {
 name = licenseURL;
@@ -205,7 +212,7 @@ value = "Noto is a trademark of Google LLC";
 },
 {
 name = versionString;
-value = "Version 1.050";
+value = "Version 1.51";
 },
 {
 name = Axes;
@@ -39785,9 +39792,39 @@ unicode = 0025;
 },
 {
 glyphname = uni25CC;
-lastChange = "2021-07-13 11:58:35 +0000";
+lastChange = "2022-07-04 08:50:50 +0000";
 layers = (
 {
+anchors = (
+{
+name = b.rrvocalicvowelsignleftorya;
+position = "{400, -49}";
+},
+{
+name = b.tasubscriptorya;
+position = "{284, 6}";
+},
+{
+name = b.uvowelsignmarkorya;
+position = "{150, -216}";
+},
+{
+name = b.uvowelsignorya;
+position = "{433, 0}";
+},
+{
+name = m.rrvocalicvowelsignleftorya;
+position = "{217, -104}";
+},
+{
+name = t.candrabinduorya;
+position = "{432, 657}";
+},
+{
+name = t.ivowelsignorya;
+position = "{272, 657}";
+}
+);
 layerId = "6C4C2116-C5E5-460E-80F0-69F45ED98D3F";
 paths = (
 {
@@ -39930,6 +39967,36 @@ nodes = (
 width = 510;
 },
 {
+anchors = (
+{
+name = b.rrvocalicvowelsignleftorya;
+position = "{401, -49}";
+},
+{
+name = b.tasubscriptorya;
+position = "{280, 6}";
+},
+{
+name = b.uvowelsignmarkorya;
+position = "{157, -216}";
+},
+{
+name = b.uvowelsignorya;
+position = "{432, 0}";
+},
+{
+name = m.rrvocalicvowelsignleftorya;
+position = "{222, -104}";
+},
+{
+name = t.candrabinduorya;
+position = "{403, 657}";
+},
+{
+name = t.ivowelsignorya;
+position = "{268, 657}";
+}
+);
 layerId = "D0F0E2C3-3B53-4823-9924-A34C50245C28";
 paths = (
 {
@@ -68632,10 +68699,6 @@ name = "TTFAutohint options";
 value = "--symbol";
 },
 {
-name = weightClass;
-value = 400;
-},
-{
 name = panose;
 value = (
 2,
@@ -68666,10 +68729,6 @@ customParameters = (
 {
 name = "TTFAutohint options";
 value = "--symbol";
-},
-{
-name = weightClass;
-value = 500;
 },
 {
 name = panose;
@@ -68706,10 +68765,6 @@ name = "TTFAutohint options";
 value = "--symbol";
 },
 {
-name = weightClass;
-value = 600;
-},
-{
 name = panose;
 value = (
 2,
@@ -68742,10 +68797,6 @@ customParameters = (
 {
 name = "TTFAutohint options";
 value = "--symbol";
-},
-{
-name = weightClass;
-value = 700;
 },
 {
 name = panose;
@@ -68931,5 +68982,5 @@ oV = "68";
 };
 };
 versionMajor = 1;
-versionMinor = 50;
+versionMinor = 51;
 }
