@@ -9,4 +9,4 @@ includeSubsets:
     - start: 0x02BC
       end: 0x02BC
 sources:
-- NotoSansOriya-MM.glyphs
+- NotoSansOriya.glyphs
