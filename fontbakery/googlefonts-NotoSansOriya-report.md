@@ -44,25 +44,25 @@ aiLengthcandraBinduoriya.umbrella, rephaiLengthcandraBinduoriya.stem and rephaiL
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- uni0B19.REV_BRACKET.141
+	- aurephcandraBinduoriya
 
-	- uni0B44.REV_BRACKET.141
+	- uni0B6B.REV_BRACKET.141
 
-	- aucandraBinduoriya
+	- uni0B37.REV_BRACKET.141
 
-	- ddaraoriya.REV_BRACKET.141
+	- uni0B24.REV_BRACKET.141
 
-	- charaoriya.REV_BRACKET.141
+	- uni0B0A.REV_BRACKET.141
+
+	- uni0B35.REV_BRACKET.141
+
+	- uni0B35.base.REV_BRACKET.141
+
+	- uni0B1C.REV_BRACKET.141
 
 	- uni0B08.REV_BRACKET.141
 
-	- ngaraoriya.REV_BRACKET.141
-
-	- uni0B09.REV_BRACKET.141
-
-	- uni0B2D.REV_BRACKET.141
-
-	- uni0B39.REV_BRACKET.141 
+	- uni0B1B.REV_BRACKET.141 
 
 	- And 33 more.
 
@@ -184,25 +184,25 @@ aiLengthcandraBinduoriya.umbrella, rephaiLengthcandraBinduoriya.stem and rephaiL
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- uni0B19.REV_BRACKET.141
+	- aurephcandraBinduoriya
 
-	- uni0B44.REV_BRACKET.141
+	- uni0B6B.REV_BRACKET.141
 
-	- aucandraBinduoriya
+	- uni0B37.REV_BRACKET.141
 
-	- ddaraoriya.REV_BRACKET.141
+	- uni0B24.REV_BRACKET.141
 
-	- charaoriya.REV_BRACKET.141
+	- uni0B0A.REV_BRACKET.141
+
+	- uni0B35.REV_BRACKET.141
+
+	- uni0B35.base.REV_BRACKET.141
+
+	- uni0B1C.REV_BRACKET.141
 
 	- uni0B08.REV_BRACKET.141
 
-	- ngaraoriya.REV_BRACKET.141
-
-	- uni0B09.REV_BRACKET.141
-
-	- uni0B2D.REV_BRACKET.141
-
-	- uni0B39.REV_BRACKET.141 
+	- uni0B1B.REV_BRACKET.141 
 
 	- And 27 more.
 
@@ -308,25 +308,25 @@ aiLengthcandraBinduoriya.umbrella, rephaiLengthcandraBinduoriya.stem and rephaiL
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- uni0B19.REV_BRACKET.141
+	- aurephcandraBinduoriya
 
-	- uni0B44.REV_BRACKET.141
+	- uni0B6B.REV_BRACKET.141
 
-	- aucandraBinduoriya
+	- uni0B37.REV_BRACKET.141
 
-	- ddaraoriya.REV_BRACKET.141
+	- uni0B24.REV_BRACKET.141
 
-	- charaoriya.REV_BRACKET.141
+	- uni0B0A.REV_BRACKET.141
+
+	- uni0B35.REV_BRACKET.141
+
+	- uni0B35.base.REV_BRACKET.141
+
+	- uni0B1C.REV_BRACKET.141
 
 	- uni0B08.REV_BRACKET.141
 
-	- ngaraoriya.REV_BRACKET.141
-
-	- uni0B09.REV_BRACKET.141
-
-	- uni0B2D.REV_BRACKET.141
-
-	- uni0B39.REV_BRACKET.141 
+	- uni0B1B.REV_BRACKET.141 
 
 	- And 27 more.
 
@@ -454,25 +454,25 @@ aiLengthcandraBinduoriya.umbrella, rephaiLengthcandraBinduoriya.stem and rephaiL
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- uni0B19.REV_BRACKET.141
+	- aurephcandraBinduoriya
 
-	- uni0B44.REV_BRACKET.141
+	- uni0B6B.REV_BRACKET.141
 
-	- aucandraBinduoriya
+	- uni0B37.REV_BRACKET.141
 
-	- ddaraoriya.REV_BRACKET.141
+	- uni0B24.REV_BRACKET.141
 
-	- charaoriya.REV_BRACKET.141
+	- uni0B0A.REV_BRACKET.141
+
+	- uni0B35.REV_BRACKET.141
+
+	- uni0B35.base.REV_BRACKET.141
+
+	- uni0B1C.REV_BRACKET.141
 
 	- uni0B08.REV_BRACKET.141
 
-	- ngaraoriya.REV_BRACKET.141
-
-	- uni0B09.REV_BRACKET.141
-
-	- uni0B2D.REV_BRACKET.141
-
-	- uni0B39.REV_BRACKET.141 
+	- uni0B1B.REV_BRACKET.141 
 
 	- And 27 more.
 
@@ -521,14 +521,10 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 	* exclamdown (U+00A1): L<<122.0,354.0>--<124.0,-186.0>> 
 
 	* And exclamdown (U+00A1): L<<96.0,-186.0>--<98.0,354.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[7] NotoSansOriya-MM[wdth,wght].ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[6] NotoSansOriya[wdth,wght].ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
 
 
 * 💔 **ERROR** Failed with IndexError: list index out of range
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking file is named canonically. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/canonical_filename">com.google.fonts/check/canonical_filename</a>)</summary><div>
-
-
-* 🔥 **FAIL** The file 'NotoSansOriya-MM[wdth,wght].ttf' must be renamed to 'NotoSansOriya[wdth,wght].ttf' according to the Google Fonts naming policy for variable fonts. [code: bad-varfont-filename]
 </div></details><details><summary>🔥 <b>FAIL:</b> Validates that when an instance record is included for the default instance, its subfamilyNameID value is set to either 2 or 17, and its postScriptNameID value is set to 6. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/fvar.html#com.adobe.fonts/check/varfont/valid_default_instance_nameids">com.adobe.fonts/check/varfont/valid_default_instance_nameids</a>)</summary><div>
 
 
@@ -547,15 +543,15 @@ aiLengthcandraBinduoriya.umbrella, rephaiLengthcandraBinduoriya.stem and rephaiL
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- aucandraBinduoriya
+	- aurephcandraBinduoriya
 
 	- airephcandraBinduoriya
 
-	- aicandraBinduoriya
+	- omoriya
 
-	- omoriya 
+	- aicandraBinduoriya 
 
-	- And aurephcandraBinduoriya
+	- And aucandraBinduoriya
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
 
@@ -569,7 +565,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 5 | 5 | 39 | 545 | 32 | 489 | 0 |
+| 5 | 4 | 39 | 545 | 32 | 490 | 0 |
 | 0% | 0% | 3% | 49% | 3% | 44% | 0% |
 
 **Note:** The following loglevels were omitted in this report:

@@ -31,25 +31,25 @@ Fontbakery version: 0.8.9
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- parenleft
-
 	- asciitilde
+
+	- semicolon
+
+	- quotedblright
+
+	- bracketright
 
 	- ellipsis
 
-	- six
+	- seven
 
-	- endash
+	- emdash
+
+	- period
 
 	- divide
 
-	- underscore
-
-	- exclam
-
-	- five
-
-	- quotedbl 
+	- comma 
 
 	- And 35 more.
 
@@ -148,25 +148,25 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- parenleft
-
 	- asciitilde
+
+	- semicolon
+
+	- quotedblright
+
+	- bracketright
 
 	- ellipsis
 
-	- six
+	- seven
 
-	- endash
+	- emdash
+
+	- period
 
 	- divide
 
-	- underscore
-
-	- exclam
-
-	- five
-
-	- quotedbl 
+	- comma 
 
 	- And 35 more.
 
@@ -253,25 +253,25 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- parenleft
-
 	- asciitilde
+
+	- semicolon
+
+	- quotedblright
+
+	- bracketright
 
 	- ellipsis
 
-	- six
+	- seven
 
-	- endash
+	- emdash
+
+	- period
 
 	- divide
 
-	- underscore
-
-	- exclam
-
-	- five
-
-	- quotedbl 
+	- comma 
 
 	- And 35 more.
 
@@ -339,25 +339,25 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- parenleft
-
 	- asciitilde
+
+	- semicolon
+
+	- quotedblright
+
+	- bracketright
 
 	- ellipsis
 
-	- six
+	- seven
 
-	- endash
+	- emdash
+
+	- period
 
 	- divide
 
-	- underscore
-
-	- exclam
-
-	- five
-
-	- quotedbl 
+	- comma 
 
 	- And 35 more.
 
@@ -444,25 +444,25 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- parenleft
-
 	- asciitilde
+
+	- semicolon
+
+	- quotedblright
+
+	- bracketright
 
 	- ellipsis
 
-	- six
+	- seven
 
-	- endash
+	- emdash
+
+	- period
 
 	- divide
 
-	- underscore
-
-	- exclam
-
-	- five
-
-	- quotedbl 
+	- comma 
 
 	- And 35 more.
 

@@ -29,27 +29,27 @@ GFTools is available at https://pypi.org/project/gftools/ [code: lacks-gasp]
 
 * 🔥 **FAIL** The following glyphs could not be attached to the dotted circle glyph:
 
-	- uni0B62
+	- uni0B3F
 
-	- uni0B3C
+	- uni0B43
 
 	- uni0B4D
-
-	- uni0B41
 
 	- uni0B44
 
 	- uni0B01
 
+	- uni0B63
+
 	- uni0B42
 
-	- uni0B3F
+	- uni0B41
 
-	- uni0B63
+	- uni0B3C
 
 	- uni0B56 
 
-	- And uni0B43 [code: unattached-dotted-circle-marks]
+	- And uni0B62 [code: unattached-dotted-circle-marks]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
 
 
@@ -64,25 +64,25 @@ aiLengthcandraBinduoriya.umbrella, rephaiLengthcandraBinduoriya.stem and rephaiL
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
+	- ddaraoriya.REV_BRACKET.141
+
+	- uni0B6F.REV_BRACKET.141
+
+	- uni0B6C.REV_BRACKET.141
+
+	- varaoriya.REV_BRACKET.141
+
+	- karaoriya.REV_BRACKET.141
+
 	- uni0B0A.REV_BRACKET.141
 
-	- uni0B1C.REV_BRACKET.141
-
-	- uni0B09.REV_BRACKET.141
-
-	- uni0B69.REV_BRACKET.141
-
-	- uni0B0F.REV_BRACKET.141
+	- uni0B1B.REV_BRACKET.141
 
 	- aicandraBinduoriya
 
-	- uni0B35.REV_BRACKET.141
+	- uni0B6B.REV_BRACKET.141
 
-	- uni0B2D.REV_BRACKET.141
-
-	- uni0B07.REV_BRACKET.141
-
-	- uni0B63.REV_BRACKET.141 
+	- uni0B35.REV_BRACKET.141 
 
 	- And 27 more.
 
@@ -186,27 +186,27 @@ GFTools is available at https://pypi.org/project/gftools/ [code: lacks-gasp]
 
 * 🔥 **FAIL** The following glyphs could not be attached to the dotted circle glyph:
 
-	- uni0B62
+	- uni0B3F
 
-	- uni0B3C
+	- uni0B43
 
 	- uni0B4D
-
-	- uni0B41
 
 	- uni0B44
 
 	- uni0B01
 
+	- uni0B63
+
 	- uni0B42
 
-	- uni0B3F
+	- uni0B41
 
-	- uni0B63
+	- uni0B3C
 
 	- uni0B56 
 
-	- And uni0B43 [code: unattached-dotted-circle-marks]
+	- And uni0B62 [code: unattached-dotted-circle-marks]
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
 
 
@@ -228,25 +228,25 @@ aiLengthcandraBinduoriya.umbrella, rephaiLengthcandraBinduoriya.stem and rephaiL
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
+	- ddaraoriya.REV_BRACKET.141
+
+	- uni0B6F.REV_BRACKET.141
+
+	- uni0B6C.REV_BRACKET.141
+
+	- varaoriya.REV_BRACKET.141
+
+	- karaoriya.REV_BRACKET.141
+
 	- uni0B0A.REV_BRACKET.141
 
-	- uni0B1C.REV_BRACKET.141
-
-	- uni0B09.REV_BRACKET.141
-
-	- uni0B69.REV_BRACKET.141
-
-	- uni0B0F.REV_BRACKET.141
+	- uni0B1B.REV_BRACKET.141
 
 	- aicandraBinduoriya
 
-	- uni0B35.REV_BRACKET.141
+	- uni0B6B.REV_BRACKET.141
 
-	- uni0B2D.REV_BRACKET.141
-
-	- uni0B07.REV_BRACKET.141
-
-	- uni0B63.REV_BRACKET.141 
+	- uni0B35.REV_BRACKET.141 
 
 	- And 27 more.
 
