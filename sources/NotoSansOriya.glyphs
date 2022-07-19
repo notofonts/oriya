@@ -557,6 +557,10 @@ name = "Use Typo Metrics";
 value = 1;
 },
 {
+name = "Feature for Feature Variations";
+value = rclt;
+},
+{
 name = description;
 value = "Designed by Amélie Bonet and Sol Matas";
 },
