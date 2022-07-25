@@ -35,21 +35,21 @@ Fontbakery version: 0.8.9
 
 	- emdash
 
-	- eight
-
 	- underscore
+
+	- plus
+
+	- uni00A0
 
 	- nine
 
-	- slash
+	- five
 
-	- percent
+	- quotedblleft
 
-	- quotedbl
+	- two
 
-	- one
-
-	- asciitilde 
+	- quotedblright 
 
 	- And 35 more.
 
@@ -145,21 +145,21 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 	- emdash
 
-	- eight
-
 	- underscore
+
+	- plus
+
+	- uni00A0
 
 	- nine
 
-	- slash
+	- five
 
-	- percent
+	- quotedblleft
 
-	- quotedbl
+	- two
 
-	- one
-
-	- asciitilde 
+	- quotedblright 
 
 	- And 35 more.
 
@@ -243,21 +243,21 @@ The following glyphs do not have the recommended number of contours:
 
 	- emdash
 
-	- eight
-
 	- underscore
+
+	- plus
+
+	- uni00A0
 
 	- nine
 
-	- slash
+	- five
 
-	- percent
+	- quotedblleft
 
-	- quotedbl
+	- two
 
-	- one
-
-	- asciitilde 
+	- quotedblright 
 
 	- And 35 more.
 
@@ -322,21 +322,21 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 	- emdash
 
-	- eight
-
 	- underscore
+
+	- plus
+
+	- uni00A0
 
 	- nine
 
-	- slash
+	- five
 
-	- percent
+	- quotedblleft
 
-	- quotedbl
+	- two
 
-	- one
-
-	- asciitilde 
+	- quotedblright 
 
 	- And 35 more.
 
@@ -420,21 +420,21 @@ The following glyphs do not have the recommended number of contours:
 
 	- emdash
 
-	- eight
-
 	- underscore
+
+	- plus
+
+	- uni00A0
 
 	- nine
 
-	- slash
+	- five
 
-	- percent
+	- quotedblleft
 
-	- quotedbl
+	- two
 
-	- one
-
-	- asciitilde 
+	- quotedblright 
 
 	- And 35 more.
 
