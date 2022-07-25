@@ -14,7 +14,7 @@ Fontbakery version: 0.8.9
 
 
 * 🔥 **FAIL** PANOSE family type is not the same across this family. In order to fix this, please make sure that the panose.bFamilyType value is the same in the OS/2 table of all of this family font files. [code: inconsistency]
-</div></details><br></div></details><details><summary><b>[9] NotoSerifOriya-Bold.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[8] NotoSerifOriya-Bold.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
 
 
 * 💔 **ERROR** Failed with IndexError: list index out of range
@@ -31,25 +31,25 @@ Fontbakery version: 0.8.9
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- asciitilde
-
-	- semicolon
-
-	- quotedblright
-
-	- bracketright
-
-	- ellipsis
-
-	- seven
+	- asciicircum
 
 	- emdash
 
-	- period
+	- eight
 
-	- divide
+	- underscore
 
-	- comma 
+	- nine
+
+	- slash
+
+	- percent
+
+	- quotedbl
+
+	- one
+
+	- asciitilde 
 
 	- And 35 more.
 
@@ -81,13 +81,6 @@ The following glyphs do not have the recommended number of contours:
 
 	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
 
 
@@ -124,7 +117,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 	* h (U+0068): L<<252.0,309.0>--<253.0,118.0>> 
 
 	* And sterling (U+00A3): L<<428.0,346.0>--<270.0,347.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[11] NotoSerifOriya-Medium.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[10] NotoSerifOriya-Medium.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
 
 
 * 💔 **ERROR** Failed with IndexError: list index out of range
@@ -148,25 +141,25 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- asciitilde
-
-	- semicolon
-
-	- quotedblright
-
-	- bracketright
-
-	- ellipsis
-
-	- seven
+	- asciicircum
 
 	- emdash
 
-	- period
+	- eight
 
-	- divide
+	- underscore
 
-	- comma 
+	- nine
+
+	- slash
+
+	- percent
+
+	- quotedbl
+
+	- one
+
+	- asciitilde 
 
 	- And 35 more.
 
@@ -203,13 +196,6 @@ The following glyphs do not have the recommended number of contours:
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
 	 llvocalicvowelsignorya (U+0B63) [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
 
 
@@ -236,7 +222,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 * ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
 
 	* h (U+0068): L<<106.0,117.0>--<105.0,649.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[7] NotoSerifOriya-Regular.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[6] NotoSerifOriya-Regular.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
 
 
 * 💔 **ERROR** Failed with IndexError: list index out of range
@@ -253,25 +239,25 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- asciitilde
-
-	- semicolon
-
-	- quotedblright
-
-	- bracketright
-
-	- ellipsis
-
-	- seven
+	- asciicircum
 
 	- emdash
 
-	- period
+	- eight
 
-	- divide
+	- underscore
 
-	- comma 
+	- nine
+
+	- slash
+
+	- percent
+
+	- quotedbl
+
+	- one
+
+	- asciitilde 
 
 	- And 35 more.
 
@@ -308,14 +294,7 @@ The following glyphs do not have the recommended number of contours:
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
 	 llvocalicvowelsignorya (U+0B63) [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
-</div></details><br></div></details><details><summary><b>[10] NotoSerifOriya-SemiBold.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[9] NotoSerifOriya-SemiBold.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
 
 
 * 💔 **ERROR** Failed with IndexError: list index out of range
@@ -339,25 +318,25 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- asciitilde
-
-	- semicolon
-
-	- quotedblright
-
-	- bracketright
-
-	- ellipsis
-
-	- seven
+	- asciicircum
 
 	- emdash
 
-	- period
+	- eight
 
-	- divide
+	- underscore
 
-	- comma 
+	- nine
+
+	- slash
+
+	- percent
+
+	- quotedbl
+
+	- one
+
+	- asciitilde 
 
 	- And 35 more.
 
@@ -394,13 +373,6 @@ The following glyphs do not have the recommended number of contours:
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
 	 llvocalicvowelsignorya (U+0B63) [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
 
 
@@ -419,7 +391,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 	* h (U+0068): L<<235.0,313.0>--<236.0,115.0>> 
 
 	* And sterling (U+00A3): L<<419.0,343.0>--<261.0,344.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[8] NotoSerifOriya[wght].ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[7] NotoSerifOriya[wght].ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
 
 
 * 💔 **ERROR** Failed with IndexError: list index out of range
@@ -444,25 +416,25 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- asciitilde
-
-	- semicolon
-
-	- quotedblright
-
-	- bracketright
-
-	- ellipsis
-
-	- seven
+	- asciicircum
 
 	- emdash
 
-	- period
+	- eight
 
-	- divide
+	- underscore
 
-	- comma 
+	- nine
+
+	- slash
+
+	- percent
+
+	- quotedbl
+
+	- one
+
+	- asciitilde 
 
 	- And 35 more.
 
@@ -473,19 +445,12 @@ Use -F or --full-lists to disable shortening of long lists.
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
 	 llvocalicvowelsignorya (U+0B63) [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 </div></details><br></div></details>
 ### Summary
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 5 | 10 | 33 | 555 | 32 | 480 | 0 |
+| 5 | 10 | 28 | 555 | 32 | 485 | 0 |
 | 0% | 1% | 3% | 50% | 3% | 43% | 0% |
 
 **Note:** The following loglevels were omitted in this report:
