@@ -44,25 +44,25 @@ aiLengthcandraBinduoriya.umbrella, rephaiLengthcandraBinduoriya.stem and rephaiL
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- uni0B0A.REV_BRACKET.141
+	- karaoriya.REV_BRACKET.141
 
-	- airephcandraBinduoriya
+	- uni0B01.REV_BRACKET.141
 
-	- uni0B0F.REV_BRACKET.141
-
-	- uni0B6B.REV_BRACKET.141
-
-	- uni0B1B.REV_BRACKET.141
+	- uni0B07.REV_BRACKET.141
 
 	- uni0B44.REV_BRACKET.141
 
+	- uni0B0A.REV_BRACKET.141
+
+	- uni0B68.REV_BRACKET.141
+
 	- aurephcandraBinduoriya
 
-	- uni0B63.REV_BRACKET.141
+	- uni0B21.REV_BRACKET.141
 
-	- uni0B22.REV_BRACKET.141
+	- uni0B08.REV_BRACKET.141
 
-	- uni0B6D.REV_BRACKET.141 
+	- uni0B37.REV_BRACKET.141 
 
 	- And 33 more.
 
@@ -177,25 +177,25 @@ aiLengthcandraBinduoriya.umbrella, rephaiLengthcandraBinduoriya.stem and rephaiL
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- uni0B0A.REV_BRACKET.141
+	- karaoriya.REV_BRACKET.141
 
-	- airephcandraBinduoriya
-
-	- uni0B0F.REV_BRACKET.141
-
-	- uni0B6B.REV_BRACKET.141
-
-	- uni0B1B.REV_BRACKET.141
+	- uni0B07.REV_BRACKET.141
 
 	- uni0B44.REV_BRACKET.141
 
+	- uni0B0A.REV_BRACKET.141
+
+	- uni0B68.REV_BRACKET.141
+
 	- aurephcandraBinduoriya
 
-	- uni0B63.REV_BRACKET.141
+	- uni0B08.REV_BRACKET.141
 
-	- uni0B6D.REV_BRACKET.141
+	- uni0B37.REV_BRACKET.141
 
-	- ngaraoriya.REV_BRACKET.141 
+	- uni0B35.REV_BRACKET.141
+
+	- uni0B6F.REV_BRACKET.141 
 
 	- And 27 more.
 
@@ -294,25 +294,25 @@ aiLengthcandraBinduoriya.umbrella, rephaiLengthcandraBinduoriya.stem and rephaiL
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- uni0B0A.REV_BRACKET.141
+	- karaoriya.REV_BRACKET.141
 
-	- airephcandraBinduoriya
-
-	- uni0B0F.REV_BRACKET.141
-
-	- uni0B6B.REV_BRACKET.141
-
-	- uni0B1B.REV_BRACKET.141
+	- uni0B07.REV_BRACKET.141
 
 	- uni0B44.REV_BRACKET.141
 
+	- uni0B0A.REV_BRACKET.141
+
+	- uni0B68.REV_BRACKET.141
+
 	- aurephcandraBinduoriya
 
-	- uni0B63.REV_BRACKET.141
+	- uni0B08.REV_BRACKET.141
 
-	- uni0B6D.REV_BRACKET.141
+	- uni0B37.REV_BRACKET.141
 
-	- ngaraoriya.REV_BRACKET.141 
+	- uni0B35.REV_BRACKET.141
+
+	- uni0B6F.REV_BRACKET.141 
 
 	- And 27 more.
 
@@ -433,25 +433,25 @@ aiLengthcandraBinduoriya.umbrella, rephaiLengthcandraBinduoriya.stem and rephaiL
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- uni0B0A.REV_BRACKET.141
+	- karaoriya.REV_BRACKET.141
 
-	- airephcandraBinduoriya
-
-	- uni0B0F.REV_BRACKET.141
-
-	- uni0B6B.REV_BRACKET.141
-
-	- uni0B1B.REV_BRACKET.141
+	- uni0B07.REV_BRACKET.141
 
 	- uni0B44.REV_BRACKET.141
 
+	- uni0B0A.REV_BRACKET.141
+
+	- uni0B68.REV_BRACKET.141
+
 	- aurephcandraBinduoriya
 
-	- uni0B63.REV_BRACKET.141
+	- uni0B08.REV_BRACKET.141
 
-	- uni0B6D.REV_BRACKET.141
+	- uni0B37.REV_BRACKET.141
 
-	- ngaraoriya.REV_BRACKET.141 
+	- uni0B35.REV_BRACKET.141
+
+	- uni0B6F.REV_BRACKET.141 
 
 	- And 27 more.
 
@@ -515,22 +515,22 @@ aiLengthcandraBinduoriya.umbrella, rephaiLengthcandraBinduoriya.stem and rephaiL
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- airephcandraBinduoriya
-
 	- aurephcandraBinduoriya
 
 	- aicandraBinduoriya
 
-	- omoriya 
+	- airephcandraBinduoriya
 
-	- And aucandraBinduoriya
+	- aucandraBinduoriya 
+
+	- And omoriya
  [code: unreachable-glyphs]
 </div></details><br></div></details>
 ### Summary
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 5 | 4 | 34 | 545 | 32 | 495 | 0 |
+| 5 | 4 | 34 | 549 | 32 | 491 | 0 |
 | 0% | 0% | 3% | 49% | 3% | 44% | 0% |
 
 **Note:** The following loglevels were omitted in this report:

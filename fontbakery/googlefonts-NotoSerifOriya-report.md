@@ -31,25 +31,25 @@ Fontbakery version: 0.8.9
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- asciicircum
+	- eight
 
-	- emdash
+	- six
 
-	- underscore
+	- braceright
+
+	- parenleft
 
 	- plus
 
-	- uni00A0
-
-	- nine
-
-	- five
+	- zero
 
 	- quotedblleft
 
-	- two
+	- bracketright
 
-	- quotedblright 
+	- quotedblright
+
+	- slash 
 
 	- And 35 more.
 
@@ -141,25 +141,25 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- asciicircum
+	- eight
 
-	- emdash
+	- six
 
-	- underscore
+	- braceright
+
+	- parenleft
 
 	- plus
 
-	- uni00A0
-
-	- nine
-
-	- five
+	- zero
 
 	- quotedblleft
 
-	- two
+	- bracketright
 
-	- quotedblright 
+	- quotedblright
+
+	- slash 
 
 	- And 35 more.
 
@@ -239,25 +239,25 @@ The following glyphs do not have the recommended number of contours:
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- asciicircum
+	- eight
 
-	- emdash
+	- six
 
-	- underscore
+	- braceright
+
+	- parenleft
 
 	- plus
 
-	- uni00A0
-
-	- nine
-
-	- five
+	- zero
 
 	- quotedblleft
 
-	- two
+	- bracketright
 
-	- quotedblright 
+	- quotedblright
+
+	- slash 
 
 	- And 35 more.
 
@@ -318,25 +318,25 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- asciicircum
+	- eight
 
-	- emdash
+	- six
 
-	- underscore
+	- braceright
+
+	- parenleft
 
 	- plus
 
-	- uni00A0
-
-	- nine
-
-	- five
+	- zero
 
 	- quotedblleft
 
-	- two
+	- bracketright
 
-	- quotedblright 
+	- quotedblright
+
+	- slash 
 
 	- And 35 more.
 
@@ -416,25 +416,25 @@ The following glyphs do not have the recommended number of contours:
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- asciicircum
+	- eight
 
-	- emdash
+	- six
 
-	- underscore
+	- braceright
+
+	- parenleft
 
 	- plus
 
-	- uni00A0
-
-	- nine
-
-	- five
+	- zero
 
 	- quotedblleft
 
-	- two
+	- bracketright
 
-	- quotedblright 
+	- quotedblright
+
+	- slash 
 
 	- And 35 more.
 
