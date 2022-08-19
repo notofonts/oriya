@@ -35,6 +35,12 @@
             "input": "ନ୍ମ",
             "expectation": "na-oriya.base=0+671|ma-oriya.below=0@-583,-60+0",
             "note": "#13"
+        },
+        {
+            "only": "NotoSansOriya-Regular.ttf",
+            "input": "ପ୍ତୁଂ",
+            "expectation": "pataoriya=0+775|uni0B41=0@-566,-147+0|uni0B02=0+304",
+            "note": "#13"
         }
     ]
 }
