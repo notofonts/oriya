@@ -1,9 +1,8 @@
 {
-.appVersion = "3109";
+.appVersion = "3072";
 DisplayStrings = (
-"/kaka-oriya",
-"/gada-oriya",
-"/dottedCircle"
+"/na-oriya",
+"/a-oriya"
 );
 classes = (
 {
@@ -583,6 +582,19 @@ value = GOOG;
 {
 name = versionString;
 value = "Version 2.002";
+},
+{
+name = Axes;
+value = (
+{
+Name = Weight;
+Tag = wght;
+},
+{
+Name = Width;
+Tag = wdth;
+}
+);
 },
 {
 name = note;
@@ -2621,6 +2633,10 @@ layers = (
 {
 anchors = (
 {
+name = bottom;
+position = "{434, 0}";
+},
+{
 name = topright;
 position = "{551, 658}";
 }
@@ -2718,6 +2734,10 @@ width = 634;
 {
 anchors = (
 {
+name = bottom;
+position = "{520, 0}";
+},
+{
 name = topright;
 position = "{667, 658}";
 }
@@ -2808,6 +2828,10 @@ width = 798;
 },
 {
 anchors = (
+{
+name = bottom;
+position = "{390, 0}";
+},
 {
 name = topright;
 position = "{454, 658}";
@@ -2906,6 +2930,10 @@ width = 519;
 {
 anchors = (
 {
+name = bottom;
+position = "{424, 0}";
+},
+{
 name = topright;
 position = "{540, 658}";
 }
@@ -2996,6 +3024,10 @@ width = 647;
 },
 {
 anchors = (
+{
+name = bottom;
+position = "{520, 0}";
+},
 {
 name = topright;
 position = "{667, 658}";
@@ -3173,6 +3205,10 @@ width = 798;
 {
 anchors = (
 {
+name = bottom;
+position = "{424, 0}";
+},
+{
 name = topright;
 position = "{540, 658}";
 }
@@ -3349,6 +3385,10 @@ width = 647;
 {
 anchors = (
 {
+name = bottom;
+position = "{474, 0}";
+},
+{
 name = topright;
 position = "{593, 658}";
 }
@@ -3373,7 +3413,7 @@ nodes = (
 "166 275 OFFCURVE",
 "268 309 CURVE",
 "288 315 LINE SMOOTH",
-"355 336 OFFCURVE",
+"355 335 OFFCURVE",
 "473 375 OFFCURVE",
 "473 521 CURVE",
 "473 613 OFFCURVE",
@@ -3415,7 +3455,7 @@ nodes = (
 "321 395 OFFCURVE",
 "258 376 CURVE",
 "235 369 LINE SMOOTH",
-"150 342 OFFCURVE",
+"150 343 OFFCURVE",
 "36 310 OFFCURVE",
 "36 177 CURVE",
 "36 62 OFFCURVE",
@@ -100648,7 +100688,7 @@ layers = (
 anchors = (
 {
 name = _bottom;
-position = "{404, 110}";
+position = "{404, 112}";
 }
 );
 guideLines = (
