@@ -29,6 +29,12 @@
             "input": "ରେଅ୍ଥ",
             "expectation": "uni0B47=0+534|uni0B30=0+744|uni0B05=2+694|uni0B4D0B25=2@-622,-110+0",
             "note": "#13"
+        },
+        {
+            "only": "NotoSansOriya-Regular.ttf",
+            "input": "ନ୍ମ",
+            "expectation": "na-oriya.base=0+671|ma-oriya.below=0@-583,-60+0",
+            "note": "#13"
         }
     ]
 }
