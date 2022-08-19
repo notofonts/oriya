@@ -41,6 +41,12 @@
             "input": "ପ୍ତୁଂ",
             "expectation": "pataoriya=0+775|uni0B41=0@-566,-147+0|uni0B02=0+304",
             "note": "#13"
+        },
+        {
+            "only": "NotoSansOriya-Regular.ttf",
+            "input": "କ଼ ଯ଼",
+            "expectation": "uni0B15=0+752|uni0B3C=0@-717,-28+0|space=2+258|uni0B2F=3+785|uni0B3C=3@-693,-28+0",
+            "note": "#10"
         }
     ]
 }
