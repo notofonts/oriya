@@ -33,7 +33,7 @@
         {
             "only": "NotoSansOriya-Regular.ttf",
             "input": "ନ୍ମ",
-            "expectation": "na-oriya.base=0+671|ma-oriya.below=0@-583,-60+0",
+            "expectation": "uni0B28.base=0+671|uni0B4D0B2E=0@-583,-60+0",
             "note": "#13"
         },
         {
