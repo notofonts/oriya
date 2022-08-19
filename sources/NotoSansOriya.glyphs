@@ -2,7 +2,7 @@
 .appVersion = "3072";
 DisplayStrings = (
 "/na-oriya",
-"/a-oriya"
+"/da-oriya.base/na-oriya.base/ma-oriya.below"
 );
 classes = (
 {
@@ -84362,7 +84362,7 @@ width = 620;
 anchors = (
 {
 name = bottom;
-position = "{450, 110}";
+position = "{450, 84}";
 },
 {
 name = bottom_ta;
@@ -84550,7 +84550,7 @@ width = 485;
 anchors = (
 {
 name = bottom;
-position = "{362, 110}";
+position = "{359, 96}";
 },
 {
 name = bottom_ta;
@@ -84644,7 +84644,7 @@ width = 619;
 anchors = (
 {
 name = bottom;
-position = "{429, 110}";
+position = "{434, 110}";
 },
 {
 name = bottom_ta;
@@ -104045,7 +104045,7 @@ layers = (
 anchors = (
 {
 name = _bottom;
-position = "{245, 110}";
+position = "{325, 139}";
 }
 );
 guideLines = (
@@ -104117,7 +104117,7 @@ width = 391;
 anchors = (
 {
 name = _bottom;
-position = "{247, 110}";
+position = "{377, 150}";
 }
 );
 guideLines = (
@@ -104182,7 +104182,7 @@ width = 448;
 anchors = (
 {
 name = _bottom;
-position = "{180, 110}";
+position = "{238, 133}";
 }
 );
 guideLines = (
@@ -104254,7 +104254,7 @@ width = 284;
 anchors = (
 {
 name = _bottom;
-position = "{199, 110}";
+position = "{279, 165}";
 }
 );
 guideLines = (
@@ -104319,7 +104319,7 @@ width = 345;
 anchors = (
 {
 name = _bottom;
-position = "{246, 110}";
+position = "{346, 170}";
 }
 );
 layerId = "41544896-EF4D-4C26-89A7-324DAFD89EC7";
