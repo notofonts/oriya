@@ -2,7 +2,7 @@
 .appVersion = "3072";
 DisplayStrings = (
 "/na-oriya",
-"/da-oriya.base/na-oriya.base/ma-oriya.below"
+"/da-oriya.base/na-oriya.base/pata-oriya"
 );
 classes = (
 {
@@ -158059,6 +158059,10 @@ layers = (
 {
 anchors = (
 {
+name = bottom;
+position = "{620, -127}";
+},
+{
 name = top;
 position = "{319, 658}";
 },
@@ -158197,6 +158201,10 @@ width = 742;
 },
 {
 anchors = (
+{
+name = bottom;
+position = "{580, -167}";
+},
 {
 name = top;
 position = "{347, 658}";
@@ -158337,6 +158345,10 @@ width = 834;
 {
 anchors = (
 {
+name = bottom;
+position = "{470, -117}";
+},
+{
 name = top;
 position = "{253, 658}";
 },
@@ -158476,6 +158488,10 @@ width = 560;
 {
 anchors = (
 {
+name = bottom;
+position = "{420, -167}";
+},
+{
 name = top;
 position = "{291, 658}";
 },
@@ -158614,6 +158630,10 @@ width = 676;
 },
 {
 anchors = (
+{
+name = bottom;
+position = "{600, -147}";
+},
 {
 name = top;
 position = "{329, 658}";
