@@ -1,0 +1,34 @@
+{
+    "tests": [
+        {
+            "only": "NotoSansOriya-Regular.ttf",
+            "input": "ଧ୍ୟ କୌଁ ସ୍ପୃ ତ୍ରୁ ଦ୍ରୁ ନ୍ତୁ ସ୍ପୃ ହୁ ହୂ ହୃ",
+            "expectation": "dhayyaoriya=0+676|space=3+258|uni0B47=4+534|uni0B15=4+752|auLengthcandraBinduoriya=4+201|space=7+258|saparVocalicMatraoriya=8+657|space=12+258|tarauMatraoriya=13+691|space=17+258|darauMatraoriya=18+712|space=22+258|natauMatraoriya=23+670|space=27+258|saparVocalicMatraoriya=28+657|space=32+258|hauoriya=33+662|space=35+258|hauuoriya=36+662|space=38+258|harVocalicoriya=39+662",
+            "note": "#7"
+        },
+        {
+            "only": "NotoSansOriya-Regular.ttf",
+            "input": "ର୍ଞୈ ର୍ଖୈ ର୍କୈ ର୍ଞୈଁ ର୍ଖୈଁ ର୍କୈଁ ର୍କୌଁ",
+            "expectation": "uni0B47=0+534|uni0B1E=0+738|rephaiLengthoriya=0@-711,0+0|space=4+258|uni0B47=5+534|uni0B16=5+742|rephaiLengthoriya.stem=5@-625,0+0|space=9+258|uni0B47=10+534|uni0B15=10+752|rephaiLengthoriya.umbrella=10@-702,0+0|space=14+258|uni0B47=15+534|uni0B1E=15+738|rephaiLengthcandraBinduoriya=15@-620,0+0|space=20+258|uni0B47=21+534|uni0B16=21+742|rephaiLengthcandraBinduoriya.stem=21@-532,0+0|space=26+258|uni0B47=27+534|uni0B15=27+752|rephaiLengthcandraBinduoriya.umbrella=27@-611,0+0|space=32+258|uni0B47=33+534|uni0B15=33+752|rephauLengthcandraBinduoriya=33+201",
+            "note": "#6"
+        },
+        {
+            "only": "NotoSansOriya-Regular.ttf",
+            "input": "କିଁ ଞିଁ ର୍କି ର୍ଞି ର୍କିଁ ର୍ଞିଁ ଞୈଁ ଖୈଁ କୈଁ",
+            "expectation": "uni0B15=0+752|iMatracandraBinduoriya=0@-719,0+0|space=3+258|uni0B1E=4+738|iMatracandraBinduoriya.wide=4@-648,0+0|space=7+258|uni0B15=8+752|iMatrarephoriya=8@-785,0+0|space=12+258|uni0B1E=13+738|iMatrarephoriya.wide=13@-772,0+0|space=17+258|uni0B15=18+752|iMatrarephcandraBinduoriya=18@-670,0+0|space=23+258|uni0B1E=24+738|iMatrarephcandraBinduoriya.wide=24@-655,0+0|space=29+258|uni0B47=30+534|uni0B1E=30+738|aiLengthcandraBinduoriya=30@-698,0+0|space=33+258|uni0B47=34+534|uni0B16=34+742|aiLengthcandraBinduoriya.stem=34@-584,0+0|space=37+258|uni0B47=38+534|uni0B15=38+752|aiLengthcandraBinduoriya.umbrella=38@-688,0+0",
+            "note": "#5"
+        },
+        {
+            "only": "NotoSansOriya-Regular.ttf",
+            "input": "କ୍ର ଖ୍ର ଗ୍ର ଘ୍ର ଙ୍ର ଚ୍ର ଛ୍ର ଜ୍ର ଝ୍ର ଞ୍ର ଟ୍ର ଠ୍ର ଡ୍ର ଢ୍ର ଣ୍ର ତ୍ର ଥ୍ର ଦ୍ର ଧ୍ର ନ୍ର ପ୍ର ଫ୍ର ବ୍ର ଭ୍ର ମ୍ର ଯ୍ର ଲ୍ର ଳ୍ର ଵ୍ର ଶ୍ର ଷ୍ର ସ୍ର ହ୍ର ୱ୍ର ଡ଼୍ର ଢ଼୍ର",
+            "expectation": "karaoriya=0+752|space=3+258|kharaoriya=4+742|space=7+258|garaoriya=8+741|space=11+258|gharaoriya=12+741|space=15+258|ngaraoriya=16+750|space=19+258|caraoriya=20+698|space=23+258|charaoriya=24+717|space=27+258|jaraoriya=28+752|space=31+258|jharaoriya=32+698|space=35+258|nyaraoriya=36+738|space=39+258|ttaraoriya=40+701|space=43+258|ttharaoriya=44+754|space=47+258|ddaraoriya=48+734|space=51+258|ddharaoriya=52+734|space=55+258|nnaraoriya=56+741|space=59+258|taraoriya=60+734|space=63+258|tharaoriya=64+690|space=67+258|daraoriya=68+752|space=71+258|dharaoriya=72+691|space=75+258|naraoriya=76+712|space=79+258|paraoriya=80+741|space=83+258|pharaoriya=84+899|space=87+258|baraoriya=88+718|space=91+258|bharaoriya=92+833|space=95+258|maraoriya=96+741|space=99+258|yaraoriya=100+785|space=103+258|laraoriya=104+833|space=107+258|llaraoriya=108+776|space=111+258|varaoriya=112+718|space=115+258|sharaoriya=116+741|space=119+258|ssaraoriya=120+741|space=123+258|saraoriya=124+695|space=127+258|haraoriya=128+703|space=131+258|waraoriya=132+700|space=135+258|rraraoriya=136+691|space=139+258|rharaoriya=140+691",
+            "note": "#4"
+        },
+        {
+            "only": "NotoSansOriya-Regular.ttf",
+            "input": "ରେଅ୍ଥ",
+            "expectation": "uni0B47=0+534|uni0B30=0+744|uni0B05=2+694|uni0B4D0B25=2@-622,-110+0",
+            "note": "#13"
+        }
+    ]
+}
