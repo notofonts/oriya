@@ -1,6 +1,6 @@
 ## Fontbakery report
 
-Fontbakery version: 0.8.9
+Fontbakery version: 0.8.10
 
 <details><summary><b>[3] Family checks</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking all files are in the same directory. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/single_directory">com.google.fonts/check/family/single_directory</a>)</summary><div>
 
@@ -14,11 +14,7 @@ Fontbakery version: 0.8.9
 
 
 * 🔥 **FAIL** PANOSE family type is not the same across this family. In order to fix this, please make sure that the panose.bFamilyType value is the same in the OS/2 table of all of this family font files. [code: inconsistency]
-</div></details><br></div></details><details><summary><b>[10] NotoSansOriya-Black.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
-
-
-* 💔 **ERROR** Failed with IndexError: list index out of range
-</div></details><details><summary>⚠ <b>WARN:</b> Glyphs are similiar to Google Fonts version? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity">com.google.fonts/check/production_glyphs_similarity</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[9] NotoSansOriya-Black.ttf</b></summary><div><details><summary>⚠ <b>WARN:</b> Glyphs are similiar to Google Fonts version? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity">com.google.fonts/check/production_glyphs_similarity</a>)</summary><div>
 
 
 * ⚠ **WARN** Following glyphs differ greatly from Google Fonts version:
@@ -44,25 +40,25 @@ aiLengthcandraBinduoriya.umbrella, rephaiLengthcandraBinduoriya.stem and rephaiL
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- uni0B6F.REV_BRACKET.141
+	- aicandraBinduoriya
 
-	- uni0B08.REV_BRACKET.141
+	- airephcandraBinduoriya
 
-	- uni0B1C.base.REV_BRACKET.141
+	- aucandraBinduoriya
 
-	- uni0B6D.REV_BRACKET.141
+	- aurephcandraBinduoriya
 
-	- uni0B15.REV_BRACKET.141
+	- bharaoriya.REV_BRACKET.141
 
-	- uni0B19.REV_BRACKET.141
+	- charaoriya.REV_BRACKET.141
 
-	- uni0B22.REV_BRACKET.141
+	- ddaraoriya.REV_BRACKET.141
 
-	- uni0B01.REV_BRACKET.141
+	- jaraoriya.REV_BRACKET.141
 
-	- uni0B2D.REV_BRACKET.141
+	- karaoriya.REV_BRACKET.141
 
-	- uni0B62.REV_BRACKET.141 
+	- ngaraoriya.REV_BRACKET.141 
 
 	- And 33 more.
 
@@ -154,11 +150,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-jaggy-s
 * ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
 
 	* uni0B27 (U+0B27): L<<558.0,274.0>--<559.0,658.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[8] NotoSansOriya-Bold.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
-
-
-* 💔 **ERROR** Failed with IndexError: list index out of range
-</div></details><details><summary>⚠ <b>WARN:</b> Glyphs are similiar to Google Fonts version? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity">com.google.fonts/check/production_glyphs_similarity</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[7] NotoSansOriya-Bold.ttf</b></summary><div><details><summary>⚠ <b>WARN:</b> Glyphs are similiar to Google Fonts version? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity">com.google.fonts/check/production_glyphs_similarity</a>)</summary><div>
 
 
 * ⚠ **WARN** Following glyphs differ greatly from Google Fonts version:
@@ -177,25 +169,25 @@ aiLengthcandraBinduoriya.umbrella, rephaiLengthcandraBinduoriya.stem and rephaiL
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- uni0B6F.REV_BRACKET.141
+	- aicandraBinduoriya
 
-	- uni0B08.REV_BRACKET.141
+	- airephcandraBinduoriya
 
-	- uni0B6D.REV_BRACKET.141
+	- aucandraBinduoriya
 
-	- uni0B19.REV_BRACKET.141
+	- aurephcandraBinduoriya
 
-	- uni0B2D.REV_BRACKET.141
-
-	- uni0B62.REV_BRACKET.141
+	- bharaoriya.REV_BRACKET.141
 
 	- charaoriya.REV_BRACKET.141
 
-	- uni0B69.REV_BRACKET.141
+	- ddaraoriya.REV_BRACKET.141
 
-	- uni0B6B.REV_BRACKET.141
+	- jaraoriya.REV_BRACKET.141
 
-	- jaraoriya.REV_BRACKET.141 
+	- karaoriya.REV_BRACKET.141
+
+	- ngaraoriya.REV_BRACKET.141 
 
 	- And 27 more.
 
@@ -271,11 +263,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 	* Wgrave (U+1E80): B<<696.5,227.5>-<705.0,182.0>-<709.0,148.0>>/B<<709.0,148.0>-<712.0,172.0>-<718.5,206.5>> = 13.834853156658685 
 
 	* And uni0B14 (U+0B14): B<<688.5,403.5>-<655.0,366.0>-<614.0,344.0>>/L<<614.0,344.0>--<619.0,346.0>> = 6.4159463683773925 [code: found-jaggy-segments]
-</div></details><br></div></details><details><summary><b>[11] NotoSansOriya-Regular.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
-
-
-* 💔 **ERROR** Failed with IndexError: list index out of range
-</div></details><details><summary>🔥 <b>FAIL:</b> Check that texts shape as per expectation (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Shaping Checks>.html#com.google.fonts/check/shaping/regression">com.google.fonts/check/shaping/regression</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[10] NotoSansOriya-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check that texts shape as per expectation (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Shaping Checks>.html#com.google.fonts/check/shaping/regression">com.google.fonts/check/shaping/regression</a>)</summary><div>
 
 
 * 🔥 **FAIL** qa/shaping_tests/androidtext-font-Oriya-or.json: Expected and actual shaping not matching
@@ -2753,25 +2741,25 @@ aiLengthcandraBinduoriya.umbrella, rephaiLengthcandraBinduoriya.stem and rephaiL
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- uni0B6F.REV_BRACKET.141
+	- aicandraBinduoriya
 
-	- uni0B08.REV_BRACKET.141
+	- airephcandraBinduoriya
 
-	- uni0B6D.REV_BRACKET.141
+	- aucandraBinduoriya
 
-	- uni0B19.REV_BRACKET.141
+	- aurephcandraBinduoriya
 
-	- uni0B2D.REV_BRACKET.141
-
-	- uni0B62.REV_BRACKET.141
+	- bharaoriya.REV_BRACKET.141
 
 	- charaoriya.REV_BRACKET.141
 
-	- uni0B69.REV_BRACKET.141
+	- ddaraoriya.REV_BRACKET.141
 
-	- uni0B6B.REV_BRACKET.141
+	- jaraoriya.REV_BRACKET.141
 
-	- jaraoriya.REV_BRACKET.141 
+	- karaoriya.REV_BRACKET.141
+
+	- ngaraoriya.REV_BRACKET.141 
 
 	- And 27 more.
 
@@ -2869,11 +2857,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-short-s
 * ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
 
 	* uni0B27 (U+0B27): L<<550.0,196.0>--<551.0,658.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[7] NotoSansOriya-Thin.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
-
-
-* 💔 **ERROR** Failed with IndexError: list index out of range
-</div></details><details><summary>⚠ <b>WARN:</b> Glyphs are similiar to Google Fonts version? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity">com.google.fonts/check/production_glyphs_similarity</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[6] NotoSansOriya-Thin.ttf</b></summary><div><details><summary>⚠ <b>WARN:</b> Glyphs are similiar to Google Fonts version? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity">com.google.fonts/check/production_glyphs_similarity</a>)</summary><div>
 
 
 * ⚠ **WARN** Following glyphs differ greatly from Google Fonts version:
@@ -2892,25 +2876,25 @@ aiLengthcandraBinduoriya.umbrella, rephaiLengthcandraBinduoriya.stem and rephaiL
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- uni0B6F.REV_BRACKET.141
+	- aicandraBinduoriya
 
-	- uni0B08.REV_BRACKET.141
+	- airephcandraBinduoriya
 
-	- uni0B6D.REV_BRACKET.141
+	- aucandraBinduoriya
 
-	- uni0B19.REV_BRACKET.141
+	- aurephcandraBinduoriya
 
-	- uni0B2D.REV_BRACKET.141
-
-	- uni0B62.REV_BRACKET.141
+	- bharaoriya.REV_BRACKET.141
 
 	- charaoriya.REV_BRACKET.141
 
-	- uni0B69.REV_BRACKET.141
+	- ddaraoriya.REV_BRACKET.141
 
-	- uni0B6B.REV_BRACKET.141
+	- jaraoriya.REV_BRACKET.141
 
-	- jaraoriya.REV_BRACKET.141 
+	- karaoriya.REV_BRACKET.141
+
+	- ngaraoriya.REV_BRACKET.141 
 
 	- And 27 more.
 
@@ -2952,14 +2936,18 @@ The following glyphs do not have the recommended number of contours:
 	* exclamdown (U+00A1): L<<122.0,354.0>--<124.0,-186.0>> 
 
 	* And exclamdown (U+00A1): L<<96.0,-186.0>--<98.0,354.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[5] NotoSansOriya[wdth,wght].ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[6] NotoSansOriya[wdth,wght].ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check font names are correct (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_names">com.google.fonts/check/font_names</a>)</summary><div>
 
 
-* 💔 **ERROR** Failed with IndexError: list index out of range
-</div></details><details><summary>🔥 <b>FAIL:</b> Validates that when an instance record is included for the default instance, its subfamilyNameID value is set to either 2 or 17, and its postScriptNameID value is set to 6. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/fvar.html#com.adobe.fonts/check/varfont/valid_default_instance_nameids">com.adobe.fonts/check/varfont/valid_default_instance_nameids</a>)</summary><div>
+* 💔 **ERROR** The condition <FontBakeryCondition:expected_font_names> had an error: KeyError: 'fvar'
+</div></details><details><summary>💔 <b>ERROR:</b> Check a font's STAT table contains compulsory Axis Values. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/STAT">com.google.fonts/check/STAT</a>)</summary><div>
 
 
-* 🔥 **FAIL** 'Regular' instance has the same coordinates as the default instance; its subfamilyNameID should be either 2 or 17, instead of 281. [code: invalid-default-instance-subfamily-nameid:281]
+* 💔 **ERROR** The condition <FontBakeryCondition:expected_font_names> had an error: KeyError: 'fvar'
+</div></details><details><summary>💔 <b>ERROR:</b> Check variable font instances (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fvar_instances">com.google.fonts/check/fvar_instances</a>)</summary><div>
+
+
+* 💔 **ERROR** The condition <FontBakeryCondition:expected_font_names> had an error: KeyError: 'fvar'
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
 
 
@@ -2974,22 +2962,22 @@ aiLengthcandraBinduoriya.umbrella, rephaiLengthcandraBinduoriya.stem and rephaiL
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- omoriya
+	- aicandraBinduoriya
 
-	- aurephcandraBinduoriya
+	- airephcandraBinduoriya
 
 	- aucandraBinduoriya
 
-	- airephcandraBinduoriya 
+	- aurephcandraBinduoriya 
 
-	- And aicandraBinduoriya
+	- And omoriya
  [code: unreachable-glyphs]
 </div></details><br></div></details>
 ### Summary
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 5 | 5 | 34 | 549 | 32 | 490 | 0 |
+| 3 | 4 | 34 | 532 | 32 | 470 | 0 |
 | 0% | 0% | 3% | 49% | 3% | 44% | 0% |
 
 **Note:** The following loglevels were omitted in this report:
