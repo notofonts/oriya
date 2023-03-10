@@ -1,5 +1,5 @@
 {
-.appVersion = "3151";
+.appVersion = "3180";
 classes = (
 {
 code = "nukta-oriya uMatra-oriya uuMatra-oriya rVocalicMatra-oriya rrVocalicMatra-oriya lVocalicMatra-oriya llVocalicMatra-oriya halant-oriya ka-oriya.below kha-oriya.below ga-oriya.below gha-oriya.below nga-oriya.below ca-oriya.below cha-oriya.below ja-oriya.below jha-oriya.below tta-oriya.below ttha-oriya.below dda-oriya.below ddha-oriya.below nna-oriya.below ta-oriya.below tha-oriya.below da-oriya.below dha-oriya.below na-oriya.below pa-oriya.below pha-oriya.below ba-oriya.below bha-oriya.below ma-oriya.below ya-oriya.below ra-oriya.below la-oriya.below lla-oriya.below va-oriya.below sha-oriya.below ssa-oriya.below sa-oriya.below ha-oriya.below kassa-oriya.below iMatra-oriya.below rephauLength-oriya rephauLengthcandraBindu-oriya rauMatra-oriya.below rauuMatra-oriya.below rarVocalicMatra-oriya.below rarrVocalicMatra-oriya.below";
@@ -662,6 +662,10 @@ value = 1;
 {
 name = "Use Typo Metrics";
 value = 1;
+},
+{
+name = "Feature for Feature Variations";
+value = rclt;
 },
 {
 name = description;
