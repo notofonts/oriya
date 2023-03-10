@@ -93725,6 +93725,10 @@ position = "{375, -164}";
 {
 name = bottom_ra;
 position = "{401, -164}";
+},
+{
+name = nukta;
+position = "{313, -224}";
 }
 );
 guideLines = (
@@ -93818,6 +93822,10 @@ position = "{309, -164}";
 {
 name = bottom_ra;
 position = "{417, -164}";
+},
+{
+name = nukta;
+position = "{353, -341}";
 }
 );
 guideLines = (
@@ -93911,6 +93919,10 @@ position = "{272, -164}";
 {
 name = bottom_ra;
 position = "{298, -164}";
+},
+{
+name = nukta;
+position = "{266, -219}";
 }
 );
 guideLines = (
@@ -94004,6 +94016,10 @@ position = "{257, -164}";
 {
 name = bottom_ra;
 position = "{351, -164}";
+},
+{
+name = nukta;
+position = "{182, -180}";
 }
 );
 guideLines = (
@@ -94097,6 +94113,10 @@ position = "{351, -164}";
 {
 name = bottom_ra;
 position = "{407, -164}";
+},
+{
+name = nukta;
+position = "{377, -226}";
 }
 );
 layerId = "41544896-EF4D-4C26-89A7-324DAFD89EC7";
@@ -96965,6 +96985,10 @@ position = "{296, -248}";
 {
 name = bottom_ra;
 position = "{305, -248}";
+},
+{
+name = nukta;
+position = "{-52, 1}";
 }
 );
 guideLines = (
@@ -97125,6 +97149,10 @@ position = "{266, -230}";
 {
 name = bottom_ra;
 position = "{367, -235}";
+},
+{
+name = nukta;
+position = "{-94, -26}";
 }
 );
 guideLines = (
@@ -97285,6 +97313,10 @@ position = "{204, -246}";
 {
 name = bottom_ra;
 position = "{227, -246}";
+},
+{
+name = nukta;
+position = "{-62, -16}";
 }
 );
 guideLines = (
@@ -97445,6 +97477,10 @@ position = "{199, -234}";
 {
 name = bottom_ra;
 position = "{288, -228}";
+},
+{
+name = nukta;
+position = "{-103, -31}";
 }
 );
 guideLines = (
@@ -97605,6 +97641,10 @@ position = "{272, -244}";
 {
 name = bottom_ra;
 position = "{325, -242}";
+},
+{
+name = nukta;
+position = "{-94, -4}";
 }
 );
 layerId = "41544896-EF4D-4C26-89A7-324DAFD89EC7";
