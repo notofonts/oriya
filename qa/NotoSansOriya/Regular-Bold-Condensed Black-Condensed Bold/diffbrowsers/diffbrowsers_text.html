@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+<head>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>GFR - Text</title>
+    
+    <style type="text/css">
+    
+        html{
+	  font-family: sans-serif;
+	}
+	.box-title{
+	  width: 100%;
+	  float: left;
+	  font-size: 8pt;
+	  font-weight: 700;
+	  border-top: 1px solid black;
+	  padding-top: 5px;
+	  margin-bottom: 10pt;
+	  display: block;
+	}
+	.box{
+	  margin-bottom: 20pt;
+	  width: 100%;
+	  float: left;
+	}
+	.box-text{
+		float: left;
+	}
+	
+	#nav{
+	  position: fixed;
+	  right: 20px;
+	  z-index: 100;
+	}
+	#font-toggle{
+	  display: block;
+	  font-weight: 700;
+	  cursor: pointer;
+	  -webkit-user-select: none; /* Safari */        
+	  -moz-user-select: none; /* Firefox */
+          -ms-user-select: none; /* IE10+/Edge */
+	  user-select: none; /* Standard */
+	  text-align: center;
+	  color: white;
+	  background-color: black;
+	  width: 50px;
+	  display: block;
+	  padding: 10px;
+	}
+	.tooltip {
+	position: relative;
+	display: inline-block;
+	border-bottom: 1px dotted black;
+	}
+
+	.tooltip .tooltiptext {
+	font-family: sans-serif;
+	visibility: hidden;
+	width: 500px;
+	background-color: black;
+	color: #fff;
+	text-align: left;
+	font-size: 12pt;
+	line-height: 15pt;
+	border-radius: 6px;
+	padding: 5px 0;
+
+	/* Position the tooltip */
+	position: absolute;
+	z-index: 1;
+	}
+
+	.tooltip:hover .tooltiptext {
+	padding: 10px;
+	visibility: visible;
+	}
+	.tooltipleft {
+		float:left;
+		width: 249px;
+	}
+	.tooltipright {
+		float:right;
+		width:250px;
+	}
+
+			/* Stuff needed for the table differ */
+            body {
+                font-family: Helvetica;
+            }
+            .node {
+                font-family: courier;
+                cursor: pointer;
+                position: relative;
+                left: 30px;
+                padding: 5px;
+                display: block;
+                border: 1px dashed grey;
+            }
+            .header {
+            font-weight: bold;
+            }
+            .attrib-old{
+                color: red;
+                cursor: text;
+            }
+            .attrib-new{
+                color: green;
+                cursor: text;
+            }
+            .leaf {
+            font-weight: bold;
+            }
+            .old .cell .new {
+            	display:  none;
+            }
+            .new .cell .old {
+            	display:  none;
+            }
+            .both .cell .old {
+            	opacity: 0.75;
+            	color:  red;
+            }
+            .both .cell .new {
+            	opacity: 0.75;
+            	position: absolute;
+            	top: 0;
+            	color:  green;
+            }
+			.spacer {
+				display:block;
+				float:left;
+				width:100%;
+			}
+
+	  
+	    @font-face{
+    src: url(old-NotoSansOriya[wght].ttf);
+    font-family: "old Noto Sans Oriya";
+    font-weight: 400 700;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSansOriya-CondensedBlack.ttf);
+    font-family: "old Noto Sans Oriya";
+    font-weight: 900;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSansOriya-CondensedBold.ttf);
+    font-family: "old Noto Sans Oriya";
+    font-weight: 700;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSansOriya-Black.ttf);
+    font-family: "old Noto Sans Oriya";
+    font-weight: 900;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSansOriya-Bold.ttf);
+    font-family: "old Noto Sans Oriya";
+    font-weight: 700;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSansOriya-ExtraCondensedBlack.ttf);
+    font-family: "old Noto Sans Oriya";
+    font-weight: 900;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSansOriya-Thin.ttf);
+    font-family: "old Noto Sans Oriya";
+    font-weight: 100;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSansOriya-CondensedThin.ttf);
+    font-family: "old Noto Sans Oriya";
+    font-weight: 100;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSansOriya-ExtraCondensedThin.ttf);
+    font-family: "old Noto Sans Oriya";
+    font-weight: 100;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSansOriya-Regular.ttf);
+    font-family: "old Noto Sans Oriya";
+    font-weight: 400;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSansOriya-ExtraCondensedBold.ttf);
+    font-family: "old Noto Sans Oriya";
+    font-weight: 700;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSansOriya-ExtraCondensed.ttf);
+    font-family: "old Noto Sans Oriya";
+    font-weight: 400;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSansOriya-Condensed.ttf);
+    font-family: "old Noto Sans Oriya";
+    font-weight: 400;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSansOriya[wdth,wght].ttf);
+    font-family: "old Noto Sans Oriya";
+    font-weight: 100 900;
+    font-stretch: 62% 100%;
+    font-style: normal;
+}
+	  
+
+	  
+	    @font-face{
+    src: url(new-NotoSansOriya-ExtraCondensedBold.ttf);
+    font-family: "new Noto Sans Oriya";
+    font-weight: 700;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(new-NotoSansOriya-Condensed.ttf);
+    font-family: "new Noto Sans Oriya";
+    font-weight: 400;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(new-NotoSansOriya-CondensedThin.ttf);
+    font-family: "new Noto Sans Oriya";
+    font-weight: 100;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(new-NotoSansOriya-CondensedBlack.ttf);
+    font-family: "new Noto Sans Oriya";
+    font-weight: 900;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(new-NotoSansOriya-Black.ttf);
+    font-family: "new Noto Sans Oriya";
+    font-weight: 900;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(new-NotoSansOriya-ExtraCondensedBlack.ttf);
+    font-family: "new Noto Sans Oriya";
+    font-weight: 900;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(new-NotoSansOriya-CondensedBold.ttf);
+    font-family: "new Noto Sans Oriya";
+    font-weight: 700;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(new-NotoSansOriya-ExtraCondensedThin.ttf);
+    font-family: "new Noto Sans Oriya";
+    font-weight: 100;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(new-NotoSansOriya-Thin.ttf);
+    font-family: "new Noto Sans Oriya";
+    font-weight: 100;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(new-NotoSansOriya-Regular.ttf);
+    font-family: "new Noto Sans Oriya";
+    font-weight: 400;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(new-NotoSansOriya-ExtraCondensed.ttf);
+    font-family: "new Noto Sans Oriya";
+    font-weight: 400;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(new-NotoSansOriya-Bold.ttf);
+    font-family: "new Noto Sans Oriya";
+    font-weight: 700;
+    
+    font-style: normal;
+}
+	  
+
+	  
+
+	  
+	    .old-Noto-Sans-Oriya-Regular{
+    font-family: "old Noto Sans Oriya";
+    font-weight: 400.0;
+    
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Oriya-Bold{
+    font-family: "old Noto Sans Oriya";
+    font-weight: 700.0;
+    
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Oriya-Condensed-Black{
+    font-family: "old Noto Sans Oriya";
+    font-weight: 900;
+    font-stretch: 75%;
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Oriya-Condensed-Bold{
+    font-family: "old Noto Sans Oriya";
+    font-weight: 700;
+    font-stretch: 75%;
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Oriya-Black{
+    font-family: "old Noto Sans Oriya";
+    font-weight: 900;
+    font-stretch: 100%;
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Oriya-Bold{
+    font-family: "old Noto Sans Oriya";
+    font-weight: 700;
+    font-stretch: 100%;
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Oriya-ExtraCondensed-Black{
+    font-family: "old Noto Sans Oriya";
+    font-weight: 900;
+    font-stretch: 62.5%;
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Oriya-Thin{
+    font-family: "old Noto Sans Oriya";
+    font-weight: 100;
+    font-stretch: 100%;
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Oriya-Condensed-Thin{
+    font-family: "old Noto Sans Oriya";
+    font-weight: 100;
+    font-stretch: 75%;
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Oriya-ExtraCondensed-Thin{
+    font-family: "old Noto Sans Oriya";
+    font-weight: 100;
+    font-stretch: 62.5%;
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Oriya-Regular{
+    font-family: "old Noto Sans Oriya";
+    font-weight: 400;
+    font-stretch: 100%;
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Oriya-ExtraCondensed-Bold{
+    font-family: "old Noto Sans Oriya";
+    font-weight: 700;
+    font-stretch: 62.5%;
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Oriya-ExtraCondensed{
+    font-family: "old Noto Sans Oriya";
+    font-weight: 400;
+    font-stretch: 62.5%;
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Oriya-Condensed{
+    font-family: "old Noto Sans Oriya";
+    font-weight: 400;
+    font-stretch: 75%;
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Oriya-Regular{
+    font-family: "old Noto Sans Oriya";
+    font-weight: 400.0;
+    font-stretch: 100.0%;
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Oriya-Bold{
+    font-family: "old Noto Sans Oriya";
+    font-weight: 700.0;
+    font-stretch: 100.0%;
+    font-style: normal;
+}
+	  
+
+	  
+	    .new-Noto-Sans-Oriya-ExtraCondensed-Bold{
+    font-family: "new Noto Sans Oriya";
+    font-weight: 700;
+    font-stretch: 62.5%;
+    font-style: normal;
+}
+	  
+	    .new-Noto-Sans-Oriya-Condensed{
+    font-family: "new Noto Sans Oriya";
+    font-weight: 400;
+    font-stretch: 75%;
+    font-style: normal;
+}
+	  
+	    .new-Noto-Sans-Oriya-Condensed-Thin{
+    font-family: "new Noto Sans Oriya";
+    font-weight: 100;
+    font-stretch: 75%;
+    font-style: normal;
+}
+	  
+	    .new-Noto-Sans-Oriya-Condensed-Black{
+    font-family: "new Noto Sans Oriya";
+    font-weight: 900;
+    font-stretch: 75%;
+    font-style: normal;
+}
+	  
+	    .new-Noto-Sans-Oriya-Black{
+    font-family: "new Noto Sans Oriya";
+    font-weight: 900;
+    font-stretch: 100%;
+    font-style: normal;
+}
+	  
+	    .new-Noto-Sans-Oriya-ExtraCondensed-Black{
+    font-family: "new Noto Sans Oriya";
+    font-weight: 900;
+    font-stretch: 62.5%;
+    font-style: normal;
+}
+	  
+	    .new-Noto-Sans-Oriya-Condensed-Bold{
+    font-family: "new Noto Sans Oriya";
+    font-weight: 700;
+    font-stretch: 75%;
+    font-style: normal;
+}
+	  
+	    .new-Noto-Sans-Oriya-ExtraCondensed-Thin{
+    font-family: "new Noto Sans Oriya";
+    font-weight: 100;
+    font-stretch: 62.5%;
+    font-style: normal;
+}
+	  
+	    .new-Noto-Sans-Oriya-Thin{
+    font-family: "new Noto Sans Oriya";
+    font-weight: 100;
+    font-stretch: 100%;
+    font-style: normal;
+}
+	  
+	    .new-Noto-Sans-Oriya-Regular{
+    font-family: "new Noto Sans Oriya";
+    font-weight: 400;
+    font-stretch: 100%;
+    font-style: normal;
+}
+	  
+	    .new-Noto-Sans-Oriya-ExtraCondensed{
+    font-family: "new Noto Sans Oriya";
+    font-weight: 400;
+    font-stretch: 62.5%;
+    font-style: normal;
+}
+	  
+	    .new-Noto-Sans-Oriya-Bold{
+    font-family: "new Noto Sans Oriya";
+    font-weight: 700;
+    font-stretch: 100%;
+    font-style: normal;
+}
+	  
+
+	  
+	
+    </style>
+</head>
+<body>
+    
+    <div id="nav">
+        <div id="font-toggle">old</div>
+     </div>
+    
+    <div id="content">
+	<h2>
+<b>Text</b>
+</h2>
+	
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Oriya-Regular 20pt</div>
+	<div class="box-text old-Noto-Sans-Oriya-Regular" dir="auto" style="font-size: 20pt">217 10 1948 10, . । (1948), " — – ' ; 360 ‐ : / ‘‘ = ~ 50 ? ?] ସଭମନ ଧତ ସଭେ ମାନସି ମଇର୍ଜାତ ଆର ହକଦାରି ଲେଇକେ ଆଁଗାସ ବୁଇଧ ଏକେ ଉପର ଭାୟାଚାରି ସୋଉବମ କିୟାଽ ଗୈରୱ ଓଡୋଽ ଅଧିକାରାଽ କୁଈ ମୁନୁଡୂ ହୋକୀ ଵାଈଵାଈ ଚାହି‍। ହୋଡ଼ୋକୋ ମନରଂଗ ଓଡ଼ୋଃ ରେଅ୍ଥ [ ଯତ୍ର ଶାନ୍ତିନ୍ୟାୟସ୍ୱାତନ୍ତ୍ର୍ୟାଣାଂ ସର୍ୱେଷାମପି ଅଖଣ୍ଡିତାନାଞ୍ଚ ଅଭିଘୋଷଣାୟାଃ ଏତାଦୃଗ୍ଭେଦଂ ଚେଷ୍ଟାଂ ଗୌରବଦୃଶା | ଜନ୍ମକାଳରୁ ସେମାନଙ୍କର ସେମାନଙ୍କଠାରେ ଅଛି.</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Oriya-Bold 20pt</div>
+	<div class="box-text old-Noto-Sans-Oriya-Bold" dir="auto" style="font-size: 20pt">217 10 1948 10, . । (1948), " — – ' ; 360 ‐ : / ‘‘ = ~ 50 ? ?] ସଭମନ ଧତ ସଭେ ମାନସି ମଇର୍ଜାତ ଆର ହକଦାରି ଲେଇକେ ଆଁଗାସ ବୁଇଧ ଏକେ ଉପର ଭାୟାଚାରି ସୋଉବମ କିୟାଽ ଗୈରୱ ଓଡୋଽ ଅଧିକାରାଽ କୁଈ ମୁନୁଡୂ ହୋକୀ ଵାଈଵାଈ ଚାହି‍। ହୋଡ଼ୋକୋ ମନରଂଗ ଓଡ଼ୋଃ ରେଅ୍ଥ [ ଯତ୍ର ଶାନ୍ତିନ୍ୟାୟସ୍ୱାତନ୍ତ୍ର୍ୟାଣାଂ ସର୍ୱେଷାମପି ଅଖଣ୍ଡିତାନାଞ୍ଚ ଅଭିଘୋଷଣାୟାଃ ଏତାଦୃଗ୍ଭେଦଂ ଚେଷ୍ଟାଂ ଗୌରବଦୃଶା | ଜନ୍ମକାଳରୁ ସେମାନଙ୍କର ସେମାନଙ୍କଠାରେ ଅଛି.</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Oriya-Condensed-Black 20pt</div>
+	<div class="box-text old-Noto-Sans-Oriya-Condensed-Black" dir="auto" style="font-size: 20pt">217 10 1948 10, . । (1948), " — – ' ; 360 ‐ : / ‘‘ = ~ 50 ? ?] ସଭମନ ଧତ ସଭେ ମାନସି ମଇର୍ଜାତ ଆର ହକଦାରି ଲେଇକେ ଆଁଗାସ ବୁଇଧ ଏକେ ଉପର ଭାୟାଚାରି ସୋଉବମ କିୟାଽ ଗୈରୱ ଓଡୋଽ ଅଧିକାରାଽ କୁଈ ମୁନୁଡୂ ହୋକୀ ଵାଈଵାଈ ଚାହି‍। ହୋଡ଼ୋକୋ ମନରଂଗ ଓଡ଼ୋଃ ରେଅ୍ଥ [ ଯତ୍ର ଶାନ୍ତିନ୍ୟାୟସ୍ୱାତନ୍ତ୍ର୍ୟାଣାଂ ସର୍ୱେଷାମପି ଅଖଣ୍ଡିତାନାଞ୍ଚ ଅଭିଘୋଷଣାୟାଃ ଏତାଦୃଗ୍ଭେଦଂ ଚେଷ୍ଟାଂ ଗୌରବଦୃଶା | ଜନ୍ମକାଳରୁ ସେମାନଙ୍କର ସେମାନଙ୍କଠାରେ ଅଛି.</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Oriya-Condensed-Bold 20pt</div>
+	<div class="box-text old-Noto-Sans-Oriya-Condensed-Bold" dir="auto" style="font-size: 20pt">217 10 1948 10, . । (1948), " — – ' ; 360 ‐ : / ‘‘ = ~ 50 ? ?] ସଭମନ ଧତ ସଭେ ମାନସି ମଇର୍ଜାତ ଆର ହକଦାରି ଲେଇକେ ଆଁଗାସ ବୁଇଧ ଏକେ ଉପର ଭାୟାଚାରି ସୋଉବମ କିୟାଽ ଗୈରୱ ଓଡୋଽ ଅଧିକାରାଽ କୁଈ ମୁନୁଡୂ ହୋକୀ ଵାଈଵାଈ ଚାହି‍। ହୋଡ଼ୋକୋ ମନରଂଗ ଓଡ଼ୋଃ ରେଅ୍ଥ [ ଯତ୍ର ଶାନ୍ତିନ୍ୟାୟସ୍ୱାତନ୍ତ୍ର୍ୟାଣାଂ ସର୍ୱେଷାମପି ଅଖଣ୍ଡିତାନାଞ୍ଚ ଅଭିଘୋଷଣାୟାଃ ଏତାଦୃଗ୍ଭେଦଂ ଚେଷ୍ଟାଂ ଗୌରବଦୃଶା | ଜନ୍ମକାଳରୁ ସେମାନଙ୍କର ସେମାନଙ୍କଠାରେ ଅଛି.</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Oriya-Black 20pt</div>
+	<div class="box-text old-Noto-Sans-Oriya-Black" dir="auto" style="font-size: 20pt">217 10 1948 10, . । (1948), " — – ' ; 360 ‐ : / ‘‘ = ~ 50 ? ?] ସଭମନ ଧତ ସଭେ ମାନସି ମଇର୍ଜାତ ଆର ହକଦାରି ଲେଇକେ ଆଁଗାସ ବୁଇଧ ଏକେ ଉପର ଭାୟାଚାରି ସୋଉବମ କିୟାଽ ଗୈରୱ ଓଡୋଽ ଅଧିକାରାଽ କୁଈ ମୁନୁଡୂ ହୋକୀ ଵାଈଵାଈ ଚାହି‍। ହୋଡ଼ୋକୋ ମନରଂଗ ଓଡ଼ୋଃ ରେଅ୍ଥ [ ଯତ୍ର ଶାନ୍ତିନ୍ୟାୟସ୍ୱାତନ୍ତ୍ର୍ୟାଣାଂ ସର୍ୱେଷାମପି ଅଖଣ୍ଡିତାନାଞ୍ଚ ଅଭିଘୋଷଣାୟାଃ ଏତାଦୃଗ୍ଭେଦଂ ଚେଷ୍ଟାଂ ଗୌରବଦୃଶା | ଜନ୍ମକାଳରୁ ସେମାନଙ୍କର ସେମାନଙ୍କଠାରେ ଅଛି.</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Oriya-Bold 20pt</div>
+	<div class="box-text old-Noto-Sans-Oriya-Bold" dir="auto" style="font-size: 20pt">217 10 1948 10, . । (1948), " — – ' ; 360 ‐ : / ‘‘ = ~ 50 ? ?] ସଭମନ ଧତ ସଭେ ମାନସି ମଇର୍ଜାତ ଆର ହକଦାରି ଲେଇକେ ଆଁଗାସ ବୁଇଧ ଏକେ ଉପର ଭାୟାଚାରି ସୋଉବମ କିୟାଽ ଗୈରୱ ଓଡୋଽ ଅଧିକାରାଽ କୁଈ ମୁନୁଡୂ ହୋକୀ ଵାଈଵାଈ ଚାହି‍। ହୋଡ଼ୋକୋ ମନରଂଗ ଓଡ଼ୋଃ ରେଅ୍ଥ [ ଯତ୍ର ଶାନ୍ତିନ୍ୟାୟସ୍ୱାତନ୍ତ୍ର୍ୟାଣାଂ ସର୍ୱେଷାମପି ଅଖଣ୍ଡିତାନାଞ୍ଚ ଅଭିଘୋଷଣାୟାଃ ଏତାଦୃଗ୍ଭେଦଂ ଚେଷ୍ଟାଂ ଗୌରବଦୃଶା | ଜନ୍ମକାଳରୁ ସେମାନଙ୍କର ସେମାନଙ୍କଠାରେ ଅଛି.</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Oriya-ExtraCondensed-Black 20pt</div>
+	<div class="box-text old-Noto-Sans-Oriya-ExtraCondensed-Black" dir="auto" style="font-size: 20pt">217 10 1948 10, . । (1948), " — – ' ; 360 ‐ : / ‘‘ = ~ 50 ? ?] ସଭମନ ଧତ ସଭେ ମାନସି ମଇର୍ଜାତ ଆର ହକଦାରି ଲେଇକେ ଆଁଗାସ ବୁଇଧ ଏକେ ଉପର ଭାୟାଚାରି ସୋଉବମ କିୟାଽ ଗୈରୱ ଓଡୋଽ ଅଧିକାରାଽ କୁଈ ମୁନୁଡୂ ହୋକୀ ଵାଈଵାଈ ଚାହି‍। ହୋଡ଼ୋକୋ ମନରଂଗ ଓଡ଼ୋଃ ରେଅ୍ଥ [ ଯତ୍ର ଶାନ୍ତିନ୍ୟାୟସ୍ୱାତନ୍ତ୍ର୍ୟାଣାଂ ସର୍ୱେଷାମପି ଅଖଣ୍ଡିତାନାଞ୍ଚ ଅଭିଘୋଷଣାୟାଃ ଏତାଦୃଗ୍ଭେଦଂ ଚେଷ୍ଟାଂ ଗୌରବଦୃଶା | ଜନ୍ମକାଳରୁ ସେମାନଙ୍କର ସେମାନଙ୍କଠାରେ ଅଛି.</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Oriya-Thin 20pt</div>
+	<div class="box-text old-Noto-Sans-Oriya-Thin" dir="auto" style="font-size: 20pt">217 10 1948 10, . । (1948), " — – ' ; 360 ‐ : / ‘‘ = ~ 50 ? ?] ସଭମନ ଧତ ସଭେ ମାନସି ମଇର୍ଜାତ ଆର ହକଦାରି ଲେଇକେ ଆଁଗାସ ବୁଇଧ ଏକେ ଉପର ଭାୟାଚାରି ସୋଉବମ କିୟାଽ ଗୈରୱ ଓଡୋଽ ଅଧିକାରାଽ କୁଈ ମୁନୁଡୂ ହୋକୀ ଵାଈଵାଈ ଚାହି‍। ହୋଡ଼ୋକୋ ମନରଂଗ ଓଡ଼ୋଃ ରେଅ୍ଥ [ ଯତ୍ର ଶାନ୍ତିନ୍ୟାୟସ୍ୱାତନ୍ତ୍ର୍ୟାଣାଂ ସର୍ୱେଷାମପି ଅଖଣ୍ଡିତାନାଞ୍ଚ ଅଭିଘୋଷଣାୟାଃ ଏତାଦୃଗ୍ଭେଦଂ ଚେଷ୍ଟାଂ ଗୌରବଦୃଶା | ଜନ୍ମକାଳରୁ ସେମାନଙ୍କର ସେମାନଙ୍କଠାରେ ଅଛି.</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Oriya-Condensed-Thin 20pt</div>
+	<div class="box-text old-Noto-Sans-Oriya-Condensed-Thin" dir="auto" style="font-size: 20pt">217 10 1948 10, . । (1948), " — – ' ; 360 ‐ : / ‘‘ = ~ 50 ? ?] ସଭମନ ଧତ ସଭେ ମାନସି ମଇର୍ଜାତ ଆର ହକଦାରି ଲେଇକେ ଆଁଗାସ ବୁଇଧ ଏକେ ଉପର ଭାୟାଚାରି ସୋଉବମ କିୟାଽ ଗୈରୱ ଓଡୋଽ ଅଧିକାରାଽ କୁଈ ମୁନୁଡୂ ହୋକୀ ଵାଈଵାଈ ଚାହି‍। ହୋଡ଼ୋକୋ ମନରଂଗ ଓଡ଼ୋଃ ରେଅ୍ଥ [ ଯତ୍ର ଶାନ୍ତିନ୍ୟାୟସ୍ୱାତନ୍ତ୍ର୍ୟାଣାଂ ସର୍ୱେଷାମପି ଅଖଣ୍ଡିତାନାଞ୍ଚ ଅଭିଘୋଷଣାୟାଃ ଏତାଦୃଗ୍ଭେଦଂ ଚେଷ୍ଟାଂ ଗୌରବଦୃଶା | ଜନ୍ମକାଳରୁ ସେମାନଙ୍କର ସେମାନଙ୍କଠାରେ ଅଛି.</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Oriya-ExtraCondensed-Thin 20pt</div>
+	<div class="box-text old-Noto-Sans-Oriya-ExtraCondensed-Thin" dir="auto" style="font-size: 20pt">217 10 1948 10, . । (1948), " — – ' ; 360 ‐ : / ‘‘ = ~ 50 ? ?] ସଭମନ ଧତ ସଭେ ମାନସି ମଇର୍ଜାତ ଆର ହକଦାରି ଲେଇକେ ଆଁଗାସ ବୁଇଧ ଏକେ ଉପର ଭାୟାଚାରି ସୋଉବମ କିୟାଽ ଗୈରୱ ଓଡୋଽ ଅଧିକାରାଽ କୁଈ ମୁନୁଡୂ ହୋକୀ ଵାଈଵାଈ ଚାହି‍। ହୋଡ଼ୋକୋ ମନରଂଗ ଓଡ଼ୋଃ ରେଅ୍ଥ [ ଯତ୍ର ଶାନ୍ତିନ୍ୟାୟସ୍ୱାତନ୍ତ୍ର୍ୟାଣାଂ ସର୍ୱେଷାମପି ଅଖଣ୍ଡିତାନାଞ୍ଚ ଅଭିଘୋଷଣାୟାଃ ଏତାଦୃଗ୍ଭେଦଂ ଚେଷ୍ଟାଂ ଗୌରବଦୃଶା | ଜନ୍ମକାଳରୁ ସେମାନଙ୍କର ସେମାନଙ୍କଠାରେ ଅଛି.</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Oriya-Regular 20pt</div>
+	<div class="box-text old-Noto-Sans-Oriya-Regular" dir="auto" style="font-size: 20pt">217 10 1948 10, . । (1948), " — – ' ; 360 ‐ : / ‘‘ = ~ 50 ? ?] ସଭମନ ଧତ ସଭେ ମାନସି ମଇର୍ଜାତ ଆର ହକଦାରି ଲେଇକେ ଆଁଗାସ ବୁଇଧ ଏକେ ଉପର ଭାୟାଚାରି ସୋଉବମ କିୟାଽ ଗୈରୱ ଓଡୋଽ ଅଧିକାରାଽ କୁଈ ମୁନୁଡୂ ହୋକୀ ଵାଈଵାଈ ଚାହି‍। ହୋଡ଼ୋକୋ ମନରଂଗ ଓଡ଼ୋଃ ରେଅ୍ଥ [ ଯତ୍ର ଶାନ୍ତିନ୍ୟାୟସ୍ୱାତନ୍ତ୍ର୍ୟାଣାଂ ସର୍ୱେଷାମପି ଅଖଣ୍ଡିତାନାଞ୍ଚ ଅଭିଘୋଷଣାୟାଃ ଏତାଦୃଗ୍ଭେଦଂ ଚେଷ୍ଟାଂ ଗୌରବଦୃଶା | ଜନ୍ମକାଳରୁ ସେମାନଙ୍କର ସେମାନଙ୍କଠାରେ ଅଛି.</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Oriya-ExtraCondensed-Bold 20pt</div>
+	<div class="box-text old-Noto-Sans-Oriya-ExtraCondensed-Bold" dir="auto" style="font-size: 20pt">217 10 1948 10, . । (1948), " — – ' ; 360 ‐ : / ‘‘ = ~ 50 ? ?] ସଭମନ ଧତ ସଭେ ମାନସି ମଇର୍ଜାତ ଆର ହକଦାରି ଲେଇକେ ଆଁଗାସ ବୁଇଧ ଏକେ ଉପର ଭାୟାଚାରି ସୋଉବମ କିୟାଽ ଗୈରୱ ଓଡୋଽ ଅଧିକାରାଽ କୁଈ ମୁନୁଡୂ ହୋକୀ ଵାଈଵାଈ ଚାହି‍। ହୋଡ଼ୋକୋ ମନରଂଗ ଓଡ଼ୋଃ ରେଅ୍ଥ [ ଯତ୍ର ଶାନ୍ତିନ୍ୟାୟସ୍ୱାତନ୍ତ୍ର୍ୟାଣାଂ ସର୍ୱେଷାମପି ଅଖଣ୍ଡିତାନାଞ୍ଚ ଅଭିଘୋଷଣାୟାଃ ଏତାଦୃଗ୍ଭେଦଂ ଚେଷ୍ଟାଂ ଗୌରବଦୃଶା | ଜନ୍ମକାଳରୁ ସେମାନଙ୍କର ସେମାନଙ୍କଠାରେ ଅଛି.</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Oriya-ExtraCondensed 20pt</div>
+	<div class="box-text old-Noto-Sans-Oriya-ExtraCondensed" dir="auto" style="font-size: 20pt">217 10 1948 10, . । (1948), " — – ' ; 360 ‐ : / ‘‘ = ~ 50 ? ?] ସଭମନ ଧତ ସଭେ ମାନସି ମଇର୍ଜାତ ଆର ହକଦାରି ଲେଇକେ ଆଁଗାସ ବୁଇଧ ଏକେ ଉପର ଭାୟାଚାରି ସୋଉବମ କିୟାଽ ଗୈରୱ ଓଡୋଽ ଅଧିକାରାଽ କୁଈ ମୁନୁଡୂ ହୋକୀ ଵାଈଵାଈ ଚାହି‍। ହୋଡ଼ୋକୋ ମନରଂଗ ଓଡ଼ୋଃ ରେଅ୍ଥ [ ଯତ୍ର ଶାନ୍ତିନ୍ୟାୟସ୍ୱାତନ୍ତ୍ର୍ୟାଣାଂ ସର୍ୱେଷାମପି ଅଖଣ୍ଡିତାନାଞ୍ଚ ଅଭିଘୋଷଣାୟାଃ ଏତାଦୃଗ୍ଭେଦଂ ଚେଷ୍ଟାଂ ଗୌରବଦୃଶା | ଜନ୍ମକାଳରୁ ସେମାନଙ୍କର ସେମାନଙ୍କଠାରେ ଅଛି.</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Oriya-Condensed 20pt</div>
+	<div class="box-text old-Noto-Sans-Oriya-Condensed" dir="auto" style="font-size: 20pt">217 10 1948 10, . । (1948), " — – ' ; 360 ‐ : / ‘‘ = ~ 50 ? ?] ସଭମନ ଧତ ସଭେ ମାନସି ମଇର୍ଜାତ ଆର ହକଦାରି ଲେଇକେ ଆଁଗାସ ବୁଇଧ ଏକେ ଉପର ଭାୟାଚାରି ସୋଉବମ କିୟାଽ ଗୈରୱ ଓଡୋଽ ଅଧିକାରାଽ କୁଈ ମୁନୁଡୂ ହୋକୀ ଵାଈଵାଈ ଚାହି‍। ହୋଡ଼ୋକୋ ମନରଂଗ ଓଡ଼ୋଃ ରେଅ୍ଥ [ ଯତ୍ର ଶାନ୍ତିନ୍ୟାୟସ୍ୱାତନ୍ତ୍ର୍ୟାଣାଂ ସର୍ୱେଷାମପି ଅଖଣ୍ଡିତାନାଞ୍ଚ ଅଭିଘୋଷଣାୟାଃ ଏତାଦୃଗ୍ଭେଦଂ ଚେଷ୍ଟାଂ ଗୌରବଦୃଶା | ଜନ୍ମକାଳରୁ ସେମାନଙ୍କର ସେମାନଙ୍କଠାରେ ଅଛି.</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Oriya-Regular 20pt</div>
+	<div class="box-text old-Noto-Sans-Oriya-Regular" dir="auto" style="font-size: 20pt">217 10 1948 10, . । (1948), " — – ' ; 360 ‐ : / ‘‘ = ~ 50 ? ?] ସଭମନ ଧତ ସଭେ ମାନସି ମଇର୍ଜାତ ଆର ହକଦାରି ଲେଇକେ ଆଁଗାସ ବୁଇଧ ଏକେ ଉପର ଭାୟାଚାରି ସୋଉବମ କିୟାଽ ଗୈରୱ ଓଡୋଽ ଅଧିକାରାଽ କୁଈ ମୁନୁଡୂ ହୋକୀ ଵାଈଵାଈ ଚାହି‍। ହୋଡ଼ୋକୋ ମନରଂଗ ଓଡ଼ୋଃ ରେଅ୍ଥ [ ଯତ୍ର ଶାନ୍ତିନ୍ୟାୟସ୍ୱାତନ୍ତ୍ର୍ୟାଣାଂ ସର୍ୱେଷାମପି ଅଖଣ୍ଡିତାନାଞ୍ଚ ଅଭିଘୋଷଣାୟାଃ ଏତାଦୃଗ୍ଭେଦଂ ଚେଷ୍ଟାଂ ଗୌରବଦୃଶା | ଜନ୍ମକାଳରୁ ସେମାନଙ୍କର ସେମାନଙ୍କଠାରେ ଅଛି.</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Oriya-Bold 20pt</div>
+	<div class="box-text old-Noto-Sans-Oriya-Bold" dir="auto" style="font-size: 20pt">217 10 1948 10, . । (1948), " — – ' ; 360 ‐ : / ‘‘ = ~ 50 ? ?] ସଭମନ ଧତ ସଭେ ମାନସି ମଇର୍ଜାତ ଆର ହକଦାରି ଲେଇକେ ଆଁଗାସ ବୁଇଧ ଏକେ ଉପର ଭାୟାଚାରି ସୋଉବମ କିୟାଽ ଗୈରୱ ଓଡୋଽ ଅଧିକାରାଽ କୁଈ ମୁନୁଡୂ ହୋକୀ ଵାଈଵାଈ ଚାହି‍। ହୋଡ଼ୋକୋ ମନରଂଗ ଓଡ଼ୋଃ ରେଅ୍ଥ [ ଯତ୍ର ଶାନ୍ତିନ୍ୟାୟସ୍ୱାତନ୍ତ୍ର୍ୟାଣାଂ ସର୍ୱେଷାମପି ଅଖଣ୍ଡିତାନାଞ୍ଚ ଅଭିଘୋଷଣାୟାଃ ଏତାଦୃଗ୍ଭେଦଂ ଚେଷ୍ଟାଂ ଗୌରବଦୃଶା | ଜନ୍ମକାଳରୁ ସେମାନଙ୍କର ସେମାନଙ୍କଠାରେ ଅଛି.</div>
+    </div>
+  
+
+    </div>
+</body>
+	<script>
+
+	POSITION = "old"
+	fontToggle = document.getElementById("font-toggle")
+	function switchFonts() {
+	  items = document.getElementsByClassName("box");
+	  console.log("Click from "+POSITION)
+	  
+	  if (POSITION === "old") {
+	  POSITION = "new"
+	  for (item of items) {
+	    item.firstElementChild.textContent = item.firstElementChild.textContent.replace("old", "new")
+            item.lastElementChild.className = item.lastElementChild.className.replace("old", "new")
+	    fontToggle.textContent = "new"
+	  }
+
+	  } else {
+	  POSITION = "old"
+	  for (item of items) {
+	    item.firstElementChild.textContent = item.firstElementChild.textContent.replace("new", "old")
+            item.lastElementChild.className = item.lastElementChild.className.replace("new", "old")
+	    fontToggle.textContent = "old"
+	  }
+	}
+	}
+	if (fontToggle !== null) {
+		fontToggle.addEventListener("click", switchFonts);
+	}
+
+    const divs = document.querySelectorAll('.node');
+    divs.forEach(el => el.addEventListener('click', event => {
+    var children = event.target.querySelectorAll(".node");
+    children.forEach(function(e) {
+        if (e.style.display === "none") {
+            e.style.display = "block";
+        } else {
+            e.style.display = "none";
+        }
+    })
+    }));
+    
+	// break text so that no reflow happens
+async function breakText() {
+	boxContent = document.getElementsByClassName("box-text")
+	for (let box of boxContent) {
+		switchFonts()
+		await sleep(1)
+		break1 = getLineBreaks(box)
+		switchFonts()
+		await sleep(1)
+		break2 = getLineBreaks(box)
+
+		if (break1.length >= break2.length) {
+		breaks = break1
+		} else {
+		breaks = break2
+		}
+		insertBreaks(box, breaks)
+		box.style.whiteSpace = "pre"
+		console.log("set to pre")
+	}
+	}
+
+function getLineBreaks(elem) {
+	const nodes = grabTextNodes(elem);
+	for (const node of nodes) { // each node is a big block of text
+		let rangeIndex = 1;
+		let textIndex = 0;
+		let nodeText = node.textContent;
+		const textLength = nodeText.length;
+
+		linebreaks = []
+		prevTop = 0;
+		while (rangeIndex <= textLength) {
+			const range = document.createRange();
+			range.setStart(node, rangeIndex-1);
+			range.setEnd(node, rangeIndex)
+			currentTop = range.getBoundingClientRect().top
+		if (currentTop > prevTop) {
+			linebreaks.push(rangeIndex-2)
+		}
+		rangeIndex += 1;
+		prevTop = currentTop
+		}
+	}
+	return linebreaks
+}
+
+function grabTextNodes(elem) {
+	const walker = document.createTreeWalker(elem, NodeFilter.SHOW_TEXT, null);
+	const nodes = [];
+	while (walker.nextNode()) {
+		nodes.push(walker.currentNode);
+	}
+	return nodes;
+}
+
+	function sleep(ms) {
+		return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+
+function insertBreaks(node, breaks) {
+	console.log(node, breaks)
+	newText = ""
+	currentText = node.textContent
+	for (i=0; i<currentText.length; i++) {
+		if (breaks.includes(i)) {
+		newText += "<br>"
+		} else {
+		newText += currentText[i]
+		}
+	}
+	node.innerHTML = newText
+}
+
+	if (fontToggle !== null) {
+		breakText()
+}
+
+	
+
+
+    </script>
+</html>
