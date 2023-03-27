@@ -10,9 +10,12 @@
         html{
 	  font-family: sans-serif;
 	}
+    @font-face {
+        font-family: "Adobe NotDef";
+        src: url(https://cdn.jsdelivr.net/gh/adobe-fonts/adobe-notdef/AND-Regular.ttf);
+    }
 	.box-title{
 	  width: 100%;
-	  float: left;
 	  font-size: 8pt;
 	  font-weight: 700;
 	  border-top: 1px solid black;
@@ -26,7 +29,6 @@
 	  float: left;
 	}
 	.box-text{
-		float: left;
 	}
 	
 	#nav{
@@ -35,19 +37,21 @@
 	  z-index: 100;
 	}
 	#font-toggle{
-	  display: block;
-	  font-weight: 700;
-	  cursor: pointer;
-	  -webkit-user-select: none; /* Safari */        
-	  -moz-user-select: none; /* Firefox */
-          -ms-user-select: none; /* IE10+/Edge */
-	  user-select: none; /* Standard */
-	  text-align: center;
-	  color: white;
-	  background-color: black;
-	  width: 50px;
-	  display: block;
-	  padding: 10px;
+	}
+	.nav-item{
+		display: block;
+		cursor: pointer;
+		-webkit-user-select: none; /* Safari */        
+		-moz-user-select: none; /* Firefox */
+			-ms-user-select: none; /* IE10+/Edge */
+		user-select: none; /* Standard */
+		text-align: center;
+		color: white;
+		background-color: black;
+		display: block;
+		font-size: 9pt;
+		padding: 5px;
+		margin: 2px;
 	}
 	.tooltip {
 	position: relative;
@@ -136,46 +140,6 @@
 
 	  
 	    @font-face{
-    src: url(old-NotoSerifOriya-Medium.ttf);
-    font-family: "old Noto Serif Oriya";
-    font-weight: 500;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(old-NotoSerifOriya-Bold.ttf);
-    font-family: "old Noto Serif Oriya";
-    font-weight: 700;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(old-NotoSerifOriya-Regular.ttf);
-    font-family: "old Noto Serif Oriya";
-    font-weight: 400;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(old-NotoSerifOriya-SemiBold.ttf);
-    font-family: "old Noto Serif Oriya";
-    font-weight: 600;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(old-NotoSerifOriya[wght].ttf);
-    font-family: "old Noto Serif Oriya";
-    font-weight: 200 700;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
     src: url(old-NotoSerifOriya[wght].ttf);
     font-family: "old Noto Serif Oriya";
     font-weight: 400 700;
@@ -186,33 +150,9 @@
 
 	  
 	    @font-face{
-    src: url(new-NotoSerifOriya-Medium.ttf);
+    src: url(new-NotoSerifOriya[wght].ttf);
     font-family: "new Noto Serif Oriya";
-    font-weight: 500;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(new-NotoSerifOriya-SemiBold.ttf);
-    font-family: "new Noto Serif Oriya";
-    font-weight: 600;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(new-NotoSerifOriya-Regular.ttf);
-    font-family: "new Noto Serif Oriya";
-    font-weight: 400;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(new-NotoSerifOriya-Bold.ttf);
-    font-family: "new Noto Serif Oriya";
-    font-weight: 700;
+    font-weight: 400 700;
     
     font-style: normal;
 }
@@ -221,85 +161,29 @@
 	  
 
 	  
-	    .old-Noto-Serif-Oriya-Medium{
-    font-family: "old Noto Serif Oriya";
-    font-weight: 500;
-    font-stretch: 100%;
-    font-style: normal;
-}
-	  
-	    .old-Noto-Serif-Oriya-Bold{
-    font-family: "old Noto Serif Oriya";
-    font-weight: 700;
-    font-stretch: 100%;
-    font-style: normal;
-}
-	  
-	    .old-Noto-Serif-Oriya-Regular{
-    font-family: "old Noto Serif Oriya";
-    font-weight: 400;
-    font-stretch: 100%;
-    font-style: normal;
-}
-	  
-	    .old-Noto-Serif-Oriya-SemiBold{
-    font-family: "old Noto Serif Oriya";
-    font-weight: 600;
-    font-stretch: 100%;
-    font-style: normal;
-}
-	  
-	    .old-Noto-Serif-Oriya-Regular{
-    font-family: "old Noto Serif Oriya";
+	    .old-Regular{
+    font-family: "old Noto Serif Oriya", "Adobe NotDef";
     font-weight: 400.0;
     
     font-style: normal;
 }
 	  
-	    .old-Noto-Serif-Oriya-Medium{
-    font-family: "old Noto Serif Oriya";
+	    .old-Medium{
+    font-family: "old Noto Serif Oriya", "Adobe NotDef";
     font-weight: 500.0;
     
     font-style: normal;
 }
 	  
-	    .old-Noto-Serif-Oriya-SemiBold{
-    font-family: "old Noto Serif Oriya";
+	    .old-SemiBold{
+    font-family: "old Noto Serif Oriya", "Adobe NotDef";
     font-weight: 600.0;
     
     font-style: normal;
 }
 	  
-	    .old-Noto-Serif-Oriya-Bold{
-    font-family: "old Noto Serif Oriya";
-    font-weight: 700.0;
-    
-    font-style: normal;
-}
-	  
-	    .old-Noto-Serif-Oriya-Regular{
-    font-family: "old Noto Serif Oriya";
-    font-weight: 400.0;
-    
-    font-style: normal;
-}
-	  
-	    .old-Noto-Serif-Oriya-Medium{
-    font-family: "old Noto Serif Oriya";
-    font-weight: 500.0;
-    
-    font-style: normal;
-}
-	  
-	    .old-Noto-Serif-Oriya-SemiBold{
-    font-family: "old Noto Serif Oriya";
-    font-weight: 600.0;
-    
-    font-style: normal;
-}
-	  
-	    .old-Noto-Serif-Oriya-Bold{
-    font-family: "old Noto Serif Oriya";
+	    .old-Bold{
+    font-family: "old Noto Serif Oriya", "Adobe NotDef";
     font-weight: 700.0;
     
     font-style: normal;
@@ -307,31 +191,31 @@
 	  
 
 	  
-	    .new-Noto-Serif-Oriya-Medium{
-    font-family: "new Noto Serif Oriya";
-    font-weight: 500;
-    font-stretch: 100%;
+	    .new-Regular{
+    font-family: "new Noto Serif Oriya", "Adobe NotDef";
+    font-weight: 400.0;
+    
     font-style: normal;
 }
 	  
-	    .new-Noto-Serif-Oriya-SemiBold{
-    font-family: "new Noto Serif Oriya";
-    font-weight: 600;
-    font-stretch: 100%;
+	    .new-Medium{
+    font-family: "new Noto Serif Oriya", "Adobe NotDef";
+    font-weight: 500.0;
+    
     font-style: normal;
 }
 	  
-	    .new-Noto-Serif-Oriya-Regular{
-    font-family: "new Noto Serif Oriya";
-    font-weight: 400;
-    font-stretch: 100%;
+	    .new-SemiBold{
+    font-family: "new Noto Serif Oriya", "Adobe NotDef";
+    font-weight: 600.0;
+    
     font-style: normal;
 }
 	  
-	    .new-Noto-Serif-Oriya-Bold{
-    font-family: "new Noto Serif Oriya";
-    font-weight: 700;
-    font-stretch: 100%;
+	    .new-Bold{
+    font-family: "new Noto Serif Oriya", "Adobe NotDef";
+    font-weight: 700.0;
+    
     font-style: normal;
 }
 	  
@@ -341,11 +225,12 @@
     </style>
 </head>
 <body>
-    
     <div id="nav">
-        <div id="font-toggle">old</div>
-     </div>
-    
+		
+			<div class="nav-item" id="font-toggle">old</div>
+		
+		
+	</div>
     <div id="content">
 	<h2>
 <b>Waterfall</b>
@@ -354,8 +239,8 @@
   
     
       <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Medium 7pt</div>
-	<span class="old-Noto-Serif-Oriya-Medium" style="font-size: 7pt">
+	<div class="box-title">old-Regular 7pt</div>
+	<span class="old-Regular" style="font-size: 7pt">
             QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
             quick wafting zephyrs vex bold jim.<br>
             $14.95<br>
@@ -363,8 +248,8 @@
        </div>
     
       <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Medium 10pt</div>
-	<span class="old-Noto-Serif-Oriya-Medium" style="font-size: 10pt">
+	<div class="box-title">old-Regular 10pt</div>
+	<span class="old-Regular" style="font-size: 10pt">
             QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
             quick wafting zephyrs vex bold jim.<br>
             $14.95<br>
@@ -372,8 +257,8 @@
        </div>
     
       <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Medium 11pt</div>
-	<span class="old-Noto-Serif-Oriya-Medium" style="font-size: 11pt">
+	<div class="box-title">old-Regular 11pt</div>
+	<span class="old-Regular" style="font-size: 11pt">
             QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
             quick wafting zephyrs vex bold jim.<br>
             $14.95<br>
@@ -381,8 +266,8 @@
        </div>
     
       <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Medium 12pt</div>
-	<span class="old-Noto-Serif-Oriya-Medium" style="font-size: 12pt">
+	<div class="box-title">old-Regular 12pt</div>
+	<span class="old-Regular" style="font-size: 12pt">
             QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
             quick wafting zephyrs vex bold jim.<br>
             $14.95<br>
@@ -390,8 +275,8 @@
        </div>
     
       <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Medium 14pt</div>
-	<span class="old-Noto-Serif-Oriya-Medium" style="font-size: 14pt">
+	<div class="box-title">old-Regular 14pt</div>
+	<span class="old-Regular" style="font-size: 14pt">
             QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
             quick wafting zephyrs vex bold jim.<br>
             $14.95<br>
@@ -399,8 +284,8 @@
        </div>
     
       <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Medium 16pt</div>
-	<span class="old-Noto-Serif-Oriya-Medium" style="font-size: 16pt">
+	<div class="box-title">old-Regular 16pt</div>
+	<span class="old-Regular" style="font-size: 16pt">
             QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
             quick wafting zephyrs vex bold jim.<br>
             $14.95<br>
@@ -408,8 +293,8 @@
        </div>
     
       <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Medium 18pt</div>
-	<span class="old-Noto-Serif-Oriya-Medium" style="font-size: 18pt">
+	<div class="box-title">old-Regular 18pt</div>
+	<span class="old-Regular" style="font-size: 18pt">
             QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
             quick wafting zephyrs vex bold jim.<br>
             $14.95<br>
@@ -417,8 +302,8 @@
        </div>
     
       <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Medium 21pt</div>
-	<span class="old-Noto-Serif-Oriya-Medium" style="font-size: 21pt">
+	<div class="box-title">old-Regular 21pt</div>
+	<span class="old-Regular" style="font-size: 21pt">
             QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
             quick wafting zephyrs vex bold jim.<br>
             $14.95<br>
@@ -426,8 +311,8 @@
        </div>
     
       <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Medium 27pt</div>
-	<span class="old-Noto-Serif-Oriya-Medium" style="font-size: 27pt">
+	<div class="box-title">old-Regular 27pt</div>
+	<span class="old-Regular" style="font-size: 27pt">
             QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
             quick wafting zephyrs vex bold jim.<br>
             $14.95<br>
@@ -435,100 +320,8 @@
        </div>
     
       <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Medium 32pt</div>
-	<span class="old-Noto-Serif-Oriya-Medium" style="font-size: 32pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-  
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Bold 7pt</div>
-	<span class="old-Noto-Serif-Oriya-Bold" style="font-size: 7pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Bold 10pt</div>
-	<span class="old-Noto-Serif-Oriya-Bold" style="font-size: 10pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Bold 11pt</div>
-	<span class="old-Noto-Serif-Oriya-Bold" style="font-size: 11pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Bold 12pt</div>
-	<span class="old-Noto-Serif-Oriya-Bold" style="font-size: 12pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Bold 14pt</div>
-	<span class="old-Noto-Serif-Oriya-Bold" style="font-size: 14pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Bold 16pt</div>
-	<span class="old-Noto-Serif-Oriya-Bold" style="font-size: 16pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Bold 18pt</div>
-	<span class="old-Noto-Serif-Oriya-Bold" style="font-size: 18pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Bold 21pt</div>
-	<span class="old-Noto-Serif-Oriya-Bold" style="font-size: 21pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Bold 27pt</div>
-	<span class="old-Noto-Serif-Oriya-Bold" style="font-size: 27pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Bold 32pt</div>
-	<span class="old-Noto-Serif-Oriya-Bold" style="font-size: 32pt">
+	<div class="box-title">old-Regular 32pt</div>
+	<span class="old-Regular" style="font-size: 32pt">
             QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
             quick wafting zephyrs vex bold jim.<br>
             $14.95<br>
@@ -538,8 +331,8 @@
   
     
       <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Regular 7pt</div>
-	<span class="old-Noto-Serif-Oriya-Regular" style="font-size: 7pt">
+	<div class="box-title">old-Medium 7pt</div>
+	<span class="old-Medium" style="font-size: 7pt">
             QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
             quick wafting zephyrs vex bold jim.<br>
             $14.95<br>
@@ -547,8 +340,8 @@
        </div>
     
       <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Regular 10pt</div>
-	<span class="old-Noto-Serif-Oriya-Regular" style="font-size: 10pt">
+	<div class="box-title">old-Medium 10pt</div>
+	<span class="old-Medium" style="font-size: 10pt">
             QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
             quick wafting zephyrs vex bold jim.<br>
             $14.95<br>
@@ -556,8 +349,8 @@
        </div>
     
       <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Regular 11pt</div>
-	<span class="old-Noto-Serif-Oriya-Regular" style="font-size: 11pt">
+	<div class="box-title">old-Medium 11pt</div>
+	<span class="old-Medium" style="font-size: 11pt">
             QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
             quick wafting zephyrs vex bold jim.<br>
             $14.95<br>
@@ -565,8 +358,8 @@
        </div>
     
       <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Regular 12pt</div>
-	<span class="old-Noto-Serif-Oriya-Regular" style="font-size: 12pt">
+	<div class="box-title">old-Medium 12pt</div>
+	<span class="old-Medium" style="font-size: 12pt">
             QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
             quick wafting zephyrs vex bold jim.<br>
             $14.95<br>
@@ -574,8 +367,8 @@
        </div>
     
       <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Regular 14pt</div>
-	<span class="old-Noto-Serif-Oriya-Regular" style="font-size: 14pt">
+	<div class="box-title">old-Medium 14pt</div>
+	<span class="old-Medium" style="font-size: 14pt">
             QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
             quick wafting zephyrs vex bold jim.<br>
             $14.95<br>
@@ -583,8 +376,8 @@
        </div>
     
       <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Regular 16pt</div>
-	<span class="old-Noto-Serif-Oriya-Regular" style="font-size: 16pt">
+	<div class="box-title">old-Medium 16pt</div>
+	<span class="old-Medium" style="font-size: 16pt">
             QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
             quick wafting zephyrs vex bold jim.<br>
             $14.95<br>
@@ -592,8 +385,8 @@
        </div>
     
       <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Regular 18pt</div>
-	<span class="old-Noto-Serif-Oriya-Regular" style="font-size: 18pt">
+	<div class="box-title">old-Medium 18pt</div>
+	<span class="old-Medium" style="font-size: 18pt">
             QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
             quick wafting zephyrs vex bold jim.<br>
             $14.95<br>
@@ -601,8 +394,8 @@
        </div>
     
       <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Regular 21pt</div>
-	<span class="old-Noto-Serif-Oriya-Regular" style="font-size: 21pt">
+	<div class="box-title">old-Medium 21pt</div>
+	<span class="old-Medium" style="font-size: 21pt">
             QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
             quick wafting zephyrs vex bold jim.<br>
             $14.95<br>
@@ -610,8 +403,8 @@
        </div>
     
       <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Regular 27pt</div>
-	<span class="old-Noto-Serif-Oriya-Regular" style="font-size: 27pt">
+	<div class="box-title">old-Medium 27pt</div>
+	<span class="old-Medium" style="font-size: 27pt">
             QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
             quick wafting zephyrs vex bold jim.<br>
             $14.95<br>
@@ -619,100 +412,8 @@
        </div>
     
       <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Regular 32pt</div>
-	<span class="old-Noto-Serif-Oriya-Regular" style="font-size: 32pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-  
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-SemiBold 7pt</div>
-	<span class="old-Noto-Serif-Oriya-SemiBold" style="font-size: 7pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-SemiBold 10pt</div>
-	<span class="old-Noto-Serif-Oriya-SemiBold" style="font-size: 10pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-SemiBold 11pt</div>
-	<span class="old-Noto-Serif-Oriya-SemiBold" style="font-size: 11pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-SemiBold 12pt</div>
-	<span class="old-Noto-Serif-Oriya-SemiBold" style="font-size: 12pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-SemiBold 14pt</div>
-	<span class="old-Noto-Serif-Oriya-SemiBold" style="font-size: 14pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-SemiBold 16pt</div>
-	<span class="old-Noto-Serif-Oriya-SemiBold" style="font-size: 16pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-SemiBold 18pt</div>
-	<span class="old-Noto-Serif-Oriya-SemiBold" style="font-size: 18pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-SemiBold 21pt</div>
-	<span class="old-Noto-Serif-Oriya-SemiBold" style="font-size: 21pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-SemiBold 27pt</div>
-	<span class="old-Noto-Serif-Oriya-SemiBold" style="font-size: 27pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-SemiBold 32pt</div>
-	<span class="old-Noto-Serif-Oriya-SemiBold" style="font-size: 32pt">
+	<div class="box-title">old-Medium 32pt</div>
+	<span class="old-Medium" style="font-size: 32pt">
             QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
             quick wafting zephyrs vex bold jim.<br>
             $14.95<br>
@@ -722,8 +423,8 @@
   
     
       <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Regular 7pt</div>
-	<span class="old-Noto-Serif-Oriya-Regular" style="font-size: 7pt">
+	<div class="box-title">old-SemiBold 7pt</div>
+	<span class="old-SemiBold" style="font-size: 7pt">
             QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
             quick wafting zephyrs vex bold jim.<br>
             $14.95<br>
@@ -731,8 +432,8 @@
        </div>
     
       <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Regular 10pt</div>
-	<span class="old-Noto-Serif-Oriya-Regular" style="font-size: 10pt">
+	<div class="box-title">old-SemiBold 10pt</div>
+	<span class="old-SemiBold" style="font-size: 10pt">
             QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
             quick wafting zephyrs vex bold jim.<br>
             $14.95<br>
@@ -740,8 +441,8 @@
        </div>
     
       <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Regular 11pt</div>
-	<span class="old-Noto-Serif-Oriya-Regular" style="font-size: 11pt">
+	<div class="box-title">old-SemiBold 11pt</div>
+	<span class="old-SemiBold" style="font-size: 11pt">
             QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
             quick wafting zephyrs vex bold jim.<br>
             $14.95<br>
@@ -749,8 +450,8 @@
        </div>
     
       <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Regular 12pt</div>
-	<span class="old-Noto-Serif-Oriya-Regular" style="font-size: 12pt">
+	<div class="box-title">old-SemiBold 12pt</div>
+	<span class="old-SemiBold" style="font-size: 12pt">
             QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
             quick wafting zephyrs vex bold jim.<br>
             $14.95<br>
@@ -758,8 +459,8 @@
        </div>
     
       <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Regular 14pt</div>
-	<span class="old-Noto-Serif-Oriya-Regular" style="font-size: 14pt">
+	<div class="box-title">old-SemiBold 14pt</div>
+	<span class="old-SemiBold" style="font-size: 14pt">
             QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
             quick wafting zephyrs vex bold jim.<br>
             $14.95<br>
@@ -767,8 +468,8 @@
        </div>
     
       <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Regular 16pt</div>
-	<span class="old-Noto-Serif-Oriya-Regular" style="font-size: 16pt">
+	<div class="box-title">old-SemiBold 16pt</div>
+	<span class="old-SemiBold" style="font-size: 16pt">
             QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
             quick wafting zephyrs vex bold jim.<br>
             $14.95<br>
@@ -776,8 +477,8 @@
        </div>
     
       <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Regular 18pt</div>
-	<span class="old-Noto-Serif-Oriya-Regular" style="font-size: 18pt">
+	<div class="box-title">old-SemiBold 18pt</div>
+	<span class="old-SemiBold" style="font-size: 18pt">
             QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
             quick wafting zephyrs vex bold jim.<br>
             $14.95<br>
@@ -785,8 +486,8 @@
        </div>
     
       <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Regular 21pt</div>
-	<span class="old-Noto-Serif-Oriya-Regular" style="font-size: 21pt">
+	<div class="box-title">old-SemiBold 21pt</div>
+	<span class="old-SemiBold" style="font-size: 21pt">
             QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
             quick wafting zephyrs vex bold jim.<br>
             $14.95<br>
@@ -794,8 +495,8 @@
        </div>
     
       <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Regular 27pt</div>
-	<span class="old-Noto-Serif-Oriya-Regular" style="font-size: 27pt">
+	<div class="box-title">old-SemiBold 27pt</div>
+	<span class="old-SemiBold" style="font-size: 27pt">
             QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
             quick wafting zephyrs vex bold jim.<br>
             $14.95<br>
@@ -803,100 +504,8 @@
        </div>
     
       <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Regular 32pt</div>
-	<span class="old-Noto-Serif-Oriya-Regular" style="font-size: 32pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-  
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Medium 7pt</div>
-	<span class="old-Noto-Serif-Oriya-Medium" style="font-size: 7pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Medium 10pt</div>
-	<span class="old-Noto-Serif-Oriya-Medium" style="font-size: 10pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Medium 11pt</div>
-	<span class="old-Noto-Serif-Oriya-Medium" style="font-size: 11pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Medium 12pt</div>
-	<span class="old-Noto-Serif-Oriya-Medium" style="font-size: 12pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Medium 14pt</div>
-	<span class="old-Noto-Serif-Oriya-Medium" style="font-size: 14pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Medium 16pt</div>
-	<span class="old-Noto-Serif-Oriya-Medium" style="font-size: 16pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Medium 18pt</div>
-	<span class="old-Noto-Serif-Oriya-Medium" style="font-size: 18pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Medium 21pt</div>
-	<span class="old-Noto-Serif-Oriya-Medium" style="font-size: 21pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Medium 27pt</div>
-	<span class="old-Noto-Serif-Oriya-Medium" style="font-size: 27pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Medium 32pt</div>
-	<span class="old-Noto-Serif-Oriya-Medium" style="font-size: 32pt">
+	<div class="box-title">old-SemiBold 32pt</div>
+	<span class="old-SemiBold" style="font-size: 32pt">
             QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
             quick wafting zephyrs vex bold jim.<br>
             $14.95<br>
@@ -906,8 +515,8 @@
   
     
       <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-SemiBold 7pt</div>
-	<span class="old-Noto-Serif-Oriya-SemiBold" style="font-size: 7pt">
+	<div class="box-title">old-Bold 7pt</div>
+	<span class="old-Bold" style="font-size: 7pt">
             QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
             quick wafting zephyrs vex bold jim.<br>
             $14.95<br>
@@ -915,8 +524,8 @@
        </div>
     
       <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-SemiBold 10pt</div>
-	<span class="old-Noto-Serif-Oriya-SemiBold" style="font-size: 10pt">
+	<div class="box-title">old-Bold 10pt</div>
+	<span class="old-Bold" style="font-size: 10pt">
             QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
             quick wafting zephyrs vex bold jim.<br>
             $14.95<br>
@@ -924,8 +533,8 @@
        </div>
     
       <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-SemiBold 11pt</div>
-	<span class="old-Noto-Serif-Oriya-SemiBold" style="font-size: 11pt">
+	<div class="box-title">old-Bold 11pt</div>
+	<span class="old-Bold" style="font-size: 11pt">
             QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
             quick wafting zephyrs vex bold jim.<br>
             $14.95<br>
@@ -933,8 +542,8 @@
        </div>
     
       <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-SemiBold 12pt</div>
-	<span class="old-Noto-Serif-Oriya-SemiBold" style="font-size: 12pt">
+	<div class="box-title">old-Bold 12pt</div>
+	<span class="old-Bold" style="font-size: 12pt">
             QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
             quick wafting zephyrs vex bold jim.<br>
             $14.95<br>
@@ -942,8 +551,8 @@
        </div>
     
       <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-SemiBold 14pt</div>
-	<span class="old-Noto-Serif-Oriya-SemiBold" style="font-size: 14pt">
+	<div class="box-title">old-Bold 14pt</div>
+	<span class="old-Bold" style="font-size: 14pt">
             QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
             quick wafting zephyrs vex bold jim.<br>
             $14.95<br>
@@ -951,8 +560,8 @@
        </div>
     
       <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-SemiBold 16pt</div>
-	<span class="old-Noto-Serif-Oriya-SemiBold" style="font-size: 16pt">
+	<div class="box-title">old-Bold 16pt</div>
+	<span class="old-Bold" style="font-size: 16pt">
             QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
             quick wafting zephyrs vex bold jim.<br>
             $14.95<br>
@@ -960,8 +569,8 @@
        </div>
     
       <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-SemiBold 18pt</div>
-	<span class="old-Noto-Serif-Oriya-SemiBold" style="font-size: 18pt">
+	<div class="box-title">old-Bold 18pt</div>
+	<span class="old-Bold" style="font-size: 18pt">
             QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
             quick wafting zephyrs vex bold jim.<br>
             $14.95<br>
@@ -969,8 +578,8 @@
        </div>
     
       <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-SemiBold 21pt</div>
-	<span class="old-Noto-Serif-Oriya-SemiBold" style="font-size: 21pt">
+	<div class="box-title">old-Bold 21pt</div>
+	<span class="old-Bold" style="font-size: 21pt">
             QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
             quick wafting zephyrs vex bold jim.<br>
             $14.95<br>
@@ -978,8 +587,8 @@
        </div>
     
       <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-SemiBold 27pt</div>
-	<span class="old-Noto-Serif-Oriya-SemiBold" style="font-size: 27pt">
+	<div class="box-title">old-Bold 27pt</div>
+	<span class="old-Bold" style="font-size: 27pt">
             QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
             quick wafting zephyrs vex bold jim.<br>
             $14.95<br>
@@ -987,468 +596,8 @@
        </div>
     
       <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-SemiBold 32pt</div>
-	<span class="old-Noto-Serif-Oriya-SemiBold" style="font-size: 32pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-  
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Bold 7pt</div>
-	<span class="old-Noto-Serif-Oriya-Bold" style="font-size: 7pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Bold 10pt</div>
-	<span class="old-Noto-Serif-Oriya-Bold" style="font-size: 10pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Bold 11pt</div>
-	<span class="old-Noto-Serif-Oriya-Bold" style="font-size: 11pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Bold 12pt</div>
-	<span class="old-Noto-Serif-Oriya-Bold" style="font-size: 12pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Bold 14pt</div>
-	<span class="old-Noto-Serif-Oriya-Bold" style="font-size: 14pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Bold 16pt</div>
-	<span class="old-Noto-Serif-Oriya-Bold" style="font-size: 16pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Bold 18pt</div>
-	<span class="old-Noto-Serif-Oriya-Bold" style="font-size: 18pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Bold 21pt</div>
-	<span class="old-Noto-Serif-Oriya-Bold" style="font-size: 21pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Bold 27pt</div>
-	<span class="old-Noto-Serif-Oriya-Bold" style="font-size: 27pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Bold 32pt</div>
-	<span class="old-Noto-Serif-Oriya-Bold" style="font-size: 32pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-  
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Regular 7pt</div>
-	<span class="old-Noto-Serif-Oriya-Regular" style="font-size: 7pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Regular 10pt</div>
-	<span class="old-Noto-Serif-Oriya-Regular" style="font-size: 10pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Regular 11pt</div>
-	<span class="old-Noto-Serif-Oriya-Regular" style="font-size: 11pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Regular 12pt</div>
-	<span class="old-Noto-Serif-Oriya-Regular" style="font-size: 12pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Regular 14pt</div>
-	<span class="old-Noto-Serif-Oriya-Regular" style="font-size: 14pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Regular 16pt</div>
-	<span class="old-Noto-Serif-Oriya-Regular" style="font-size: 16pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Regular 18pt</div>
-	<span class="old-Noto-Serif-Oriya-Regular" style="font-size: 18pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Regular 21pt</div>
-	<span class="old-Noto-Serif-Oriya-Regular" style="font-size: 21pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Regular 27pt</div>
-	<span class="old-Noto-Serif-Oriya-Regular" style="font-size: 27pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Regular 32pt</div>
-	<span class="old-Noto-Serif-Oriya-Regular" style="font-size: 32pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-  
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Medium 7pt</div>
-	<span class="old-Noto-Serif-Oriya-Medium" style="font-size: 7pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Medium 10pt</div>
-	<span class="old-Noto-Serif-Oriya-Medium" style="font-size: 10pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Medium 11pt</div>
-	<span class="old-Noto-Serif-Oriya-Medium" style="font-size: 11pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Medium 12pt</div>
-	<span class="old-Noto-Serif-Oriya-Medium" style="font-size: 12pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Medium 14pt</div>
-	<span class="old-Noto-Serif-Oriya-Medium" style="font-size: 14pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Medium 16pt</div>
-	<span class="old-Noto-Serif-Oriya-Medium" style="font-size: 16pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Medium 18pt</div>
-	<span class="old-Noto-Serif-Oriya-Medium" style="font-size: 18pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Medium 21pt</div>
-	<span class="old-Noto-Serif-Oriya-Medium" style="font-size: 21pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Medium 27pt</div>
-	<span class="old-Noto-Serif-Oriya-Medium" style="font-size: 27pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Medium 32pt</div>
-	<span class="old-Noto-Serif-Oriya-Medium" style="font-size: 32pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-  
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-SemiBold 7pt</div>
-	<span class="old-Noto-Serif-Oriya-SemiBold" style="font-size: 7pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-SemiBold 10pt</div>
-	<span class="old-Noto-Serif-Oriya-SemiBold" style="font-size: 10pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-SemiBold 11pt</div>
-	<span class="old-Noto-Serif-Oriya-SemiBold" style="font-size: 11pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-SemiBold 12pt</div>
-	<span class="old-Noto-Serif-Oriya-SemiBold" style="font-size: 12pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-SemiBold 14pt</div>
-	<span class="old-Noto-Serif-Oriya-SemiBold" style="font-size: 14pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-SemiBold 16pt</div>
-	<span class="old-Noto-Serif-Oriya-SemiBold" style="font-size: 16pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-SemiBold 18pt</div>
-	<span class="old-Noto-Serif-Oriya-SemiBold" style="font-size: 18pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-SemiBold 21pt</div>
-	<span class="old-Noto-Serif-Oriya-SemiBold" style="font-size: 21pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-SemiBold 27pt</div>
-	<span class="old-Noto-Serif-Oriya-SemiBold" style="font-size: 27pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-SemiBold 32pt</div>
-	<span class="old-Noto-Serif-Oriya-SemiBold" style="font-size: 32pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-  
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Bold 7pt</div>
-	<span class="old-Noto-Serif-Oriya-Bold" style="font-size: 7pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Bold 10pt</div>
-	<span class="old-Noto-Serif-Oriya-Bold" style="font-size: 10pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Bold 11pt</div>
-	<span class="old-Noto-Serif-Oriya-Bold" style="font-size: 11pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Bold 12pt</div>
-	<span class="old-Noto-Serif-Oriya-Bold" style="font-size: 12pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Bold 14pt</div>
-	<span class="old-Noto-Serif-Oriya-Bold" style="font-size: 14pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Bold 16pt</div>
-	<span class="old-Noto-Serif-Oriya-Bold" style="font-size: 16pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Bold 18pt</div>
-	<span class="old-Noto-Serif-Oriya-Bold" style="font-size: 18pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Bold 21pt</div>
-	<span class="old-Noto-Serif-Oriya-Bold" style="font-size: 21pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Bold 27pt</div>
-	<span class="old-Noto-Serif-Oriya-Bold" style="font-size: 27pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Serif-Oriya-Bold 32pt</div>
-	<span class="old-Noto-Serif-Oriya-Bold" style="font-size: 32pt">
+	<div class="box-title">old-Bold 32pt</div>
+	<span class="old-Bold" style="font-size: 32pt">
             QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
             quick wafting zephyrs vex bold jim.<br>
             $14.95<br>
@@ -1464,23 +613,27 @@
 	POSITION = "old"
 	fontToggle = document.getElementById("font-toggle")
 	function switchFonts() {
-	  items = document.getElementsByClassName("box");
-	  console.log("Click from "+POSITION)
+	boxTitles = document.getElementsByClassName("box-title")
+	items = document.getElementsByClassName("box-text");
 	  
-	  if (POSITION === "old") {
+	if (POSITION === "old") {
 	  POSITION = "new"
-	  for (item of items) {
-	    item.firstElementChild.textContent = item.firstElementChild.textContent.replace("old", "new")
-            item.lastElementChild.className = item.lastElementChild.className.replace("old", "new")
+	  for (item of boxTitles) {
+	    item.textContent = item.textContent.replace("old", "new")
 	    fontToggle.textContent = "new"
+	  }
+	  for (item of items) {
+		item.className = item.className.replace("old", "new")
 	  }
 
 	  } else {
 	  POSITION = "old"
-	  for (item of items) {
-	    item.firstElementChild.textContent = item.firstElementChild.textContent.replace("new", "old")
-            item.lastElementChild.className = item.lastElementChild.className.replace("new", "old")
+	  for (item of boxTitles) {
+	    item.textContent = item.textContent.replace("new", "old")
 	    fontToggle.textContent = "old"
+	  }
+	  for (item of items) {
+		item.className = item.className.replace("new", "old")
 	  }
 	}
 	}
