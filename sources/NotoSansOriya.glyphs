@@ -1,9 +1,5 @@
 {
-.appVersion = "3180";
-DisplayStrings = (
-"/cha-oriya",
-"/overline-oriya/ka-oriya"
-);
+.appVersion = "3151";
 classes = (
 {
 code = "nukta-oriya uMatra-oriya uuMatra-oriya rVocalicMatra-oriya rrVocalicMatra-oriya lVocalicMatra-oriya llVocalicMatra-oriya halant-oriya ka-oriya.below kha-oriya.below ga-oriya.below gha-oriya.below nga-oriya.below ca-oriya.below cha-oriya.below ja-oriya.below jha-oriya.below tta-oriya.below ttha-oriya.below dda-oriya.below ddha-oriya.below nna-oriya.below ta-oriya.below tha-oriya.below da-oriya.below dha-oriya.below na-oriya.below pa-oriya.below pha-oriya.below ba-oriya.below bha-oriya.below ma-oriya.below ya-oriya.below ra-oriya.below la-oriya.below lla-oriya.below va-oriya.below sha-oriya.below ssa-oriya.below sa-oriya.below ha-oriya.below kassa-oriya.below iMatra-oriya.below rephauLength-oriya rephauLengthcandraBindu-oriya rauMatra-oriya.below rauuMatra-oriya.below rarVocalicMatra-oriya.below rarrVocalicMatra-oriya.below";
@@ -42091,6 +42087,7 @@ width = 930.47222;
 note = omorya;
 },
 {
+color = 6;
 glyphname = "rra-oriya";
 layers = (
 {
@@ -42098,6 +42095,14 @@ anchors = (
 {
 name = bottom_ra;
 position = "{578, -80}";
+},
+{
+name = top;
+position = "{348, 658}";
+},
+{
+name = topright;
+position = "{600, 658}";
 }
 );
 components = (
@@ -42117,6 +42122,14 @@ anchors = (
 {
 name = bottom_ra;
 position = "{723, -92}";
+},
+{
+name = top;
+position = "{393, 658}";
+},
+{
+name = topright;
+position = "{617, 658}";
 }
 );
 components = (
@@ -42136,6 +42149,14 @@ anchors = (
 {
 name = bottom_ra;
 position = "{430, -80}";
+},
+{
+name = top;
+position = "{262, 658}";
+},
+{
+name = topright;
+position = "{448, 658}";
 }
 );
 components = (
@@ -42155,6 +42176,14 @@ anchors = (
 {
 name = bottom_ra;
 position = "{606, -92}";
+},
+{
+name = top;
+position = "{323, 658}";
+},
+{
+name = topright;
+position = "{505, 658}";
 }
 );
 components = (
@@ -42174,6 +42203,14 @@ anchors = (
 {
 name = bottom_ra;
 position = "{630, -84}";
+},
+{
+name = top;
+position = "{364, 658}";
+},
+{
+name = topright;
+position = "{606, 658}";
 }
 );
 components = (
@@ -42195,6 +42232,7 @@ note = rraorya;
 unicode = 0B5C;
 },
 {
+color = 6;
 glyphname = "rha-oriya";
 layers = (
 {
@@ -42202,6 +42240,14 @@ anchors = (
 {
 name = bottom_ra;
 position = "{578, -80}";
+},
+{
+name = top;
+position = "{356, 658}";
+},
+{
+name = topright;
+position = "{600, 658}";
 }
 );
 components = (
@@ -42221,6 +42267,14 @@ anchors = (
 {
 name = bottom_ra;
 position = "{723, -92}";
+},
+{
+name = top;
+position = "{382, 658}";
+},
+{
+name = topright;
+position = "{617, 658}";
 }
 );
 components = (
@@ -42240,6 +42294,14 @@ anchors = (
 {
 name = bottom_ra;
 position = "{453, -80}";
+},
+{
+name = top;
+position = "{275, 658}";
+},
+{
+name = topright;
+position = "{448, 658}";
 }
 );
 components = (
@@ -42259,6 +42321,14 @@ anchors = (
 {
 name = bottom_ra;
 position = "{606, -92}";
+},
+{
+name = top;
+position = "{322, 658}";
+},
+{
+name = topright;
+position = "{505, 658}";
 }
 );
 components = (
@@ -42278,6 +42348,14 @@ anchors = (
 {
 name = bottom_ra;
 position = "{630, -84}";
+},
+{
+name = top;
+position = "{365, 658}";
+},
+{
+name = topright;
+position = "{606, 658}";
 }
 );
 components = (
@@ -92401,9 +92479,20 @@ note = hasquishorya;
 rightMetricsKey = "ha-oriya";
 },
 {
+color = 6;
 glyphname = "rra-oriya.base";
 layers = (
 {
+anchors = (
+{
+name = top;
+position = "{318, 658}";
+},
+{
+name = topright;
+position = "{550, 658}";
+}
+);
 components = (
 {
 name = "dda-oriya.base";
@@ -92417,6 +92506,16 @@ layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
 width = 653;
 },
 {
+anchors = (
+{
+name = top;
+position = "{369, 658}";
+},
+{
+name = topright;
+position = "{587, 658}";
+}
+);
 components = (
 {
 name = "dda-oriya.base";
@@ -92430,6 +92529,16 @@ layerId = "639D56B4-59BE-4993-85FD-8F80ECD3B0F6";
 width = 759;
 },
 {
+anchors = (
+{
+name = top;
+position = "{239, 658}";
+},
+{
+name = topright;
+position = "{411, 658}";
+}
+);
 components = (
 {
 name = "dda-oriya.base";
@@ -92443,6 +92552,16 @@ layerId = "EAF3E1E9-0001-42EF-B2A4-765526B8C83B";
 width = 484;
 },
 {
+anchors = (
+{
+name = top;
+position = "{310, 658}";
+},
+{
+name = topright;
+position = "{489, 658}";
+}
+);
 components = (
 {
 name = "dda-oriya.base";
@@ -92456,6 +92575,16 @@ layerId = "A6029D4D-1571-45DB-86AE-EDC9D2308E6F";
 width = 635;
 },
 {
+anchors = (
+{
+name = top;
+position = "{336, 658}";
+},
+{
+name = topright;
+position = "{563, 658}";
+}
+);
 components = (
 {
 alignment = -1;
@@ -92475,9 +92604,20 @@ leftMetricsKey = "dda-oriya.base";
 rightMetricsKey = "dda-oriya.base";
 },
 {
+color = 6;
 glyphname = "rha-oriya.base";
 layers = (
 {
+anchors = (
+{
+name = top;
+position = "{318, 658}";
+},
+{
+name = topright;
+position = "{550, 658}";
+}
+);
 components = (
 {
 name = "ddha-oriya.base";
@@ -92491,6 +92631,16 @@ layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
 width = 653;
 },
 {
+anchors = (
+{
+name = top;
+position = "{369, 658}";
+},
+{
+name = topright;
+position = "{587, 658}";
+}
+);
 components = (
 {
 name = "ddha-oriya.base";
@@ -92504,6 +92654,16 @@ layerId = "639D56B4-59BE-4993-85FD-8F80ECD3B0F6";
 width = 759;
 },
 {
+anchors = (
+{
+name = top;
+position = "{239, 658}";
+},
+{
+name = topright;
+position = "{411, 658}";
+}
+);
 components = (
 {
 name = "ddha-oriya.base";
@@ -92517,6 +92677,16 @@ layerId = "EAF3E1E9-0001-42EF-B2A4-765526B8C83B";
 width = 484;
 },
 {
+anchors = (
+{
+name = top;
+position = "{310, 658}";
+},
+{
+name = topright;
+position = "{489, 658}";
+}
+);
 components = (
 {
 name = "ddha-oriya.base";
@@ -92530,6 +92700,16 @@ layerId = "A6029D4D-1571-45DB-86AE-EDC9D2308E6F";
 width = 635;
 },
 {
+anchors = (
+{
+name = top;
+position = "{336, 658}";
+},
+{
+name = topright;
+position = "{563, 658}";
+}
+);
 components = (
 {
 alignment = -1;
