@@ -1,4 +1,10 @@
-git+https://github.com/googlefonts/ufo2ft@fca66fe
+# We need at least this ufo2ft version to fix ufo2ft#730
+ufo2ft>=2.31.1
+
+# We need this specific glyphsLib version because of
+# https://github.com/googlefonts/glyphsLib/issues/907
+glyphsLib==6.2.1
+
 git+https://github.com/notofonts/notobuilder
 drawbot-skia>=0.4.8
 sh>=1.14.2
