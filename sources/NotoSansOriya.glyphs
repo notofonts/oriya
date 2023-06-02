@@ -2,7 +2,7 @@
 .appVersion = "3195";
 DisplayStrings = (
 "/cha-oriya",
-"/overline-oriya/ka-oriya"
+"/ra-oriya.below/ka-oriya"
 );
 classes = (
 {
@@ -726,7 +726,7 @@ name = Languagesystems;
 features = (
 {
 automatic = 1;
-code = "feature akhn;\012feature nukt;\012feature rphf;\012feature blwf;\012feature pstf;\012feature cjct;\012feature pres;\012feature blws;\012feature psts;\012feature abvs;\012feature haln;\012feature calt;\012feature ss01;\012feature ss02;\012feature ss03;\012";
+code = "feature akhn;\012feature nukt;\012feature rphf;\012feature blwf;\012feature pstf;\012feature cjct;\012feature pres;\012feature blws;\012feature psts;\012feature abvs;\012feature haln;\012feature calt;\012feature ss01;\012";
 name = aalt;
 },
 {
