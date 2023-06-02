@@ -1,5 +1,5 @@
 {
-.appVersion = "3180";
+.appVersion = "3195";
 DisplayStrings = (
 "/cha-oriya",
 "/overline-oriya/ka-oriya"
@@ -783,16 +783,6 @@ name = calt;
 code = "script ory2;\012	sub katara-oriya by kataraalt-oriya;";
 name = ss01;
 notes = "Name: KaTaRa Alternate";
-},
-{
-code = "script ory2;\012	sub zero-oriya by zero;\012	sub one-oriya by one;\012	sub two-oriya by two;\012	sub three-oriya by three;\012	sub four-oriya by four;\012	sub five-oriya by five;\012	sub six-oriya by six;\012	sub seven-oriya by seven;\012	sub eight-oriya by eight;\012	sub nine-oriya by nine;";
-name = ss02;
-notes = "Name: Oriya to Latin Figures";
-},
-{
-code = "script ory2;\012	sub zero by zero-oriya;\012	sub one by one-oriya;\012	sub two by two-oriya;\012	sub three by three-oriya;\012	sub four by four-oriya;\012	sub five by five-oriya;\012	sub six by six-oriya;\012	sub seven by seven-oriya;\012	sub eight by eight-oriya;\012	sub nine by nine-oriya;";
-name = ss03;
-notes = "Name: Latin to Oriya Figures";
 }
 );
 fontMaster = (
