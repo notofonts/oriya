@@ -1,9 +1,5 @@
 {
 .appVersion = "3151";
-DisplayStrings = (
-"/a-oriya",
-"/a-oriya/tha-oriya.below"
-);
 classes = (
 {
 code = "nukta-oriya uMatra-oriya uuMatra-oriya rVocalicMatra-oriya rrVocalicMatra-oriya lVocalicMatra-oriya llVocalicMatra-oriya halant-oriya ka-oriya.below kha-oriya.below ga-oriya.below gha-oriya.below nga-oriya.below ca-oriya.below cha-oriya.below ja-oriya.below jha-oriya.below tta-oriya.below ttha-oriya.below dda-oriya.below ddha-oriya.below nna-oriya.below ta-oriya.below tha-oriya.below da-oriya.below dha-oriya.below na-oriya.below pa-oriya.below pha-oriya.below ba-oriya.below bha-oriya.below ma-oriya.below ya-oriya.below ra-oriya.below la-oriya.below lla-oriya.below va-oriya.below sha-oriya.below ssa-oriya.below sa-oriya.below ha-oriya.below kassa-oriya.below iMatra-oriya.below rephauLength-oriya rephauLengthcandraBindu-oriya rauMatra-oriya.below rauuMatra-oriya.below rarVocalicMatra-oriya.below rarrVocalicMatra-oriya.below";
@@ -255697,7 +255693,7 @@ position = "{1, 728}";
 },
 {
 name = top;
-position = "{1, 842}";
+position = "{1, 822}";
 }
 );
 layerId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
@@ -255705,10 +255701,10 @@ paths = (
 {
 closed = 1;
 nodes = (
-"-208 801 LINE",
-"209 801 LINE",
-"209 842 LINE",
-"-208 842 LINE"
+"-208 798 LINE",
+"209 798 LINE",
+"209 822 LINE",
+"-208 822 LINE"
 );
 }
 );
@@ -255722,7 +255718,7 @@ position = "{1, 751}";
 },
 {
 name = top;
-position = "{1, 842}";
+position = "{1, 922}";
 }
 );
 layerId = "639D56B4-59BE-4993-85FD-8F80ECD3B0F6";
@@ -255730,10 +255726,10 @@ paths = (
 {
 closed = 1;
 nodes = (
-"-208 771 LINE",
-"209 771 LINE",
-"209 842 LINE",
-"-208 842 LINE"
+"-278 791 LINE",
+"279 791 LINE",
+"279 922 LINE",
+"-278 922 LINE"
 );
 }
 );
@@ -255747,7 +255743,7 @@ position = "{1, 714}";
 },
 {
 name = top;
-position = "{1, 842}";
+position = "{1, 792}";
 }
 );
 layerId = "EAF3E1E9-0001-42EF-B2A4-765526B8C83B";
@@ -255755,10 +255751,10 @@ paths = (
 {
 closed = 1;
 nodes = (
-"-208 739 LINE",
-"209 739 LINE",
-"209 842 LINE",
-"-208 842 LINE"
+"-158 769 LINE",
+"159 769 LINE",
+"159 792 LINE",
+"-158 792 LINE"
 );
 }
 );
@@ -255797,7 +255793,7 @@ position = "{0, 727}";
 },
 {
 name = top;
-position = "{0, 835}";
+position = "{0, 845}";
 }
 );
 layerId = "41544896-EF4D-4C26-89A7-324DAFD89EC7";
@@ -255805,10 +255801,10 @@ paths = (
 {
 closed = 1;
 nodes = (
-"-134 810 LINE",
-"134 810 LINE",
-"134 835 LINE",
-"-134 835 LINE"
+"-214 780 LINE",
+"214 780 LINE",
+"214 845 LINE",
+"-214 845 LINE"
 );
 }
 );
