@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+<head>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>GFR - Glyphs</title>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <style type="text/css">
+    
+
+        html{
+	  font-family: sans-serif;
+	}
+    @font-face {
+        font-family: "Adobe NotDef";
+        src: url(https://cdn.jsdelivr.net/gh/adobe-fonts/adobe-notdef/AND-Regular.ttf);
+    }
+	.box-title{
+	  width: 100%;
+	  font-size: 8pt;
+	  font-weight: 700;
+	  border-top: 1px solid black;
+	  padding-top: 5px;
+	  margin-bottom: 10pt;
+	  display: block;
+	}
+	.box{
+	  margin-bottom: 20pt;
+	  width: 100%;
+	  float: left;
+	}
+	.box-text{
+	}
+	
+	#nav{
+	  position: fixed;
+	  right: 20px;
+	  z-index: 100;
+	}
+	#font-toggle{
+	}
+	.nav-item{
+		display: block;
+		cursor: pointer;
+		-webkit-user-select: none; /* Safari */        
+		-moz-user-select: none; /* Firefox */
+			-ms-user-select: none; /* IE10+/Edge */
+		user-select: none; /* Standard */
+		text-align: center;
+		color: white;
+		background-color: black;
+		display: block;
+		font-size: 9pt;
+		padding: 5px;
+		margin: 2px;
+	}
+	.tooltip {
+	position: relative;
+	display: inline-block;
+	border-bottom: 1px dotted black;
+	}
+
+	.tooltip .tooltiptext {
+	font-family: sans-serif;
+	visibility: hidden;
+	width: 500px;
+	background-color: black;
+	color: #fff;
+	text-align: left;
+	font-size: 12pt;
+	line-height: 15pt;
+	border-radius: 6px;
+	padding: 5px 0;
+
+	/* Position the tooltip */
+	position: absolute;
+	z-index: 1;
+	}
+
+	.tooltip:hover .tooltiptext {
+	padding: 10px;
+	visibility: visible;
+	}
+	.tooltipleft {
+		float:left;
+		width: 249px;
+	}
+	.tooltipright {
+		float:right;
+		width:250px;
+	}
+
+			/* Stuff needed for the table differ */
+            body {
+                font-family: Helvetica;
+            }
+            .node {
+                font-family: courier;
+                cursor: pointer;
+                position: relative;
+                left: 30px;
+                padding: 5px;
+                display: block;
+                border: 1px dashed grey;
+            }
+            .header {
+            font-weight: bold;
+            }
+            .attrib-old{
+                color: red;
+                cursor: text;
+            }
+            .attrib-new{
+                color: green;
+                cursor: text;
+            }
+            .leaf {
+            font-weight: bold;
+            }
+            .old .cell .new {
+            	display:  none;
+            }
+            .new .cell .old {
+            	display:  none;
+            }
+            .both .cell .old {
+            	opacity: 0.75;
+            	color:  red;
+            }
+            .both .cell .new {
+            	opacity: 0.75;
+            	position: absolute;
+            	top: 0;
+            	color:  green;
+            }
+			.spacer {
+				display:block;
+				float:left;
+				width:100%;
+			}
+
+	  
+	    @font-face{
+    src: url(old-NotoSansOriya-CondensedThin.ttf);
+    font-family: "old font";
+    font-weight: 100;
+    
+    font-style: normal;
+}
+	  
+
+	  
+	    @font-face{
+    src: url(new-NotoSansOriya-CondensedThin.ttf);
+    font-family: "new font";
+    font-weight: 100;
+    
+    font-style: normal;
+}
+	  
+
+	  
+
+	  
+	    .old-wght-400{
+    font-family: "old font", "Adobe NotDef";
+    font-weight: 400;
+    
+    font-style: normal;
+    font-variation-settings: "wght" 400;
+}
+	  
+
+	  
+	    .new-wght-400{
+    font-family: "new font", "Adobe NotDef";
+    font-weight: 400;
+    
+    font-style: normal;
+    font-variation-settings: "wght" 400;
+}
+	  
+
+	  
+	
+.cell{
+  z-index: -100;
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 5pt;
+  margin: 5pt;
+  width: 50pt;
+  line-height: 48.0px;
+}
+.cell-word{
+  z-index: -100;
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 5pt;
+  margin: 5pt;
+  line-height: 48.0px;
+}
+.cat-strings .cell {
+  clear: both;
+  position: static;
+  float: none;
+  text-align: left;
+}
+.box-title {
+  clear: both;
+}
+
+
+	   #ot-panel {
+		max-height: 400px;
+		overflow-y: scroll;
+		background: white;
+		padding: 10px;
+		display: none;
+	   }
+    </style>
+</head>
+<body>
+    <div id="nav">
+		
+			<div class="nav-item" id="font-toggle">old</div>
+		
+			<div class="nav-item" id="ot-button">OT features</div>
+			<div id="ot-panel">
+			</div>
+		
+	</div>
+    <div id="content">
+	<h2>
+<b>Diffenator</b>
+</h2>
+	
+  
+    <div class="box">
+    <div class="box-title">Tables</div>
+     <script>var fontdiff = {"maxp": {"numGlyphs": [592, 600]}, "GDEF": {"table": {"MarkGlyphSetsDef": {"Coverage": {"1": {"glyphs": {"28": ["uni0B4D0B2C", "uni0B4D0B2D"], "29": ["uni0B4D0B2D", "uni0B4D0B2E"], "30": ["uni0B4D0B2E", "uni0B4D0B2F"], "31": ["uni0B4D0B2F", "uni0B4D0B30"], "32": ["uni0B4D0B30", "uni0B4D0B32"], "33": ["uni0B4D0B32", "uni0B4D0B33"], "34": ["uni0B4D0B33", "uni0B4D0B35"], "35": ["uni0B4D0B35", "uni0B4D0B36"], "36": ["uni0B4D0B36", "uni0B4D0B37"], "37": ["uni0B4D0B37", "uni0B4D0B38"], "38": ["uni0B4D0B38", "uni0B4D0B39"], "39": ["uni0B4D0B39", "kassaoriya.below"], "40": ["kassaoriya.below", "uni0B3F.below"], "41": ["uni0B3F.below", "uni0B41.001"], "42": ["uni0B41.001", "uni0B41.002"], "43": ["uni0B41.002", "uni0B41.003"], "44": ["uni0B41.003", "uni0B41.004"], "45": ["uni0B41.004", "uni0B41.005"], "46": ["uni0B41.005", "uni0B41.006"], "47": ["uni0B41.006", "uni0B41.007"], "48": ["uni0B41.007", "uni0B41.008"], "49": ["uni0B41.008", "uni0B41.009"], "50": ["uni0B41.009", "uni0B41.010"], "51": ["uni0B41.010", "uni0B41.011"], "52": ["uni0B41.011", "uni0B41.012"], "53": ["uni0B41.012", "uni0B41.013"], "54": ["uni0B41.013", "uni0B41.014"], "55": ["uni0B41.014", "uni0B41.015"], "56": ["uni0B41.015", "uni0B41.016"], "57": ["uni0B41.016", "uni0B41.017"], "58": ["uni0B41.017", "uni0B41.018"], "59": ["uni0B41.018", "uni0B41.019"], "60": ["uni0B41.019", "uni0B41.020"], "61": ["uni0B41.020", "uni0B41.021"], "62": ["uni0B41.021", "uni0B41.022"], "63": ["uni0B41.022", "uni0B41.023"], "64": ["uni0B41.023", "uni0B41.024"], "65": ["uni0B41.024", "uni0B41.025"], "66": ["uni0B41.025", "uni0B41.026"], "67": ["uni0B41.026", "uni0B41.027"], "68": ["uni0B41.027", "uni0B41.028"], "69": ["uni0B41.028", "uni0B42.001"], "70": ["uni0B42.001", "uni0B42.002"], "71": ["uni0B42.002", "uni0B42.003"], "72": ["uni0B42.003", "uni0B42.004"], "73": ["uni0B42.004", "uni0B42.005"], "74": ["uni0B42.005", "uni0B42.006"], "75": ["uni0B42.006", "uni0B42.007"], "76": ["uni0B42.007", "uni0B42.008"], "77": ["uni0B42.008", "uni0B42.009"], "78": ["uni0B42.009", "uni0B42.010"], "79": ["uni0B42.010", "uni0B42.011"], "80": ["uni0B42.011", "uni0B42.012"], "81": ["uni0B42.012", "uni0B42.013"], "82": ["uni0B42.013", "uni0B42.014"], "83": ["uni0B42.014", "uni0B42.015"], "84": ["uni0B42.015", "uni0B42.016"], "85": ["uni0B42.016", "uni0B42.017"], "86": ["uni0B42.017", "uni0B42.018"], "87": ["uni0B42.018", "uni0B42.019"], "88": ["uni0B42.019", "uni0B42.020"], "89": ["uni0B42.020", "uni0B42.021"], "90": ["uni0B42.021", "uni0B42.022"], "91": ["uni0B42.022", "uni0B42.023"], "92": ["uni0B42.023", "uni0B42.024"], "93": ["uni0B42.024", "uni0B42.025"], "94": ["uni0B42.025", "uni0B42.026"], "95": ["uni0B42.026", "uni0B42.027"], "96": ["uni0B42.027", "uni0B42.028"], "97": ["uni0B42.028", null]}}, "2": {"glyphs": {"21": ["uni0B4D0B2C", "uni0B4D0B2D"], "22": ["uni0B4D0B2D", "uni0B4D0B2E"], "23": ["uni0B4D0B2E", "uni0B4D0B2F"], "24": ["uni0B4D0B2F", "uni0B4D0B30"], "25": ["uni0B4D0B30", "uni0B4D0B32"], "26": ["uni0B4D0B32", "uni0B4D0B33"], "27": ["uni0B4D0B33", "uni0B4D0B35"], "28": ["uni0B4D0B35", "uni0B4D0B36"], "29": ["uni0B4D0B36", "uni0B4D0B37"], "30": ["uni0B4D0B37", "uni0B4D0B38"], "31": ["uni0B4D0B38", "uni0B4D0B39"], "32": ["uni0B4D0B39", "kassaoriya.below"], "33": ["kassaoriya.below", "uni0B3F.below"], "34": ["uni0B3F.below", "rauMatraoriya.below"], "35": ["rauMatraoriya.below", "rauuMatraoriya.below"], "36": ["rauuMatraoriya.below", "rarVocalicMatraoriya.below"], "37": ["rarVocalicMatraoriya.below", "rarrVocalicMatraoriya.below"], "38": ["rarrVocalicMatraoriya.below", null]}}, "3": {"glyphs": {"2": ["uni0B4D0B1B", "uni0B4D0B16"], "3": [null, "uni0B4D0B17"], "4": [null, "uni0B4D0B18"], "5": [null, "uni0B4D0B19"], "6": [null, "uni0B4D0B1A"], "7": [null, "uni0B4D0B1B"], "8": [null, "uni0B4D0B1C"], "9": [null, "uni0B4D0B1D"], "10": [null, "uni0B4D0B1F"], "11": [null, "uni0B4D0B20"], "12": [null, "uni0B4D0B21"], "13": [null, "uni0B4D0B22"], "14": [null, "uni0B4D0B23"], "15": [null, "uni0B4D0B24"], "16": [null, "uni0B4D0B25"], "17": [null, "uni0B4D0B26"], "18": [null, "uni0B4D0B27"], "19": [null, "uni0B4D0B28"], "20": [null, "uni0B4D0B2A"], "21": [null, "uni0B4D0B2B"], "22": [null, "uni0B4D0B2D"], "23": [null, "uni0B4D0B2E"], "24": [null, "uni0B4D0B2F"], "25": [null, "uni0B4D0B30"], "26": [null, "uni0B4D0B32"], "27": [null, "uni0B4D0B33"], "28": [null, "uni0B4D0B35"], "29": [null, "uni0B4D0B36"], "30": [null, "uni0B4D0B37"], "31": [null, "uni0B4D0B38"], "32": [null, "uni0B4D0B39"], "33": [null, "kassaoriya.below"], "34": [null, "uni0B3F.below"], "35": [null, "uni0B3C.alt"]}}, "4": {"glyphs": {"0": ["taaltoriya.below", "uni0B4D0B2C"], "1": ["uni0B62.BRACKET.varAlt01", "taaltoriya.below"], "2": ["uni0B63.BRACKET.varAlt01", "uni0B62.BRACKET.varAlt01"], "3": ["uni0B44.BRACKET.varAlt01", "uni0B63.BRACKET.varAlt01"], "4": ["uni0B42.BRACKET.varAlt01", "uni0B44.BRACKET.varAlt01"], "5": [null, "uni0B42.BRACKET.varAlt01"]}}, "5": {"glyphs": {"0": ["taaltoriya.below", "uni0B4D0B2C"], "1": [null, "taaltoriya.below"]}}}}, "GlyphClassDef": {"classDefs": {"uni0B5C.alt.BRACKET.varAlt01": [null, 1], "airephoriya": [null, 1], "aucandraBinduoriya": [null, 1], "aurephoriya": [null, 1], "uni0B5D.alt": [null, 1], "aicandraBinduoriya": [null, 1], "uni0B5D.base.alt": [null, 1], "omoriya": [null, 1], "airephcandraBinduoriya": [null, 1], "uni0B5C.alt": [null, 1], "uni0B4D0B5F": [null, 1], "aurephcandraBinduoriya": [null, 1], "airephcandraBinduoriya.BRACKET.varAlt01": [null, 1], "uni0B61": [null, 1], "aicandraBinduoriya.BRACKET.varAlt01": [null, 1], "uni0B5C.base.alt": [null, 1], "uni0B60": [null, 1], "uni0B10": [null, 1], "uni0B5D.alt.BRACKET.varAlt01": [null, 1], "uni0B3C.alt": [null, 3], "aucandraBinduoriya.BRACKET.varAlt01": [null, 1], "uni0B1F.base.001": [null, 1], "uni0B14": [null, 1], "aurephcandraBinduoriya.BRACKET.varAlt01": [null, 1]}}}}, "head": {"checkSumAdjustment": [2881727093, 3596760782], "modified": [3762752489, 3781088364]}, "post": {"extraNames": {"425": ["uni0B41.001", "uni0B5C.alt"], "426": ["uni0B41.002", "uni0B5D.alt"], "427": ["uni0B41.003", "uni0B1F.base.001"], "428": ["uni0B41.004", "uni0B5C.base.alt"], "429": ["uni0B41.005", "uni0B5D.base.alt"], "430": ["uni0B41.006", "uni0B3C.alt"], "431": ["uni0B41.007", "uni0B41.001"], "432": ["uni0B41.008", "uni0B41.002"], "433": ["uni0B41.009", "uni0B41.003"], "434": ["uni0B41.010", "uni0B41.004"], "435": ["uni0B41.011", "uni0B41.005"], "436": ["uni0B41.012", "uni0B41.006"], "437": ["uni0B41.013", "uni0B41.007"], "438": ["uni0B41.014", "uni0B41.008"], "439": ["uni0B41.015", "uni0B41.009"], "440": ["uni0B41.016", "uni0B41.010"], "441": ["uni0B41.017", "uni0B41.011"], "442": ["uni0B41.018", "uni0B41.012"], "443": ["uni0B41.019", "uni0B41.013"], "444": ["uni0B41.020", "uni0B41.014"], "445": ["uni0B41.021", "uni0B41.015"], "446": ["uni0B41.022", "uni0B41.016"], "447": ["uni0B41.023", "uni0B41.017"], "448": ["uni0B41.024", "uni0B41.018"], "449": ["uni0B41.025", "uni0B41.019"], "450": ["uni0B41.026", "uni0B41.020"], "451": ["uni0B41.027", "uni0B41.021"], "452": ["uni0B41.028", "uni0B41.022"], "453": ["uni0B42.001", "uni0B41.023"], "454": ["uni0B42.002", "uni0B41.024"], "455": ["uni0B42.003", "uni0B41.025"], "456": ["uni0B42.004", "uni0B41.026"], "457": ["uni0B42.005", "uni0B41.027"], "458": ["uni0B42.006", "uni0B41.028"], "459": ["uni0B42.007", "uni0B42.001"], "460": ["uni0B42.008", "uni0B42.002"], "461": ["uni0B42.009", "uni0B42.003"], "462": ["uni0B42.010", "uni0B42.004"], "463": ["uni0B42.011", "uni0B42.005"], "464": ["uni0B42.012", "uni0B42.006"], "465": ["uni0B42.013", "uni0B42.007"], "466": ["uni0B42.014", "uni0B42.008"], "467": ["uni0B42.015", "uni0B42.009"], "468": ["uni0B42.016", "uni0B42.010"], "469": ["uni0B42.017", "uni0B42.011"], "470": ["uni0B42.018", "uni0B42.012"], "471": ["uni0B42.019", "uni0B42.013"], "472": ["uni0B42.020", "uni0B42.014"], "473": ["uni0B42.021", "uni0B42.015"], "474": ["uni0B42.022", "uni0B42.016"], "475": ["uni0B42.023", "uni0B42.017"], "476": ["uni0B42.024", "uni0B42.018"], "477": ["uni0B42.025", "uni0B42.019"], "478": ["uni0B42.026", "uni0B42.020"], "479": ["uni0B42.027", "uni0B42.021"], "480": ["uni0B42.028", "uni0B42.022"], "481": ["uni0b55", "uni0B42.023"], "482": ["uni0B05.BRACKET.varAlt01", "uni0B42.024"], "483": ["uni0B06.BRACKET.varAlt01", "uni0B42.025"], "484": ["aiLengthcandraBinduoriya.BRACKET.varAlt01", "uni0B42.026"], "485": ["aiLengthcandraBinduoriya.stem.BRACKET.varAlt01", "uni0B42.027"], "486": ["aiLengthcandraBinduoriya.umbrella.BRACKET.varAlt01", "uni0B42.028"], "487": ["aicandraBinduoriya.BRACKET.varAlt01", "uni0b55"], "488": ["airephcandraBinduoriya.BRACKET.varAlt01", "uni0B05.BRACKET.varAlt01"], "489": ["auLengthcandraBinduoriya.BRACKET.varAlt01", "uni0B06.BRACKET.varAlt01"], "490": ["aucandraBinduoriya.BRACKET.varAlt01", "aiLengthcandraBinduoriya.BRACKET.varAlt01"], "491": ["aurephcandraBinduoriya.BRACKET.varAlt01", "aiLengthcandraBinduoriya.stem.BRACKET.varAlt01"], "492": ["uni0B2D.BRACKET.varAlt01", "aiLengthcandraBinduoriya.umbrella.BRACKET.varAlt01"], "493": ["bharaoriya.BRACKET.varAlt01", "aicandraBinduoriya.BRACKET.varAlt01"], "494": ["uni0B01.BRACKET.varAlt01", "airephcandraBinduoriya.BRACKET.varAlt01"], "495": ["uni0B1B.BRACKET.varAlt01", "auLengthcandraBinduoriya.BRACKET.varAlt01"], "496": ["charaoriya.BRACKET.varAlt01", "aucandraBinduoriya.BRACKET.varAlt01"], "497": ["uni0B21.BRACKET.varAlt01", "aurephcandraBinduoriya.BRACKET.varAlt01"], "498": ["ddaraoriya.BRACKET.varAlt01", "uni0B2D.BRACKET.varAlt01"], "499": ["uni0B22.BRACKET.varAlt01", "bharaoriya.BRACKET.varAlt01"], "500": ["uni0B0F.BRACKET.varAlt01", "uni0B01.BRACKET.varAlt01"], "501": ["uni0B6B.BRACKET.varAlt01", "uni0B1B.BRACKET.varAlt01"], "502": ["uni0B39.BRACKET.varAlt01", "charaoriya.BRACKET.varAlt01"], "503": ["uni0B07.BRACKET.varAlt01", "uni0B21.BRACKET.varAlt01"], "504": ["iMatracandraBinduoriya.BRACKET.varAlt01", "ddaraoriya.BRACKET.varAlt01"], "505": ["iMatracandraBinduoriya.wide.BRACKET.varAlt01", "uni0B22.BRACKET.varAlt01"], "506": ["iMatrarephcandraBinduoriya.BRACKET.varAlt01", "uni0B0F.BRACKET.varAlt01"], "507": ["iMatrarephcandraBinduoriya.wide.BRACKET.varAlt01", "uni0B6B.BRACKET.varAlt01"], "508": ["uni0B08.BRACKET.varAlt01", "uni0B39.BRACKET.varAlt01"], "509": ["uni0B1C.BRACKET.varAlt01", "uni0B07.BRACKET.varAlt01"], "510": ["uni0B1C.base.BRACKET.varAlt01", "iMatracandraBinduoriya.BRACKET.varAlt01"], "511": ["jajhaoriya.BRACKET.varAlt01", "iMatracandraBinduoriya.wide.BRACKET.varAlt01"], "512": ["jaraoriya.BRACKET.varAlt01", "iMatrarephcandraBinduoriya.BRACKET.varAlt01"], "513": ["uni0B15.BRACKET.varAlt01", "iMatrarephcandraBinduoriya.wide.BRACKET.varAlt01"], "514": ["karaoriya.BRACKET.varAlt01", "uni0B08.BRACKET.varAlt01"], "515": ["uni0B62.BRACKET.varAlt01", "uni0B1C.BRACKET.varAlt01"], "516": ["uni0B63.BRACKET.varAlt01", "uni0B1C.base.BRACKET.varAlt01"], "517": ["uni0B19.BRACKET.varAlt01", "jajhaoriya.BRACKET.varAlt01"], "518": ["ngaraoriya.BRACKET.varAlt01", "jaraoriya.BRACKET.varAlt01"], "519": ["uni0B6F.BRACKET.varAlt01", "uni0B15.BRACKET.varAlt01"], "520": ["uni0B67.BRACKET.varAlt01", "karaoriya.BRACKET.varAlt01"], "521": ["rephaiLengthcandraBinduoriya.BRACKET.varAlt01", "uni0B62.BRACKET.varAlt01"], "522": ["rephaiLengthcandraBinduoriya.stem.BRACKET.varAlt01", "uni0B63.BRACKET.varAlt01"], "523": ["rephaiLengthcandraBinduoriya.umbrella.BRACKET.varAlt01", "uni0B19.BRACKET.varAlt01"], "524": ["rephauLengthcandraBinduoriya.BRACKET.varAlt01", "ngaraoriya.BRACKET.varAlt01"], "525": ["rephcandraBinduoriya.BRACKET.varAlt01", "uni0B6F.BRACKET.varAlt01"], "526": ["uni0B5D.BRACKET.varAlt01", "uni0B67.BRACKET.varAlt01"], "527": ["uni0B44.BRACKET.varAlt01", "rephaiLengthcandraBinduoriya.BRACKET.varAlt01"], "528": ["uni0B5C.BRACKET.varAlt01", "rephaiLengthcandraBinduoriya.stem.BRACKET.varAlt01"], "529": ["uni0B6D.BRACKET.varAlt01", "rephaiLengthcandraBinduoriya.umbrella.BRACKET.varAlt01"], "530": ["uni0B6C.BRACKET.varAlt01", "rephauLengthcandraBinduoriya.BRACKET.varAlt01"], "531": ["uni0B37.BRACKET.varAlt01", "rephcandraBinduoriya.BRACKET.varAlt01"], "532": ["uni0B24.BRACKET.varAlt01", "uni0B5D.BRACKET.varAlt01"], "533": ["takaoriya.BRACKET.varAlt01", "uni0B5D.alt.BRACKET.varAlt01"], "534": ["uni0B69.BRACKET.varAlt01", "uni0B44.BRACKET.varAlt01"], "535": ["uni0B68.BRACKET.varAlt01", "uni0B5C.BRACKET.varAlt01"], "536": ["uni0B09.BRACKET.varAlt01", "uni0B5C.alt.BRACKET.varAlt01"], "537": ["uni0B0A.BRACKET.varAlt01", "uni0B6D.BRACKET.varAlt01"], "538": ["uni0B42.BRACKET.varAlt01", "uni0B6C.BRACKET.varAlt01"], "539": ["uni0B35.BRACKET.varAlt01", "uni0B37.BRACKET.varAlt01"], "540": ["uni0B35.base.BRACKET.varAlt01", "uni0B24.BRACKET.varAlt01"], "541": ["varaoriya.BRACKET.varAlt01", "takaoriya.BRACKET.varAlt01"], "542": [null, "uni0B69.BRACKET.varAlt01"], "543": [null, "uni0B68.BRACKET.varAlt01"], "544": [null, "uni0B09.BRACKET.varAlt01"], "545": [null, "uni0B0A.BRACKET.varAlt01"], "546": [null, "uni0B42.BRACKET.varAlt01"], "547": [null, "uni0B35.BRACKET.varAlt01"], "548": [null, "uni0B35.base.BRACKET.varAlt01"], "549": [null, "varaoriya.BRACKET.varAlt01"]}}, "GPOS": {"table": {"FeatureList": {"FeatureRecord": {"3": {"Feature": {"LookupCount": [2, 3], "LookupListIndex": {"2": [null, 11]}}}}}, "LookupList": {"Lookup": {"0": {"SubTable": {"0": {"BaseCoverage": {"glyphs": {"error": ["There are 226 changes, check manually!", ""]}}, "BaseArray": {"BaseCount": [271, 277], "BaseRecord": {"error": ["There are 170 changes, check manually!", ""]}}}}}, "1": {"SubTable": {"0": {"Mark2Array": {"Mark2Record": {"0": {"Mark2Anchor": {"0": {"YCoordinate": [842, 805]}}}}}}}}, "3": {"SubTable": {"0": {"MarkArray": {"MarkCount": [108, 109], "MarkRecord": {"48": {"MarkAnchor": {"YCoordinate": [0, -105], "XCoordinate": [366, 300]}, "Class": [1, 0]}, "76": {"MarkAnchor": {"XCoordinate": [332, 366]}}, "104": {"MarkAnchor": {"YCoordinate": [-1, 0], "XCoordinate": [333, 332]}}, "106": {"MarkAnchor": {"YCoordinate": [-19, -1], "XCoordinate": [285, 333]}}, "107": {"MarkAnchor": {"YCoordinate": [0, -19], "XCoordinate": [332, 285]}}, "108": {"Class": [null, 1], "MarkAnchor": {"Format": [null, 1], "XCoordinate": [null, 332], "YCoordinate": [null, 0]}}}}, "BaseCoverage": {"glyphs": {"error": ["There are 281 changes, check manually!", ""]}}, "MarkCoverage": {"glyphs": {"48": ["uni0B41.001", "uni0B3C.alt"], "49": ["uni0B41.002", "uni0B41.001"], "50": ["uni0B41.003", "uni0B41.002"], "51": ["uni0B41.004", "uni0B41.003"], "52": ["uni0B41.005", "uni0B41.004"], "53": ["uni0B41.006", "uni0B41.005"], "54": ["uni0B41.007", "uni0B41.006"], "55": ["uni0B41.008", "uni0B41.007"], "56": ["uni0B41.009", "uni0B41.008"], "57": ["uni0B41.010", "uni0B41.009"], "58": ["uni0B41.011", "uni0B41.010"], "59": ["uni0B41.012", "uni0B41.011"], "60": ["uni0B41.013", "uni0B41.012"], "61": ["uni0B41.014", "uni0B41.013"], "62": ["uni0B41.015", "uni0B41.014"], "63": ["uni0B41.016", "uni0B41.015"], "64": ["uni0B41.017", "uni0B41.016"], "65": ["uni0B41.018", "uni0B41.017"], "66": ["uni0B41.019", "uni0B41.018"], "67": ["uni0B41.020", "uni0B41.019"], "68": ["uni0B41.021", "uni0B41.020"], "69": ["uni0B41.022", "uni0B41.021"], "70": ["uni0B41.023", "uni0B41.022"], "71": ["uni0B41.024", "uni0B41.023"], "72": ["uni0B41.025", "uni0B41.024"], "73": ["uni0B41.026", "uni0B41.025"], "74": ["uni0B41.027", "uni0B41.026"], "75": ["uni0B41.028", "uni0B41.027"], "76": ["uni0B42.001", "uni0B41.028"], "77": ["uni0B42.002", "uni0B42.001"], "78": ["uni0B42.003", "uni0B42.002"], "79": ["uni0B42.004", "uni0B42.003"], "80": ["uni0B42.005", "uni0B42.004"], "81": ["uni0B42.006", "uni0B42.005"], "82": ["uni0B42.007", "uni0B42.006"], "83": ["uni0B42.008", "uni0B42.007"], "84": ["uni0B42.009", "uni0B42.008"], "85": ["uni0B42.010", "uni0B42.009"], "86": ["uni0B42.011", "uni0B42.010"], "87": ["uni0B42.012", "uni0B42.011"], "88": ["uni0B42.013", "uni0B42.012"], "89": ["uni0B42.014", "uni0B42.013"], "90": ["uni0B42.015", "uni0B42.014"], "91": ["uni0B42.016", "uni0B42.015"], "92": ["uni0B42.017", "uni0B42.016"], "93": ["uni0B42.018", "uni0B42.017"], "94": ["uni0B42.019", "uni0B42.018"], "95": ["uni0B42.020", "uni0B42.019"], "96": ["uni0B42.021", "uni0B42.020"], "97": ["uni0B42.022", "uni0B42.021"], "98": ["uni0B42.023", "uni0B42.022"], "99": ["uni0B42.024", "uni0B42.023"], "100": ["uni0B42.025", "uni0B42.024"], "101": ["uni0B42.026", "uni0B42.025"], "102": ["uni0B42.027", "uni0B42.026"], "103": ["uni0B42.028", "uni0B42.027"], "104": ["uni0B62.BRACKET.varAlt01", "uni0B42.028"], "105": ["uni0B63.BRACKET.varAlt01", "uni0B62.BRACKET.varAlt01"], "106": ["uni0B44.BRACKET.varAlt01", "uni0B63.BRACKET.varAlt01"], "107": ["uni0B42.BRACKET.varAlt01", "uni0B44.BRACKET.varAlt01"], "108": [null, "uni0B42.BRACKET.varAlt01"]}}, "BaseArray": {"BaseCount": [220, 281], "BaseRecord": {"error": ["There are 281 changes, check manually!", ""]}}}}}, "4": {"SubTable": {"0": {"Mark2Array": {"Mark2Count": [35, 34], "Mark2Record": {"21": {"Mark2Anchor": {"0": {"YCoordinate": [-244, -245], "XCoordinate": [214, 150]}}}, "22": {"Mark2Anchor": {"0": {"YCoordinate": [-245, -164], "XCoordinate": [150, 265]}}}, "23": {"Mark2Anchor": {"0": {"YCoordinate": [-164, -244], "XCoordinate": [265, 302]}}}, "24": {"Mark2Anchor": {"0": {"YCoordinate": [-244, -140], "XCoordinate": [302, 202]}}}, "25": {"Mark2Anchor": {"0": {"YCoordinate": [-140, -164], "XCoordinate": [202, 381]}}}, "26": {"Mark2Anchor": {"0": {"XCoordinate": [381, 311]}}}, "27": {"Mark2Anchor": {"0": {"XCoordinate": [311, 205]}}}, "28": {"Mark2Anchor": {"0": {"YCoordinate": [-164, -244], "XCoordinate": [205, 290]}}}, "29": {"Mark2Anchor": {"0": {"XCoordinate": [290, 308]}}}, "30": {"Mark2Anchor": {"0": {"XCoordinate": [308, 285]}}}, "31": {"Mark2Anchor": {"0": {"YCoordinate": [-244, -212], "XCoordinate": [285, 153]}}}, "32": {"Mark2Anchor": {"0": {"YCoordinate": [-212, -244], "XCoordinate": [153, 302]}}}, "33": {"Mark2Anchor": {"0": {"YCoordinate": [-244, -147], "XCoordinate": [302, 317]}}}, "34": {"Mark2Anchor": {"0": {"Format": [1, null], "XCoordinate": [317, null], "YCoordinate": [-147, null]}}}}}, "Mark2Coverage": {"glyphs": {"21": ["uni0B4D0B2C", "uni0B4D0B2D"], "22": ["uni0B4D0B2D", "uni0B4D0B2E"], "23": ["uni0B4D0B2E", "uni0B4D0B2F"], "24": ["uni0B4D0B2F", "uni0B4D0B30"], "25": ["uni0B4D0B30", "uni0B4D0B32"], "26": ["uni0B4D0B32", "uni0B4D0B33"], "27": ["uni0B4D0B33", "uni0B4D0B35"], "28": ["uni0B4D0B35", "uni0B4D0B36"], "29": ["uni0B4D0B36", "uni0B4D0B37"], "30": ["uni0B4D0B37", "uni0B4D0B38"], "31": ["uni0B4D0B38", "uni0B4D0B39"], "32": ["uni0B4D0B39", "kassaoriya.below"], "33": ["kassaoriya.below", "uni0B3F.below"], "34": ["uni0B3F.below", null]}}}}}, "5": {"SubTable": {"0": {"Mark2Array": {"Mark2Count": [35, 34], "Mark2Record": {"21": {"Mark2Anchor": {"0": {"YCoordinate": [-244, -246], "XCoordinate": [240, 172]}}}, "22": {"Mark2Anchor": {"0": {"YCoordinate": [-246, -164], "XCoordinate": [172, 291]}}}, "23": {"Mark2Anchor": {"0": {"YCoordinate": [-164, -244], "XCoordinate": [291, 328]}}}, "24": {"Mark2Anchor": {"0": {"YCoordinate": [-244, -140], "XCoordinate": [328, 224]}}}, "25": {"Mark2Anchor": {"0": {"YCoordinate": [-140, -164], "XCoordinate": [224, 407]}}}, "26": {"Mark2Anchor": {"0": {"XCoordinate": [407, 337]}}}, "27": {"Mark2Anchor": {"0": {"XCoordinate": [337, 231]}}}, "28": {"Mark2Anchor": {"0": {"YCoordinate": [-164, -244], "XCoordinate": [231, 316]}}}, "29": {"Mark2Anchor": {"0": {"XCoordinate": [316, 334]}}}, "30": {"Mark2Anchor": {"0": {"YCoordinate": [-244, -248], "XCoordinate": [334, 311]}}}, "31": {"Mark2Anchor": {"0": {"YCoordinate": [-248, -215], "XCoordinate": [311, 175]}}}, "32": {"Mark2Anchor": {"0": {"YCoordinate": [-215, -244], "XCoordinate": [175, 328]}}}, "33": {"Mark2Anchor": {"0": {"YCoordinate": [-244, -152], "XCoordinate": [328, 342]}}}, "34": {"Mark2Anchor": {"0": {"Format": [1, null], "XCoordinate": [342, null], "YCoordinate": [-152, null]}}}}}, "Mark2Coverage": {"glyphs": {"21": ["uni0B4D0B2C", "uni0B4D0B2D"], "22": ["uni0B4D0B2D", "uni0B4D0B2E"], "23": ["uni0B4D0B2E", "uni0B4D0B2F"], "24": ["uni0B4D0B2F", "uni0B4D0B30"], "25": ["uni0B4D0B30", "uni0B4D0B32"], "26": ["uni0B4D0B32", "uni0B4D0B33"], "27": ["uni0B4D0B33", "uni0B4D0B35"], "28": ["uni0B4D0B35", "uni0B4D0B36"], "29": ["uni0B4D0B36", "uni0B4D0B37"], "30": ["uni0B4D0B37", "uni0B4D0B38"], "31": ["uni0B4D0B38", "uni0B4D0B39"], "32": ["uni0B4D0B39", "kassaoriya.below"], "33": ["kassaoriya.below", "uni0B3F.below"], "34": ["uni0B3F.below", null]}}}}}, "6": {"SubTable": {"0": {"Mark1Array": {"MarkCount": [1, 2], "MarkRecord": {"1": {"Class": [null, 0], "MarkAnchor": {"Format": [null, 1], "XCoordinate": [null, 300], "YCoordinate": [null, -105]}}}}, "Mark2Array": {"Mark2Count": [2, 34], "Mark2Record": {"0": {"Mark2Anchor": {"0": {"YCoordinate": [-221, -271], "XCoordinate": [287, 195]}}}, "1": {"Mark2Anchor": {"0": {"YCoordinate": [-9, -337], "XCoordinate": [-58, 173]}}}, "2": {"Mark2Anchor": {"0": {"Format": [null, 1], "XCoordinate": [null, 173], "YCoordinate": [null, -344]}}}, "3": {"Mark2Anchor": {"0": {"Format": [null, 1], "XCoordinate": [null, 178], "YCoordinate": [null, -338]}}}, "4": {"Mark2Anchor": {"0": {"Format": [null, 1], "XCoordinate": [null, 178], "YCoordinate": [null, -332]}}}, "5": {"Mark2Anchor": {"0": {"Format": [null, 1], "XCoordinate": [null, 167], "YCoordinate": [null, -322]}}}, "6": {"Mark2Anchor": {"0": {"Format": [null, 1], "XCoordinate": [null, 169], "YCoordinate": [null, -297]}}}, "7": {"Mark2Anchor": {"0": {"Format": [null, 1], "XCoordinate": [null, 181], "YCoordinate": [null, -258]}}}, "8": {"Mark2Anchor": {"0": {"Format": [null, 1], "XCoordinate": [null, 178], "YCoordinate": [null, -324]}}}, "9": {"Mark2Anchor": {"0": {"Format": [null, 1], "XCoordinate": [null, 163], "YCoordinate": [null, -318]}}}, "10": {"Mark2Anchor": {"0": {"Format": [null, 1], "XCoordinate": [null, 168], "YCoordinate": [null, -278]}}}, "11": {"Mark2Anchor": {"0": {"Format": [null, 1], "XCoordinate": [null, 178], "YCoordinate": [null, -312]}}}, "12": {"Mark2Anchor": {"0": {"Format": [null, 1], "XCoordinate": [null, 123], "YCoordinate": [null, -293]}}}, "13": {"Mark2Anchor": {"0": {"Format": [null, 1], "XCoordinate": [null, 219], "YCoordinate": [null, -328]}}}, "14": {"Mark2Anchor": {"0": {"Format": [null, 1], "XCoordinate": [null, 232], "YCoordinate": [null, -202]}}}, "15": {"Mark2Anchor": {"0": {"Format": [null, 1], "XCoordinate": [null, 242], "YCoordinate": [null, -232]}}}, "16": {"Mark2Anchor": {"0": {"Format": [null, 1], "XCoordinate": [null, 193], "YCoordinate": [null, -320]}}}, "17": {"Mark2Anchor": {"0": {"Format": [null, 1], "XCoordinate": [null, 179], "YCoordinate": [null, -332]}}}, "18": {"Mark2Anchor": {"0": {"Format": [null, 1], "XCoordinate": [null, 182], "YCoordinate": [null, -242]}}}, "19": {"Mark2Anchor": {"0": {"Format": [null, 1], "XCoordinate": [null, 198], "YCoordinate": [null, -318]}}}, "20": {"Mark2Anchor": {"0": {"Format": [null, 1], "XCoordinate": [null, 197], "YCoordinate": [null, -318]}}}, "21": {"Mark2Anchor": {"0": {"Format": [null, 1], "XCoordinate": [null, 194], "YCoordinate": [null, -326]}}}, "22": {"Mark2Anchor": {"0": {"Format": [null, 1], "XCoordinate": [null, 162], "YCoordinate": [null, -252]}}}, "23": {"Mark2Anchor": {"0": {"Format": [null, 1], "XCoordinate": [null, 171], "YCoordinate": [null, -328]}}}, "24": {"Mark2Anchor": {"0": {"Format": [null, 1], "XCoordinate": [null, 208], "YCoordinate": [null, -234]}}}, "25": {"Mark2Anchor": {"0": {"Format": [null, 1], "XCoordinate": [null, 183], "YCoordinate": [null, -239]}}}, "26": {"Mark2Anchor": {"0": {"Format": [null, 1], "XCoordinate": [null, 183], "YCoordinate": [null, -237]}}}, "27": {"Mark2Anchor": {"0": {"Format": [null, 1], "XCoordinate": [null, 127], "YCoordinate": [null, -234]}}}, "28": {"Mark2Anchor": {"0": {"Format": [null, 1], "XCoordinate": [null, 214], "YCoordinate": [null, -318]}}}, "29": {"Mark2Anchor": {"0": {"Format": [null, 1], "XCoordinate": [null, 219], "YCoordinate": [null, -315]}}}, "30": {"Mark2Anchor": {"0": {"Format": [null, 1], "XCoordinate": [null, 167], "YCoordinate": [null, -278]}}}, "31": {"Mark2Anchor": {"0": {"Format": [null, 1], "XCoordinate": [null, 171], "YCoordinate": [null, -292]}}}, "32": {"Mark2Anchor": {"0": {"Format": [null, 1], "XCoordinate": [null, 176], "YCoordinate": [null, -308]}}}, "33": {"Mark2Anchor": {"0": {"Format": [null, 1], "XCoordinate": [null, 263], "YCoordinate": [null, -219]}}}}}, "Mark2Coverage": {"glyphs": {"1": ["uni0B4D0B1B", "uni0B4D0B16"], "2": [null, "uni0B4D0B17"], "3": [null, "uni0B4D0B18"], "4": [null, "uni0B4D0B19"], "5": [null, "uni0B4D0B1A"], "6": [null, "uni0B4D0B1B"], "7": [null, "uni0B4D0B1C"], "8": [null, "uni0B4D0B1D"], "9": [null, "uni0B4D0B1F"], "10": [null, "uni0B4D0B20"], "11": [null, "uni0B4D0B21"], "12": [null, "uni0B4D0B22"], "13": [null, "uni0B4D0B23"], "14": [null, "uni0B4D0B24"], "15": [null, "uni0B4D0B25"], "16": [null, "uni0B4D0B26"], "17": [null, "uni0B4D0B27"], "18": [null, "uni0B4D0B28"], "19": [null, "uni0B4D0B2A"], "20": [null, "uni0B4D0B2B"], "21": [null, "uni0B4D0B2D"], "22": [null, "uni0B4D0B2E"], "23": [null, "uni0B4D0B2F"], "24": [null, "uni0B4D0B30"], "25": [null, "uni0B4D0B32"], "26": [null, "uni0B4D0B33"], "27": [null, "uni0B4D0B35"], "28": [null, "uni0B4D0B36"], "29": [null, "uni0B4D0B37"], "30": [null, "uni0B4D0B38"], "31": [null, "uni0B4D0B39"], "32": [null, "kassaoriya.below"], "33": [null, "uni0B3F.below"]}}, "Mark1Coverage": {"glyphs": {"1": [null, "uni0B3C.alt"]}}}}}, "8": {"SubTable": {"0": {"MarkArray": {"MarkCount": [144, 145], "MarkRecord": {"71": {"MarkAnchor": {"YCoordinate": [0, -105], "XCoordinate": [366, 300]}, "Class": [3, 1]}, "99": {"MarkAnchor": {"XCoordinate": [332, 366]}}, "127": {"MarkAnchor": {"YCoordinate": [720, 0], "XCoordinate": [1, 332]}, "Class": [2, 3]}, "128": {"MarkAnchor": {"YCoordinate": [658, 720], "XCoordinate": [461, 1]}, "Class": [0, 2]}, "129": {"MarkAnchor": {"XCoordinate": [389, 461]}}, "130": {"MarkAnchor": {"XCoordinate": [461, 389]}}, "131": {"MarkAnchor": {"XCoordinate": [344, 461]}}, "132": {"MarkAnchor": {"XCoordinate": [260, 344]}, "Class": [2, 0]}, "133": {"MarkAnchor": {"XCoordinate": [298, 260]}}, "134": {"MarkAnchor": {"XCoordinate": [281, 298]}}, "135": {"MarkAnchor": {"XCoordinate": [271, 281]}}, "136": {"MarkAnchor": {"YCoordinate": [-1, 658], "XCoordinate": [333, 271]}, "Class": [3, 2]}, "138": {"MarkAnchor": {"YCoordinate": [658, -1], "XCoordinate": [445, 333]}, "Class": [0, 3]}, "139": {"MarkAnchor": {"XCoordinate": [389, 445]}}, "140": {"MarkAnchor": {"XCoordinate": [445, 389]}}, "141": {"MarkAnchor": {"XCoordinate": [226, 445]}}, "142": {"MarkAnchor": {"YCoordinate": [-19, 658], "XCoordinate": [285, 226]}, "Class": [3, 0]}, "143": {"MarkAnchor": {"YCoordinate": [0, -19], "XCoordinate": [332, 285]}}, "144": {"Class": [null, 3], "MarkAnchor": {"Format": [null, 1], "XCoordinate": [null, 332], "YCoordinate": [null, 0]}}}}, "BaseCoverage": {"glyphs": {"0": ["uni25CC", "omoriya"], "1": ["uni0B05.BRACKET.varAlt01", "uni25CC"], "2": ["uni0B06.BRACKET.varAlt01", "aicandraBinduoriya"], "3": ["uni0B2D.BRACKET.varAlt01", "airephoriya"], "4": ["bharaoriya.BRACKET.varAlt01", "airephcandraBinduoriya"], "5": ["uni0B1B.BRACKET.varAlt01", "aucandraBinduoriya"], "6": ["charaoriya.BRACKET.varAlt01", "aurephoriya"], "7": ["uni0B21.BRACKET.varAlt01", "aurephcandraBinduoriya"], "8": ["ddaraoriya.BRACKET.varAlt01", "uni0B1F.base.001"], "9": ["uni0B22.BRACKET.varAlt01", "uni0B05.BRACKET.varAlt01"], "10": ["uni0B0F.BRACKET.varAlt01", "uni0B06.BRACKET.varAlt01"], "11": ["uni0B39.BRACKET.varAlt01", "aicandraBinduoriya.BRACKET.varAlt01"], "12": ["uni0B07.BRACKET.varAlt01", "airephcandraBinduoriya.BRACKET.varAlt01"], "13": ["uni0B08.BRACKET.varAlt01", "aucandraBinduoriya.BRACKET.varAlt01"], "14": ["uni0B1C.BRACKET.varAlt01", "aurephcandraBinduoriya.BRACKET.varAlt01"], "15": ["uni0B1C.base.BRACKET.varAlt01", "uni0B2D.BRACKET.varAlt01"], "16": ["jajhaoriya.BRACKET.varAlt01", "bharaoriya.BRACKET.varAlt01"], "17": ["jaraoriya.BRACKET.varAlt01", "uni0B1B.BRACKET.varAlt01"], "18": ["uni0B15.BRACKET.varAlt01", "charaoriya.BRACKET.varAlt01"], "19": ["karaoriya.BRACKET.varAlt01", "uni0B21.BRACKET.varAlt01"], "20": ["uni0B19.BRACKET.varAlt01", "ddaraoriya.BRACKET.varAlt01"], "21": ["ngaraoriya.BRACKET.varAlt01", "uni0B22.BRACKET.varAlt01"], "22": ["uni0B5D.BRACKET.varAlt01", "uni0B0F.BRACKET.varAlt01"], "23": ["uni0B5C.BRACKET.varAlt01", "uni0B39.BRACKET.varAlt01"], "24": ["uni0B37.BRACKET.varAlt01", "uni0B07.BRACKET.varAlt01"], "25": ["uni0B24.BRACKET.varAlt01", "uni0B08.BRACKET.varAlt01"], "26": ["takaoriya.BRACKET.varAlt01", "uni0B1C.BRACKET.varAlt01"], "27": ["uni0B09.BRACKET.varAlt01", "uni0B1C.base.BRACKET.varAlt01"], "28": ["uni0B0A.BRACKET.varAlt01", "jajhaoriya.BRACKET.varAlt01"], "29": ["uni0B35.BRACKET.varAlt01", "jaraoriya.BRACKET.varAlt01"], "30": ["uni0B35.base.BRACKET.varAlt01", "uni0B15.BRACKET.varAlt01"], "31": ["varaoriya.BRACKET.varAlt01", "karaoriya.BRACKET.varAlt01"], "32": [null, "uni0B19.BRACKET.varAlt01"], "33": [null, "ngaraoriya.BRACKET.varAlt01"], "34": [null, "uni0B5D.BRACKET.varAlt01"], "35": [null, "uni0B5D.alt.BRACKET.varAlt01"], "36": [null, "uni0B5C.BRACKET.varAlt01"], "37": [null, "uni0B5C.alt.BRACKET.varAlt01"], "38": [null, "uni0B37.BRACKET.varAlt01"], "39": [null, "uni0B24.BRACKET.varAlt01"], "40": [null, "takaoriya.BRACKET.varAlt01"], "41": [null, "uni0B09.BRACKET.varAlt01"], "42": [null, "uni0B0A.BRACKET.varAlt01"], "43": [null, "uni0B35.BRACKET.varAlt01"], "44": [null, "uni0B35.base.BRACKET.varAlt01"], "45": [null, "varaoriya.BRACKET.varAlt01"]}}, "MarkCoverage": {"glyphs": {"71": ["uni0B41.001", "uni0B3C.alt"], "72": ["uni0B41.002", "uni0B41.001"], "73": ["uni0B41.003", "uni0B41.002"], "74": ["uni0B41.004", "uni0B41.003"], "75": ["uni0B41.005", "uni0B41.004"], "76": ["uni0B41.006", "uni0B41.005"], "77": ["uni0B41.007", "uni0B41.006"], "78": ["uni0B41.008", "uni0B41.007"], "79": ["uni0B41.009", "uni0B41.008"], "80": ["uni0B41.010", "uni0B41.009"], "81": ["uni0B41.011", "uni0B41.010"], "82": ["uni0B41.012", "uni0B41.011"], "83": ["uni0B41.013", "uni0B41.012"], "84": ["uni0B41.014", "uni0B41.013"], "85": ["uni0B41.015", "uni0B41.014"], "86": ["uni0B41.016", "uni0B41.015"], "87": ["uni0B41.017", "uni0B41.016"], "88": ["uni0B41.018", "uni0B41.017"], "89": ["uni0B41.019", "uni0B41.018"], "90": ["uni0B41.020", "uni0B41.019"], "91": ["uni0B41.021", "uni0B41.020"], "92": ["uni0B41.022", "uni0B41.021"], "93": ["uni0B41.023", "uni0B41.022"], "94": ["uni0B41.024", "uni0B41.023"], "95": ["uni0B41.025", "uni0B41.024"], "96": ["uni0B41.026", "uni0B41.025"], "97": ["uni0B41.027", "uni0B41.026"], "98": ["uni0B41.028", "uni0B41.027"], "99": ["uni0B42.001", "uni0B41.028"], "100": ["uni0B42.002", "uni0B42.001"], "101": ["uni0B42.003", "uni0B42.002"], "102": ["uni0B42.004", "uni0B42.003"], "103": ["uni0B42.005", "uni0B42.004"], "104": ["uni0B42.006", "uni0B42.005"], "105": ["uni0B42.007", "uni0B42.006"], "106": ["uni0B42.008", "uni0B42.007"], "107": ["uni0B42.009", "uni0B42.008"], "108": ["uni0B42.010", "uni0B42.009"], "109": ["uni0B42.011", "uni0B42.010"], "110": ["uni0B42.012", "uni0B42.011"], "111": ["uni0B42.013", "uni0B42.012"], "112": ["uni0B42.014", "uni0B42.013"], "113": ["uni0B42.015", "uni0B42.014"], "114": ["uni0B42.016", "uni0B42.015"], "115": ["uni0B42.017", "uni0B42.016"], "116": ["uni0B42.018", "uni0B42.017"], "117": ["uni0B42.019", "uni0B42.018"], "118": ["uni0B42.020", "uni0B42.019"], "119": ["uni0B42.021", "uni0B42.020"], "120": ["uni0B42.022", "uni0B42.021"], "121": ["uni0B42.023", "uni0B42.022"], "122": ["uni0B42.024", "uni0B42.023"], "123": ["uni0B42.025", "uni0B42.024"], "124": ["uni0B42.026", "uni0B42.025"], "125": ["uni0B42.027", "uni0B42.026"], "126": ["uni0B42.028", "uni0B42.027"], "127": ["uni0b55", "uni0B42.028"], "128": ["aiLengthcandraBinduoriya.BRACKET.varAlt01", "uni0b55"], "129": ["aiLengthcandraBinduoriya.stem.BRACKET.varAlt01", "aiLengthcandraBinduoriya.BRACKET.varAlt01"], "130": ["aiLengthcandraBinduoriya.umbrella.BRACKET.varAlt01", "aiLengthcandraBinduoriya.stem.BRACKET.varAlt01"], "131": ["uni0B01.BRACKET.varAlt01", "aiLengthcandraBinduoriya.umbrella.BRACKET.varAlt01"], "132": ["iMatracandraBinduoriya.BRACKET.varAlt01", "uni0B01.BRACKET.varAlt01"], "133": ["iMatracandraBinduoriya.wide.BRACKET.varAlt01", "iMatracandraBinduoriya.BRACKET.varAlt01"], "134": ["iMatrarephcandraBinduoriya.BRACKET.varAlt01", "iMatracandraBinduoriya.wide.BRACKET.varAlt01"], "135": ["iMatrarephcandraBinduoriya.wide.BRACKET.varAlt01", "iMatrarephcandraBinduoriya.BRACKET.varAlt01"], "136": ["uni0B62.BRACKET.varAlt01", "iMatrarephcandraBinduoriya.wide.BRACKET.varAlt01"], "137": ["uni0B63.BRACKET.varAlt01", "uni0B62.BRACKET.varAlt01"], "138": ["rephaiLengthcandraBinduoriya.BRACKET.varAlt01", "uni0B63.BRACKET.varAlt01"], "139": ["rephaiLengthcandraBinduoriya.stem.BRACKET.varAlt01", "rephaiLengthcandraBinduoriya.BRACKET.varAlt01"], "140": ["rephaiLengthcandraBinduoriya.umbrella.BRACKET.varAlt01", "rephaiLengthcandraBinduoriya.stem.BRACKET.varAlt01"], "141": ["rephcandraBinduoriya.BRACKET.varAlt01", "rephaiLengthcandraBinduoriya.umbrella.BRACKET.varAlt01"], "142": ["uni0B44.BRACKET.varAlt01", "rephcandraBinduoriya.BRACKET.varAlt01"], "143": ["uni0B42.BRACKET.varAlt01", "uni0B44.BRACKET.varAlt01"], "144": [null, "uni0B42.BRACKET.varAlt01"]}}, "BaseArray": {"BaseCount": [32, 46], "BaseRecord": {"0": {"BaseAnchor": {"0": {"Format": [1, null], "XCoordinate": [659, null], "YCoordinate": [658, null]}, "1": {"YCoordinate": [-41, -157], "XCoordinate": [375, 395]}, "2": {"Format": [1, null], "XCoordinate": [373, null], "YCoordinate": [659, null]}, "3": {"Format": [1, null], "XCoordinate": [548, null], "YCoordinate": [51, null]}, "4": {"Format": [1, null], "XCoordinate": [641, null], "YCoordinate": [-4, null]}}}, "1": {"BaseAnchor": {"0": {"XCoordinate": [496, 659]}, "1": {"Format": [null, 1], "XCoordinate": [null, 375], "YCoordinate": [null, -191]}, "2": {"Format": [null, 1], "XCoordinate": [null, 373], "YCoordinate": [null, 659]}, "3": {"Format": [null, 1], "XCoordinate": [null, 548], "YCoordinate": [null, 51]}, "4": {"Format": [null, 1], "XCoordinate": [null, 641], "YCoordinate": [null, -4]}}}, "2": {"BaseAnchor": {"0": {"Format": [1, null], "XCoordinate": [642, null], "YCoordinate": [658, null]}, "1": {"Format": [null, 1], "XCoordinate": [null, 468], "YCoordinate": [null, -150]}}}, "3": {"BaseAnchor": {"0": {"Format": [1, null], "XCoordinate": [554, null], "YCoordinate": [658, null]}, "1": {"Format": [null, 1], "XCoordinate": [null, 488], "YCoordinate": [null, -150]}, "2": {"Format": [1, null], "XCoordinate": [321, null], "YCoordinate": [658, null]}, "3": {"Format": [1, null], "XCoordinate": [297, null], "YCoordinate": [0, null]}, "4": {"Format": [1, null], "XCoordinate": [526, null], "YCoordinate": [0, null]}}}, "4": {"BaseAnchor": {"0": {"Format": [1, null], "XCoordinate": [554, null], "YCoordinate": [658, null]}, "1": {"Format": [null, 1], "XCoordinate": [null, 492], "YCoordinate": [null, -150]}, "2": {"Format": [1, null], "XCoordinate": [321, null], "YCoordinate": [658, null]}}}, "5": {"BaseAnchor": {"0": {"Format": [1, null], "XCoordinate": [500, null], "YCoordinate": [658, null]}, "1": {"Format": [null, 1], "XCoordinate": [null, 521], "YCoordinate": [null, -158]}, "2": {"Format": [1, null], "XCoordinate": [291, null], "YCoordinate": [658, null]}, "3": {"Format": [1, null], "XCoordinate": [420, null], "YCoordinate": [0, null]}, "4": {"Format": [1, null], "XCoordinate": [474, null], "YCoordinate": [0, null]}}}, "6": {"BaseAnchor": {"0": {"Format": [1, null], "XCoordinate": [500, null], "YCoordinate": [658, null]}, "1": {"Format": [null, 1], "XCoordinate": [null, 463], "YCoordinate": [null, -158]}, "2": {"Format": [1, null], "XCoordinate": [291, null], "YCoordinate": [658, null]}}}, "7": {"BaseAnchor": {"0": {"Format": [1, null], "XCoordinate": [515, null], "YCoordinate": [658, null]}, "1": {"YCoordinate": [-90, -158], "XCoordinate": [285, 540]}, "2": {"Format": [1, null], "XCoordinate": [300, null], "YCoordinate": [658, null]}, "3": {"Format": [1, null], "XCoordinate": [285, null], "YCoordinate": [0, null]}, "4": {"Format": [1, null], "XCoordinate": [506, null], "YCoordinate": [0, null]}}}, "8": {"BaseAnchor": {"0": {"XCoordinate": [515, 466]}, "1": {"Format": [null, 1], "XCoordinate": [null, 255], "YCoordinate": [null, -60]}, "2": {"XCoordinate": [300, 248]}, "3": {"Format": [null, 1], "XCoordinate": [null, 373], "YCoordinate": [null, 110]}}}, "9": {"BaseAnchor": {"0": {"XCoordinate": [515, 496]}, "1": {"YCoordinate": [-90, -158], "XCoordinate": [297, 277]}, "2": {"Format": [1, null], "XCoordinate": [310, null], "YCoordinate": [658, null]}, "3": {"YCoordinate": [0, 11], "XCoordinate": [255, 388]}, "4": {"Format": [1, null], "XCoordinate": [524, null], "YCoordinate": [0, null]}}}, "10": {"BaseAnchor": {"0": {"XCoordinate": [491, 642]}, "1": {"Format": [null, 1], "XCoordinate": [null, 350], "YCoordinate": [null, -158]}, "3": {"Format": [null, 1], "XCoordinate": [null, 388], "YCoordinate": [null, 11]}}}, "11": {"BaseAnchor": {"0": {"Format": [1, null], "XCoordinate": [492, null], "YCoordinate": [658, null]}, "1": {"Format": [null, 1], "XCoordinate": [null, 468], "YCoordinate": [null, -150]}, "2": {"Format": [1, null], "XCoordinate": [284, null], "YCoordinate": [658, null]}, "3": {"Format": [1, null], "XCoordinate": [358, null], "YCoordinate": [20, null]}, "4": {"Format": [1, null], "XCoordinate": [461, null], "YCoordinate": [0, null]}}}, "12": {"BaseAnchor": {"0": {"Format": [1, null], "XCoordinate": [563, null], "YCoordinate": [658, null]}, "1": {"Format": [null, 1], "XCoordinate": [null, 492], "YCoordinate": [null, -150]}}}, "13": {"BaseAnchor": {"0": {"Format": [1, null], "XCoordinate": [563, null], "YCoordinate": [658, null]}, "1": {"Format": [null, 1], "XCoordinate": [null, 521], "YCoordinate": [null, -158]}}}, "14": {"BaseAnchor": {"0": {"Format": [1, null], "XCoordinate": [534, null], "YCoordinate": [658, null]}, "1": {"Format": [null, 1], "XCoordinate": [null, 540], "YCoordinate": [null, -158]}, "2": {"Format": [1, null], "XCoordinate": [307, null], "YCoordinate": [658, null]}, "3": {"Format": [1, null], "XCoordinate": [444, null], "YCoordinate": [0, null]}, "4": {"Format": [1, null], "XCoordinate": [470, null], "YCoordinate": [0, null]}}}, "15": {"BaseAnchor": {"0": {"XCoordinate": [490, 554]}, "1": {"Format": [null, 1], "XCoordinate": [null, 334], "YCoordinate": [null, -158]}, "2": {"XCoordinate": [287, 321]}, "3": {"YCoordinate": [110, 0], "XCoordinate": [422, 297]}, "4": {"Format": [null, 1], "XCoordinate": [null, 526], "YCoordinate": [null, 0]}}}, "16": {"BaseAnchor": {"0": {"XCoordinate": [490, 554]}, "1": {"Format": [null, 1], "XCoordinate": [null, 334], "YCoordinate": [null, -290]}, "2": {"XCoordinate": [287, 321]}, "3": {"Format": [1, null], "XCoordinate": [414, null], "YCoordinate": [-247, null]}, "4": {"Format": [1, null], "XCoordinate": [438, null], "YCoordinate": [-247, null]}}}, "17": {"BaseAnchor": {"0": {"XCoordinate": [534, 500]}, "1": {"Format": [null, 1], "XCoordinate": [null, 292], "YCoordinate": [null, -158]}, "2": {"XCoordinate": [307, 291]}, "3": {"Format": [null, 1], "XCoordinate": [null, 420], "YCoordinate": [null, 0]}, "4": {"Format": [null, 1], "XCoordinate": [null, 474], "YCoordinate": [null, 0]}}}, "18": {"BaseAnchor": {"0": {"XCoordinate": [534, 500]}, "1": {"Format": [null, 1], "XCoordinate": [null, 292], "YCoordinate": [null, -290]}, "2": {"XCoordinate": [307, 291]}, "3": {"Format": [1, null], "XCoordinate": [444, null], "YCoordinate": [0, null]}, "4": {"Format": [1, null], "XCoordinate": [470, null], "YCoordinate": [0, null]}}}, "19": {"BaseAnchor": {"0": {"XCoordinate": [534, 515]}, "1": {"Format": [null, 1], "XCoordinate": [null, 285], "YCoordinate": [null, -140]}, "2": {"XCoordinate": [307, 300]}, "3": {"Format": [null, 1], "XCoordinate": [null, 285], "YCoordinate": [null, 0]}, "4": {"Format": [null, 1], "XCoordinate": [null, 506], "YCoordinate": [null, 0]}}}, "20": {"BaseAnchor": {"0": {"XCoordinate": [479, 515]}, "1": {"Format": [null, 1], "XCoordinate": [null, 300], "YCoordinate": [null, -290]}, "2": {"XCoordinate": [290, 300]}, "3": {"Format": [1, null], "XCoordinate": [285, null], "YCoordinate": [0, null]}, "4": {"Format": [1, null], "XCoordinate": [516, null], "YCoordinate": [0, null]}}}, "21": {"BaseAnchor": {"0": {"XCoordinate": [479, 515]}, "1": {"Format": [null, 1], "XCoordinate": [null, 297], "YCoordinate": [null, -140]}, "2": {"XCoordinate": [290, 310]}, "3": {"Format": [null, 1], "XCoordinate": [null, 255], "YCoordinate": [null, 0]}, "4": {"Format": [null, 1], "XCoordinate": [null, 524], "YCoordinate": [null, 0]}}}, "22": {"BaseAnchor": {"0": {"XCoordinate": [515, 491]}, "1": {"YCoordinate": [-90, -150], "XCoordinate": [297, 247]}, "2": {"Format": [1, null], "XCoordinate": [310, null], "YCoordinate": [658, null]}, "4": {"Format": [1, null], "XCoordinate": [508, null], "YCoordinate": [-80, null]}}}, "23": {"BaseAnchor": {"0": {"XCoordinate": [515, 492]}, "1": {"YCoordinate": [-90, -108], "XCoordinate": [285, 288]}, "2": {"XCoordinate": [300, 284]}, "3": {"Format": [null, 1], "XCoordinate": [null, 358], "YCoordinate": [null, 20]}, "4": {"YCoordinate": [-80, 0], "XCoordinate": [495, 461]}}}, "24": {"BaseAnchor": {"0": {"XCoordinate": [537, 563]}, "1": {"Format": [null, 1], "XCoordinate": [null, 333], "YCoordinate": [null, -158]}, "2": {"Format": [1, null], "XCoordinate": [282, null], "YCoordinate": [658, null]}, "3": {"Format": [1, null], "XCoordinate": [524, null], "YCoordinate": [0, null]}, "4": {"Format": [1, null], "XCoordinate": [550, null], "YCoordinate": [0, null]}}}, "25": {"BaseAnchor": {"0": {"XCoordinate": [515, 563]}, "1": {"Format": [null, 1], "XCoordinate": [null, 333], "YCoordinate": [null, -158]}, "2": {"Format": [1, null], "XCoordinate": [298, null], "YCoordinate": [658, null]}, "3": {"Format": [1, null], "XCoordinate": [284, null], "YCoordinate": [0, null]}, "4": {"Format": [1, null], "XCoordinate": [507, null], "YCoordinate": [0, null]}}}, "26": {"BaseAnchor": {"1": {"Format": [null, 1], "XCoordinate": [null, 310], "YCoordinate": [null, -158]}, "3": {"YCoordinate": [-140, 0], "XCoordinate": [430, 444]}, "4": {"YCoordinate": [-147, 0], "XCoordinate": [456, 470]}}}, "27": {"BaseAnchor": {"0": {"XCoordinate": [538, 490]}, "1": {"Format": [null, 1], "XCoordinate": [null, 287], "YCoordinate": [null, -60]}, "2": {"Format": [null, 1], "XCoordinate": [null, 287], "YCoordinate": [null, 658]}, "3": {"Format": [null, 1], "XCoordinate": [null, 422], "YCoordinate": [null, 110]}}}, "28": {"BaseAnchor": {"0": {"XCoordinate": [513, 490]}, "1": {"Format": [null, 1], "XCoordinate": [null, 426], "YCoordinate": [null, -308]}, "2": {"Format": [null, 1], "XCoordinate": [null, 287], "YCoordinate": [null, 658]}, "3": {"Format": [null, 1], "XCoordinate": [null, 414], "YCoordinate": [null, -247]}, "4": {"Format": [null, 1], "XCoordinate": [null, 438], "YCoordinate": [null, -247]}}}, "29": {"BaseAnchor": {"0": {"XCoordinate": [497, 534]}, "1": {"Format": [null, 1], "XCoordinate": [null, 310], "YCoordinate": [null, -290]}, "2": {"XCoordinate": [289, 307]}, "3": {"Format": [1, null], "XCoordinate": [381, null], "YCoordinate": [0, null]}, "4": {"Format": [1, null], "XCoordinate": [482, null], "YCoordinate": [0, null]}}}, "30": {"BaseAnchor": {"0": {"XCoordinate": [456, 534]}, "1": {"Format": [null, 1], "XCoordinate": [null, 310], "YCoordinate": [null, -150]}, "2": {"XCoordinate": [269, 307]}, "3": {"YCoordinate": [110, 0], "XCoordinate": [364, 444]}, "4": {"Format": [null, 1], "XCoordinate": [null, 470], "YCoordinate": [null, 0]}}}, "31": {"BaseAnchor": {"0": {"XCoordinate": [497, 534]}, "1": {"Format": [null, 1], "XCoordinate": [null, 310], "YCoordinate": [null, -290]}, "2": {"XCoordinate": [289, 307]}}}, "32": {"BaseAnchor": {"0": {"Format": [null, 1], "XCoordinate": [null, 479], "YCoordinate": [null, 658]}, "1": {"Format": [null, 1], "XCoordinate": [null, 285], "YCoordinate": [null, -158]}, "2": {"Format": [null, 1], "XCoordinate": [null, 290], "YCoordinate": [null, 658]}, "3": {"Format": [null, 1], "XCoordinate": [null, 285], "YCoordinate": [null, 0]}, "4": {"Format": [null, 1], "XCoordinate": [null, 516], "YCoordinate": [null, 0]}}}, "33": {"BaseAnchor": {"0": {"Format": [null, 1], "XCoordinate": [null, 479], "YCoordinate": [null, 658]}, "1": {"Format": [null, 1], "XCoordinate": [null, 318], "YCoordinate": [null, -290]}, "2": {"Format": [null, 1], "XCoordinate": [null, 290], "YCoordinate": [null, 658]}}}, "34": {"BaseAnchor": {"0": {"Format": [null, 1], "XCoordinate": [null, 515], "YCoordinate": [null, 658]}, "1": {"Format": [null, 1], "XCoordinate": [null, 297], "YCoordinate": [null, -140]}, "2": {"Format": [null, 1], "XCoordinate": [null, 310], "YCoordinate": [null, 658]}, "4": {"Format": [null, 1], "XCoordinate": [null, 508], "YCoordinate": [null, -80]}}}, "35": {"BaseAnchor": {"0": {"Format": [null, 1], "XCoordinate": [null, 515], "YCoordinate": [null, 658]}, "1": {"Format": [null, 1], "XCoordinate": [null, 297], "YCoordinate": [null, -140]}, "2": {"Format": [null, 1], "XCoordinate": [null, 310], "YCoordinate": [null, 658]}, "3": {"Format": [null, 1], "XCoordinate": [null, 255], "YCoordinate": [null, 0]}, "4": {"Format": [null, 1], "XCoordinate": [null, 508], "YCoordinate": [null, -80]}}}, "36": {"BaseAnchor": {"0": {"Format": [null, 1], "XCoordinate": [null, 515], "YCoordinate": [null, 658]}, "1": {"Format": [null, 1], "XCoordinate": [null, 285], "YCoordinate": [null, -140]}, "2": {"Format": [null, 1], "XCoordinate": [null, 300], "YCoordinate": [null, 658]}, "4": {"Format": [null, 1], "XCoordinate": [null, 495], "YCoordinate": [null, -80]}}}, "37": {"BaseAnchor": {"0": {"Format": [null, 1], "XCoordinate": [null, 515], "YCoordinate": [null, 658]}, "1": {"Format": [null, 1], "XCoordinate": [null, 285], "YCoordinate": [null, -140]}, "2": {"Format": [null, 1], "XCoordinate": [null, 300], "YCoordinate": [null, 658]}, "3": {"Format": [null, 1], "XCoordinate": [null, 285], "YCoordinate": [null, 0]}, "4": {"Format": [null, 1], "XCoordinate": [null, 495], "YCoordinate": [null, -80]}}}, "38": {"BaseAnchor": {"0": {"Format": [null, 1], "XCoordinate": [null, 537], "YCoordinate": [null, 658]}, "1": {"Format": [null, 1], "XCoordinate": [null, 291], "YCoordinate": [null, -158]}, "2": {"Format": [null, 1], "XCoordinate": [null, 282], "YCoordinate": [null, 658]}, "3": {"Format": [null, 1], "XCoordinate": [null, 524], "YCoordinate": [null, 0]}, "4": {"Format": [null, 1], "XCoordinate": [null, 550], "YCoordinate": [null, 0]}}}, "39": {"BaseAnchor": {"0": {"Format": [null, 1], "XCoordinate": [null, 515], "YCoordinate": [null, 658]}, "1": {"Format": [null, 1], "XCoordinate": [null, 300], "YCoordinate": [null, -158]}, "2": {"Format": [null, 1], "XCoordinate": [null, 298], "YCoordinate": [null, 658]}, "3": {"Format": [null, 1], "XCoordinate": [null, 284], "YCoordinate": [null, 0]}, "4": {"Format": [null, 1], "XCoordinate": [null, 507], "YCoordinate": [null, 0]}}}, "40": {"BaseAnchor": {"0": {"Format": [null, 1], "XCoordinate": [null, 534], "YCoordinate": [null, 658]}, "1": {"Format": [null, 1], "XCoordinate": [null, 368], "YCoordinate": [null, -207]}, "2": {"Format": [null, 1], "XCoordinate": [null, 307], "YCoordinate": [null, 658]}, "3": {"Format": [null, 1], "XCoordinate": [null, 430], "YCoordinate": [null, -140]}, "4": {"Format": [null, 1], "XCoordinate": [null, 456], "YCoordinate": [null, -147]}}}, "41": {"BaseAnchor": {"0": {"Format": [null, 1], "XCoordinate": [null, 538], "YCoordinate": [null, 658]}, "1": {"Format": [null, 1], "XCoordinate": [null, 316], "YCoordinate": [null, -158]}}}, "42": {"BaseAnchor": {"0": {"Format": [null, 1], "XCoordinate": [null, 513], "YCoordinate": [null, 658]}, "1": {"Format": [null, 1], "XCoordinate": [null, 336], "YCoordinate": [null, -166]}}}, "43": {"BaseAnchor": {"0": {"Format": [null, 1], "XCoordinate": [null, 497], "YCoordinate": [null, 658]}, "1": {"Format": [null, 1], "XCoordinate": [null, 291], "YCoordinate": [null, -150]}, "2": {"Format": [null, 1], "XCoordinate": [null, 289], "YCoordinate": [null, 658]}, "3": {"Format": [null, 1], "XCoordinate": [null, 381], "YCoordinate": [null, 0]}, "4": {"Format": [null, 1], "XCoordinate": [null, 482], "YCoordinate": [null, 0]}}}, "44": {"BaseAnchor": {"0": {"Format": [null, 1], "XCoordinate": [null, 456], "YCoordinate": [null, 658]}, "1": {"Format": [null, 1], "XCoordinate": [null, 270], "YCoordinate": [null, -54]}, "2": {"Format": [null, 1], "XCoordinate": [null, 269], "YCoordinate": [null, 658]}, "3": {"Format": [null, 1], "XCoordinate": [null, 364], "YCoordinate": [null, 110]}}}, "45": {"BaseAnchor": {"0": {"Format": [null, 1], "XCoordinate": [null, 497], "YCoordinate": [null, 658]}, "1": {"Format": [null, 1], "XCoordinate": [null, 291], "YCoordinate": [null, -290]}, "2": {"Format": [null, 1], "XCoordinate": [null, 289], "YCoordinate": [null, 658]}}}}}}}}, "9": {"SubTable": {"0": {"Mark2Array": {"Mark2Count": [1, 2], "Mark2Record": {"0": {"Mark2Anchor": {"0": {"YCoordinate": [-143, -244], "XCoordinate": [110, 214]}}}, "1": {"Mark2Anchor": {"0": {"Format": [null, 1], "XCoordinate": [null, 110], "YCoordinate": [null, -143]}}}}}, "Mark2Coverage": {"glyphs": {"0": ["taaltoriya.below", "uni0B4D0B2C"], "1": [null, "taaltoriya.below"]}}}}}, "10": {"SubTable": {"0": {"Mark2Array": {"Mark2Count": [1, 2], "Mark2Record": {"0": {"Mark2Anchor": {"0": {"YCoordinate": [-147, -244], "XCoordinate": [132, 240]}}}, "1": {"Mark2Anchor": {"0": {"Format": [null, 1], "XCoordinate": [null, 132], "YCoordinate": [null, -147]}}}}}, "Mark2Coverage": {"glyphs": {"0": ["taaltoriya.below", "uni0B4D0B2C"], "1": [null, "taaltoriya.below"]}}}}}, "11": {"LookupType": [null, 6], "LookupFlag": [null, 16], "SubTableCount": [null, 1], "SubTable": {"0": {"Format": [null, 1], "Mark1Coverage": {"glyphs": {"0": [null, "uni0B3C"], "1": [null, "uni0B3C.alt"]}}, "Mark2Coverage": {"glyphs": {"0": [null, "uni0B4D0B2C"], "1": [null, "taaltoriya.below"]}}, "ClassCount": [null, 1], "Mark1Array": {"MarkCount": [null, 2], "MarkRecord": {"0": {"Class": [null, 0], "MarkAnchor": {"Format": [null, 1], "XCoordinate": [null, 300], "YCoordinate": [null, -105]}}, "1": {"Class": [null, 0], "MarkAnchor": {"Format": [null, 1], "XCoordinate": [null, 300], "YCoordinate": [null, -105]}}}}, "Mark2Array": {"Mark2Count": [null, 2], "Mark2Record": {"0": {"Mark2Anchor": {"0": {"Format": [null, 1], "XCoordinate": [null, 169], "YCoordinate": [null, -300]}}}, "1": {"Mark2Anchor": {"0": {"Format": [null, 1], "XCoordinate": [null, 65], "YCoordinate": [null, -220]}}}}}}}, "MarkFilteringSet": [null, 5]}}, "LookupCount": [11, 12]}}}, "hhea": {"numberOfHMetrics": [592, 600]}, "name": {"258/3/1/1033": ["Latin to Oriya Figures", null], "257/3/1/1033": ["Oriya to Latin Figures", null]}, "GSUB": {"table": {"ScriptList": {"ScriptRecord": {"2": {"Script": {"DefaultLangSys": {"FeatureIndex": {"14": [14, null], "15": [15, null]}, "FeatureCount": [16, 14]}}}}}, "FeatureList": {"FeatureRecord": {"1": {"Feature": {"LookupListIndex": {"0": [17, 21], "1": [19, 23]}}}, "4": {"Feature": {"LookupCount": [4, 6], "LookupListIndex": {"4": [null, 16], "5": [null, 18]}}}, "5": {"Feature": {"LookupCount": [4, 6], "LookupListIndex": {"0": [21, 25], "1": [24, 28], "2": [26, 30], "3": [55, 59], "4": [null, 88], "5": [null, 117]}}}, "7": {"Feature": {"LookupListIndex": {"0": [20, 24]}}}, "11": {"Feature": {"LookupListIndex": {"0": [16, 20]}}}, "13": {"Feature": {"LookupListIndex": {"0": [84, 146]}}}, "14": {"FeatureTag": ["ss02", null], "Feature": {"FeatureParams": {"Version": [0, null], "UINameID": [257, null]}, "LookupCount": [1, null], "LookupListIndex": {"0": [85, null]}}}, "15": {"FeatureTag": ["ss03", null], "Feature": {"FeatureParams": {"Version": [0, null], "UINameID": [258, null]}, "LookupCount": [1, null], "LookupListIndex": {"0": [86, null]}}}}, "FeatureCount": [16, 14]}, "LookupList": {"Lookup": {"error": ["There are 135 changes, check manually!", ""]}, "LookupCount": [87, 147]}}}, "glyf": {"glyphOrder": {"475": ["uni0B41.001", "uni0B5C.alt"], "476": ["uni0B41.002", "uni0B5D.alt"], "477": ["uni0B41.003", "uni0B1F.base.001"], "478": ["uni0B41.004", "uni0B5C.base.alt"], "479": ["uni0B41.005", "uni0B5D.base.alt"], "480": ["uni0B41.006", "uni0B3C.alt"], "481": ["uni0B41.007", "uni0B41.001"], "482": ["uni0B41.008", "uni0B41.002"], "483": ["uni0B41.009", "uni0B41.003"], "484": ["uni0B41.010", "uni0B41.004"], "485": ["uni0B41.011", "uni0B41.005"], "486": ["uni0B41.012", "uni0B41.006"], "487": ["uni0B41.013", "uni0B41.007"], "488": ["uni0B41.014", "uni0B41.008"], "489": ["uni0B41.015", "uni0B41.009"], "490": ["uni0B41.016", "uni0B41.010"], "491": ["uni0B41.017", "uni0B41.011"], "492": ["uni0B41.018", "uni0B41.012"], "493": ["uni0B41.019", "uni0B41.013"], "494": ["uni0B41.020", "uni0B41.014"], "495": ["uni0B41.021", "uni0B41.015"], "496": ["uni0B41.022", "uni0B41.016"], "497": ["uni0B41.023", "uni0B41.017"], "498": ["uni0B41.024", "uni0B41.018"], "499": ["uni0B41.025", "uni0B41.019"], "500": ["uni0B41.026", "uni0B41.020"], "501": ["uni0B41.027", "uni0B41.021"], "502": ["uni0B41.028", "uni0B41.022"], "503": ["uni0B42.001", "uni0B41.023"], "504": ["uni0B42.002", "uni0B41.024"], "505": ["uni0B42.003", "uni0B41.025"], "506": ["uni0B42.004", "uni0B41.026"], "507": ["uni0B42.005", "uni0B41.027"], "508": ["uni0B42.006", "uni0B41.028"], "509": ["uni0B42.007", "uni0B42.001"], "510": ["uni0B42.008", "uni0B42.002"], "511": ["uni0B42.009", "uni0B42.003"], "512": ["uni0B42.010", "uni0B42.004"], "513": ["uni0B42.011", "uni0B42.005"], "514": ["uni0B42.012", "uni0B42.006"], "515": ["uni0B42.013", "uni0B42.007"], "516": ["uni0B42.014", "uni0B42.008"], "517": ["uni0B42.015", "uni0B42.009"], "518": ["uni0B42.016", "uni0B42.010"], "519": ["uni0B42.017", "uni0B42.011"], "520": ["uni0B42.018", "uni0B42.012"], "521": ["uni0B42.019", "uni0B42.013"], "522": ["uni0B42.020", "uni0B42.014"], "523": ["uni0B42.021", "uni0B42.015"], "524": ["uni0B42.022", "uni0B42.016"], "525": ["uni0B42.023", "uni0B42.017"], "526": ["uni0B42.024", "uni0B42.018"], "527": ["uni0B42.025", "uni0B42.019"], "528": ["uni0B42.026", "uni0B42.020"], "529": ["uni0B42.027", "uni0B42.021"], "530": ["uni0B42.028", "uni0B42.022"], "531": ["uni0b55", "uni0B42.023"], "532": ["uni0B05.BRACKET.varAlt01", "uni0B42.024"], "533": ["uni0B06.BRACKET.varAlt01", "uni0B42.025"], "534": ["aiLengthcandraBinduoriya.BRACKET.varAlt01", "uni0B42.026"], "535": ["aiLengthcandraBinduoriya.stem.BRACKET.varAlt01", "uni0B42.027"], "536": ["aiLengthcandraBinduoriya.umbrella.BRACKET.varAlt01", "uni0B42.028"], "537": ["aicandraBinduoriya.BRACKET.varAlt01", "uni0b55"], "538": ["airephcandraBinduoriya.BRACKET.varAlt01", "uni0B05.BRACKET.varAlt01"], "539": ["auLengthcandraBinduoriya.BRACKET.varAlt01", "uni0B06.BRACKET.varAlt01"], "540": ["aucandraBinduoriya.BRACKET.varAlt01", "aiLengthcandraBinduoriya.BRACKET.varAlt01"], "541": ["aurephcandraBinduoriya.BRACKET.varAlt01", "aiLengthcandraBinduoriya.stem.BRACKET.varAlt01"], "542": ["uni0B2D.BRACKET.varAlt01", "aiLengthcandraBinduoriya.umbrella.BRACKET.varAlt01"], "543": ["bharaoriya.BRACKET.varAlt01", "aicandraBinduoriya.BRACKET.varAlt01"], "544": ["uni0B01.BRACKET.varAlt01", "airephcandraBinduoriya.BRACKET.varAlt01"], "545": ["uni0B1B.BRACKET.varAlt01", "auLengthcandraBinduoriya.BRACKET.varAlt01"], "546": ["charaoriya.BRACKET.varAlt01", "aucandraBinduoriya.BRACKET.varAlt01"], "547": ["uni0B21.BRACKET.varAlt01", "aurephcandraBinduoriya.BRACKET.varAlt01"], "548": ["ddaraoriya.BRACKET.varAlt01", "uni0B2D.BRACKET.varAlt01"], "549": ["uni0B22.BRACKET.varAlt01", "bharaoriya.BRACKET.varAlt01"], "550": ["uni0B0F.BRACKET.varAlt01", "uni0B01.BRACKET.varAlt01"], "551": ["uni0B6B.BRACKET.varAlt01", "uni0B1B.BRACKET.varAlt01"], "552": ["uni0B39.BRACKET.varAlt01", "charaoriya.BRACKET.varAlt01"], "553": ["uni0B07.BRACKET.varAlt01", "uni0B21.BRACKET.varAlt01"], "554": ["iMatracandraBinduoriya.BRACKET.varAlt01", "ddaraoriya.BRACKET.varAlt01"], "555": ["iMatracandraBinduoriya.wide.BRACKET.varAlt01", "uni0B22.BRACKET.varAlt01"], "556": ["iMatrarephcandraBinduoriya.BRACKET.varAlt01", "uni0B0F.BRACKET.varAlt01"], "557": ["iMatrarephcandraBinduoriya.wide.BRACKET.varAlt01", "uni0B6B.BRACKET.varAlt01"], "558": ["uni0B08.BRACKET.varAlt01", "uni0B39.BRACKET.varAlt01"], "559": ["uni0B1C.BRACKET.varAlt01", "uni0B07.BRACKET.varAlt01"], "560": ["uni0B1C.base.BRACKET.varAlt01", "iMatracandraBinduoriya.BRACKET.varAlt01"], "561": ["jajhaoriya.BRACKET.varAlt01", "iMatracandraBinduoriya.wide.BRACKET.varAlt01"], "562": ["jaraoriya.BRACKET.varAlt01", "iMatrarephcandraBinduoriya.BRACKET.varAlt01"], "563": ["uni0B15.BRACKET.varAlt01", "iMatrarephcandraBinduoriya.wide.BRACKET.varAlt01"], "564": ["karaoriya.BRACKET.varAlt01", "uni0B08.BRACKET.varAlt01"], "565": ["uni0B62.BRACKET.varAlt01", "uni0B1C.BRACKET.varAlt01"], "566": ["uni0B63.BRACKET.varAlt01", "uni0B1C.base.BRACKET.varAlt01"], "567": ["uni0B19.BRACKET.varAlt01", "jajhaoriya.BRACKET.varAlt01"], "568": ["ngaraoriya.BRACKET.varAlt01", "jaraoriya.BRACKET.varAlt01"], "569": ["uni0B6F.BRACKET.varAlt01", "uni0B15.BRACKET.varAlt01"], "570": ["uni0B67.BRACKET.varAlt01", "karaoriya.BRACKET.varAlt01"], "571": ["rephaiLengthcandraBinduoriya.BRACKET.varAlt01", "uni0B62.BRACKET.varAlt01"], "572": ["rephaiLengthcandraBinduoriya.stem.BRACKET.varAlt01", "uni0B63.BRACKET.varAlt01"], "573": ["rephaiLengthcandraBinduoriya.umbrella.BRACKET.varAlt01", "uni0B19.BRACKET.varAlt01"], "574": ["rephauLengthcandraBinduoriya.BRACKET.varAlt01", "ngaraoriya.BRACKET.varAlt01"], "575": ["rephcandraBinduoriya.BRACKET.varAlt01", "uni0B6F.BRACKET.varAlt01"], "576": ["uni0B5D.BRACKET.varAlt01", "uni0B67.BRACKET.varAlt01"], "577": ["uni0B44.BRACKET.varAlt01", "rephaiLengthcandraBinduoriya.BRACKET.varAlt01"], "578": ["uni0B5C.BRACKET.varAlt01", "rephaiLengthcandraBinduoriya.stem.BRACKET.varAlt01"], "579": ["uni0B6D.BRACKET.varAlt01", "rephaiLengthcandraBinduoriya.umbrella.BRACKET.varAlt01"], "580": ["uni0B6C.BRACKET.varAlt01", "rephauLengthcandraBinduoriya.BRACKET.varAlt01"], "581": ["uni0B37.BRACKET.varAlt01", "rephcandraBinduoriya.BRACKET.varAlt01"], "582": ["uni0B24.BRACKET.varAlt01", "uni0B5D.BRACKET.varAlt01"], "583": ["takaoriya.BRACKET.varAlt01", "uni0B5D.alt.BRACKET.varAlt01"], "584": ["uni0B69.BRACKET.varAlt01", "uni0B44.BRACKET.varAlt01"], "585": ["uni0B68.BRACKET.varAlt01", "uni0B5C.BRACKET.varAlt01"], "586": ["uni0B09.BRACKET.varAlt01", "uni0B5C.alt.BRACKET.varAlt01"], "587": ["uni0B0A.BRACKET.varAlt01", "uni0B6D.BRACKET.varAlt01"], "588": ["uni0B42.BRACKET.varAlt01", "uni0B6C.BRACKET.varAlt01"], "589": ["uni0B35.BRACKET.varAlt01", "uni0B37.BRACKET.varAlt01"], "590": ["uni0B35.base.BRACKET.varAlt01", "uni0B24.BRACKET.varAlt01"], "591": ["varaoriya.BRACKET.varAlt01", "takaoriya.BRACKET.varAlt01"], "592": [null, "uni0B69.BRACKET.varAlt01"], "593": [null, "uni0B68.BRACKET.varAlt01"], "594": [null, "uni0B09.BRACKET.varAlt01"], "595": [null, "uni0B0A.BRACKET.varAlt01"], "596": [null, "uni0B42.BRACKET.varAlt01"], "597": [null, "uni0B35.BRACKET.varAlt01"], "598": [null, "uni0B35.base.BRACKET.varAlt01"], "599": [null, "varaoriya.BRACKET.varAlt01"]}}, "hmtx": {"metrics": {"uni0B5C.alt.BRACKET.varAlt01": {"0": [null, 601], "1": [null, 32]}, "uni0b55": {"1": [-208, -180]}, "uni0B5D.alt": {"0": [null, 601], "1": [null, 32]}, "uni0B5D.base.alt": {"0": [null, 558], "1": [null, 32]}, "uni0B5C.alt": {"0": [null, 601], "1": [null, 32]}, "uni0B5C.base.alt": {"0": [null, 558], "1": [null, 32]}, "uni0B5D.alt.BRACKET.varAlt01": {"0": [null, 601], "1": [null, 32]}, "uni0B3C.alt": {"0": [null, 0], "1": [null, 160]}, "uni0B1F.base.001": {"0": [null, 539], "1": [null, 32]}}}, "OS/2": {"xAvgCharWidth": [548, 549]}};</script><div id="difftable"></div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+      <div class="box">
+        <div class="box-title">Modified encoded Glyphs</div>
+        <div class="box-text old-wght-400" style="font-size: 32pt">
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ୕<br>
+        <span class="tooltiptext">
+            name: ORIYA SIGN OVERLINE<br>
+            unicode: U+0B55<br>
+            changed pixels: 5.40%
+        </span>
+    </div>
+</div>
+            </div>
+          
+          </div>
+      </div>
+    
+
+    
+      <div class="box">
+        <div class="box-title">Misshapen Common words</div>
+        <div class="box-text old-wght-400" style="font-size: 32pt">
+          
+        </div>
+      </div>
+    
+      <div class="box">
+        <div class="box-title">Misshapen Oriya words</div>
+        <div class="box-text old-wght-400" style="font-size: 32pt">
+          
+              <div class="cell-word" style="font-feature-settings: " lang="None">
+    <div class="tooltip">
+        ରଇଟ଼୍<br>
+        <span class="tooltiptext">
+        <div class="tooltipleft">
+            Before:<br>
+            gid=46, pos=(0, 0, 608, 0)<br>gid=10, pos=(0, 0, 655, 0)<br>gid=30, pos=(0, 0, 570, 0)<br>gid=57, pos=(0, 0, 0, 0)<br>gid=77, pos=(-325, 0, 0, 0)<br>
+            feats=()
+        </div>
+        <div class="tooltipright">
+            After:<br>
+            gid=46, pos=(0, 0, 608, 0)<br>gid=10, pos=(0, 0, 655, 0)<br>gid=30, pos=(0, 0, 570, 0)<br>gid=57, pos=(-606, -53, 0, 0)<br>gid=77, pos=(-325, 0, 0, 0)<br>
+            feats=()
+        </div>
+        <div>
+            changed pixels: 8.72%
+        </div>
+        </span>
+    </div>
+</div>
+          
+        </div>
+      </div>
+    
+    
+    <div class="box">
+      <div class="box-title">Misshapen user strings</div>
+      <div class="box-text old-wght-400" style="font-size: 32pt">
+        
+      </div>
+    </div>
+    
+
+    
+
+    </div>
+  
+
+    </div>
+</body>
+	<script>
+
+	POSITION = "old"
+	fontToggle = document.getElementById("font-toggle")
+	function switchFonts() {
+	boxTitles = document.getElementsByClassName("box-title")
+	items = document.getElementsByClassName("box-text");
+	  
+	if (POSITION === "old") {
+	  POSITION = "new"
+	  for (item of boxTitles) {
+	    item.textContent = item.textContent.replace("old", "new")
+	    fontToggle.textContent = "new"
+	  }
+	  for (item of items) {
+		item.className = item.className.replace("old", "new")
+	  }
+
+	  } else {
+	  POSITION = "old"
+	  for (item of boxTitles) {
+	    item.textContent = item.textContent.replace("new", "old")
+	    fontToggle.textContent = "old"
+	  }
+	  for (item of items) {
+		item.className = item.className.replace("new", "old")
+	  }
+	}
+	}
+	if (fontToggle !== null) {
+		fontToggle.addEventListener("click", switchFonts);
+	}
+
+// apply optional ot feats
+
+function buildFeatureList() {
+	var features = [
+		'aalt', 'c2sc', 'calt', 'case', 'cpsp', 'dlig', 'dnom',
+		'fina', 'frac', 'init', 'kern', 'liga', 'lnum', 'numr', 'onum',
+		'ordn', 'pnum', 'salt', 'sinf', 'smcp', 'sups',
+		'swsh', 'titl', 'tnum', 'zero', 'ss01', 'ss02',
+		'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08',
+		'ss09', 'ss10', 'ss11', 'ss12', 'ss13', 'ss14',
+		'ss15', 'ss16', 'ss17', 'ss18', 'ss19', 'ss20'
+	]
+	
+	var otPanel = document.getElementById("ot-panel")
+	for (i=0; i<features.length; i++) {
+		var feat = features[i]
+		
+		var row = document.createElement("div");
+
+		var item = document.createElement("input");
+		item.type = "checkbox"
+		item.value = feat
+		item.classList.add("ot-checkbox")
+		var label = document.createElement("label")
+		label.textContent = feat
+
+		row.appendChild(item)
+		row.appendChild(label)
+
+		otPanel.appendChild(row)
+	}
+}
+
+buildFeatureList()
+
+
+function enableFeatures() {
+	var checkboxes = document.getElementsByClassName("ot-checkbox")
+	var res = []
+	var disableKerning = false
+	for (i=0; i<checkboxes.length; i++) {
+		if (checkboxes[i].checked === true) {
+			var checkbox = checkboxes[i]
+			res.push('"' + checkbox.value + '"')
+
+			if (checkbox.value === "kern") {
+				disableKerning = true
+			}
+		}
+	}	
+
+	var boxText = document.getElementsByClassName("box-text")
+	var otString = res.join(", ")
+	for (j=0; j<boxText.length; j++) {
+		boxText[j].style.fontFeatureSettings = otString
+		if (disableKerning === true) {
+			boxText[j].style.fontKerning = "none"
+		}
+	}
+}
+
+var otButton = document.getElementById("ot-button")
+otButton.addEventListener("click", function() {
+    otPanel = document.getElementById("ot-panel")
+    if (otPanel.style.display !== "block") {
+        otPanel.style.display = "block"
+    } else {
+        otPanel.style.display = "none"
+    }
+})
+var checkboxes = document.getElementsByClassName("ot-checkbox")
+for (i=0; i<checkboxes.length; i++) {
+	cb = checkboxes[i]
+	cb.addEventListener("click", enableFeatures)
+}	
+    
+	function render(node, toplevel) {
+		var wrapper = $("<div> </div>");
+		if (!node) { return wrapper }
+		if (Array.isArray(node)) {
+			var before = $("<span/>");
+			before.addClass("attr-before");
+			before.html(" " + node[0] + " ");
+			var after = $("<span/>");
+			after.addClass("attr-after");
+			after.append(node[1]);
+			wrapper.append(before);
+			wrapper.append(after);
+			return wrapper
+		}
+		for (const [key, value] of Object.entries(node)) {
+			var display = $("<div/>");
+			display.addClass("node")
+			if (!toplevel && ! key.match(/^\d+$/)) {
+				display.hide()
+			}
+			display.append(key);
+			display.append(render(value, false).children());
+			wrapper.append(display)
+		}
+		return wrapper
+
+	}
+	$(function() {
+		$("#difftable").append(render(fontdiff, true).children())
+		$("#difftable .node").on("click", function(event){ $(this).children().toggle(); event.stopPropagation() })
+	});
+
+function wordBreaks() {
+  words = document.getElementsByClassName("cell-word")
+  res = []
+  prevTop = 0
+  for (i=0; i<words.length; i++) {
+      var word = words[i]
+      currentTop = word.getBoundingClientRect().top
+      if (currentTop > prevTop) {
+          res.push(i)
+      }
+      prevTop = currentTop
+  }
+  return res
+}
+
+async function insertBreaks() {
+  switchFonts()
+  await sleep(1)
+  breaksBefore = wordBreaks()
+  switchFonts()
+  await sleep(1)
+  breaksAfter = wordBreaks()
+
+
+  console.log(breaksBefore.length, breaksAfter.length)
+
+  if (breaksBefore.length >= breaksAfter.length) {
+    breaks = breaksBefore
+  } else {
+    breaks = breaksAfter
+  }
+
+  words = document.getElementsByClassName("cell-word")
+  breaks.forEach(function(i) {
+    if (i != 0) {
+      i = i
+    }
+    word = words[i]
+    spacer = document.createElement("div")
+    spacer.className = "spacer"
+    word.parentNode.insertBefore(spacer, word)
+  })
+}
+
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+  
+insertBreaks()
+
+
+    </script>
+</html>
