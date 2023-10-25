@@ -1,5 +1,8 @@
 {
-.appVersion = "3151";
+.appVersion = "3221";
+DisplayStrings = (
+"/_part.ra.below/ra-oriya.below/overline-oriya/a-oriya"
+);
 classes = (
 {
 code = "nukta-oriya uMatra-oriya uuMatra-oriya rVocalicMatra-oriya rrVocalicMatra-oriya lVocalicMatra-oriya llVocalicMatra-oriya halant-oriya ka-oriya.below kha-oriya.below ga-oriya.below gha-oriya.below nga-oriya.below ca-oriya.below cha-oriya.below ja-oriya.below jha-oriya.below tta-oriya.below ttha-oriya.below dda-oriya.below ddha-oriya.below nna-oriya.below ta-oriya.below tha-oriya.below da-oriya.below dha-oriya.below na-oriya.below pa-oriya.below pha-oriya.below ba-oriya.below bha-oriya.below ma-oriya.below ya-oriya.below ra-oriya.below la-oriya.below lla-oriya.below va-oriya.below sha-oriya.below ssa-oriya.below sa-oriya.below ha-oriya.below kassa-oriya.below iMatra-oriya.below rephauLength-oriya rephauLengthcandraBindu-oriya rauMatra-oriya.below rauuMatra-oriya.below rarVocalicMatra-oriya.below rarrVocalicMatra-oriya.below";
@@ -233698,6 +233701,96 @@ Width = 1;
 };
 };
 width = 476.97222;
+},
+{
+anchors = (
+{
+name = _bottom_ra;
+position = "{447, 0}";
+},
+{
+name = horizontal;
+position = "{43, -96}";
+},
+{
+name = stem;
+position = "{369, -96}";
+},
+{
+name = vertical;
+position = "{369, 14}";
+}
+);
+associatedMasterId = "41544896-EF4D-4C26-89A7-324DAFD89EC7";
+layerId = "FD32B2EE-AD8A-4E12-B67D-D0AC7E26BB1D";
+name = tall;
+paths = (
+{
+closed = 1;
+nodes = (
+"447 -162 LINE",
+"447 14 LINE",
+"369 14 LINE",
+"369 -96 LINE",
+"43 -96 LINE",
+"43 -162 LINE"
+);
+}
+);
+userData = {
+PartSelection = {
+Height = 2;
+Overlap = 2;
+Width = 1;
+"Width vertical stem" = 1;
+};
+};
+width = 476.97222;
+},
+{
+anchors = (
+{
+name = _bottom_ra;
+position = "{447, 0}";
+},
+{
+name = horizontal;
+position = "{43, -96}";
+},
+{
+name = stem;
+position = "{369, -96}";
+},
+{
+name = vertical;
+position = "{369, 14}";
+}
+);
+associatedMasterId = "41544896-EF4D-4C26-89A7-324DAFD89EC7";
+layerId = "340FA690-F7F8-4926-930F-740DBC7F1B4B";
+name = long;
+paths = (
+{
+closed = 1;
+nodes = (
+"447 -162 LINE",
+"447 14 LINE",
+"369 14 LINE",
+"369 -96 LINE",
+"43 -96 LINE",
+"43 -162 LINE"
+);
+}
+);
+userData = {
+PartSelection = {
+Height = 1;
+Overlap = 2;
+Width = 2;
+"Width vertical stem" = 1;
+};
+};
+width = 476.97222;
 }
 );
 partsSettings = (
@@ -255805,87 +255898,6 @@ nodes = (
 "214 780 LINE",
 "214 845 LINE",
 "-214 845 LINE"
-);
-}
-);
-width = 0;
-},
-{
-anchors = (
-{
-name = _top;
-position = "{0, 637}";
-},
-{
-name = top;
-position = "{0, 838}";
-}
-);
-associatedMasterId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
-layerId = "36F3C8CB-53EE-4548-BFDE-2C03212BACAA";
-name = Condensed;
-paths = (
-{
-closed = 1;
-nodes = (
-"-147 770 LINE",
-"147 770 LINE",
-"147 838 LINE",
-"-147 838 LINE"
-);
-}
-);
-width = 0;
-},
-{
-anchors = (
-{
-name = _top;
-position = "{-1, 627}";
-},
-{
-name = top;
-position = "{-1, 840}";
-}
-);
-associatedMasterId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
-layerId = "43B45EC1-5522-4B1A-B0C7-88628E50A583";
-name = "SemiBold Condensed";
-paths = (
-{
-closed = 1;
-nodes = (
-"-160 742 LINE",
-"159 742 LINE",
-"159 840 LINE",
-"-160 840 LINE"
-);
-}
-);
-width = 0;
-},
-{
-anchors = (
-{
-name = _top;
-position = "{0, 623}";
-},
-{
-name = top;
-position = "{0, 842}";
-}
-);
-associatedMasterId = "926CF2F4-31F1-4036-BA3C-0F7EE51EF36A";
-layerId = "98E204A9-1C79-49C7-AB3E-40A925F56409";
-name = "Bold Condensed";
-paths = (
-{
-closed = 1;
-nodes = (
-"-167 724 LINE",
-"167 724 LINE",
-"167 842 LINE",
-"-167 842 LINE"
 );
 }
 );
