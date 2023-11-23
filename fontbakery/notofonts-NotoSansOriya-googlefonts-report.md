@@ -1,8 +1,36 @@
 ## FontBakery report
 
-fontbakery version: 0.10.2
+fontbakery version: 0.10.4
 
-<details><summary><b>[9] NotoSansOriya[wdth,wght].ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
+<details><summary><b>[1] Experimental checks</b></summary><div><details><summary>🔥 <b>FAIL:</b> Shapes languages in all GF glyphsets. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyphsets/shape_languages">com.google.fonts/check/glyphsets/shape_languages</a>)</summary><div>
+
+
+* 🔥 **FAIL** GF_Latin_Core glyphset:
+
+| Language | FAIL messages |
+| :--- | :--- |
+| haw_Latn (Hawaiian) | Some base glyphs were missing: ʻ |
+|  ^  | Shaper produced a .notdef |
+| mh_Latn (Marshallese) | Some base glyphs were missing: Ḷ, ḷ, Ṃ, ṃ, Ṇ, ṇ, Ọ, ọ |
+|  ^  | Some mark glyphs were missing: ◌̣ |
+|  ^  | Shaper produced a .notdef |
+| scn_Latn (Sicilian) | Some base glyphs were missing: Ḍ, ḍ |
+|  ^  | Shaper produced a .notdef |
+| teo_Latn (Teso) | Some base glyphs were missing: Ɔ, Ɛ, Ɨ, Ʉ, ɔ, ɛ, ɨ, ʉ, ᵃ, ᵉ, ᵋ, ᵒ, ᵓ, ᵘ, ᶤ, ᶶ, ⁱ |
+|  ^  | Shaper produced a .notdef |
+
+ [code: failed-language-shaping]
+* ⚠ **WARN** GF_Latin_Core glyphset:
+
+| Language | FAIL messages |
+| :--- | :--- |
+| lg_Latn (Ganda) | No variant glyphs were found for Eng |
+| dyo_Latn (Jola-Fonyi) | No variant glyphs were found for Eng |
+| ny_Latn (Nyanja) | No variant glyphs were found for Eng |
+| wo_Latn (Wolof) | No variant glyphs were found for Eng |
+
+ [code: warning-language-shaping]
+</div></details><br></div></details><details><summary><b>[8] NotoSansOriya[wdth,wght].ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
 
 
 * 🔥 **FAIL** This is a Noto font but it lacks an ARTICLE.en_us.html file [code: missing-article]
@@ -151,17 +179,17 @@ fontbakery version: 0.10.2
     subset declarations to METADATA.pb, or by editing the glyphset
     definitions.
 
- * U+02C7 CARON: try adding one of: tifinagh, yi, canadian-aboriginal
+ * U+02C7 CARON: try adding one of: tifinagh, canadian-aboriginal, yi
  * U+02C9 MODIFIER LETTER MACRON: not included in any glyphset definition
- * U+02D8 BREVE: try adding one of: yi, canadian-aboriginal
- * U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal
- * U+02DB OGONEK: try adding one of: yi, canadian-aboriginal
+ * U+02D8 BREVE: try adding one of: canadian-aboriginal, yi
+ * U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi
+ * U+02DB OGONEK: try adding one of: canadian-aboriginal, yi
  * U+02DD DOUBLE ACUTE ACCENT: not included in any glyphset definition
- * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, coptic, cherokee, tifinagh
+ * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: tifinagh, coptic, cherokee, math
  * U+0306 COMBINING BREVE: try adding one of: tifinagh, old-permic
- * U+0307 COMBINING DOT ABOVE: try adding one of: canadian-aboriginal, syriac, old-permic, coptic, tai-le, tifinagh, math, malayalam
+ * U+0307 COMBINING DOT ABOVE: try adding one of: tifinagh, coptic, old-permic, math, canadian-aboriginal, syriac, malayalam, tai-le
  * U+030A COMBINING RING ABOVE: try adding syriac
- * U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee
+ * U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: cherokee, osage
  * U+030C COMBINING CARON: try adding one of: cherokee, tai-le
  * U+0312 COMBINING TURNED COMMA ABOVE: not included in any glyphset definition
  * U+0326 COMBINING COMMA BELOW: not included in any glyphset definition
@@ -169,7 +197,7 @@ fontbakery version: 0.10.2
  * U+0328 COMBINING OGONEK: not included in any glyphset definition
  * U+035A COMBINING DOUBLE RING BELOW: not included in any glyphset definition
  * U+0B55 ORIYA SIGN OVERLINE: not included in any glyphset definition
- * U+2010 HYPHEN: try adding one of: sora-sompeng, kaithi, kharoshthi, coptic, lisu, syloti-nagri, sundanese, yi, kayah-li, cham
+ * U+2010 HYPHEN: try adding one of: sora-sompeng, syloti-nagri, cham, coptic, kharoshthi, kaithi, yi, lisu, kayah-li, sundanese
 
 Or you can add the above codepoints to one of the subsets supported by the font: `latin`, `latin-ext`, `oriya` [code: unreachable-subsetting]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
@@ -202,20 +230,6 @@ aiLengthcandraBinduoriya.BRACKET.varAlt01, aiLengthcandraBinduoriya.stem.BRACKET
 
 
 * ⚠ **WARN** This font has a 'Soft Hyphen' character. [code: softhyphen]
-</div></details><details><summary>⚠ <b>WARN:</b> Detect any interpolation issues in the font. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/interpolation_issues">com.google.fonts/check/interpolation_issues</a>)</summary><div>
-
-
-* ⚠ **WARN** Interpolation issues were found in the font:
-
-	- Contour 2 start point differs in glyph 'uni0B19.base' between location wght=400,wdth=100 and location wght=900,wdth=100
-
-	- Contour order differs in glyph 'laphaoriya': [0, 1, 2, 3, 4, 5] in <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f777c9e5f90>, [0, 1, 2, 3, 5, 4] in <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f777a62e950>.
-
-	- Contour 5 start point differs in glyph 'laphaoriya' between location wght=400,wdth=100 and location wght=100,wdth=100
-
-	- Contour 4 start point differs in glyph 'laphaoriya' between location wght=400,wdth=100 and location wght=900,wdth=100
-
-	- Contour 4 start point differs in glyph 'laphaoriya' between location wght=400,wdth=100 and location wght=900,wdth=62 [code: interpolation-issues]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Shaping Checks>.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
 
 
@@ -223,17 +237,17 @@ aiLengthcandraBinduoriya.BRACKET.varAlt01, aiLengthcandraBinduoriya.stem.BRACKET
 
 The dot of soft dotted characters _should_ disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́
 
-Your font fully covers the following languages that require the soft-dotted feature: Navajo (Latn, 166,319 speakers), Dutch (Latn, 31,709,104 speakers), Lithuanian (Latn, 2,357,094 speakers). 
+Your font fully covers the following languages that require the soft-dotted feature: Dutch (Latn, 31,709,104 speakers), Lithuanian (Latn, 2,357,094 speakers), Navajo (Latn, 166,319 speakers). 
 
-Your font does *not* cover the following languages that require the soft-dotted feature: Nateni (Latn, 100,000 speakers), Ma’di (Latn, 584,000 speakers), Lugbara (Latn, 2,200,000 speakers), Igbo (Latn, 27,823,640 speakers), Dan (Latn, 1,099,244 speakers), Ebira (Latn, 2,200,000 speakers), Ejagham (Latn, 120,000 speakers), Kom (Latn, 360,685 speakers), Belarusian (Cyrl, 10,064,517 speakers), Aghem (Latn, 38,843 speakers), Koonzime (Latn, 40,000 speakers), Avokaya (Latn, 100,000 speakers), Basaa (Latn, 332,940 speakers), Ukrainian (Cyrl, 29,273,587 speakers). [code: soft-dotted]
+Your font does *not* cover the following languages that require the soft-dotted feature: Igbo (Latn, 27,823,640 speakers), Basaa (Latn, 332,940 speakers), Aghem (Latn, 38,843 speakers), Nateni (Latn, 100,000 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Lugbara (Latn, 2,200,000 speakers), Avokaya (Latn, 100,000 speakers), Dan (Latn, 1,099,244 speakers), Koonzime (Latn, 40,000 speakers), Belarusian (Cyrl, 10,064,517 speakers), Ma’di (Latn, 584,000 speakers), Ejagham (Latn, 120,000 speakers), Kom (Latn, 360,685 speakers), Ebira (Latn, 2,200,000 speakers). [code: soft-dotted]
 </div></details><br></div></details>
 
 ### Summary
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 2 | 7 | 99 | 8 | 138 | 0 |
-| 0% | 1% | 3% | 39% | 3% | 54% | 0% |
+| 0 | 3 | 6 | 100 | 8 | 138 | 0 |
+| 0% | 1% | 2% | 39% | 3% | 54% | 0% |
 
 **Note:** The following loglevels were omitted in this report:
 * **SKIP**

@@ -128,16 +128,16 @@ ul {
             </tr>
             <tr>
                 <td>0</td>
-                <td>2</td>
-                <td>7</td>
-                <td>99</td>
+                <td>3</td>
+                <td>6</td>
+                <td>100</td>
                 <td>8</td>
                 <td>138</td>
             </tr>
             <tr>
                 <td>0%</td>
-                <td>1%</td>
-                <td>4%</td>
+                <td>2%</td>
+                <td>3%</td>
                 <td>54%</td>
                 <td>4%</td>
                 <td>75%</td>
@@ -163,10 +163,10 @@ ul {
     <p>(but other kinds of bug reports and/or feature requests
        are also always welcome, of course!)</p>
 
-    <p>FontBakery version: 0.10.2</p>
+    <p>FontBakery version: 0.10.4</p>
     
 <h2>Section: Google Fonts</h2>
-<span class='section__emoji'>🔥⚠️⚠️⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩ℹ️ℹ️ℹ️ℹ️ℹ️ℹ️</span>
+<span class='section__emoji'>🔥🔥⚠️⚠️⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩ℹ️ℹ️ℹ️ℹ️ℹ️ℹ️</span>
 <h3>Check for codepoints not covered by METADATA subsets.</h3>
 <div class='check__idlabel'>Check ID: com.google.fonts/check/metadata/unreachable_subsetting</div>
 
@@ -176,17 +176,17 @@ be served. You can solve this by either manually adding additional
 subset declarations to METADATA.pb, or by editing the glyphset
 definitions.</p>
 <ul>
-<li>U+02C7 CARON: try adding one of: tifinagh, yi, canadian-aboriginal</li>
+<li>U+02C7 CARON: try adding one of: tifinagh, canadian-aboriginal, yi</li>
 <li>U+02C9 MODIFIER LETTER MACRON: not included in any glyphset definition</li>
-<li>U+02D8 BREVE: try adding one of: yi, canadian-aboriginal</li>
-<li>U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal</li>
-<li>U+02DB OGONEK: try adding one of: yi, canadian-aboriginal</li>
+<li>U+02D8 BREVE: try adding one of: canadian-aboriginal, yi</li>
+<li>U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi</li>
+<li>U+02DB OGONEK: try adding one of: canadian-aboriginal, yi</li>
 <li>U+02DD DOUBLE ACUTE ACCENT: not included in any glyphset definition</li>
-<li>U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, coptic, cherokee, tifinagh</li>
+<li>U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: tifinagh, coptic, cherokee, math</li>
 <li>U+0306 COMBINING BREVE: try adding one of: tifinagh, old-permic</li>
-<li>U+0307 COMBINING DOT ABOVE: try adding one of: canadian-aboriginal, syriac, old-permic, coptic, tai-le, tifinagh, math, malayalam</li>
+<li>U+0307 COMBINING DOT ABOVE: try adding one of: tifinagh, coptic, old-permic, math, canadian-aboriginal, syriac, malayalam, tai-le</li>
 <li>U+030A COMBINING RING ABOVE: try adding syriac</li>
-<li>U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee</li>
+<li>U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: cherokee, osage</li>
 <li>U+030C COMBINING CARON: try adding one of: cherokee, tai-le</li>
 <li>U+0312 COMBINING TURNED COMMA ABOVE: not included in any glyphset definition</li>
 <li>U+0326 COMBINING COMMA BELOW: not included in any glyphset definition</li>
@@ -194,9 +194,34 @@ definitions.</p>
 <li>U+0328 COMBINING OGONEK: not included in any glyphset definition</li>
 <li>U+035A COMBINING DOUBLE RING BELOW: not included in any glyphset definition</li>
 <li>U+0B55 ORIYA SIGN OVERLINE: not included in any glyphset definition</li>
-<li>U+2010 HYPHEN: try adding one of: sora-sompeng, kaithi, kharoshthi, coptic, lisu, syloti-nagri, sundanese, yi, kayah-li, cham</li>
+<li>U+2010 HYPHEN: try adding one of: sora-sompeng, syloti-nagri, cham, coptic, kharoshthi, kaithi, yi, lisu, kayah-li, sundanese</li>
 </ul>
 <p>Or you can add the above codepoints to one of the subsets supported by the font: <code>latin</code>, <code>latin-ext</code>, <code>oriya</code> [code: unreachable-subsetting]</p>
+</span></li></ul></div></details>
+<h3><div style='color:#88c'>EXPERIMENTAL CHECK - Since 2023/Nov/02</div>Shapes languages in all GF glyphsets.</h3>
+<div class='check__idlabel'>Check ID: com.google.fonts/check/glyphsets/shape_languages</div>
+
+<details><summary>🔥 NotoSansOriya[wdth,wght].ttf</summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>GF_Latin_Core glyphset:</p>
+<p>| Language | FAIL messages |
+| :--- | :--- |
+| haw_Latn (Hawaiian) | Some base glyphs were missing: ʻ |
+|  ^  | Shaper produced a .notdef |
+| mh_Latn (Marshallese) | Some base glyphs were missing: Ḷ, ḷ, Ṃ, ṃ, Ṇ, ṇ, Ọ, ọ |
+|  ^  | Some mark glyphs were missing: ◌̣ |
+|  ^  | Shaper produced a .notdef |
+| scn_Latn (Sicilian) | Some base glyphs were missing: Ḍ, ḍ |
+|  ^  | Shaper produced a .notdef |
+| teo_Latn (Teso) | Some base glyphs were missing: Ɔ, Ɛ, Ɨ, Ʉ, ɔ, ɛ, ɨ, ʉ, ᵃ, ᵉ, ᵋ, ᵒ, ᵓ, ᵘ, ᶤ, ᶶ, ⁱ |
+|  ^  | Shaper produced a .notdef |</p>
+<p>[code: failed-language-shaping]</p>
+</span></li><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>GF_Latin_Core glyphset:</p>
+<p>| Language | FAIL messages |
+| :--- | :--- |
+| lg_Latn (Ganda) | No variant glyphs were found for Eng |
+| dyo_Latn (Jola-Fonyi) | No variant glyphs were found for Eng |
+| ny_Latn (Nyanja) | No variant glyphs were found for Eng |
+| wo_Latn (Wolof) | No variant glyphs were found for Eng |</p>
+<p>[code: warning-language-shaping]</p>
 </span></li></ul></div></details>
 <h3>Ensure fonts have ScriptLangTags declared on the 'meta' table.</h3>
 <div class='check__idlabel'>Check ID: com.google.fonts/check/meta/script_lang_tags</div>
@@ -209,7 +234,7 @@ definitions.</p>
 <details><summary>🔥 NotoSansOriya[wdth,wght].ttf</summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>This is a Noto font but it lacks an ARTICLE.en_us.html file [code: missing-article]</p>
 </span></li></ul></div></details>
 <h2>Section: Universal</h2>
-<span class='section__emoji'>🔥⚠️⚠️⚠️⚠️⏩⏩⏩⏩ℹ️ℹ️</span>
+<span class='section__emoji'>🔥⚠️⚠️⚠️⏩⏩⏩⏩⏩ℹ️ℹ️</span>
 <h3>Check that legacy accents aren't used in composite glyphs. (derived from com.google.fonts/check/legacy_accents)</h3>
 <div class='check__idlabel'>Check ID: com.google.fonts/check/legacy_accents</div>
 
@@ -376,21 +401,6 @@ aiLengthcandraBinduoriya.BRACKET.varAlt01, aiLengthcandraBinduoriya.stem.BRACKET
 
 <details><summary>⚠️ NotoSansOriya[wdth,wght].ttf</summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>This font has a 'Soft Hyphen' character. [code: softhyphen]</p>
 </span></li></ul></div></details>
-<h3>Detect any interpolation issues in the font.</h3>
-<div class='check__idlabel'>Check ID: com.google.fonts/check/interpolation_issues</div>
-
-<details><summary>⚠️ NotoSansOriya[wdth,wght].ttf</summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>Interpolation issues were found in the font:</p>
-<pre><code>- Contour 2 start point differs in glyph 'uni0B19.base' between location wght=400,wdth=100 and location wght=900,wdth=100
-
-- Contour order differs in glyph 'laphaoriya': [0, 1, 2, 3, 4, 5] in &lt;fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f777c9e5f90&gt;, [0, 1, 2, 3, 5, 4] in &lt;fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f777a62e950&gt;.
-
-- Contour 5 start point differs in glyph 'laphaoriya' between location wght=400,wdth=100 and location wght=100,wdth=100
-
-- Contour 4 start point differs in glyph 'laphaoriya' between location wght=400,wdth=100 and location wght=900,wdth=100
-
-- Contour 4 start point differs in glyph 'laphaoriya' between location wght=400,wdth=100 and location wght=900,wdth=62 [code: interpolation-issues]
-</code></pre>
-</span></li></ul></div></details>
 <h2>Section: Shaping Checks</h2>
 <span class='section__emoji'>⚠️⏩⏩⏩</span>
 <h3>Ensure soft_dotted characters lose their dot when combined with marks that replace the dot.</h3>
@@ -398,8 +408,8 @@ aiLengthcandraBinduoriya.BRACKET.varAlt01, aiLengthcandraBinduoriya.stem.BRACKET
 
 <details><summary>⚠️ NotoSansOriya[wdth,wght].ttf</summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The dot of soft dotted characters used in orthographies <em>must</em> disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌</p>
 <p>The dot of soft dotted characters <em>should</em> disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́</p>
-<p>Your font fully covers the following languages that require the soft-dotted feature: Navajo (Latn, 166,319 speakers), Dutch (Latn, 31,709,104 speakers), Lithuanian (Latn, 2,357,094 speakers).</p>
-<p>Your font does <em>not</em> cover the following languages that require the soft-dotted feature: Nateni (Latn, 100,000 speakers), Ma’di (Latn, 584,000 speakers), Lugbara (Latn, 2,200,000 speakers), Igbo (Latn, 27,823,640 speakers), Dan (Latn, 1,099,244 speakers), Ebira (Latn, 2,200,000 speakers), Ejagham (Latn, 120,000 speakers), Kom (Latn, 360,685 speakers), Belarusian (Cyrl, 10,064,517 speakers), Aghem (Latn, 38,843 speakers), Koonzime (Latn, 40,000 speakers), Avokaya (Latn, 100,000 speakers), Basaa (Latn, 332,940 speakers), Ukrainian (Cyrl, 29,273,587 speakers). [code: soft-dotted]</p>
+<p>Your font fully covers the following languages that require the soft-dotted feature: Dutch (Latn, 31,709,104 speakers), Lithuanian (Latn, 2,357,094 speakers), Navajo (Latn, 166,319 speakers).</p>
+<p>Your font does <em>not</em> cover the following languages that require the soft-dotted feature: Igbo (Latn, 27,823,640 speakers), Basaa (Latn, 332,940 speakers), Aghem (Latn, 38,843 speakers), Nateni (Latn, 100,000 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Lugbara (Latn, 2,200,000 speakers), Avokaya (Latn, 100,000 speakers), Dan (Latn, 1,099,244 speakers), Koonzime (Latn, 40,000 speakers), Belarusian (Cyrl, 10,064,517 speakers), Ma’di (Latn, 584,000 speakers), Ejagham (Latn, 120,000 speakers), Kom (Latn, 360,685 speakers), Ebira (Latn, 2,200,000 speakers). [code: soft-dotted]</p>
 </span></li></ul></div></details>
                         </main>
                     </body>
