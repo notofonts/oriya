@@ -8919,7 +8919,7 @@ subCategory = Spacing;
 category = Letter;
 glyphname = badaorya;
 kernRight = caorya;
-lastChange = "2021-07-29 09:37:05 +0000";
+lastChange = "2023-11-23 07:16:15 +0000";
 layers = (
 {
 anchors = (
@@ -8969,7 +8969,6 @@ nodes = (
 {
 closed = 1;
 nodes = (
-(317,126,l),
 (329,87,o),
 (355,60,o),
 (394,60,cs),
@@ -8982,7 +8981,8 @@ nodes = (
 (410,120,cs),
 (391,120,o),
 (375,138,o),
-(373,187,c)
+(373,187,c),
+(317,126,l)
 );
 },
 {
@@ -9040,9 +9040,6 @@ nodes = (
 {
 closed = 1;
 nodes = (
-(136,355,o),
-(84,275,o),
-(84,199,cs),
 (84,117,o),
 (150,60,o),
 (235,60,cs),
@@ -9051,13 +9048,15 @@ nodes = (
 (376,216,cs),
 (376,294,o),
 (316,355,o),
-(231,355,cs)
+(231,355,cs),
+(136,355,o),
+(84,275,o),
+(84,199,cs)
 );
 },
 {
 closed = 1;
 nodes = (
-(303,155,l),
 (312,107,o),
 (332,75,o),
 (375,75,cs),
@@ -9070,7 +9069,8 @@ nodes = (
 (400,182,cs),
 (379,182,o),
 (370,201,o),
-(361,239,c)
+(361,239,c),
+(303,155,l)
 );
 },
 {
@@ -22797,7 +22797,7 @@ subCategory = Spacing;
 category = Letter;
 glyphname = nnattaUIorya;
 kernRight = kassannaorya;
-lastChange = "2021-07-22 07:42:59 +0000";
+lastChange = "2023-11-23 07:16:37 +0000";
 layers = (
 {
 anchors = (
@@ -22823,12 +22823,12 @@ shapes = (
 {
 closed = 1;
 nodes = (
+(526,163,l),
 (586,177,l),
 (586,657,l),
 (579,664,l),
 (519,650,l),
-(519,170,l),
-(526,163,l)
+(519,170,l)
 );
 },
 {
@@ -22894,7 +22894,7 @@ subCategory = Spacing;
 category = Letter;
 glyphname = nnattaorya;
 kernRight = nnattaorya;
-lastChange = "2021-07-22 08:03:45 +0000";
+lastChange = "2023-11-23 07:16:47 +0000";
 layers = (
 {
 anchors = (
@@ -22920,12 +22920,12 @@ shapes = (
 {
 closed = 1;
 nodes = (
+(527,93,l),
 (587,107,l),
 (587,657,l),
 (580,664,l),
 (520,650,l),
-(520,100,l),
-(527,93,l)
+(520,100,l)
 );
 },
 {
@@ -22991,7 +22991,7 @@ subCategory = Spacing;
 category = Letter;
 glyphname = nnatthaUIorya;
 kernRight = nnattaorya;
-lastChange = "2021-07-22 08:03:48 +0000";
+lastChange = "2023-11-23 07:16:54 +0000";
 layers = (
 {
 anchors = (
@@ -23017,12 +23017,12 @@ shapes = (
 {
 closed = 1;
 nodes = (
+(527,113,l),
 (587,113,l),
 (587,657,l),
 (580,664,l),
 (520,650,l),
-(520,120,l),
-(527,113,l)
+(520,120,l)
 );
 },
 {
@@ -31073,7 +31073,7 @@ subCategory = Spacing;
 {
 category = Letter;
 glyphname = tasaorya;
-lastChange = "2021-07-22 07:42:59 +0000";
+lastChange = "2023-11-23 07:17:12 +0000";
 layers = (
 {
 anchors = (
@@ -31132,10 +31132,6 @@ shapes = (
 {
 closed = 1;
 nodes = (
-(249,156,l),
-(189,108,o),
-(144,59,o),
-(98,-8,c),
 (116,-49,l),
 (260,-80,o),
 (402,-122,o),
@@ -31147,7 +31143,11 @@ nodes = (
 (182,-9,l),
 (213,39,o),
 (251,82,o),
-(293,122,c)
+(293,122,c),
+(249,156,l),
+(189,108,o),
+(144,59,o),
+(98,-8,c)
 );
 },
 {
@@ -36465,20 +36465,20 @@ layers = (
 hints = (
 {
 horizontal = 1;
-place = (-14, 40);
+place = (-14,40);
 type = Stem;
 },
 {
 horizontal = 1;
-place = (703, 41);
+place = (703,41);
 type = Stem;
 },
 {
-place = (47, 83);
+place = (47,83);
 type = Stem;
 },
 {
-place = (409, 83);
+place = (409,83);
 type = Stem;
 }
 );
@@ -36572,17 +36572,17 @@ layers = (
 hints = (
 {
 horizontal = 1;
-place = (0, 32);
+place = (0,32);
 type = Stem;
 },
 {
 horizontal = 1;
-place = (739, -20);
+place = (739,-20);
 target = down;
 type = TopGhost;
 },
 {
-place = (243, 77);
+place = (243,77);
 type = Stem;
 }
 );
@@ -36666,16 +36666,16 @@ layers = (
 hints = (
 {
 horizontal = 1;
-place = (0, 75);
+place = (0,75);
 type = Stem;
 },
 {
 horizontal = 1;
-place = (703, 41);
+place = (703,41);
 type = Stem;
 },
 {
-place = (379, 82);
+place = (379,82);
 type = Stem;
 }
 );
