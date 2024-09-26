@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Diffenator3</title>
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+		crossorigin="anonymous"></script>
+	<style type="text/css">
+		@font-face {
+      font-family: "Font Before";
+      src: url();
+    }
+
+    @font-face {
+      font-family: "Font After";
+      src: url();
+    }
+
+    .font-before, .font-after {
+      font-variation-settings: "wght" 400, "wdth" 100;
+    }
+
+    .font-before {
+      font-family: "Font Before", "Adobe Notdef";
+    }
+
+    .font-after {
+      font-family: "Font After", "Adobe Notdef";
+    }
+
+	:root {
+	--node-pt-size: 40px;
+	}
+
+	@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background-color: #b3d4f5 !important;
+    font-family: "Montserrat", sans-serif !important;
+}
+
+.nav-pills .nav-item.show .nav-link, .nav-pills .nav-link.active {
+    background-color: #ced9e4 !important;
+}
+.nav-item {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 2px;
+}
+
+.nav-pills .nav-link{
+    background-color: #9fcaf5 !important;
+}
+h4 {
+    color: #6f7882 !important;
+}
+
+@font-face {
+    font-family: "Adobe NotDef";
+    src: url(https://cdn.jsdelivr.net/gh/adobe-fonts/adobe-notdef/AND-Regular.ttf);
+}
+
+.box-title {
+    width: 100%;
+    font-size: 8pt;
+    font-weight: 700;
+    border-top: 1px solid black;
+    padding-top: 5px;
+    margin-bottom: 10pt;
+    display: block;
+}
+
+.box {
+    margin-bottom: 20pt;
+    width: 100%;
+    float: left;
+}
+
+.box-text {}
+
+#ui-nav {
+    position: fixed;
+    right: 20px;
+    z-index: 100;
+}
+
+#font-toggle {}
+
+.ui-nav-item {
+    display: block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    /* Safari */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* IE10+/Edge */
+    user-select: none;
+    /* Standard */
+    text-align: center;
+    color: white;
+    background-color: black;
+    display: block;
+    font-size: 14pt;
+    padding: 5px;
+    margin: 2px;
+}
+
+/* Stuff needed for the table differ */
+body {
+    font-family: Helvetica;
+}
+
+.node {
+    font-family: courier;
+    cursor: pointer;
+    position: relative;
+    left: 30px;
+    padding: 5px;
+    display: block;
+    border: 1px dashed grey;
+    background-color: #e9e9ee;
+}
+
+.header {
+    font-weight: bold;
+}
+
+.attr-before {
+    color: green;
+    cursor: text;
+}
+
+.attr-after {
+    color: red;
+    cursor: text;
+}
+
+.leaf {
+    font-weight: bold;
+}
+
+.old .cell .new {
+    display: none;
+}
+
+.new .cell .old {
+    display: none;
+}
+
+.both .cell .old {
+    opacity: 0.75;
+    color: red;
+}
+
+.both .cell .new {
+    opacity: 0.75;
+    position: absolute;
+    top: 0;
+    color: green;
+}
+
+.spacer {
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+#ot-panel {
+    max-height: 400px;
+    overflow-y: scroll;
+    background: white;
+    padding: 10px;
+    display: none;
+   }
+
+   .cell{
+    z-index: -100;
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 5pt;
+    margin: 5pt;
+    width: 50pt;
+    font-size: var(--node-pt-size);
+    line-height: calc(var(--node-pt-size) * 1.5);
+  }
+  .cell-word{
+    z-index: -100;
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 5pt;
+    margin: 5pt;
+    font-size: var(--node-pt-size);
+    line-height: calc(var(--node-pt-size) * 1.5);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  }
+  .cell-glyph{
+    z-index: -100;
+    float: left;
+    display: block;
+    text-align: center;
+    border-radius: 5pt;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    padding: 5pt;
+    margin: 5pt;
+    width: calc(var(--node-pt-size) * 2);
+    min-height: calc(var(--node-pt-size) * 2);
+    font-size: var(--node-pt-size);
+  }
+  .cell-glyph.font-before, .cell-word.font-before {
+    background: #eff6f2;
+  }
+  .cell-glyph.font-after, .cell-word.font-after {
+    background: #f7f4f4;
+  }
+
+  .cell-glyph:hover {
+    box-shadow: none;
+    background: #f0f0f5;
+  }
+  .cat-strings .cell {
+    clear: both;
+    position: static;
+    float: none;
+    text-align: left;
+  }
+  .codepoint {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 10pt;
+    line-height: 10pt;
+  }
+  .box-title {
+    clear: both;
+  }
+  .node.closed::before {
+    content: "+";
+    margin-right: 5pt;
+  }
+  .node.open::before {
+    content: "-";
+    margin-right: 5pt;
+  }
+
+  .tooltip pre {
+    background-color: #6f7882;
+    padding: 5px;
+    white-space: pre-wrap;
+    word-break: break-all;
+  }
+  .tooltip {
+    line-height: 1em;
+  }
+  .tooltip-inner {
+    max-width: 300px;
+  }
+
+  h1,h2,h3,h4,h5 {
+    clear: both;
+  }
+
+  #locationnav li {
+    white-space: wrap;
+  }
+
+  #userdefined div { width: 100%; }
+  
+/* The following rules are used in the WASM version, not in the CLI version.
+   But we keep them here so we can share them between the two versions. */
+
+   .modal-dialog {
+    max-width: 100% !important;
+    margin: 0 !important;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    display: flex;
+  }
+
+  .fontdrop {
+    padding: 30px;
+    border-radius: 20px;
+    outline: 3px dashed #ffffffff;
+    outline-offset: -20px;
+  }
+
+  #fontbefore {
+    background-color: #ddffdddd;
+  }
+
+  #fontafter {
+    background-color: #ffdddddd;
+  }
+
+  .dragging {
+    background-image: linear-gradient(rgb(0 0 0/5%) 0 0);
+    outline: 5px dashed #ffffffff;
+  }
+
+  #diffkerns {
+    max-height: 500px;
+    overflow-y: scroll;
+  }
+		</style>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+	integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+		<div id="ui-nav">
+		  <div class="ui-nav-item" id="fonttoggle">Old</div>
+		  <div class="ui-nav-item" id="fontanimate">Animate</div>
+		  <div id="axes">
+		  </div>
+		</div>
+	
+	<div class="row">
+		<div class="col-2">
+			<ul class="nav nav-pills" id="locationnav">
+			</ul>
+		</div>
+		<div class="col-9 mt-3">
+			<div id="title"></div>
+			<div id="cmapdiff"> </div>
+			<div id="main"></div>
+			<div id="userdefined">
+				<h4>User defined sample text</h4>
+				<div contenteditable="true" class="font-before cell-word">
+					You can type your own text here to see it previewed in the fonts.
+				</div>
+				<div style="clear: both"></div>
+			</div>
+			<div id="diffkerns"> </div>
+			<div id="difftable"> </div>
+		</div>
+	</div>
+	<script type="module">
+		function renderTableDiff(node, toplevel) {
+  var wrapper = $("<div> </div>");
+  if (!node) {
+    return wrapper;
+  }
+  if (Array.isArray(node) && node.length == 2) {
+    var before = $("<span/>");
+    before.addClass("attr-before");
+    before.html(" " + node[0] + " ");
+    var after = $("<span/>");
+    after.addClass("attr-after");
+    after.append(renderTableDiff(node[1], true).children());
+    wrapper.append(before);
+    wrapper.append(after);
+    return wrapper;
+  }
+  if (node.constructor != Object) {
+    var thing = $("<span/>");
+    thing.html(node);
+    wrapper.append(thing);
+    return wrapper;
+  }
+  for (const [key, value] of Object.entries(node)) {
+    var display = $("<div/>");
+    display.addClass("node");
+    if (!toplevel) {
+      display.hide();
+    }
+    display.append(key);
+    display.append(renderTableDiff(value, false).children());
+    if (display.children(".node").length > 0) {
+      display.addClass("closed");
+    }
+    wrapper.append(display);
+  }
+  return wrapper;
+}
+
+function addAGlyph(glyph, where) {
+  let title = "";
+  if (glyph.name) {
+    title = "name: " + glyph.name;
+  }
+  let cp =
+    "<br>U+" +
+    glyph.string.codePointAt(0).toString(16).padStart(4, "0").toUpperCase();
+  where.append(`
+        <div class="cell-glyph font-before">
+        <div data-toggle="tooltip" data-html="true" data-title="${glyph.differing_pixels} pixels"> ${glyph.string}
+        <div class="codepoint" data-toggle="tooltip" data-html="true" data-title="${title}">
+		${cp}
+        </div>
+        </div>
+    `);
+}
+
+function addAWord(diff, where) {
+  if (!diff.buffer_b) {
+    diff.buffer_b = diff.buffer_a;
+  }
+  where.append(`
+		<div class="cell-word font-before">
+		<span data-toggle="tooltip" data-html="true" data-title="Before: <pre>${diff.buffer_a}</pre>After: <pre>${diff.buffer_b}</pre><br>difference: ${diff.differing_pixels} pixels">
+		${diff.word}
+		</span>
+		</div>
+	`);
+}
+
+function diffTables(report) {
+  $("#difftable").empty();
+  $("#difftable").append(`<h4 class="mt-2 box-title">Table-level details</h4>`);
+  $("#difftable").append(
+    renderTableDiff({ tables: report["tables"] }, true).children()
+  );
+  $("#difftable .node").on("click", function (e) {
+    $(this).toggleClass("closed open");
+    $(this).children(".node").toggle();
+    e.stopPropagation();
+  });
+}
+function diffKerns(report) {
+  $("#diffkerns").empty();
+  $("#diffkerns").append(`<h4 class="mt-2">Modified Kerns</h4>`);
+  $("#diffkerns").append(
+    `<table class="table table-striped" id="diffkerns"><tr><th>Pair</th><th>Old</old><th>New</th></table>`
+  );
+  for (let [pair, value] of Object.entries(report["kerns"])) {
+    if (pair == "error") {
+      $("#diffkerns").append(`<p class="text-danger">Error: ${value}</p>`);
+      continue;
+    } else {
+      let row = $("<tr>");
+      row.append(`<td>${pair}</td>`);
+      row.append(`<td>${serializeKernBefore(value)}</td>`);
+      row.append(`<td>${serializeKernAfter(value)}</td>`);
+      $("#diffkerns table").append(row);
+    }
+  }
+}
+
+function serializeKernBefore(kern) {
+  if (Array.isArray(kern)) {
+    return serializeKern(kern[0], -1);
+  }
+  return serializeKern(kern, 0);
+}
+
+function serializeKernAfter(kern) {
+  if (Array.isArray(kern)) {
+    return serializeKern(kern[1], -1);
+  }
+  return serializeKern(kern, 1);
+}
+
+function serializeKern(kern, index) {
+  let string = "";
+  if (kern === null || kern === undefined) {
+    return "(null)";
+  }
+  if (kern.x) {
+    string += serializeKernValue(kern.x, index);
+  } else if (kern.y) {
+    string = "0";
+  }
+
+  if (kern.y) {
+    string += "," + serializeKernValue(kern.y, index);
+  }
+  if (!kern.x_placement && !kern.y_placement) {
+    return string;
+  }
+  string += "@";
+  if (kern.x_placement) {
+    string += serializeKernValue(kern.x_placement, index);
+  } else if (kern.y_placement) {
+    string += "0";
+  }
+  if (kern.y_placement) {
+    string += "," + serializeKernValue(kern.y_placement, index);
+  }
+  return string;
+}
+
+function serializeKernValue(kern, index) {
+  if (typeof kern == "number") {
+    return kern;
+  }
+  let string = "(";
+  let verybig = Object.entries(kern).length > 5;
+  for (let [key, value] of Object.entries(kern)) {
+    if (key == "default") {
+      string += value[index] + " ";
+    } else {
+      string += value[index] + "@" + key + " ";
+    }
+    if (verybig) {
+      string += "<br>";
+    }
+  }
+  return string.trim() + ")";
+}
+
+function cmapDiff(report) {
+  if (report.cmap_diff && (report.cmap_diff.new || report.cmap_diff.missing)) {
+    $("#cmapdiff").append(
+      `<h4 class="mt-2">Added and Removed Encoded Glyphs</h4>`
+    );
+    if (report["cmap_diff"]["new"]) {
+      $("#cmapdiff").append(`<h4 class="box-title">Added Glyphs</h4>`);
+      let added = $("<div>");
+      for (let glyph of report["cmap_diff"]["new"]) {
+        addAGlyph(glyph, added);
+      }
+      $("#cmapdiff").append(added);
+    }
+
+    if (report["cmap_diff"]["missing"]) {
+      $("#cmapdiff").append(`<h4 class="box-title">Removed Glyphs</h4>`);
+      let missing = $("<div>");
+      for (let glyph of report["cmap_diff"]["missing"]) {
+        addAGlyph(glyph, missing);
+      }
+      $("#cmapdiff").append(missing);
+    }
+  } else {
+    $("#cmapdiff").append(`<p>No changes to encoded glyphs</p>`);
+  }
+}
+
+function setupAnimation() {
+  $("#fonttoggle").click(function () {
+    if ($(this).text() == "Old") {
+      $(this).text("New");
+      $(".font-before").removeClass("font-before").addClass("font-after");
+    } else {
+      $(this).text("Old");
+      $(".font-after").removeClass("font-after").addClass("font-before");
+    }
+  });
+
+  let animationHandle;
+  function animate() {
+    $("#fonttoggle").click();
+    animationHandle = setTimeout(animate, 1000);
+  }
+  $("#fontanimate").click(function () {
+    if ($(this).text() == "Animate") {
+      $(this).text("Stop");
+      animate();
+    } else {
+      $(this).text("Animate");
+      clearTimeout(animationHandle);
+    }
+  });
+}
+
+export {
+  renderTableDiff,
+  addAGlyph,
+  addAWord,
+  cmapDiff,
+  diffTables,
+  diffKerns,
+  setupAnimation,
+};
+
+	var report = {"tables":{"GDEF":{"glyph_classes":{"uni0B4D0B15.single":[null,"Base"],"uni0B4D0B16.single":[null,"Base"],"uni0B4D0B17.single":[null,"Base"],"uni0B4D0B18.single":[null,"Base"],"uni0B4D0B19.single":[null,"Base"],"uni0B4D0B1A.single":[null,"Base"],"uni0B4D0B1B.single":[null,"Base"],"uni0B4D0B1C.single":[null,"Base"],"uni0B4D0B1D.single":[null,"Base"],"uni0B4D0B1F.single":[null,"Base"],"uni0B4D0B20.single":[null,"Base"],"uni0B4D0B21.single":[null,"Base"],"uni0B4D0B22.single":[null,"Base"],"uni0B4D0B23.single":[null,"Base"],"uni0B4D0B24.single":[null,"Base"],"uni0B4D0B25.single":[null,"Base"],"uni0B4D0B26.single":[null,"Base"],"uni0B4D0B27.single":[null,"Base"],"uni0B4D0B28.single":[null,"Base"],"uni0B4D0B2A.single":[null,"Base"],"uni0B4D0B2B.single":[null,"Base"],"uni0B4D0B2C.single":[null,"Base"],"uni0B4D0B2D.single":[null,"Base"],"uni0B4D0B2E.single":[null,"Base"],"uni0B4D0B2F.single":[null,"Base"],"uni0B4D0B32.single":[null,"Base"],"uni0B4D0B33.single":[null,"Base"],"uni0B4D0B35.single":[null,"Base"],"uni0B4D0B36.single":[null,"Base"],"uni0B4D0B37.single":[null,"Base"],"uni0B4D0B38.single":[null,"Base"],"uni0B4D0B39.single":[null,"Base"]}},"GPOS":{"lookup_list":{"0":{"0":{"bases":{"kataraoriya":[{"anchor_0":{"x":366,"y":658}},null],"kataraaltoriya":[{"anchor_0":{"x":354,"y":658}},null],"nnaddaraoriya":[{"anchor_0":{"x":326,"y":658}},null],"takaraoriya":[{"anchor_0":{"x":354,"y":658}},null],"tataraoriya":[{"anchor_0":{"x":382,"y":658}},null],"taparaoriya":[{"anchor_0":{"x":335,"y":658}},null],"nataraoriya":[{"anchor_0":{"x":332,"y":658}},null],"nadaraoriya":[{"anchor_0":{"x":415,"y":658}},null],"nadharaoriya":[{"anchor_0":{"x":415,"y":658}},null],"maparaoriya":[{"anchor_0":{"x":352,"y":738}},null],"mabharaoriya":[{"anchor_0":{"x":335,"y":658}},null],"ssakaraoriya":[{"anchor_0":{"x":335,"y":658}},null],"ssattaraoriya":[{"anchor_0":{"x":335,"y":658}},null],"sataraoriya":[{"anchor_0":{"x":313,"y":658}},null]}}},"1":{"0":{"bases":{"kataraoriya":[{"anchor_0":{"x":634,"y":658}},null],"kataraaltoriya":[{"anchor_0":{"x":584,"y":658}},null],"nnaddaraoriya":[{"anchor_0":{"x":590,"y":658}},null],"takaraoriya":[{"anchor_0":{"x":584,"y":658}},null],"tataraoriya":[{"anchor_0":{"x":672,"y":658}},null],"taparaoriya":[{"anchor_0":{"x":597,"y":658}},null],"nataraoriya":[{"anchor_0":{"x":546,"y":658}},null],"nadaraoriya":[{"anchor_0":{"x":672,"y":658}},null],"nadharaoriya":[{"anchor_0":{"x":672,"y":658}},null],"maparaoriya":[{"anchor_0":{"x":640,"y":658}},null],"mabharaoriya":[{"anchor_0":{"x":597,"y":658}},null],"ssakaraoriya":[{"anchor_0":{"x":597,"y":658}},null],"ssattaraoriya":[{"anchor_0":{"x":597,"y":658}},null],"sataraoriya":[{"anchor_0":{"x":557,"y":658}},null],"uni0B4B":[null,{"anchor_0":{"x":1110,"y":658}}]}}},"3":{"0":{"bases":{"uni0B4D0B30.single":[{"anchor_0":{"x":201,"y":-162}},null],"kataraoriya":[{"anchor_0":{"x":409,"y":-225}},null],"kataraaltoriya":[{"anchor_0":{"x":326,"y":-130}},null],"nnaddaraoriya":[{"anchor_0":{"x":551,"y":-261}},null],"takaraoriya":[{"anchor_0":{"x":463,"y":-223}},null],"tataraoriya":[{"anchor_0":{"x":576,"y":-162}},null],"taparaoriya":[{"anchor_0":{"x":558,"y":-223}},null],"nataraoriya":[{"anchor_0":{"x":508,"y":-244}},null],"nadaraoriya":[{"anchor_0":{"x":607,"y":-162}},null],"nadharaoriya":[{"anchor_0":{"x":607,"y":-161}},null],"maparaoriya":[{"anchor_0":{"x":601,"y":-162}},null],"mabharaoriya":[{"anchor_0":{"x":558,"y":-244}},null],"ssakaraoriya":[{"anchor_0":{"x":654,"y":-244}},null],"ssattaraoriya":[{"anchor_0":{"x":740,"y":-244}},null],"sataraoriya":[{"anchor_0":{"x":518,"y":-164}},null],"uni0B06":[null,{"anchor_0":{"x":458,"y":-3}}],"uni0B5C":[null,{"anchor_0":{"x":337,"y":0}}],"uni0B5D":[null,{"anchor_0":{"x":279,"y":0}}],"uni0B4D0B15.single":[null,{"anchor_0":{"x":351,"y":-164}}],"uni0B4D0B16.single":[null,{"anchor_0":{"x":347,"y":-244}}],"uni0B4D0B17.single":[null,{"anchor_0":{"x":347,"y":-244}}],"uni0B4D0B18.single":[null,{"anchor_0":{"x":352,"y":-244}}],"uni0B4D0B19.single":[null,{"anchor_0":{"x":168,"y":-244}}],"uni0B4D0B1A.single":[null,{"anchor_0":{"x":139,"y":-240}}],"uni0B4D0B1B.single":[null,{"anchor_0":{"x":272,"y":-244}}],"uni0B4D0B1C.single":[null,{"anchor_0":{"x":339,"y":-164}}],"uni0B4D0B1D.single":[null,{"anchor_0":{"x":149,"y":-244}}],"uni0B4D0B1F.single":[null,{"anchor_0":{"x":145,"y":-242}}],"uni0B4D0B20.single":[null,{"anchor_0":{"x":158,"y":-204}}],"uni0B4D0B21.single":[null,{"anchor_0":{"x":169,"y":-244}}],"uni0B4D0B22.single":[null,{"anchor_0":{"x":104,"y":-181}}],"uni0B4D0B23.single":[null,{"anchor_0":{"x":326,"y":-244}}],"uni0B4D0B24.single":[null,{"anchor_0":{"x":235,"y":-121}}],"uni0B4D0B25.single":[null,{"anchor_0":{"x":389,"y":-164}}],"uni0B4D0B26.single":[null,{"anchor_0":{"x":247,"y":-244}}],"uni0B4D0B27.single":[null,{"anchor_0":{"x":319,"y":-244}}],"uni0B4D0B28.single":[null,{"anchor_0":{"x":288,"y":-164}}],"uni0B4D0B2A.single":[null,{"anchor_0":{"x":352,"y":-244}}],"uni0B4D0B2B.single":[null,{"anchor_0":{"x":352,"y":-244}}],"uni0B4D0B2D.single":[null,{"anchor_0":{"x":152,"y":-244}}],"uni0B4D0B2E.single":[null,{"anchor_0":{"x":315,"y":-164}}],"uni0B4D0B2F.single":[null,{"anchor_0":{"x":356,"y":-244}}],"uni0B4D0B32.single":[null,{"anchor_0":{"x":417,"y":-164}}],"uni0B4D0B33.single":[null,{"anchor_0":{"x":338,"y":-164}}],"uni0B4D0B35.single":[null,{"anchor_0":{"x":222,"y":-164}}],"uni0B4D0B36.single":[null,{"anchor_0":{"x":326,"y":-244}}],"uni0B4D0B37.single":[null,{"anchor_0":{"x":352,"y":-244}}],"uni0B4D0B38.single":[null,{"anchor_0":{"x":322,"y":-239}}],"uni0B4D0B39.single":[null,{"anchor_0":{"x":165,"y":-220}}]}}},"4":{"0":{"bases":{"uni0B4D0B30.single":[{"anchor_0":{"x":267,"y":-162}},null],"kataraoriya":[{"anchor_0":{"x":488,"y":-225}},null],"kataraaltoriya":[{"anchor_0":{"x":404,"y":-130}},null],"nnaddaraoriya":[{"anchor_0":{"x":629,"y":-261}},null],"takaraoriya":[{"anchor_0":{"x":541,"y":-223}},null],"tataraoriya":[{"anchor_0":{"x":654,"y":-162}},null],"taparaoriya":[{"anchor_0":{"x":636,"y":-223}},null],"nataraoriya":[{"anchor_0":{"x":586,"y":-244}},null],"nadaraoriya":[{"anchor_0":{"x":685,"y":-162}},null],"nadharaoriya":[{"anchor_0":{"x":685,"y":-162}},null],"maparaoriya":[{"anchor_0":{"x":679,"y":-162}},null],"mabharaoriya":[{"anchor_0":{"x":636,"y":-244}},null],"ssakaraoriya":[{"anchor_0":{"x":710,"y":-244}},null],"ssattaraoriya":[{"anchor_0":{"x":796,"y":-244}},null],"sataraoriya":[{"anchor_0":{"x":596,"y":-164}},null],"uni0B4D0B15.single":[null,{"anchor_0":{"x":407,"y":-164}}],"uni0B4D0B16.single":[null,{"anchor_0":{"x":403,"y":-244}}],"uni0B4D0B17.single":[null,{"anchor_0":{"x":403,"y":-244}}],"uni0B4D0B18.single":[null,{"anchor_0":{"x":408,"y":-244}}],"uni0B4D0B19.single":[null,{"anchor_0":{"x":241,"y":-244}}],"uni0B4D0B1A.single":[null,{"anchor_0":{"x":222,"y":-244}}],"uni0B4D0B1B.single":[null,{"anchor_0":{"x":325,"y":-242}}],"uni0B4D0B1C.single":[null,{"anchor_0":{"x":395,"y":-164}}],"uni0B4D0B1D.single":[null,{"anchor_0":{"x":225,"y":-244}}],"uni0B4D0B1F.single":[null,{"anchor_0":{"x":221,"y":-244}}],"uni0B4D0B20.single":[null,{"anchor_0":{"x":231,"y":-204}}],"uni0B4D0B21.single":[null,{"anchor_0":{"x":240,"y":-244}}],"uni0B4D0B22.single":[null,{"anchor_0":{"x":153,"y":-173}}],"uni0B4D0B23.single":[null,{"anchor_0":{"x":382,"y":-244}}],"uni0B4D0B24.single":[null,{"anchor_0":{"x":315,"y":-123}}],"uni0B4D0B25.single":[null,{"anchor_0":{"x":462,"y":-164}}],"uni0B4D0B26.single":[null,{"anchor_0":{"x":303,"y":-244}}],"uni0B4D0B27.single":[null,{"anchor_0":{"x":375,"y":-244}}],"uni0B4D0B28.single":[null,{"anchor_0":{"x":344,"y":-164}}],"uni0B4D0B2A.single":[null,{"anchor_0":{"x":408,"y":-244}}],"uni0B4D0B2B.single":[null,{"anchor_0":{"x":408,"y":-244}}],"uni0B4D0B2D.single":[null,{"anchor_0":{"x":207,"y":-245}}],"uni0B4D0B2E.single":[null,{"anchor_0":{"x":370,"y":-164}}],"uni0B4D0B2F.single":[null,{"anchor_0":{"x":411,"y":-244}}],"uni0B4D0B32.single":[null,{"anchor_0":{"x":473,"y":-164}}],"uni0B4D0B33.single":[null,{"anchor_0":{"x":394,"y":-164}}],"uni0B4D0B35.single":[null,{"anchor_0":{"x":277,"y":-164}}],"uni0B4D0B36.single":[null,{"anchor_0":{"x":382,"y":-244}}],"uni0B4D0B37.single":[null,{"anchor_0":{"x":408,"y":-244}}],"uni0B4D0B38.single":[null,{"anchor_0":{"x":378,"y":-239}}],"uni0B4D0B39.single":[null,{"anchor_0":{"x":220,"y":-221}}]}}},"6":{"0":{"bases":{"kataraoriya":[{"anchor_0":{"x":447,"y":-345}},null],"kataraaltoriya":[{"anchor_0":{"x":356,"y":-254}},null],"nnaddaraoriya":[{"anchor_0":{"x":387,"y":-371}},null],"takaraoriya":[{"anchor_0":{"x":346,"y":-323}},null],"tataraoriya":[{"anchor_0":{"x":404,"y":-262}},null],"taparaoriya":[{"anchor_0":{"x":435,"y":-323}},null],"nataraoriya":[{"anchor_0":{"x":335,"y":-314}},null],"nadaraoriya":[{"anchor_0":{"x":415,"y":-242}},null],"nadharaoriya":[{"anchor_0":{"x":435,"y":-262}},null],"maparaoriya":[{"anchor_0":{"x":387,"y":-272}},null],"mabharaoriya":[{"anchor_0":{"x":373,"y":-354}},null],"ssakaraoriya":[{"anchor_0":{"x":451,"y":-354}},null],"ssattaraoriya":[{"anchor_0":{"x":535,"y":-334}},null],"sataraoriya":[{"anchor_0":{"x":324,"y":-244}},null],"uni0B5C":[null,{"anchor_0":{"x":354,"y":-151}}],"uni0B5D":[null,{"anchor_0":{"x":361,"y":-151}}],"uni0B4D0B15.single":[null,{"anchor_0":{"x":228,"y":-276}}],"uni0B4D0B16.single":[null,{"anchor_0":{"x":212,"y":-348}}],"uni0B4D0B17.single":[null,{"anchor_0":{"x":212,"y":-348}}],"uni0B4D0B18.single":[null,{"anchor_0":{"x":215,"y":-348}}],"uni0B4D0B19.single":[null,{"anchor_0":{"x":208,"y":-348}}],"uni0B4D0B1A.single":[null,{"anchor_0":{"x":200,"y":-338}}],"uni0B4D0B1B.single":[null,{"anchor_0":{"x":209,"y":-316}}],"uni0B4D0B1C.single":[null,{"anchor_0":{"x":208,"y":-268}}],"uni0B4D0B1D.single":[null,{"anchor_0":{"x":211,"y":-329}}],"uni0B4D0B1F.single":[null,{"anchor_0":{"x":202,"y":-328}}],"uni0B4D0B20.single":[null,{"anchor_0":{"x":193,"y":-298}}],"uni0B4D0B21.single":[null,{"anchor_0":{"x":217,"y":-328}}],"uni0B4D0B22.single":[null,{"anchor_0":{"x":142,"y":-306}}],"uni0B4D0B23.single":[null,{"anchor_0":{"x":262,"y":-338}}],"uni0B4D0B24.single":[null,{"anchor_0":{"x":292,"y":-236}}],"uni0B4D0B25.single":[null,{"anchor_0":{"x":279,"y":-248}}],"uni0B4D0B26.single":[null,{"anchor_0":{"x":221,"y":-334}}],"uni0B4D0B27.single":[null,{"anchor_0":{"x":198,"y":-348}}],"uni0B4D0B28.single":[null,{"anchor_0":{"x":207,"y":-258}}],"uni0B4D0B2A.single":[null,{"anchor_0":{"x":255,"y":-328}}],"uni0B4D0B2B.single":[null,{"anchor_0":{"x":257,"y":-328}}],"uni0B4D0B2D.single":[null,{"anchor_0":{"x":242,"y":-343}}],"uni0B4D0B2E.single":[null,{"anchor_0":{"x":226,"y":-288}}],"uni0B4D0B2F.single":[null,{"anchor_0":{"x":205,"y":-338}}],"uni0B4D0B32.single":[null,{"anchor_0":{"x":213,"y":-255}}],"uni0B4D0B33.single":[null,{"anchor_0":{"x":214,"y":-255}}],"uni0B4D0B35.single":[null,{"anchor_0":{"x":149,"y":-214}}],"uni0B4D0B36.single":[null,{"anchor_0":{"x":252,"y":-328}}],"uni0B4D0B37.single":[null,{"anchor_0":{"x":265,"y":-338}}],"uni0B4D0B38.single":[null,{"anchor_0":{"x":200,"y":-308}}],"uni0B4D0B39.single":[null,{"anchor_0":{"x":207,"y":-313}}],"uni0B5C.alt":[null,{"anchor_0":{"x":354,"y":-151}}],"uni0B5D.alt":[null,{"anchor_0":{"x":361,"y":-151}}]}}},"10":{"0":{"bases":{"uni0B4D0B2C.single":[null,{"anchor_0":{"x":237,"y":-244}}],"uni0B4D0B30.single":[null,{"anchor_0":{"x":201,"y":-162}}],"kataraoriya":[null,{"anchor_0":{"x":409,"y":-225}}],"kataraaltoriya":[null,{"anchor_0":{"x":326,"y":-130}}],"nnaddaraoriya":[null,{"anchor_0":{"x":551,"y":-261}}],"takaraoriya":[null,{"anchor_0":{"x":463,"y":-223}}],"tataraoriya":[null,{"anchor_0":{"x":576,"y":-162}}],"taparaoriya":[null,{"anchor_0":{"x":558,"y":-223}}],"nataraoriya":[null,{"anchor_0":{"x":508,"y":-244}}],"nadaraoriya":[null,{"anchor_0":{"x":607,"y":-162}}],"nadharaoriya":[null,{"anchor_0":{"x":607,"y":-161}}],"maparaoriya":[null,{"anchor_0":{"x":601,"y":-162}}],"mabharaoriya":[null,{"anchor_0":{"x":558,"y":-244}}],"ssakaraoriya":[null,{"anchor_0":{"x":654,"y":-244}}],"ssattaraoriya":[null,{"anchor_0":{"x":740,"y":-244}}],"sataraoriya":[null,{"anchor_0":{"x":518,"y":-164}}],"uni0B5D.BRACKET.varAlt01":[null,{"anchor_0":{"x":279,"y":0}}],"uni0B5C.BRACKET.varAlt01":[null,{"anchor_0":{"x":337,"y":0}}]}}},"11":{"0":{"bases":{"uni0B4D0B2C.single":[null,{"anchor_0":{"x":291,"y":-244}}],"uni0B4D0B30.single":[null,{"anchor_0":{"x":267,"y":-162}}],"kataraoriya":[null,{"anchor_0":{"x":488,"y":-225}}],"kataraaltoriya":[null,{"anchor_0":{"x":404,"y":-130}}],"nnaddaraoriya":[null,{"anchor_0":{"x":629,"y":-261}}],"takaraoriya":[null,{"anchor_0":{"x":541,"y":-223}}],"tataraoriya":[null,{"anchor_0":{"x":654,"y":-162}}],"taparaoriya":[null,{"anchor_0":{"x":636,"y":-223}}],"nataraoriya":[null,{"anchor_0":{"x":586,"y":-244}}],"nadaraoriya":[null,{"anchor_0":{"x":685,"y":-162}}],"nadharaoriya":[null,{"anchor_0":{"x":685,"y":-162}}],"maparaoriya":[null,{"anchor_0":{"x":679,"y":-162}}],"mabharaoriya":[null,{"anchor_0":{"x":636,"y":-244}}],"ssakaraoriya":[null,{"anchor_0":{"x":710,"y":-244}}],"ssattaraoriya":[null,{"anchor_0":{"x":796,"y":-244}}],"sataraoriya":[null,{"anchor_0":{"x":596,"y":-164}}]}}},"13":{"0":{"bases":{"uni0B4D0B2C.single":[null,{"anchor_0":{"x":213,"y":-334}}],"uni0B4D0B30.single":[null,{"anchor_0":{"x":245,"y":-262}}],"kataraoriya":[null,{"anchor_0":{"x":447,"y":-345}}],"kataraaltoriya":[null,{"anchor_0":{"x":356,"y":-254}}],"nnaddaraoriya":[null,{"anchor_0":{"x":387,"y":-371}}],"takaraoriya":[null,{"anchor_0":{"x":346,"y":-323}}],"tataraoriya":[null,{"anchor_0":{"x":404,"y":-262}}],"taparaoriya":[null,{"anchor_0":{"x":435,"y":-323}}],"nataraoriya":[null,{"anchor_0":{"x":335,"y":-314}}],"nadaraoriya":[null,{"anchor_0":{"x":415,"y":-242}}],"nadharaoriya":[null,{"anchor_0":{"x":435,"y":-262}}],"maparaoriya":[null,{"anchor_0":{"x":387,"y":-272}}],"mabharaoriya":[null,{"anchor_0":{"x":373,"y":-354}}],"ssakaraoriya":[null,{"anchor_0":{"x":451,"y":-354}}],"ssattaraoriya":[null,{"anchor_0":{"x":535,"y":-334}}],"sataraoriya":[null,{"anchor_0":{"x":324,"y":-244}}]}}},"14":{"0":{"bases":{"kataraoriya":[null,{"anchor_0":{"x":366,"y":658}}],"kataraaltoriya":[null,{"anchor_0":{"x":354,"y":658}}],"nnaddaraoriya":[null,{"anchor_0":{"x":326,"y":658}}],"takaraoriya":[null,{"anchor_0":{"x":354,"y":658}}],"tataraoriya":[null,{"anchor_0":{"x":382,"y":658}}],"taparaoriya":[null,{"anchor_0":{"x":335,"y":658}}],"nataraoriya":[null,{"anchor_0":{"x":332,"y":658}}],"nadaraoriya":[null,{"anchor_0":{"x":415,"y":658}}],"nadharaoriya":[null,{"anchor_0":{"x":415,"y":658}}],"maparaoriya":[null,{"anchor_0":{"x":352,"y":738}}],"mabharaoriya":[null,{"anchor_0":{"x":335,"y":658}}],"ssakaraoriya":[null,{"anchor_0":{"x":335,"y":658}}],"ssattaraoriya":[null,{"anchor_0":{"x":335,"y":658}}],"sataraoriya":[null,{"anchor_0":{"x":313,"y":658}}]}}},"15":{"0":{"bases":{"kataraoriya":[null,{"anchor_0":{"x":634,"y":658}}],"kataraaltoriya":[null,{"anchor_0":{"x":584,"y":658}}],"nnaddaraoriya":[null,{"anchor_0":{"x":590,"y":658}}],"takaraoriya":[null,{"anchor_0":{"x":584,"y":658}}],"tataraoriya":[null,{"anchor_0":{"x":672,"y":658}}],"taparaoriya":[null,{"anchor_0":{"x":597,"y":658}}],"nataraoriya":[null,{"anchor_0":{"x":546,"y":658}}],"nadaraoriya":[null,{"anchor_0":{"x":672,"y":658}}],"nadharaoriya":[null,{"anchor_0":{"x":672,"y":658}}],"maparaoriya":[null,{"anchor_0":{"x":640,"y":658}}],"mabharaoriya":[null,{"anchor_0":{"x":597,"y":658}}],"ssakaraoriya":[null,{"anchor_0":{"x":597,"y":658}}],"ssattaraoriya":[null,{"anchor_0":{"x":597,"y":658}}],"sataraoriya":[null,{"anchor_0":{"x":557,"y":658}}]}}}}},"GSUB":{"lookup_list":{"0":{"0":{"uni0B4D0B30":["uni0B4D0B30.single",null]}},"11":{"0":{"rules":{"0":["[uni0B4D0B15 uni0B4D0B16 uni0B4D0B17 uni0B4D0B18 uni0B4D0B19 uni0B4D0B1A uni0B4D0B1B uni0B4D0B1C uni0B4D0B1D uni0B4D0B1F uni0B4D0B20 uni0B4D0B21 uni0B4D0B22 uni0B4D0B23 uni0B4D0B24 uni0B4D0B25 uni0B4D0B26 uni0B4D0B27 uni0B4D0B28 uni0B4D0B2A uni0B4D0B2B uni0B4D0B2C uni0B4D0B2D uni0B4D0B2E uni0B4D0B2F uni0B4D0B30 uni0B4D0B32 uni0B4D0B33 uni0B4D0B35 uni0B4D0B36 uni0B4D0B37 uni0B4D0B38 uni0B4D0B39 kassaoriya.below] [uni0B4D0B15 uni0B4D0B16 uni0B4D0B17 uni0B4D0B18 uni0B4D0B19 uni0B4D0B1A uni0B4D0B1B uni0B4D0B1C uni0B4D0B1D uni0B4D0B1F uni0B4D0B20 uni0B4D0B21 uni0B4D0B22 uni0B4D0B23 uni0B4D0B24 uni0B4D0B25 uni0B4D0B26 uni0B4D0B27 uni0B4D0B28 uni0B4D0B2A uni0B4D0B2B uni0B4D0B2C uni0B4D0B2D uni0B4D0B2E uni0B4D0B2F uni0B4D0B30 uni0B4D0B32 uni0B4D0B33 uni0B4D0B35 uni0B4D0B36 uni0B4D0B37 uni0B4D0B38 uni0B4D0B39]' lookup lookup_12","[uni0B4D0B15 uni0B4D0B16 uni0B4D0B17 uni0B4D0B18 uni0B4D0B19 uni0B4D0B1A uni0B4D0B1B uni0B4D0B1C uni0B4D0B1D uni0B4D0B1F uni0B4D0B20 uni0B4D0B21 uni0B4D0B22 uni0B4D0B23 uni0B4D0B24 uni0B4D0B25 uni0B4D0B26 uni0B4D0B27 uni0B4D0B28 uni0B4D0B2A uni0B4D0B2B uni0B4D0B2C uni0B4D0B2D uni0B4D0B2E uni0B4D0B2F uni0B4D0B30 uni0B4D0B32 uni0B4D0B33 uni0B4D0B35 uni0B4D0B36 uni0B4D0B37 uni0B4D0B38 uni0B4D0B39 kassaoriya.below] [uni0B4D0B15 uni0B4D0B16 uni0B4D0B17 uni0B4D0B18 uni0B4D0B19 uni0B4D0B1A uni0B4D0B1B uni0B4D0B1C uni0B4D0B1D uni0B4D0B1F uni0B4D0B20 uni0B4D0B21 uni0B4D0B22 uni0B4D0B23 uni0B4D0B24 uni0B4D0B25 uni0B4D0B26 uni0B4D0B27 uni0B4D0B28 uni0B4D0B2A uni0B4D0B2B uni0B4D0B2C uni0B4D0B2D uni0B4D0B2E uni0B4D0B2F uni0B4D0B32 uni0B4D0B33 uni0B4D0B35 uni0B4D0B36 uni0B4D0B37 uni0B4D0B38 uni0B4D0B39]' lookup lookup_12"]}}},"12":{"0":{"uni0B4D0B30":["uni0B4D0B30.single",null]}}}},"cmap":{"U+2010":["hyphen",null],"U+002D":[null,"hyphen"]},"head":{"checksum_adjustment":[4198586440,2267444657],"modified":[3792492719,3810212155]},"hhea":{"number_of_long_metrics":[600,599]},"hmtx":{"uni0B69":{"width":[563,761],"lsb":[19,29]},"uni0B69.BRACKET.varAlt01":[{"width":563,"lsb":19},null]},"loca":{"offsets":{"error":"There are 512 changes, check manually!"}},"maxp":{"num_glyphs":[600,599]},"post":{"num_glyphs":[600,599],"glyph_name_index":{"599":[807,null]}}},"cmap_diff":{"missing":[{"string":"‐","name":"HYPHEN"}],"new":[{"string":"-","name":"HYPHEN-MINUS"}]},"locations":[{"location":"Default","glyphs":[{"string":"୩","name":"ORIYA DIGIT THREE","unicode":"U+0B69","differing_pixels":348}],"words":{"Oriya":[{"word":"‌ଅନ୍ଦ୍ରୁ","buffer_a":"3|8|323|63@-583,-162|","buffer_b":"3|8|322|408@-857,0|","differing_pixels":133},{"word":"ହାଇପରାଣ୍ଡ୍ରୋଜେନିଜିମର","buffer_a":"53|59|10|40|46|59|69|292|59|69|27|39|60@-664,0|27|60@-685,0|44|46|","buffer_b":"53|59|10|40|46|59|69|291|206@-704,-191|59|69|27|39|60@-664,0|27|60@-685,0|44|46|","differing_pixels":128},{"word":"ବୌଦ୍ଧତନ୍ତ୍ର","buffer_a":"69|42|76|311|35|319|","buffer_b":"69|42|76|311|35|318|206@-748,-97|","differing_pixels":128},{"word":"ସ୍ମ୍ରୁତିରେ","buffer_a":"378|243|63@-679,-162|35|60@-670,0|69|46|","buffer_b":"378|408@-685,-244|35|60@-670,0|69|46|","differing_pixels":128},{"word":"ଆଣ୍ଡ୍ର୍ଯୁଜ","buffer_a":"9|292|205@-410,-372|489@-445,-616|27|","buffer_b":"9|291|206@-704,-191|242|63@-488,-244|27|","differing_pixels":122},{"word":"ଆଲେକ୍‌ଜାଣ୍ଡ୍ରିଆରେ","buffer_a":"9|69|47|20|77@-280,0|3|27|59|292|60@-699,0|9|69|46|","buffer_b":"9|69|47|20|77@-280,0|3|27|59|291|60@-726,0|206@-704,-191|9|69|46|","differing_pixels":114},{"word":"ସର୍ବୋତ୍କ୍ରୁଷ୍ଟ","buffer_a":"52|69|42|82@-486,0|59|296|63@-640,-223|363|","buffer_b":"52|69|42|82@-486,0|59|295|408@-819,-156|363|","differing_pixels":114},{"word":"ମେନ୍‌ଷ୍ଟ୍ରୁଆଲ୍‌","buffer_a":"69|44|39|77@-318,0|3|364|489@-489,-244|9|47|77@-344,0|3|","buffer_b":"69|44|39|77@-318,0|3|363|408@-825,-165|9|47|77@-344,0|3|","differing_pixels":106},{"word":"ଆନ୍ତ୍ର୍ଜାତୀୟ","buffer_a":"9|319|188@-421,-354|59|35|62|78|","buffer_b":"9|318|206@-748,-97|225|59|35|62|78|","differing_pixels":103},{"word":"ଖୋଜନ୍ତ୍ରୁ","buffer_a":"69|21|59|27|319|63@-554,-244|","buffer_b":"69|21|59|27|318|408@-924,-87|","differing_pixels":95},{"word":"ଯନ୍ତ୍ର୍ରଣାର","buffer_a":"45|319|206@-532,-254|34|59|46|","buffer_b":"45|318|206@-748,-97|206@-928,-269|34|59|46|","differing_pixels":93},{"word":"ସମ୍ଭ୍ରାନ୍ତମାନଙ୍କର","buffer_a":"52|344|59|318|44|59|39|269|46|","buffer_b":"52|343|206@-592,-132|59|318|44|59|39|269|46|","differing_pixels":90},{"word":"ଆଣ୍ଡ୍ର୍ୟୁସ୍","buffer_a":"9|292|63@-565,-261|214|52|77@-164,0|","buffer_b":"9|291|408@-880,-181|214|52|77@-164,0|","differing_pixels":78},{"word":"ତ୍ପ୍ରତ୍ଯାଶୀ","buffer_a":"303|158|205@-445,-1|59|50|62|","buffer_b":"302|206@-523,-169|158|205@-445,-1|59|50|62|","differing_pixels":59},{"word":"ଟ୍ରାନ୍ସନିଷ୍ଟ୍ରିଆରେ","buffer_a":"116|59|162|212@-451,-1|39|60@-664,0|364|60@-803,0|9|69|46|","buffer_b":"116|59|162|212@-451,-1|39|60@-664,0|363|60@-819,0|206@-649,-175|9|69|46|","differing_pixels":56},{"word":"ଶାସ୍ତ୍ର୍ରୀୟ","buffer_a":"50|59|372|206@-509,-174|62|78|","buffer_b":"50|59|371|206@-702,-191|206@-882,-363|62|78|","differing_pixels":47},{"word":"ଗାଷ୍ଟ୍ରୋଏଣ୍ଟେରୋଲୋଜିଷ୍ଟି","buffer_a":"22|59|69|364|59|16|69|289|69|46|59|69|47|59|27|60@-685,0|363|60@-819,0|","buffer_b":"22|59|69|363|206@-649,-175|59|16|69|289|69|46|59|69|47|59|27|60@-685,0|363|60@-819,0|","differing_pixels":40},{"word":"ସଷ୍କ୍ରିୟସଭ୍ୟମାନଙ୍କୁ","buffer_a":"52|362|60@-717,0|78|52|43|214|44|59|39|269|63@-562,0|","buffer_b":"52|361|60@-766,0|206@-489,-174|78|52|43|214|44|59|39|269|63@-562,0|","differing_pixels":38},{"word":"ଧର୍ମଶାସ୍ତ୍ରୀଙ୍କଦ୍ୱାରା","buffer_a":"38|44|82@-459,0|50|59|372|62|269|313|59|46|59|","buffer_b":"38|44|82@-459,0|50|59|371|206@-702,-191|62|269|313|59|46|59|","differing_pixels":37},{"word":"ବାଦ୍ଯଯନ୍ତ୍ର","buffer_a":"42|59|160|205@-500,-1|45|319|","buffer_b":"42|59|160|205@-500,-1|45|318|206@-748,-97|","differing_pixels":31},{"word":"ଦୁଇରନ୍ଧ୍ରରେ","buffer_a":"37|63@-703,0|10|46|327|69|46|","buffer_b":"37|63@-703,0|10|46|325|206@-681,-10|69|46|","differing_pixels":20},{"word":"ତିରୁଭୋତ୍ତ୍ରିୟାର","buffer_a":"35|60@-670,0|46|63@-843,0|69|43|59|299|60@-732,0|78|59|46|","buffer_b":"35|60@-670,0|46|63@-843,0|69|43|59|297|60@-732,0|206@-823,-10|78|59|46|","differing_pixels":18},{"word":"ସ୍ନାୟୁକେନ୍ଦ୍ରଗୁଡ଼ିକରେ","buffer_a":"374|59|78|63@-856,0|69|20|323|22|63@-531,0|80|60@-670,0|20|69|46|","buffer_b":"374|59|78|63@-856,0|69|20|322|206@-681,-10|22|63@-531,0|80|60@-670,0|20|69|46|","differing_pixels":17},{"word":"ପୁରୁଶ୍ଚନ୍ଦ୍ରୈରଭିଦ୍ୟୁଭିଃ","buffer_a":"40|63@-531,0|46|63@-843,0|357|69|323|75@-650,0|46|43|61@-773,0|37|63@-703,0|214|43|61@-773,0|7|","buffer_b":"40|63@-531,0|46|63@-843,0|357|69|322|75@-650,0|206@-681,-10|46|43|61@-773,0|37|63@-703,0|214|43|61@-773,0|7|","differing_pixels":16},{"word":"ସାମ୍ପ୍ରଦାୟିକତାବୋରୋଧୀ","buffer_a":"52|59|340|37|59|78|61@-798,0|20|35|59|69|42|59|69|46|59|38|62|","buffer_b":"52|59|339|206@-561,-10|37|59|78|61@-798,0|20|35|59|69|42|59|69|46|59|38|62|","differing_pixels":13},{"word":"ବ୍ରହ୍ମାବରୁଣେନ୍ଦ୍ରରୁଦ୍ରମରୁତଃ","buffer_a":"128|382|59|42|46|63@-843,0|69|34|323|46|63@-843,0|123|44|46|63@-843,0|35|7|","buffer_b":"128|382|59|42|46|63@-843,0|69|34|322|206@-681,-10|46|63@-843,0|123|44|46|63@-843,0|35|7|","differing_pixels":9}]}}]};
+		function buildLocation_statichtml(loc) {
+  // Set font styles to appropriate axis locations
+  let rule = document.styleSheets[0].cssRules[2].style;
+  let cssSetting = "";
+  let textLocation = "Default";
+  if (loc.coords) {
+    cssSetting = Object.entries(loc.coords)
+      .map(function ([axis, value]) {
+        return `"${axis}" ${value}`;
+      })
+      .join(", ");
+    textLocation = Object.entries(loc.coords)
+      .map(function ([axis, value]) {
+        return `${axis}=${value}`;
+      })
+      .join(" ");
+    rule.setProperty("font-variation-settings", cssSetting);
+  }
+
+  $("#main").empty();
+
+  $("#title").html(`<h4 class="mt-2">${textLocation}</h2>`);
+
+  if (loc.glyphs) {
+    $("#main").append("<h4>Modified Glyphs</h4>");
+    let glyphs = $("<div>");
+    for (let glyph of loc.glyphs) {
+      addAGlyph(glyph, glyphs);
+    }
+    $("#main").append(glyphs);
+  }
+
+  if (loc.words) {
+    $("#main").append("<h4>Modified Words</h4>");
+    for (let [script, words] of Object.entries(loc.words)) {
+      let scriptTitle = $(`<h6>${script}</h6>`);
+      $("#main").append(scriptTitle);
+      let worddiv = $("<div>");
+      for (let word of words) {
+        addAWord(word, worddiv);
+      }
+      $("#main").append(worddiv);
+    }
+  }
+  $('[data-toggle="tooltip"]').tooltip();
+}
+
+$(function () {
+  if (report["tables"]) {
+    diffTables(report);
+  }
+  if (report["kerns"]) {
+    diffKerns(report);
+  }
+  cmapDiff(report);
+  $('[data-toggle="tooltip"]').tooltip();
+  if (!report["locations"]) {
+    $("#title").html("<h4 class='mt-2'>No differences found</h4>");
+    $("#ui-nav").hide();
+    return;
+  }
+
+  for (var [index, loc] of report["locations"].entries()) {
+    var loc_nav = $(`<li class="nav-item">
+		<a class="nav-link text-secondary" href="#" data-index="${index}">${loc.location.replaceAll(
+      ",",
+      ",\u200b"
+    )}</a>
+	</li>`);
+    $("#locationnav").append(loc_nav);
+  }
+  $("#locationnav li a").on("click", function (e) {
+    $("#locationnav li a").removeClass("active");
+    $(this).addClass("active");
+    buildLocation_statichtml(report.locations[$(this).data("index")]);
+  });
+  $("#locationnav li a").eq(0).click();
+
+  document.styleSheets[0].cssRules[0].style.setProperty(
+    "src",
+    "url(old-NotoSansOriya-Regular.ttf)"
+  );
+  document.styleSheets[0].cssRules[1].style.setProperty(
+    "src",
+    "url(new-NotoSansOriya-Regular.ttf)"
+  );
+  setupAnimation();
+});
+
+	</script>
+</body>
+
+</html>
