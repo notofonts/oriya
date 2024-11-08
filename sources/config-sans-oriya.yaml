@@ -6,11 +6,12 @@ includeSubsets:
   name: GF_Latin_Core
 - from: Noto Sans
   ranges:
-    - start: 0x02BC
-      end: 0x02BC
+  - end: 700
+    start: 700
 - from: Noto Sans
   ranges:
-    - start: 0x035A
-      end: 0x035A
+  - end: 858
+    start: 858
+recipeProvider: noto
 sources:
 - NotoSansOriya.glyphs
