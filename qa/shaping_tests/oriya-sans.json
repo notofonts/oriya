@@ -47,6 +47,12 @@
             "input": "କ଼ ଯ଼",
             "expectation": "uni0B15=0+752|uni0B3C=0@-717,-28+0|space=2+258|uni0B2F=3+785|uni0B3C=3@-693,-28+0",
             "note": "#10"
+        },
+        {
+            "only": "NotoSansOriya-Regular.ttf",
+            "input": "ହେଲା। ଶେଷ॥",
+            "expectation": "uni0B47=0+534|uni0B39=0+703|uni0B32=2+833|uni0B3E=2+201|uni0964=4+326|space=5+258|uni0B47=6+534|uni0B36=6+741|uni0B37=8+741|uni0965=9+539",
+            "note": "Danda and dbldanda height and spacing"
         }
     ]
 }

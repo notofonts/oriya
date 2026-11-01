@@ -1,0 +1,10 @@
+{
+    "tests": [
+        {
+            "only": "NotoSerifOriya-Regular.ttf",
+            "input": "ହେଲା। ଶେଷ॥",
+            "expectation": "uni0B47=0+491|uni0B39=0+613|uni0B32=2+703|uni0B3E=2+207|uni0964=4+345|space=5+400|uni0B47=6+491|uni0B36=6+659|uni0B37=8+638|uni0965=9+527",
+            "note": "Danda and dbldanda spacing"
+        }
+    ]
+}
