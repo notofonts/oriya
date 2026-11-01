@@ -50683,14 +50683,14 @@ paths = (
 {
 closed = 1;
 nodes = (
-"90 658 LINE",
-"90 0 LINE",
-"116 0 LINE",
-"116 658 LINE"
+"170 778 LINE",
+"170 -80 LINE",
+"196 -80 LINE",
+"196 778 LINE"
 );
 }
 );
-width = 206;
+width = 286;
 },
 {
 layerId = "639D56B4-59BE-4993-85FD-8F80ECD3B0F6";
@@ -50698,14 +50698,14 @@ paths = (
 {
 closed = 1;
 nodes = (
-"74 658 LINE",
-"74 0 LINE",
-"244 0 LINE",
-"244 658 LINE"
+"154 778 LINE",
+"154 -80 LINE",
+"324 -80 LINE",
+"324 778 LINE"
 );
 }
 );
-width = 318;
+width = 398;
 },
 {
 layerId = "EAF3E1E9-0001-42EF-B2A4-765526B8C83B";
@@ -50713,14 +50713,14 @@ paths = (
 {
 closed = 1;
 nodes = (
-"74 658 LINE",
-"74 0 LINE",
-"100 0 LINE",
-"100 658 LINE"
+"154 778 LINE",
+"154 -80 LINE",
+"180 -80 LINE",
+"180 778 LINE"
 );
 }
 );
-width = 174;
+width = 254;
 },
 {
 layerId = "A6029D4D-1571-45DB-86AE-EDC9D2308E6F";
@@ -50728,14 +50728,14 @@ paths = (
 {
 closed = 1;
 nodes = (
-"68 658 LINE",
-"68 0 LINE",
-"215 0 LINE",
-"215 658 LINE"
+"148 778 LINE",
+"148 -80 LINE",
+"295 -80 LINE",
+"295 778 LINE"
 );
 }
 );
-width = 283;
+width = 363;
 },
 {
 layerId = "41544896-EF4D-4C26-89A7-324DAFD89EC7";
@@ -50743,14 +50743,14 @@ paths = (
 {
 closed = 1;
 nodes = (
-"84 658 LINE",
-"84 0 LINE",
-"162 0 LINE",
-"162 658 LINE"
+"164 778 LINE",
+"164 -80 LINE",
+"242 -80 LINE",
+"242 778 LINE"
 );
 }
 );
-width = 246.44444;
+width = 326.44444;
 },
 {
 layerId = "070887A0-C365-47E0-9E97-21510F23DCBB";
@@ -50758,14 +50758,14 @@ paths = (
 {
 closed = 1;
 nodes = (
-"72 658 LINE",
-"72 0 LINE",
-"142 0 LINE",
-"142 658 LINE"
+"152 778 LINE",
+"152 -80 LINE",
+"222 -80 LINE",
+"222 778 LINE"
 );
 }
 );
-width = 213;
+width = 293;
 }
 );
 note = danda.orya;
@@ -50780,8 +50780,8 @@ paths = (
 {
 closed = 1;
 nodes = (
-"282 0 LINE",
-"308 0 LINE",
+"362 -80 LINE",
+"388 -80 LINE",
 "308 622 LINE",
 "282 622 LINE"
 );
@@ -50789,8 +50789,8 @@ nodes = (
 {
 closed = 1;
 nodes = (
-"90 0 LINE",
-"116 0 LINE",
+"170 -80 LINE",
+"196 -80 LINE",
 "116 622 LINE",
 "90 622 LINE"
 );
@@ -50802,23 +50802,23 @@ paths = (
 {
 closed = 1;
 nodes = (
-"90 658 LINE",
-"90 0 LINE",
-"116 0 LINE",
-"116 658 LINE"
+"170 778 LINE",
+"170 -80 LINE",
+"196 -80 LINE",
+"196 778 LINE"
 );
 },
 {
 closed = 1;
 nodes = (
-"282 658 LINE",
-"282 0 LINE",
-"308 0 LINE",
-"308 658 LINE"
+"362 778 LINE",
+"362 -80 LINE",
+"388 -80 LINE",
+"388 778 LINE"
 );
 }
 );
-width = 398;
+width = 478;
 },
 {
 layerId = "639D56B4-59BE-4993-85FD-8F80ECD3B0F6";
@@ -50826,23 +50826,23 @@ paths = (
 {
 closed = 1;
 nodes = (
-"74 658 LINE",
-"74 0 LINE",
-"234 0 LINE",
-"234 658 LINE"
+"154 778 LINE",
+"154 -80 LINE",
+"314 -80 LINE",
+"314 778 LINE"
 );
 },
 {
 closed = 1;
 nodes = (
-"334 658 LINE",
-"334 0 LINE",
-"494 0 LINE",
-"494 658 LINE"
+"414 778 LINE",
+"414 -80 LINE",
+"574 -80 LINE",
+"574 778 LINE"
 );
 }
 );
-width = 568;
+width = 648;
 },
 {
 background = {
@@ -50850,8 +50850,8 @@ paths = (
 {
 closed = 1;
 nodes = (
-"236 0 LINE",
-"263 0 LINE",
+"316 -80 LINE",
+"343 -80 LINE",
 "263 622 LINE",
 "236 622 LINE"
 );
@@ -50859,8 +50859,8 @@ nodes = (
 {
 closed = 1;
 nodes = (
-"74 0 LINE",
-"100 0 LINE",
+"154 -80 LINE",
+"180 -80 LINE",
 "100 622 LINE",
 "74 622 LINE"
 );
@@ -50872,23 +50872,23 @@ paths = (
 {
 closed = 1;
 nodes = (
-"74 658 LINE",
-"74 0 LINE",
-"100 0 LINE",
-"100 658 LINE"
+"154 778 LINE",
+"154 -80 LINE",
+"180 -80 LINE",
+"180 778 LINE"
 );
 },
 {
 closed = 1;
 nodes = (
-"236 658 LINE",
-"236 0 LINE",
-"262 0 LINE",
-"262 658 LINE"
+"316 778 LINE",
+"316 -80 LINE",
+"342 -80 LINE",
+"342 778 LINE"
 );
 }
 );
-width = 336;
+width = 416;
 },
 {
 layerId = "A6029D4D-1571-45DB-86AE-EDC9D2308E6F";
@@ -50896,23 +50896,23 @@ paths = (
 {
 closed = 1;
 nodes = (
-"68 658 LINE",
-"68 0 LINE",
-"215 0 LINE",
-"215 658 LINE"
+"148 778 LINE",
+"148 -80 LINE",
+"295 -80 LINE",
+"295 778 LINE"
 );
 },
 {
 closed = 1;
 nodes = (
-"295 658 LINE",
-"295 0 LINE",
-"442 0 LINE",
-"442 658 LINE"
+"375 778 LINE",
+"375 -80 LINE",
+"522 -80 LINE",
+"522 778 LINE"
 );
 }
 );
-width = 510;
+width = 590;
 },
 {
 layerId = "41544896-EF4D-4C26-89A7-324DAFD89EC7";
@@ -50920,23 +50920,23 @@ paths = (
 {
 closed = 1;
 nodes = (
-"84 658 LINE",
-"84 0 LINE",
-"159 0 LINE",
-"159 658 LINE"
+"164 778 LINE",
+"164 -80 LINE",
+"239 -80 LINE",
+"239 778 LINE"
 );
 },
 {
 closed = 1;
 nodes = (
-"301 658 LINE",
-"301 0 LINE",
-"375 0 LINE",
-"375 658 LINE"
+"381 778 LINE",
+"381 -80 LINE",
+"455 -80 LINE",
+"455 778 LINE"
 );
 }
 );
-width = 459.38889;
+width = 539.38889;
 },
 {
 layerId = "070887A0-C365-47E0-9E97-21510F23DCBB";
@@ -50944,23 +50944,23 @@ paths = (
 {
 closed = 1;
 nodes = (
-"72 658 LINE",
-"72 0 LINE",
-"142 0 LINE",
-"142 658 LINE"
+"152 778 LINE",
+"152 -80 LINE",
+"222 -80 LINE",
+"222 778 LINE"
 );
 },
 {
 closed = 1;
 nodes = (
-"257 658 LINE",
-"257 0 LINE",
-"327 0 LINE",
-"327 658 LINE"
+"337 778 LINE",
+"337 -80 LINE",
+"407 -80 LINE",
+"407 778 LINE"
 );
 }
 );
-width = 399;
+width = 479;
 }
 );
 leftMetricsKey = danda;
